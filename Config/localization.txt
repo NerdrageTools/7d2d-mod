@@ -1,0 +1,266 @@
+Key,Source,Context,Changes,English
+reqPerceptionLevel11,progression,Attribute,,Perception Level 11
+reqPerceptionLevel12,progression,Attribute,,Perception Level 12
+reqPerceptionLevel13,progression,Attribute,,Perception Level 13
+reqStrengthLevel11,progression,Attribute,,Strength Level 11
+reqStrengthLevel12,progression,Attribute,,Strength Level 12
+reqStrengthLevel13,progression,Attribute,,Strength Level 13
+reqFortitudeLevel11,progression,Attribute,,Fortitude Level 11
+reqFortitudeLevel12,progression,Attribute,,Fortitude Level 12
+reqFortitudeLevel13,progression,Attribute,,Fortitude Level 13
+reqAgilityLevel11,progression,Attribute,,Agility Level 11
+reqAgilityLevel12,progression,Attribute,,Agility Level 12
+reqAgilityLevel13,progression,Attribute,,Agility Level 13
+reqIntellectLevel11,progression,Attribute,,Intellect Level 11
+reqIntellectLevel12,progression,Attribute,,Intellect Level 12
+reqIntellectLevel13,progression,Attribute,,Intellect Level 13
+attPerceptionRank11Desc,progression,Attribute,,Junior Perceptionist
+attPerceptionRank11LongDesc,progression,Attribute,,"Deal 325% head shot damage and have 55% chance to dismember with rifles, explosives, spears and tools governed by Salvage Operations."
+attPerceptionRank12Desc,progression,Attribute,,Elite Perceptionist
+attPerceptionRank12LongDesc,progression,Attribute,,"Deal 350% head shot damage and have 65% chance to dismember with rifles, explosives, spears and tools governed by Salvage Operations."
+attPerceptionRank13Desc,progression,Attribute,,Master Perceptionist
+attPerceptionRank13LongDesc,progression,Attribute,,"Deal 375% head shot damage and have 75% chance to dismember with rifles, explosives, spears and tools governed by Salvage Operations."
+attStrengthRank11Desc,progression,Attribute,,Junior Power House
+attStrengthRank11LongDesc,progression,Attribute,,"Deal 325% head shot damage and have 55% chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
+attStrengthRank12Desc,progression,Attribute,,Elite Power House
+attStrengthRank12LongDesc,progression,Attribute,,"Deal 350% head shot damage and have 65% chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
+attStrengthRank13Desc,progression,Attribute,,Master Power House
+attStrengthRank13LongDesc,progression,Attribute,,"Deal 375% head shot damage and have 75% chance to dismember with shotguns, clubs, sledgehammers and tools governed by Miner 69'er."
+attFortitudeRank11Desc,progression,Attribute,,Junior Survivor
+attFortitudeRank11LongDesc,progression,Attribute,,"Deal 325% head shot damage and have 55% chance to dismember with fists and machine guns."
+attFortitudeRank12Desc,progression,Attribute,,Elite Survivor
+attFortitudeRank12LongDesc,progression,Attribute,,"Deal 350% head shot damage and have 65% chance to dismember with fists and machine guns."
+attFortitudeRank13Desc,progression,Attribute,,Master Survivor
+attFortitudeRank13LongDesc,progression,Attribute,,"Deal 375% head shot damage and have 75% chance to dismember with fists and machine guns."
+attAgilityRank11Desc,progression,Attribute,,Junior Gymnast
+attAgilityRank11LongDesc,progression,Attribute,,"Junior Gymnast: Deal 325% headshot damage and have 55% chance to dismember with bows, handguns and knives."
+attAgilityRank12Desc,progression,Attribute,,Elite Gymnast
+attAgilityRank12LongDesc,progression,Attribute,,"Elite Gymnast: Deal 350% headshot damage and have 65% chance to dismember with bows, handguns and knives."
+attAgilityRank13Desc,progression,Attribute,,Master Gymnast
+attAgilityRank13LongDesc,progression,Attribute,,"Master Gymnast: Deal 375% headshot damage and have 75% chance to dismember with bows, handguns and knives."
+attIntellectRank11Desc,progression,Attribute,,Junior Brainiac
+attIntellectRank11LongDesc,progression,Attribute,,"Junior Brainiac: Deal 325% headshot damage and have 55% chance to dismember with stun batons and robotic turrets."
+attIntellectRank12Desc,progression,Attribute,,Elite Brainiac
+attIntellectRank12LongDesc,progression,Attribute,,"Elite Brainiac: Deal 350% headshot damage and have 65% chance to dismember with stun batons and robotic turrets."
+attIntellectRank13Desc,progression,Attribute,,Master Brainiac
+attIntellectRank13LongDesc,progression,Attribute,,"Master Brainiac: Deal 375% headshot damage and have 75% chance to dismember with stun batons and robotic turrets."
+perkDeadEyeRank6Desc,progression,perk,Per,Junior Sniper
+perkDeadEyeRank6LongDesc,progression,perk,Per,"Junior Sniper: Deal 60% more damage, aim 70% faster, reload 35% faster, and use 40% less stamina aiming with rifles.\nKill Streak: Successive kills increase damage bonus by 40%, 50% up to a maximum of 60%.\nUnlocks marksman rifle crafting."
+perkDeadEyeRank7Desc,progression,perk,Per,Elite Sniper
+perkDeadEyeRank7LongDesc,progression,perk,Per,"Elite Sniper: Deal 75% more damage, aim 80% faster, reload 40% faster, and use 50% less stamina aiming with rifles.\nKill Streak: Successive kills increase damage bonus by 50%, 60%, up to a maximum of 70%.\nUnlocks sniper rifle crafting."
+perkDeadEyeRank8Desc,progression,perk,Per,Master Sniper
+perkDeadEyeRank8LongDesc,progression,perk,Per,"Master Sniper: Craft quality 6 flawless rifles. Deal 100% more damage, aim 90% faster, reload 50% faster, and use 75% less stamina aiming with rifles.\nKill Streak: Successive kills increase damage bonus by 70%, 80%, up to a maximum of 90%."
+perkDemolitionsExpertRank6Desc,progression,perk,Per,Junior Rocket Ranger
+perkDemolitionsExpertRank6LongDesc,progression,perk,Per,"Junior Rocket Ranger: Increase damage 60%, reload speed by 40%, aim 60% faster and a 55% greater chance to dismember.\nUnlocks rocket launcher crafting."
+perkDemolitionsExpertRank7Desc,progression,perk,Per,Elite Rocket Ranger
+perkDemolitionsExpertRank7LongDesc,progression,perk,Per,"Elite Rocket Ranger: Increase damage 75%, reload speed by 50%, aim 70% faster and a 65% greater chance to dismember."
+perkDemolitionsExpertRank8Desc,progression,perk,Per,Master Rocket Ranger
+perkDemolitionsExpertRank8LongDesc,progression,perk,Per,"Master Rocket Ranger: Craft quality 6 flawless rocket launchers. Increase damage 100%, reload speed by 65%, aim 80% faster and a 75% chance to dismember."
+perkJavelinMasterRank6Desc,progression,perk,Per,Junior Spear Tosser
+perkJavelinMasterRank6LongDesc,progression,perk,Per,"Junior Spear Tosser: Spears do 60% more damage and have 60% more range.\nUnlocks steel spear crafting."
+perkJavelinMasterRank7Desc,progression,perk,Per,Elite Spear Tosser
+perkJavelinMasterRank7LongDesc,progression,perk,Per,"Elite Spear Tosser: Spears do 75% more damage and have 70% more range."
+perkJavelinMasterRank8Desc,progression,perk,Per,Master Spear Tosser
+perkJavelinMasterRank8LongDesc,progression,perk,Per,"Master Spear Tosser: Craft quality 6 flawless spears. Spears do 100% more damage and have 80% more range."
+perkLockPickingRank4Desc,progression,perk,Per,Elite Locksmith
+perkLockPickingRank4LongDesc,progression,perk,Per,"Elite Locksmith: Pick locks 80% faster and have a 50% lower chance to break lockpicks."
+perkLockPickingRank5Desc,progression,perk,Per,Master Locksmith
+perkLockPickingRank5LongDesc,progression,perk,Per,"Master Locksmith: Pick locks 100% faster and have a 75% lower chance to break lockpicks."
+perkInfiltratorRank4Desc,progression,perk,Per,Elite Infiltrator
+perkInfiltratorRank4LongDesc,progression,perk,Per,"Elite Infiltrator: Loose board traps and land mines trigger 2.5 seconds slower. Take 65% less damage from land mines."
+perkInfiltratorRank5Desc,progression,perk,Per,Master Infiltrator
+perkInfiltratorRank5LongDesc,progression,perk,Per,"Master Infiltrator: Loose board traps and land mines trigger 3 seconds slower. Take 80% less damage from land mines."
+perkPenetratorRank5Desc,progression,perk,Per,Elite Penetrator
+perkPenetratorRank5LongDesc,progression,perk,Per,"Elite Penetrator: Ignore 50% of armor with firearms, archery and spears. Armor-piercing rounds can penetrate four additional target when using rifles."
+perkPenetratorRank6Desc,progression,perk,Per,Master Penetrator
+perkPenetratorRank6LongDesc,progression,perk,Per,"Master Penetrator: Ignore 75% of armor with firearms, archery and spears."
+perkLuckyLooterRank6Desc,progression,perk,Per,Junior Looter
+perkLuckyLooterRank6LongDesc,progression,perk,Per,"Junior Looter: Adds 40% to loot bonus. Looting is 90% faster."
+perkLuckyLooterRank7Desc,progression,perk,Per,Elite Looter
+perkLuckyLooterRank7LongDesc,progression,perk,Per,"Elite Looter: Adds 55% to loot bonus. Looting is 95% faster."
+perkLuckyLooterRank8Desc,progression,perk,Per,Master Looter
+perkLuckyLooterRank8LongDesc,progression,perk,Per,"Master Looter: Adds 75% to loot bonus. Looting is 99% faster."
+perkTreasureHunterRank4Desc,progression,perk,Per,Elite Treasure Hunter
+perkTreasureHunterRank4LongDesc,progression,perk,Per,"Elite Treasure Hunter: For every 2 blocks dug up the treasure search radius is reduced by 1m.\nFind 50% more items in buried treasure."
+perkTreasureHunterRank5Desc,progression,perk,Per,Master Treasure Hunter
+perkTreasureHunterRank5LongDesc,progression,perk,Per,"Master Treasure Hunter: For every block dug up the treasure search radius is reduced by 1m.\nFind 75% more items in buried treasure."
+perkSalvageOperationsRank6Desc,progression,perk,Per,Junior Scavenger
+perkSalvageOperationsRank6LongDesc,progression,perk,Per,"Junior Scavenger: Deal 65% more damage, harvest 125% faster and gain 120% more resources with a wrench, ratchet or impact driver.\nUnlocks ratchet crafting."
+perkSalvageOperationsRank7Desc,progression,perk,Per,Elite Scavenger
+perkSalvageOperationsRank7LongDesc,progression,perk,Per,"Elite Scavenger: Deal 85% more damage, harvest 150% faster and gain 140% more resources with a wrench, ratchet or impact driver."
+perkSalvageOperationsRank8Desc,progression,perk,Per,Master Scavenger
+perkSalvageOperationsRank8LongDesc,progression,perk,Per,"Master Scavenger: Craft quality 6 flawless salvage tools. Deal 100% more damage, harvest 175% faster and gain 160% more resources with a wrench, ratchet or impact driver.\nUnlocks impact driver crafting."
+perkBoomstickRank6Desc,progression,perk,Str,Junior Shotgunner
+perkBoomstickRank6LongDesc,progression,perk,Str,"Junior Shotgunner: Deal 60% more damage, 60% faster fire rate, and a 35% faster reload with shotguns.\nUnlocks pump shotgun crafting."
+perkBoomstickRank7Desc,progression,perk,Str,Elite Shotgunner
+perkBoomstickRank7LongDesc,progression,perk,Str,"Elite Shotgunner: Deal 75% more damage, 70% faster fire rate, and a 40% faster reload with shotguns."
+perkBoomstickRank8Desc,progression,perk,Str,Master Shotgunner
+perkBoomstickRank8LongDesc,progression,perk,Str,"Master Shotgunner: Craft quality 6 flawless shotguns.\nDeal 100% more damage, 75% faster fire rate, and 50% faster reload with shotguns.\nUnlocks auto shotgun crafting."
+perkPummelPeteRank6Desc,progression,perk,Str,Junior Pummeler
+perkPummelPeteRank6LongDesc,progression,perk,Str,"Junior Pummeler: Deal 65% more damage and attacks do 240% more damage to stunned enemies when using clubs.\nUnlocks steel club crafting."
+perkPummelPeteRank7Desc,progression,perk,Str,Elite Pummeler
+perkPummelPeteRank7LongDesc,progression,perk,Str,"Elite Pummeler: Deal 80% more damage and attacks do 280% more damage to stunned enemies when using clubs."
+perkPummelPeteRank8Desc,progression,perk,Str,Master Pummeler
+perkPummelPeteRank8LongDesc,progression,perk,Str,"Master Pummeler: Craft quality 6 flawless clubs.\nDeal 100% more damage and do 300% more damage to stunned enemies when using clubs."
+perkSkullCrusherRank6Desc,progression,perk,Str,Junior Skull Crusher
+perkSkullCrusherRank6LongDesc,progression,perk,Str,"Junior Skull Crusher: Deal 60% more damage with sledgehammers. Power attacks have 85% chance to knock down enemies and 60% chance to knock down nearby foes.\nUnlocks steel sledgehammer crafting."
+perkSkullCrusherRank7Desc,progression,perk,Str,Elite Skull Crusher
+perkSkullCrusherRank7LongDesc,progression,perk,Str,"Elite Skull Crusher: Deal 75% more damage with sledgehammers. Power attacks have 90% chance to knock down enemies and 70% chance to knock down nearby foes."
+perkSkullCrusherRank8Desc,progression,perk,Str,Master Skull Crusher
+perkSkullCrusherRank8LongDesc,progression,perk,Str,"Master Skull Crusher: Craft quality 6 flawless sledgehammers.\nDeal 100% more damage with sledgehammers. Power attacks have 95% chance to knockdown enemies and 75% chance to knock down nearby foes."
+perkSexualTrexRank5Desc,progression,perk,Str,Elite Sexual T-rex
+perkSexualTrexRank5LongDesc,progression,perk,Str,"Elite Sexual T-rex: Reduce melee and tool stamina usage by 35% and power attacks by 60%.\nKilling blows grant 40 stamina."
+perkSexualTrexRank6Desc,progression,perk,Str,Master Sexual T-rex
+perkSexualTrexRank6LongDesc,progression,perk,Str,"Master Sexual T-rex: Reduce melee and tool stamina usage by 50% and power attacks by 75%.\nKilling blows grant 50 stamina."
+perkHeavyArmorRank5Desc,progression,perk,Str,Elite Heavy Armorer
+perkHeavyArmorRank5LongDesc,progression,perk,Str,"Elite Heavy Armorer: Reduce heavy armor movement and stamina penalty by 50%. Improve durability by 250%.\nUnlocks steel armor crafting."
+perkHeavyArmorRank6Desc,progression,perk,Str,Master Heavy Armorer
+perkHeavyArmorRank6LongDesc,progression,perk,Str,"Master Heavy Armorer: Craft quality 6 flawless heavy armor.\nReduce heavy armor movement and stamina penalty by 75%. Improve durability by 300%."
+foodChickenStew,items,Food,,Chicken Stew
+foodChickenStewDesc,items,Food,,"Don't let that canned chicken soup go to waste. Soup it up with Chicken Stew recipe!"
+foodBeefTacos,items,Food,,Beef Tacos
+foodBeefTacosDesc,items,Food,,"Try delicious beef tacos!"
+foodChickenTacos,items,Food,,Chicken Tacos
+foodChickenTacosDesc,items,Food,,"Try delicious chicken tacos!"
+drinkFruitSmoothie,items,Food,,Fruit Smoothie
+drinkFruitSmoothieDesc,items,Food,,"Don't let that fruit go to waste. Blend it up with a fruit smoothie!"
+drinkJarBlueBeer,items,Food,,Blueberry Ale
+drinkJarBlueBeerDesc,items,Foor,,"Try refreshing blueberry ale!"
+perkMasterChefRank6Desc,progression,perk,Str,Master Chef
+perkMasterChefRank6LongDesc,progression,perk,Str,"Master Chef: Learn to make energy drinks, chicken stew, beef tacos, chicken tacos, fruit smoothies and blueberry ale.\nCook 75% faster."
+perkMiner69rRank6Desc,progression,perk,Str,Junior Miner
+perkMiner69rRank6LongDesc,progression,perk,Str,"Junior Miner: Increase damage by 60% and block damage by 180% with any axe, pick, chainsaw or auger.\nUnlocks steel tool crafting."
+perkMiner69rRank7Desc,progression,perk,Str,Elite Miner
+perkMiner69rRank7LongDesc,progression,perk,Str,"Elite Miner: Increase damage by 75% and block damage by 210% with any axe, pick, chainsaw or auger."
+perkMiner69rRank8Desc,progression,perk,Str,Master Miner
+perkMiner69rRank8LongDesc,progression,perk,Str,"Master Miner: Craft quality 6 flawless tools.\nIncrease damage by 100% and block damage by 250% with any axe, pick, chainsaw or auger.\nUnlocks chainsaw and auger crafting."
+perkMotherLodeRank6Desc,progression,perk,Str,Junior Mother Loder
+perkMotherLodeRank6LongDesc,progression,perk,Str,"Junior Mother Loder: Harvest 125% more from ore, stone, terrain blocks and trees with any axe, pick, chainsaw or auger."
+perkMotherLodeRank7Desc,progression,perk,Str,Elite Mother Loder
+perkMotherLodeRank7LongDesc,progression,perk,Str,"Elite Mother Loder: Harvest 150% more from ore, stone, terrain blocks and trees with any axe, pick, chainsaw or auger."
+perkMotherLodeRank8Desc,progression,perk,Str,Master Mother Loder
+perkMotherLodeRank8LongDesc,progression,perk,Str,"Master Mother Loder: Harvest 200% more from ore, stone, terrain blocks and trees with any axe, pick, chainsaw or auger."
+perkBrawlerRank6Desc,progression,perk,For,Junior Brawler
+perkBrawlerRank6LongDesc,progression,perk,For,"Junior Brawler: Deal 60% more damage and power attacks to the head have 40% chance to knockdown your opponent with fists.\nUnlocks steel knuckles crafting."
+perkBrawlerRank7Desc,progression,perk,For,Elite Brawler
+perkBrawlerRank7LongDesc,progression,perk,For,"Elite Brawler: Deal 75% more damage and headshots have increased chance to dismember with fists."
+perkBrawlerRank8Desc,progression,perk,For,Master Brawler
+perkBrawlerRank8LongDesc,progression,perk,For,"Master Brawler: Craft quality 6 flawless knuckles.\nDeal 100% more damage and power attacks to the head have 50% chance to knockdown your opponent with fists."
+perkMachineGunnerRank6Desc,progression,perk,For,Junior Machine Gunner
+perkMachineGunnerRank6LongDesc,progression,perk,For,"Junior Machine Gunner: Deal 60% more damage, 30% faster fire rate and reload 35% faster with machine guns. Each shot scored gives you 8 stamina.\nUnlocks tactical assault rifle crafting."
+perkMachineGunnerRank7Desc,progression,perk,For,Elite Machine Gunner
+perkMachineGunnerRank7LongDesc,progression,perk,For,"Elite Machine Gunner: Deal 75% more damage, 40% faster fire rate and reload 40% faster with machine guns. Each shot scored gives you 10 stamina."
+perkMachineGunnerRank8Desc,progression,perk,For,Master Machiner Gunner
+perkMachineGunnerRank8LongDesc,progression,perk,For,"Master Machine Gunner: Craft quality 6 flawless machine guns.\nDeal 100% more damage, 50% faster fire rate and reload 50% faster with machine guns. Each shot scored gives you 15 stamina.\nUnlocks M60 machine gun crafting."
+perkTheHuntsmanRank6Desc,progression,perk,For,Junior Huntsman
+perkTheHuntsmanRank6LongDesc,progression,perk,For,"Junior Huntsman: Harvest 125% more resources from animals using any bladed tool or weapon."
+perkTheHuntsmanRank7Desc,progression,perk,For,Elite Huntsman
+perkTheHuntsmanRank7LongDesc,progression,perk,For,"Elite Huntsman: Harvest 150% more resources from animals using any bladed tool or weapon."
+perkTheHuntsmanRank8Desc,progression,perk,For,Master Huntsman
+perkTheHuntsmanRank8LongDesc,progression,perk,For,"Master Huntsman: Harvest 200% more resources from animals using any bladed tool or weapon."
+perkPainToleranceRank6Desc,progression,perk,For,Junior Tough Guy
+perkPainToleranceRank6LongDesc,progression,perk,For,"Junior Tough Guy: Reduce HP loss by 35%"
+perkPainToleranceRank7Desc,progression,perk,For,Elite Tough Guy
+perkPainToleranceRank7LongDesc,progression,perk,For,"Elite Tough Guy: Reduce HP loss by 50%"
+perkPainToleranceRank8Desc,progression,perk,For,Master Tough Guy
+perkPainToleranceRank8LongDesc,progression,perk,For,"Master Tough Guy: Reduce HP loss by 75%"
+perkHealingFactorRank6Desc,progression,perk,For,Junior Healer
+perkHealingFactorRank6LongDesc,progression,perk,For,"Junior Healer: Gain 1 health every 5 seconds. Critical injuries heal 125% faster."
+perkHealingFactorRank7Desc,progression,perk,For,Elite Healer
+perkHealingFactorRank7LongDesc,progression,perk,For,"Elite Healer: Gain 1 health every 4 seconds. Critical injuries heal 150% faster."
+perkHealingFactorRank8Desc,progression,perk,For,Master Healer
+perkHealingFactorRank8LongDesc,progression,perk,For,"Master Healer: Gain 1 health every 3 seconds. Critical injuries heal 175% faster."
+perkSlowMetabolismRank6Desc,progression,perk,For,Junior Metabolizer
+perkSlowMetabolismRank6LongDesc,progression,perk,For,"Junior Metabolizer: Reduce food and water loss from physical exertion by 30%. Hold your breath for 204 seconds. Chance of Dysentery is reduced by 6%. Buffs from consumables last 60% longer."
+perkSlowMetabolismRank7Desc,progression,perk,For,Elite Metabolizer
+perkSlowMetabolismRank7LongDesc,progression,perk,For,"Elite Metabolizer: Reduce food and water loss from physical exertion by 40%. Hold your breath for 252 seconds. Chance of Dysentery is reduced by 8%. Buffs from consumables last 75% longer."
+perkSlowMetabolismRank8Desc,progression,perk,For,Master Metabolizer
+perkSlowMetabolismRank8LongDesc,progression,perk,For,"Master Metabolizer: Reduce food and water loss from physical exertion by 50%. Hold your breath for 300 seconds. Chance of Dysentery is reduced by 10%. Buffs from consumables last 100% longer."
+perkRuleOneCardioRank4Desc,progression,perk,For,Junior Briathlete
+perkRuleOneCardioRank4LongDesc,progression,perk,For,"Junior Briathlete: Increase stamina regen by 40% and move 50% faster when sprinting."
+perkRuleOneCardioRank5Desc,progression,perk,For,Master Briathlete
+perkRuleOneCardioRank5LongDesc,progression,perk,For,"Master Briathlete: Increase stamina regen by 50% and move 100% faster when sprinting."
+perkArcheryRank6Desc,progression,perk,Agi,Junior Archer
+perkArcheryRank6LongDesc,progression,perk,Agi,"Junior Archer: Deal 60% more damage, 60% faster aim, draw and reload with bows.\nUnlocks compound bow crafting."
+perkArcheryRank7Desc,progression,perk,Agi,Elite Archer
+perkArcheryRank7LongDesc,progression,perk,Agi,"Elite Archer: Deal 75% more damage, 70% faster aim, draw and reload with bows.\nUnlocks compound crossbow crafting."
+perkArcheryRank8Desc,progression,perk,Agi,Master Archer
+perkArcheryRank8LongDesc,progression,perk,Agi,"Master Archer: Craft quality 6 flawless bows.\nDeal 100% more damage, 80% faster aim, draw and reload with bows."
+perkGunslingerRank6Desc,progression,perk,Agi,Junior Gunslinger
+perkGunslingerRank6LongDesc,progression,perk,Agi,"Junior Gunslinger: Deal 60% more damage, 30% faster fire rate, and 35% faster reload with handguns.\nUnlocks .44 magnum crafting."
+perkGunslingerRank7Desc,progression,perk,Agi,Elite Gunslinger
+perkGunslingerRank7LongDesc,progression,perk,Agi,"Elite Gunslinger: Deal 75% more damage, 35% faster fire rate, and 40% faster reload with handguns.\nUnlocks .44 desert vulture crafting."
+perkGunslingerRank8Desc,progression,perk,Agi,Master Gunslinger
+perkGunslingerRank8LongDesc,progression,perk,Agi,"Master Gunslinger: Craft quality 6 flawless handguns.\nDeal 100% more damage, 50% faster fire rate, and 50% faster reload with handguns.\nUnlocks SMG-5 crafting."
+perkDeepCutsRank6Desc,progression,perk,Agi,Junior Swordsman
+perkDeepCutsRank6LongDesc,progression,perk,Agi,"Junior Swordsman: Deal 60% more damage with blades. Inflict up to 8 bleeding wounds on an enemy and a power attack inflicts 6. Enemies run 25% slower while bleeding."
+perkDeepCutsRank7Desc,progression,perk,Agi,Elite Swordsman
+perkDeepCutsRank7LongDesc,progression,perk,Agi,"Elite Swordsman: Deal 75% more damage with blades. Inflict up to 9 bleeding wounds on an enemy and a power attack inflicts 7. Enemies run 30% slower while bleeding.\nUnlocks machete crafting."
+perkDeepCutsRank8Desc,progression,perk,Agi,Master Swordsman
+perkDeepCutsRank8LongDesc,progression,perk,Agi,"Master Swordsman: Craft quality 6 flawless blades.\nDeal 100% more damage with blades. Inflict up to 10 bleeding wounds on an enemy and a power attack inflicts 8. Enemies run 50% slower while bleeding."
+perkRunAndGunRank4Desc,progression,perk,Agi,Elite Mobile Gunner
+perkRunAndGunRank4LongDesc,progression,perk,Agi,"Elite Mobile Gunner: Hip fire accuracy is improved by 40%."
+perkRunAndGunRank5Desc,progression,perk,Agi,Master Mobile Gunner
+perkRunAndGunRank5LongDesc,progression,perk,Agi,"Master Mobile Gunner: Hip fire accuracy is improved by 60%."
+perkFlurryOfBlowsRank4Desc,progression,perk,Agi,Elite Blower
+perkFlurryOfBlowsRank4LongDesc,progression,perk,Agi,"Elite Blower: One-handed melee attack speeds are increased by 35%. Each kill recharges stamina by 45 points."
+perkFlurryOfBlowsRank5Desc,progression,perk,Agi,Master Blower
+perkFlurryOfBlowsRank5LongDesc,progression,perk,Agi,"Elite Blower: One-handed melee attack speeds are increased by 50%. Each kill recharges stamina by 60 points."
+perkLightArmorRank5Desc,progression,perk,Agi,Elite Light Armorer
+perkLightArmorRank5LongDesc,progression,perk,Agi,"Elite Light Armorer: Reduce light armor movement penalty by 90% and stamina penalty by 65%. Improve durability by 250%.\nUnlocks military armor crafting."
+perkLightArmorRank6Desc,progression,perk,Agi,Master Light Armorer
+perkLightArmorRank6LongDesc,progression,perk,Agi,"Master Light Armorer: Craft quality 6 flawless light armor.\nReduce light armor movement penalty by 100% and stamina penalty by 90%. Improve durability by 300%."
+perkParkourRank5Desc,progression,perk,Agi,Elite Stuntman
+perkParkourRank5LongDesc,progression,perk,Agi,"Elite Stuntman: Reduce stamina cost of jumping by 50%. Increase safe fall distance by 7 meters."
+perkParkourRank6Desc,progression,perk,Agi,Master Stuntman
+perkParkourRank6LongDesc,progression,perk,Agi,"Master Stuntman: Reduce stamina cost of jumping by 75%. Increase safe fall distance by 10 meters."
+perkHiddenStrikeRank6Desc,progression,perk,Agi,Junior Assassin
+perkHiddenStrikeRank6LongDesc,progression,perk,Agi,"Junior Assassin: Sneak attacks deal an extra 300% damage."
+perkHiddenStrikeRank7Desc,progression,perk,Agi,Elite Assassin
+perkHiddenStrikeRank7LongDesc,progression,perk,Agi,"Elite Assassin: Sneak attacks deal an extra 350% damage."
+perkHiddenStrikeRank8Desc,progression,perk,Agi,Master Assassin
+perkHiddenStrikeRank8LongDesc,progression,perk,Agi,"Master Assassin: Sneak attacks deal an extra 400% damage."
+perkFromTheShadowsRank6Desc,progression,perk,Agi,Junior Ninja
+perkFromTheShadowsRank6LongDesc,progression,perk,Agi,"Junior Ninja: Hide in the shadows 75% more effectively, noises from actions are muffled 60% and sneak movement is 60% faster.\nEnemies will search for you for up to 15 seconds."
+perkFromTheShadowsRank7Desc,progression,perk,Agi,Elite Ninja
+perkFromTheShadowsRank7LongDesc,progression,perk,Agi,"Elite Ninja: Hide in the shadows 85% more effectively, noises from actions are muffled 70% and sneak movement is 70% faster.\nEnemies will search for you for up to 10 seconds."
+perkFromTheShadowsRank8Desc,progression,perk,Agi,Master Ninja
+perkFromTheShadowsRank8LongDesc,progression,perk,Agi,"Master Ninja: Hide in the shadows 95% more effectively, noises from actions are muffled 80% and sneak movement is 80% faster.\nEnemies will search for you for up to 5 seconds."
+perkElectrocutionerRank6Desc,progression,perk,Int,Junior Stunner
+perkElectrocutionerRank6LongDesc,progression,perk,Int,"Junior Stunner: Craft quality 6 flawless stun batons.\nDeal 60% more damage and stun victims 120% longer with stun batons."
+perkElectrocutionerRank7Desc,progression,perk,Int,Elite Stunner
+perkElectrocutionerRank7LongDesc,progression,perk,Int,"Elite Stunner: Deal 75% more damage and stun victims 140% longer with stun batons."
+perkElectrocutionerRank8Desc,progression,perk,Int,Master Stunner
+perkElectrocutionerRank8LongDesc,progression,perk,Int,"Master Stunner: Deal 100% more damage and stun victims 160% longer with stun batons."
+perkTurretsRank6Desc,progression,perk,Int,Junior Robot Expert
+perkTurretsRank6LongDesc,progression,perk,Int,"Junior Robot Expert: Deal 50% more damage, 150% faster fire rate and reload an extra 60 rounds. Reload robot weapons 30% faster. Robot active range is 19 meters.\nUnlocks robotic turret crafting."
+perkTurretsRank7Desc,progression,perk,Int,Elite Robot Expert
+perkTurretsRank7LongDesc,progression,perk,Int,"Elite Robot Expert: Deal 75% more damage, 180% faster fire rate and reload an extra 75 rounds. Reload robot weapons 40% faster. Robot active range is 20 meters."
+perkTurretsRank8Desc,progression,perk,Int,Master Robot Expert
+perkTurretsRank8LongDesc,progression,perk,Int,"Master Robot Expert: Craft quality 6 flawless robots.\nDeal 100% more damage, 210% faster fire rate and reload an extra 100 rounds. Reload robot weapons 50% faster.\nThree deployed robots can be active at once."
+perkBetterBarterRank6Desc,progression,perk,Int,Junior Trader
+perkBetterBarterRank6LongDesc,progression,perk,Int,"Junior Trader: Get a 35% better deal buying and selling with traders."
+perkBetterBarterRank7Desc,progression,perk,Int,Elite Trader
+perkBetterBarterRank7LongDesc,progression,perk,Int,"Elite Trader: Get a 50% better deal buying and selling with traders."
+perkBetterBarterRank8Desc,progression,perk,Int,Master Trader
+perkBetterBarterRank8LongDesc,progression,perk,Int,"Master Trader: Get a 70% better deal buying and selling with traders. Unlock Secret Stash!"
+perkDaringAdventurerRank5Desc,progression,perk,Int,Elite Adventurer
+perkDaringAdventurerRank5LongDesc,progression,perk,Int,"Elite Adventurer: You can now choose three quest rewards and get 25% more dukes for completing quests."
+perkDaringAdventurerRank6Desc,progression,perk,Int,Master Adventurer
+perkDaringAdventurerRank6LongDesc,progression,perk,Int,"Master Adventurer: Get 50% more dukes for completing quests."
+perkCharismaticNatureRank5Desc,progression,perk,Int,Elite Squad Leader
+perkCharismaticNatureRank5LongDesc,progression,perk,Int,"Elite Squad Leader: Allies gain 50 health and stamina while you are nearby."
+perkCharismaticNatureRank6Desc,progression,perk,Int,Master Squad Leader
+perkCharismaticNatureRank6LongDesc,progression,perk,Int,"Master Squad Leader: Nearby allies take 25% less damage from all sources."
+perkPhysicianRank5Desc,progression,perk,Int,Elite Surgeon
+perkPhysicianRank5LongDesc,progression,perk,Int,"Elite Surgeon: Medical healing items heal 100% more health over time. Gain 120% more XP from using bandages, first aid bandages, first aid kits and splints. Craft items 60% faster at chemistry station."
+perkPhysicianRank6Desc,progression,perk,Int,Master Surgeon
+perkPhysicianRank6LongDesc,progression,perk,Int,"Master Surgeon: Medical healing items heal 150% more health over time. Gain 150% more XP from using bandages, first aid bandages, first aid kits and splints. Craft items 80% faster at chemistry station."
+perkAdvancedEngineeringRank6Desc,progression,perk,Int,Junior Engineer
+perkAdvancedEngineeringRank6LongDesc,progression,perk,Int,"Junior Engineer: Gain 65% more XP from electrical trap kills. Crafting at forges, workbenches and cement mixers is 50% faster."
+perkAdvancedEngineeringRank7Desc,progression,perk,Int,Elite Engineer
+perkAdvancedEngineeringRank7LongDesc,progression,perk,Int,"Elite Engineer: Gain 80% more XP from electrical trap kills.  All forge recipes cost 40% less, crafting forged steel and electrical devices costs 50% less."
+perkAdvancedEngineeringRank8Desc,progression,perk,Int,Master Engineer
+perkAdvancedEngineeringRank8LongDesc,progression,perk,Int,"Master Engineer: Learn to craft solar banks and solar panels. Gain 100% more XP from electrical trap kills."
+perkGreaseMonkeyRank6Desc,progression,perk,Int,Master Mechanic
+perkGreaseMonkeyRank6LongDesc,progression,perk,Int,"Master Mechanic: Craft engines and quality 6 car batteries."

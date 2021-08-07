@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	 biome
+	 maxcount: int - the sum of all spawned entities in the group may not exceed this number
+	 daytime: Any,Day,Night - determines the time of day the entity spawns
+	 <property name="TotalAlive" value="3" />
+	 total alive means how many are alive at once.
+	 <property name="TotalPerWave" value="10,20" />Total per wave means a random number between the first and second. The total alive will replenish the dead ranks until TotalPerWave's random number is met.
+-->
+
+<configs>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
+
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameDesert']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
+
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
+
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameSnow']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">3</set>
+
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">3</set>
+</configs>

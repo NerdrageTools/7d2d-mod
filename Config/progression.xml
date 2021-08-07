@@ -1,0 +1,1290 @@
+<configs>
+	<!--increase max level to 500 and flatten XP curve-->
+	<set xpath="progression/level/@max_level">500</set>
+	<set xpath="progression/level/@experience_multiplier">1.01</set>
+	<!--Change max level for attributes to 13-->
+	<set xpath="progression/attributes/@max_level">13</set>
+	<append xpath="/progression/attributes/attribute">
+		<level_requirements level="11"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="12"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints04"/></level_requirements>
+		<level_requirements level="13"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints05"/></level_requirements>
+	</append>
+	<!--Change max levels on perks from 5 to 8-->
+	<set xpath="progression/perks/@max_level">8</set>
+	
+	
+	
+	<!--PERCEPTION ATTRIBUTE-->
+	<append xpath="/progression/attributes/attribute[@name='attPerception']/effect_group">
+		<passive_effect name="DamageModifier" operation="perc_add" level="11,13" value="1.25,1.75" tags="head"/>
+		<passive_effect name="DismemberChance" operation="base_add" level="11,13" value=".5,.7"/>
+		<effect_description level="11" desc_key="attPerceptionRank11Desc" long_desc_key="attPerceptionRank11LongDesc"/>
+		<effect_description level="12" desc_key="attPerceptionRank12Desc" long_desc_key="attPerceptionRank12LongDesc"/>
+		<effect_description level="13" desc_key="attPerceptionRank13Desc" long_desc_key="attPerceptionRank13LongDesc"/>
+	</append>
+	
+	<!--Dead Eye Perk-->
+	<!--stamina usage and kill streak bonus handled in buffs.xml-->
+	<!--create level requirements for new Dead Eye perks-->
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" desc_key="reqPerceptionLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Dead Eye perk-->
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunRifleT1HuntingRifle']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunRifleT2MarksmanRifle"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,8" value="1" tags="gunRifleT3SniperRifle"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase rifle damage for Dead Eye perk-->
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<!--increase rifle aim speed for Dead Eye perk-->
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='WeaponHandling']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='WeaponHandling']/@value">.1,.2,.32,.45,.60,.70,.80,.90</set>
+	<!--increase rifle reload speed for Dead Eye perk-->
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.1,.15,.20,.25,.30,.35,.40,.50</set>
+	<!--link to localization for Dead Eye perk-->
+	<append xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group">
+		<effect_description level="6" desc_key="perkDeadEyeRank6Desc" long_desc_key="perkDeadEyeRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkDeadEyeRank7Desc" long_desc_key="perkDeadEyeRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkDeadEyeRank8Desc" long_desc_key="perkDeadEyeRank8LongDesc"/>
+	</append>
+	
+	<!--Demolitions Expert Perk-->
+	<!--create level requirements for new Demolitions Expert perks-->
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" desc_key="reqPerceptionLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Demolitions Expert perk-->
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='thrownAmmoPipeBomb,mineCookingPot,rScrapIronPlateMine']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='thrownDynamite,mineHubcap']/@level">2,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='thrownGrenade,resourceGunPowderBundle']/@level">3,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='ammoRocketHE,ammoRocketFrag,resourceRocketTip,resourceRocketCasing']/@level">4,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='thrownGrenadeContact,thrownTimedCharge,mineAirFilter']/@level">5,8</set>
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunExplosivesT3RocketLauncher"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase explosives dismember chance for Demolitions Expert perk-->
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='DismemberChance']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='DismemberChance']/@value">.05,.1,.2,.3,.45,.55,.65,.75</set>
+	<!--increase explosives damage for Demolitions Expert perk-->
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='BlockDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<!--increase explosives aim speed for Demolitions Expert perk-->
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='WeaponHandling']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='WeaponHandling']/@value">.1,.8</set>
+	<!--increase explosives reload speed for Demolitions Expert perk-->
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDemolitionsExpert']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.15,.20,.25,.30,.35,.40,.50,.65</set>
+	<!--link to localization for Demolitions Expert perk-->
+	<append xpath="/progression/perks/perk[@name='perkDemolitionsExpert']/effect_group">
+		<effect_description level="6" desc_key="perkDemolitionsExpertRank6Desc" long_desc_key="perkDemolitionsExpertRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkDemolitionsExpertRank7Desc" long_desc_key="perkDemolitionsExpertRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkDemolitionsExpertRank8Desc" long_desc_key="perkDemolitionsExpertRank8LongDesc"/>
+	</append>
+	
+	<!--Javelin Master Perk-->
+	<!--create level requirements for new Javelin Master perks-->
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" desc_key="reqPerceptionLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Javelin Master perk-->
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnSpearT1IronSpear']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeWpnSpearT3SteelSpear"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase spear damage for Javelin Master perk-->
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,1.6</set>
+	<!--increase spear throw range for Javelin Master perk-->
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='ProjectileVelocity']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkJavelinMaster']/effect_group/passive_effect[@name='ProjectileVelocity']/@value">.1,.8</set>
+	<!--link to localization for Javelin Master perk-->
+	<append xpath="/progression/perks/perk[@name='perkJavelinMaster']/effect_group">
+		<effect_description level="6" desc_key="perkJavelinMasterRank6Desc" long_desc_key="perkJavelinMasterRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkJavelinMasterRank7Desc" long_desc_key="perkJavelinMasterRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkJavelinMasterRank8Desc" long_desc_key="perkJavelinMasterRank8LongDesc"/>
+	</append>
+	
+	<!--Lock Picking Perk-->
+	<!--create level requirements for new Lock Picking perks-->
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/@max_level">5</set>
+	<append xpath="/progression/perks/perk[@name='perkLockPicking']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlock for Lock Picking perk-->
+	<set xpath="progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='resourceLockPick']/@level">1,5</set>
+	<!--increase lockpicking speed for Lock Picking perk-->
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickTime']/@level">1,5</set>
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickTime']/@value">.17,.58</set>
+	<!--reduce chance to break lockpick for Lock Picking perk-->
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickBreakChance']/@level">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group/passive_effect[@name='LockPickBreakChance']/@value">.1,.2,.3,.5,.75</set>
+	<!--link to localization for Lock Picking perk-->
+	<append xpath="/progression/perks/perk[@name='perkLockPicking']/effect_group">
+		<effect_description level="4" desc_key="perkLockPickingRank4Desc" long_desc_key="perkLockPickingRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkLockPickingRank5Desc" long_desc_key="perkLockPickingRank5LongDesc"/>
+	</append>
+	
+	<!--The Infiltrator Perk-->
+	<!--create level requirements for new The Infiltrator perks-->
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/@max_level">5</set>
+	<append xpath="/progression/perks/perk[@name='perkInfiltrator']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--increase trap delay time for The Infiltrator perk-->
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='TrapDoorTriggerDelay']/@level">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='TrapDoorTriggerDelay']/@value">.5,1,2,2.5,3</set>
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='LandMineTriggerDelay']/@level">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='LandMineTriggerDelay']/@value">.5,1,2,2.5,3</set>
+	<!--increase damage resistance to landmines for The Infiltrator perk-->
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='TrapIncomingDamage']/@level">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='TrapIncomingDamage']/@value">-.2,-.35,-.5,-.65,-.8</set>
+	<!--landmine pickup ability for The Infiltrator perk-->
+	<set xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group/passive_effect[@name='BlockPickup']/@level">3,5</set>
+	<!--link to localization for The Infiltrator perk-->
+	<append xpath="/progression/perks/perk[@name='perkInfiltrator']/effect_group">
+		<effect_description level="4" desc_key="perkInfiltratorRank4Desc" long_desc_key="perkInfiltratorRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkInfiltratorRank5Desc" long_desc_key="perkInfiltratorRank5LongDesc"/>
+	</append>
+	
+	<!--Animal Tracker Perk-->
+	<!--no changes-->
+	
+	<!--The Penetrator Perk-->
+	<!--create level requirements for new The Penetrator perks-->
+	<set xpath="/progression/perks/perk[@name='perkPenetrator']/@max_level">6</set>
+	<append xpath="/progression/perks/perk[@name='perkPenetrator']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--increase armor pentration for new The Infiltrator perks-->
+	<set xpath="/progression/perks/perk[@name='perkPenetrator']/effect_group/passive_effect[@name='TargetArmor']/@level">1,2,3,4,5,6</set>
+	<set xpath="/progression/perks/perk[@name='perkPenetrator']/effect_group/passive_effect[@name='TargetArmor']/@value">-.15,-.25,-.35,-.35,-.5,-.75</set>
+	<!--increase number of targets and strength of blocks pentrated with The Infiltrator perk-->
+	<set xpath="/progression/perks/perk[@name='perkPenetrator']/effect_group/passive_effect[@name='EntityPenetrationCount']/@level">2,3,4,5,6</set>
+	<set xpath="/progression/perks/perk[@name='perkPenetrator']/effect_group/passive_effect[@name='EntityPenetrationCount']/@value">1,2,3,4,4</set>
+	<!--link to localization for The Penetrator perk-->
+	<append xpath="/progression/perks/perk[@name='perkPenetrator']/effect_group">
+		<effect_description level="5" desc_key="perkPenetratorRank5Desc" long_desc_key="perkPenetratorRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkPenetratorRank6Desc" long_desc_key="perkPenetratorRank6LongDesc"/>
+	</append>
+	
+	<!--Lucky Looter Perk-->
+	<!--create level requirements for new Lucky Looter perks-->
+	<append xpath="/progression/perks/perk[@name='perkLuckyLooter']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" desc_key="reqPerceptionLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--increase loot bonus for Lucky Looter perk-->
+	<append xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group">
+		<passive_effect name="LootGamestage" operation="perc_add" level="6,7,8" value=".4,.55,.75"/>
+		<passive_effect name="ScavengingTime" operation="perc_subtract" level="6,7,8" value=".90,.95,.99"/>
+	</append>
+	<!--link to localization for Lucky Looter perk-->
+	<append xpath="/progression/perks/perk[@name='perkLuckyLooter']/effect_group">
+		<effect_description level="6" desc_key="perkLuckyLooterRank6Desc" long_desc_key="perkLuckyLooterRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkLuckyLooterRank7Desc" long_desc_key="perkLuckyLooterRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkLuckyLooterRank8Desc" long_desc_key="perkLuckyLooterRank8LongDesc"/>
+	</append>
+	
+	<!--Treasure Hunter Perk-->
+	<!--create level requirements for new Treasure Hunter perks-->
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/@max_level">5</set>
+	<append xpath="/progression/perks/perk[@name='perkTreasureHunter']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--decrease number of blocks needed to shrink radius in Treasure Hunter perk-->
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group/passive_effect[@name='TreasureBlocksPerReduction']/@level">0,1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group/passive_effect[@name='TreasureBlocksPerReduction']/@value">0,-3,-5,-7,-8,-9</set>
+	<!--increase amount of loot in buried treasure-->
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group/passive_effect[@name='LootQuantity']/@level">1,2,3,4,5</set>
+	<set xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group/passive_effect[@name='LootQuantity']/@value">.1,.2,.3,.5,.75</set>
+	<!--link to localization for Treasure Hunter perk-->
+	<append xpath="/progression/perks/perk[@name='perkTreasureHunter']/effect_group">
+		<effect_description level="4" desc_key="perkTreasureHunterRank4Desc" long_desc_key="perkTreasureHunterRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkTreasureHunterRank5Desc" long_desc_key="perkTreasureHunterRank5LongDesc"/>
+	</append>
+	
+	<!--Salvage Operations Perk-->
+	<!--create level requirements for new Salvage Operations perks-->
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="11" desc_key="reqPerceptionLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="12" desc_key="reqPerceptionLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attPerception" operation="GTE" value="13" desc_key="reqPerceptionLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Salvage Operations perk-->
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeToolSalvageT1Wrench']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeToolSalvageT2Ratchet"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="meleeToolSalvageT3ImpactDriver"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='CraftingTime']/@value">-0.1,-0.8</set>
+	<!--increase damage from salvage tools for Salvage Operations perk-->
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.65,.85,1</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.25,1.50,1.75</set>
+	<!--increase amount of material harvested with salvage tools for Salvage Operations perk-->
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='HarvestCount']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='HarvestCount']/@value">.2,1.6</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='PlayerExpGain']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkSalvageOperations']/effect_group/passive_effect[@name='PlayerExpGain']/@value">-.1,-.625</set>
+	<!--link to localization for Lucky Looter perk-->
+	<append xpath="/progression/perks/perk[@name='perkSalvageOperations']/effect_group">
+		<effect_description level="6" desc_key="perkSalvageOperationsRank6Desc" long_desc_key="perkSalvageOperationsRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkSalvageOperationsRank7Desc" long_desc_key="perkSalvageOperationsRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkSalvageOperationsRank8Desc" long_desc_key="perkSalvageOperationsRank8LongDesc"/>
+	</append>
+	
+	
+	
+	<!--STRENGTH ATTRIBUTE-->
+	<append xpath="/progression/attributes/attribute[@name='attStrength']/effect_group">
+		<passive_effect name="DamageModifier" operation="perc_add" level="11,13" value="1.25,1.75" tags="head"/>
+		<passive_effect name="DismemberChance" operation="base_add" level="11,13" value=".5,.7"/>
+		<effect_description level="11" desc_key="attStrengthRank11Desc" long_desc_key="attStrengthRank11LongDesc"/>
+		<effect_description level="12" desc_key="attStrengthRank12Desc" long_desc_key="attStrengthRank12LongDesc"/>
+		<effect_description level="13" desc_key="attStrengthRank13Desc" long_desc_key="attStrengthRank13LongDesc"/>
+	</append>
+	
+	<!--Boomstick Perk-->
+	<!--create level requirements for new Boomstick perks-->
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Boomstick perk-->
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunShotgunT1DoubleBarrel']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunShotgunT2PumpShotgun"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="gunShotgunT3AutoShotgun"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from shotguns tools for Boomstick perk-->
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.7,1</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase shotgun reload speed for Boomstick perk-->
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.1,.15,.20,.25,.30,.35,.40,.50</set>
+	<!--increase fire rate on shotguns for Boomstick perk-->
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RoundsPerMinute']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">.1,.2,.3,.4,.5,.6,.7,.75</set>
+	<!--link to localization for Boomstick perk-->
+	<append xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group">
+		<effect_description level="6" desc_key="perkBoomstickRank6Desc" long_desc_key="perkBoomstickRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkBoomstickRank7Desc" long_desc_key="perkBoomstickRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkBoomstickRank8Desc" long_desc_key="perkBoomstickRank8LongDesc"/>
+	</append>
+	
+	<!--Pummel Pete Perk-->
+	<!--create level requirements for new Pummel Pete perks-->
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Pummel Pete perk-->
+	<set xpath="progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnClubT1BaseballBat']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeWpnClubT3SteelClub"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkPummelPete']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from clubs for Pummel Pete perk-->
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group">
+		<passive_effect name="BlockDamage" operation="perc_add" level="6,8" value="1.2,1.6" tags="perkPummelPete"/>
+		<passive_effect name="EntityDamage" operation="perc_add" level="6,7,8" value=".65,.8,1" tags="perkPummelPete"/>
+		<passive_effect name="EntityDamage" operation="perc_add" level="6,7,8" value="2.4,2.8,3" tags="perkPummelPete">
+			<requirement name="CVarCompare" cvar="_stunned" operation="Equals" value="1" target="other"/>
+		</passive_effect>
+	</append>
+	<!--link to localization for Pummel Pete perk-->
+	<append xpath="/progression/perks/perk[@name='perkPummelPete']/effect_group">
+		<effect_description level="6" desc_key="perkPummelPeteRank6Desc" long_desc_key="perkPummelPeteRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkPummelPeteRank7Desc" long_desc_key="perkPummelPeteRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkPummelPeteRank8Desc" long_desc_key="perkPummelPeteRank8LongDesc"/>
+	</append>
+	
+	<!--Skull Crusher Perk-->
+	<!--create level requirements for new Skull Crusher perks-->
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Skull Crusher perk-->
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnSledgeT1IronSledgehammer']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeWpnSledgeT3SteelSledgehammer"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from sledgehammers tools for Skull Crusher perk-->
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSkullCrusher']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase power attack knockdown chance with sledgehammers for Skull Crusher perk-->
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group">
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+			<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="6"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="85"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+			<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="7"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="90"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown02">
+			<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="8"/>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="95"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.3" target_tags="zombie,animal" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="6"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="60"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.3" target_tags="zombie,animal" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="7"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="70"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="otherAOE" range="1.4" target_tags="zombie,animal" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkSkullCrusher" operation="Equals" value="8"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="75"/>
+			</triggered_effect>
+	</append>
+	<!--link to localization for Skull Crusher perk-->
+	<append xpath="/progression/perks/perk[@name='perkSkullCrusher']/effect_group">
+		<effect_description level="6" desc_key="perkSkullCrusherRank6Desc" long_desc_key="perkSkullCrusherRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkSkullCrusherRank7Desc" long_desc_key="perkSkullCrusherRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkSkullCrusherRank8Desc" long_desc_key="perkSkullCrusherRank8LongDesc"/>
+	</append>
+	
+	<!--Sexual Tyranosaurus Perk-->
+	<!--create level requirements for new Sexual Tyranosaurus perks-->
+	<set xpath="/progression/perks/perk[@name='perkSexualTrex']/@max_level">6</set>
+	<append xpath="/progression/perks/perk[@name='perkSexualTrex']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--decrease melee and tool stamina usage for Sexual Tyranosaurus perk-->
+	<append xpath="/progression/perks/perk[@name='perkSexualTrex']/effect_group">
+		<passive_effect name="StaminaLoss" operation="perc_add" level="5,6" value="-.175,-.25"/>					<!--had to cut these in half because it's being applied twice-->
+		<passive_effect name="StaminaLoss" operation="perc_add" level="5,6" value="-.125,-.125," tags="secondary"/>	<!--had to cut these in half because it's being applied twice-->
+	</append>
+	<!--increase stamina gain from killing blows for Sexual Tyranosaurus perk-->
+	<append xpath="/progression/perks/perk[@name='perkSexualTrex']/effect_group">
+		<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="40">
+			<requirement name="ProgressionLevel" progression_name="perkSexualTrex" operation="Equals" value="5"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="50">
+			<requirement name="ProgressionLevel" progression_name="perkSexualTrex" operation="Equals" value="6"/>
+		</triggered_effect>
+	</append>
+	<!--link to localization for Sexual Tyranosaurus perk-->
+	<append xpath="/progression/perks/perk[@name='perkSexualTrex']/effect_group">
+		<effect_description level="5" desc_key="perkSexualTrexRank5Desc" long_desc_key="perkSexualTrexRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkSexualTrexRank6Desc" long_desc_key="perkSexualTrexRank6LongDesc"/>
+	</append>
+	
+	<!--Heavy Armor Perk-->
+	<!--stamina/mobility handled in buffs.xml-->
+	<!--create level requirements for new Heavy Armor perks-->
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/@max_level">6</set>
+	<set xpath="/progression/perks/perk[@name='perkHeavyArmor']/@max_level">6</set>
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Heavy Armor perk-->
+	<set xpath="progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='armorIronHelmet,armorIronChest,armorIronGloves,armorIronLegs,armorIronBoots']/@level">1,6</set>
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,6" value="1" tags="armorSteelHelmet,armorSteelChest,armorSteelGloves,armorSteelLegs,armorSteelBoots"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkHeavyArmor']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,5</set>
+	<!--increase durability of heavy armor for Heavy Armor perk-->
+	<append xpath="progression/perks/perk[@name='perkHeavyArmor']/effect_group">
+		<passive_effect name="DegradationPerUse" operation="perc_add" level="5,6" value="-.705,-.75" tags="heavyArmorDeg"/>
+	</append>
+	<!--link to localization for Heavy Armor perk-->
+	<append xpath="/progression/perks/perk[@name='perkHeavyArmor']/effect_group">
+		<effect_description level="5" desc_key="perkHeavyArmorRank5Desc" long_desc_key="perkHeavyArmorRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkHeavyArmorRank6Desc" long_desc_key="perkHeavyArmorRank6LongDesc"/>
+	</append>
+	
+	<!--Pack Mule Perk-->
+	<setattribute xpath="/progression/perks/perk[@name='perkPackMule']" name="max_level">5</setattribute>
+	<!--no changes-->
+	
+	<!--Master Chef Perk-->
+	<!--create level requirements for new Master Chef perk-->
+	<setattribute xpath="/progression/perks/perk[@name='perkMasterChef']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Master Chef perk-->
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTier']/@level">0,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='CraftingTier']/@value">0,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='foodBaconAndEggs,foodBoiledMeat,foodGrilledMeat,foodBakedPotato,foodCornBread,foodCornOnTheCob,drinkJarRedTea,drinkJarCoffee,drinkJarGoldenRodTea']/@level">1,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='foodSteakAndPotato,foodBlueberryPie,foodMeatStew,foodVegetableStew,foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread']/@level">2,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='foodShamChowder,foodHoboStew,foodFishTacos,drinkYuccaJuiceSmoothie,foodChiliDog,drinkJarBeer']/@level">3,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='foodGumboStew,foodShepardsPie,foodSpaghetti,foodTunaFishGravyToast']/@level">4,6</set>
+	<set xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='drinkJarGrandpasMoonshine,drinkJarGrandpasAwesomeSauce,drinkJarGrandpasLearningElixir']/@level">5,6</set>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6" value="1" tags="foodChickenStew,foodBeefTacos,foodChickenTacos,drinkFruitSmoothie,drinkCanMegaCrush,drinkJarBlueBeer"/>
+	</append>
+	<!--increase cooking speed for Master Chef perk-->
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">
+		<passive_effect name="CraftingTime" operation="perc_add" level="6" value="-.75" tags="perkMasterChef"/>
+	</append>
+	<!--link to localization for Master Chef perk-->
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group">
+		<effect_description level="6" desc_key="perkMasterChefRank6Desc" long_desc_key="perkMasterChefRank6LongDesc"/>
+	</append>
+	
+	<!--Miner 69'er Perk-->
+	<!--create level requirements for new Miner 69'er perks-->
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Miner 69'er perk-->
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeToolRepairT1ClawHammer,meleeToolAxeT1IronFireaxe,meleeToolPickT1IronPickaxe,meleeToolShovelT1IronShovel']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeToolAxeT2SteelAxe,meleeToolPickT2SteelPickaxe,meleeToolShovelT2SteelShovel"/>
+	</append>
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="meleeToolAxeT3Chainsaw,meleeToolPickT3Auger"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from tools for Miner 69'er perk-->
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMiner69r']/effect_group/passive_effect[@name='BlockDamage']/@value">.3,.6,.9,1.2,1.5,1.8,2.1,2.5</set>
+	<!--link to localization for Miner 69'er perk-->
+	<append xpath="/progression/perks/perk[@name='perkMiner69r']/effect_group">
+		<effect_description level="6" desc_key="perkMiner69rRank6Desc" long_desc_key="perkMiner69rRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkMiner69rRank7Desc" long_desc_key="perkMiner69rRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkMiner69rRank8Desc" long_desc_key="perkMiner69rRank8LongDesc"/>
+	</append>
+	
+	<!--Mother Lode Perk-->
+	<!--create level requirements for new Mother Lode perks-->
+	<append xpath="/progression/perks/perk[@name='perkMotherLode']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="11" desc_key="reqStrengthLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="12" desc_key="reqStrengthLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attStrength" operation="GTE" value="13" desc_key="reqStrengthLevel13"/></level_requirements>
+	</append>
+	<!--increase mining yield for Mother Lode-->
+	<set xpath="progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='HarvestCount']/@value">.2,.4,.6,.8,1,1.25,1.5,2</set>
+	<set xpath="progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkMotherLode']/effect_group/passive_effect[@name='PlayerExpGain']/@value">-.1,-.625</set>
+	<!--link to localization for Mother Lode perk-->
+	<append xpath="/progression/perks/perk[@name='perkMotherLode']/effect_group">
+		<effect_description level="6" desc_key="perkMotherLodeRank6Desc" long_desc_key="perkMotherLodeRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkMotherLodeRank7Desc" long_desc_key="perkMotherLodeRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkMotherLodeRank8Desc" long_desc_key="perkMotherLodeRank8LongDesc"/>
+	</append>
+	
+	
+	
+	<!--FORTITUDE ATTRIBUTE-->
+	<append xpath="/progression/attributes/attribute[@name='attFortitude']/effect_group">
+		<passive_effect name="DamageModifier" operation="perc_add" level="11,13" value="1.25,1.75" tags="head"/>
+		<passive_effect name="DismemberChance" operation="base_add" level="11,13" value=".5,.7"/>
+		<effect_description level="11" desc_key="attFortitudeRank11Desc" long_desc_key="attFortitudeRank11LongDesc"/>
+		<effect_description level="12" desc_key="attFortitudeRank12Desc" long_desc_key="attFortitudeRank12LongDesc"/>
+		<effect_description level="13" desc_key="attFortitudeRank13Desc" long_desc_key="attFortitudeRank13LongDesc"/>
+	</append>
+	
+	<!--The Brawler Perk-->
+	<!--create level requirements for new The Brawler perks-->
+	<append xpath="/progression/perks/perk[@name='perkBrawler']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for The Brawler perk-->
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnKnucklesT1IronKnuckles']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkBrawler']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="meleeWpnKnucklesT3SteelKnuckles"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from fists and knuckles for The Brawler perk-->
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase dismember on headshot chance for The Brawler Perk-->
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='DismemberChance']/@level">5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBrawler']/effect_group/passive_effect[@name='DismemberChance']/@value">.2,.2,.35,.35</set>
+	<!--increase knockdown chance on headshots for The Brawler perk-->
+	<append xpath="/progression/perks/perk[@name='perkBrawler']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkBrawler"/>
+			<requirement name="HitLocation" body_parts="Head"/>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="6"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfSecondaryActionRayHit" action="AddBuff" target="other" buff="buffInjuryKnockdown01">
+				<requirement name="ProgressionLevel" progression_name="perkBrawler" operation="GTE" value="8"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+				</triggered_effect>
+		</effect_group>
+	</append>
+	<!--link to localization for The Brawler perk-->
+	<append xpath="/progression/perks/perk[@name='perkBrawler']/effect_group">
+		<effect_description level="6" desc_key="perkBrawlerRank6Desc" long_desc_key="perkBrawlerRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkBrawlerRank7Desc" long_desc_key="perkBrawlerRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkBrawlerRank8Desc" long_desc_key="perkBrawlerRank8LongDesc"/>
+	</append>
+	
+	<!--Machine Gunner Perk-->
+	<!--create level requirements for new Machine Gunner perks-->
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Machine Gunner perk-->
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunMGT1AK47']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunMGT2TacticalAR"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="gunMGT3M60"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from machine guns for Machine Gunner perk-->
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase fire and reload speeds for Machine Gunner perk-->
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RoundsPerMinute']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">.05,.10,.15,.20,.25,.30,.40,.50</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.1,.15,.20,.25,.30,.35,.40,.50</set>
+	<!--adjust kick and spread multiplier for Machine Gunner perk-->
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesVerticalMin']/@value">0,-.0075,-.015,-.0225,-.03,-.0375,-.045,-.0525</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesVerticalMax']/@value">0,-.0375,-.075,-.1125,-.15,-.1875,-.225,-.2625</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesHorizontalMin']/@value">0,-.0075,-.015,-.0225,-.03,-.0375,-.045,-.0525</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='KickDegreesHorizontalMax']/@value">0,-.0375,-.075,-.1125,-.15,-.1875,-.225,-.2625</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='IncrementalSpreadMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='IncrementalSpreadMultiplier']/@value">-.03,-.06,-.09,-.12,-.15,-.18,-.21,-.24</set>
+	<!--increase stamina gain for Machine Gunner Perk-->
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkMachineGunner"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" stat="Stamina" operation="add" value="8">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="6"/>
+				<requirement name="IsAlive" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" stat="Stamina" operation="add" value="10">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="7"/>
+				<requirement name="IsAlive" target="other"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfAttackedOther" action="ModifyStats" stat="Stamina" operation="add" value="15">
+				<requirement name="ProgressionLevel" progression_name="perkMachineGunner" operation="Equals" value="8"/>
+				<requirement name="IsAlive" target="other"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	<!--link to localization for Machine Gunner perk-->
+	<append xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group">
+		<effect_description level="6" desc_key="perkMachineGunnerRank6Desc" long_desc_key="perkMachineGunnerRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkMachineGunnerRank7Desc" long_desc_key="perkMachineGunnerRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkMachineGunnerRank8Desc" long_desc_key="perkMachineGunnerRank8LongDesc"/>
+	</append>
+	
+	<!--The Huntsman Perk-->
+	<!--create level requirements for new The Huntsman perks-->
+	<append xpath="/progression/perks/perk[@name='perkTheHuntsman']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--increase animal harvest with blades for The Huntsman perk-->
+	<set xpath="progression/perks/perk[@name='perkTheHuntsman']/effect_group/passive_effect[@name='HarvestCount']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTheHuntsman']/effect_group/passive_effect[@name='HarvestCount']/@value">.2,.4,.6,.8,1,1.25,1.5,2</set>
+	<!--link to localization for The Huntsman perk-->
+	<append xpath="/progression/perks/perk[@name='perkTheHuntsman']/effect_group">
+		<effect_description level="6" desc_key="perkTheHuntsmanRank6Desc" long_desc_key="perkTheHuntsmanRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkTheHuntsmanRank7Desc" long_desc_key="perkTheHuntsmanRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkTheHuntsmanRank8Desc" long_desc_key="perkTheHuntsmanRank8LongDesc"/>
+	</append>
+	
+	<!--Well Insulated Perk-->
+	<!--no changes-->
+	
+	<!--Living Off the Land Perk-->
+	<!--no changes-->
+	
+	<!--Pain Tolerance Perk-->
+	<!--create level requirements for new Pain Tolerance perks-->
+	<append xpath="/progression/perks/perk[@name='perkPainTolerance']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--damage and stun reduction for Pain Tolerance perk-->
+	<set xpath="progression/perks/perk[@name='perkPainTolerance']/effect_group/passive_effect[@name='HealthLoss']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkPainTolerance']/effect_group/passive_effect[@name='HealthLoss']/@value">.05,.10,.15,.20,.25,.35,.5,.75</set>
+	<set xpath="progression/perks/perk[@name='perkPainTolerance']/effect_group/passive_effect[@name='BuffResistance']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkPainTolerance']/effect_group/passive_effect[@name='BuffResistance']/@value">.20,.40,.60,.80,1,1,1,1</set>
+	<!--link to localization for The Huntsman perk-->
+	<append xpath="/progression/perks/perk[@name='perkPainTolerance']/effect_group">
+		<effect_description level="6" desc_key="perkPainToleranceRank6Desc" long_desc_key="perkPainToleranceRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkPainToleranceRank7Desc" long_desc_key="perkPainToleranceRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkPainToleranceRank8Desc" long_desc_key="perkPainToleranceRank8LongDesc"/>
+	</append>
+	
+	<!--Healing Factor Perk-->
+	<!--create level requirements for new Healing Factor perks-->
+	<append xpath="/progression/perks/perk[@name='perkHealingFactor']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--healing buffs for Healing Factor perk-->
+	<set xpath="progression/perks/perk[@name='perkHealingFactor']/effect_group/passive_effect[@name='HealthChangeOT']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkHealingFactor']/effect_group/passive_effect[@name='HealthChangeOT']/@value">.011,.022,.05,.1,.16,.2,.25,.33</set>
+	<!--crit healing for Healing Factor perk is handled in buffs.xml-->
+	<!--link to localization for Healing Factor perk-->
+	<append xpath="/progression/perks/perk[@name='perkHealingFactor']/effect_group">
+		<effect_description level="6" desc_key="perkHealingFactorRank6Desc" long_desc_key="perkHealingFactorRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkHealingFactorRank7Desc" long_desc_key="perkHealingFactorRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkHealingFactorRank8Desc" long_desc_key="perkHealingFactorRank8LongDesc"/>
+	</append>
+	
+	<!--Iron Gut Perk-->
+	<!--create level requirements for new Iron Gut perks-->
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="12" desc_key="reqFortitudeLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--reduce food/water usage for Iron Gut perk-->
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='WaterLossPerHealthPointGained']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='WaterLossPerHealthPointGained']/@value">-.05,-.10,-.15,-.20,-.25,-.30,-.40,-.50</set>
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='WaterLossPerStaminaPointGained']/@value">-.05,-.10,-.15,-.20,-.25,-.30,-.40,-.50</set>
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkSlowMetabolism']/effect_group/passive_effect[@name='FoodLossPerStaminaPointGained']/@value">-.05,-.10,-.15,-.20,-.25,-.30,-.40,-.50</set>
+	<!--reduced chance of dysentery, holding breath in water, and increased food buff time are handled in buffs.xml-->
+	<!--link to localization for Iron Gut perk-->
+	<append xpath="/progression/perks/perk[@name='perkSlowMetabolism']/effect_group">
+		<effect_description level="6" desc_key="perkSlowMetabolismRank6Desc" long_desc_key="perkSlowMetabolismRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkSlowMetabolismRank7Desc" long_desc_key="perkSlowMetabolismRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkSlowMetabolismRank8Desc" long_desc_key="perkSlowMetabolismRank8LongDesc"/>
+	</append>
+	
+	<!--Rule 1: Cardio Perk-->
+	<!--create level requirements for new Rule 1: Cardio perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkRuleOneCardio']" name="max_level">5</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="11" desc_key="reqFortitudeLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attFortitude" operation="GTE" value="13" desc_key="reqFortitudeLevel13"/></level_requirements>
+	</append>
+	<!--increase stamina regen while running for Rule 1: Cardio perk-->
+	<set xpath="progression/perks/perk[@name='perkRuleOneCardio']/effect_group/passive_effect[@name='StaminaChangeOT']/@level">1,5</set>
+	<set xpath="progression/perks/perk[@name='perkRuleOneCardio']/effect_group/passive_effect[@name='StaminaChangeOT']/@value">0.1,0.5</set>
+	<!--increase running speed for Rule 1: Cardio perk-->
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group">
+		<passive_effect name="RunSpeed" operation="perc_add" level="4,5" value=".5,1"/>
+	</append>
+	<!--link to localization for Rule 1: Cardio perk-->
+	<append xpath="/progression/perks/perk[@name='perkRuleOneCardio']/effect_group">
+		<effect_description level="4" desc_key="perkRuleOneCardioRank4Desc" long_desc_key="perkRuleOneCardioRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkRuleOneCardioRank5Desc" long_desc_key="perkRuleOneCardioRank5LongDesc"/>
+	</append>
+	
+	
+	
+	<!--AGILITY ATTRIBUTE-->
+	<append xpath="/progression/attributes/attribute[@name='attAgility']/effect_group">
+		<passive_effect name="DamageModifier" operation="perc_add" level="11,13" value="1.25,1.75" tags="head"/>
+		<passive_effect name="DismemberChance" operation="base_add" level="11,13" value=".5,.7"/>
+		<effect_description level="11" desc_key="attAgilityRank11Desc" long_desc_key="attAgilityRank11LongDesc"/>
+		<effect_description level="12" desc_key="attAgilityRank12Desc" long_desc_key="attAgilityRank12LongDesc"/>
+		<effect_description level="13" desc_key="attAgilityRank13Desc" long_desc_key="attAgilityRank13LongDesc"/>
+	</append>
+	
+	<!--Archery Perk-->
+	<!--create level requirements for new Archery perks-->
+	<append xpath="/progression/perks/perk[@name='perkArchery']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="12" desc_key="reqAgilityLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Archery perk-->
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBowT1WoodenBow,gunBowT1IronCrossbow']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkArchery']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunBowT3CompoundBow"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,8" value="1" tags="gunBowT3CompoundCrossbow"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from bows for Archery perk-->
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase draw, aim, and reload speed with bows for Archery perk-->
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='WeaponHandling']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='WeaponHandling']/@value">.1,.2,.3,.4,.5,.6,.7,.8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">.1,.2,.3,.4,.5,.6,.7,.8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='RoundsPerMinute']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkArchery']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">.1,.15,.25,.35,.5,.6,.7,.8</set>
+	<!--link to localization for Archery perk-->
+	<append xpath="/progression/perks/perk[@name='perkArchery']/effect_group">
+		<effect_description level="6" desc_key="perkArcheryRank6Desc" long_desc_key="perkArcheryRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkArcheryRank7Desc" long_desc_key="perkArcheryRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkArcheryRank8Desc" long_desc_key="perkArcheryRank8LongDesc"/>
+	</append>
+	
+	<!--Gunslinger Perk-->
+	<!--create level requirements for new Gunslinger perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkGunslinger']" name="max_level">8</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="12" desc_key="reqAgilityLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Gunslinger perk-->
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunHandgunT1Pistol']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunHandgunT2Magnum44"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,8" value="1" tags="gunHandgunT3DesertVulture"/>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="gunHandgunT3SMG5"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from handguns for Gunslinger perk-->
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='EntityDamage']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='EntityDamage']/@value">0,.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='BlockDamage']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='BlockDamage']/@value">0,.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase fire rate, reload speed, and spread multiplier with handguns for Gunslinger perk-->
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">0,.06,.12,.18,.24,.30,.36,.42,.54</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RoundsPerMinute']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RoundsPerMinute']/@value">0,.05,.10,.15,.20,.25,.30,.35,.50</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='IncrementalSpreadMultiplier']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='IncrementalSpreadMultiplier']/@value">0,-.05,-.10,-.15,-.20,-.25,-.30,-.35,-.40</set>
+	<!--gunslinger combo is handled in buffs.xml-->
+	<!--link to localization for Archery perk-->
+	<append xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group">
+		<effect_description level="6" desc_key="perkGunslingerRank6Desc" long_desc_key="perkGunslingerRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkGunslingerRank7Desc" long_desc_key="perkGunslingerRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkGunslingerRank8Desc" long_desc_key="perkGunslingerRank8LongDesc"/>
+	</append>
+	
+	<!--Deep Cuts Perk-->
+	<!--create level requirements for new Deep Cuts perks-->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="12" desc_key="reqAgilityLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Deep Cuts perk-->
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnBladeT1HuntingKnife']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="7,8" value="1" tags="meleeWpnBladeT3Machete"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from blades for Deep Cuts perk-->
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='EntityDamage']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='EntityDamage']/@value">0,.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='BlockDamage']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkDeepCuts']/effect_group/passive_effect[@name='BlockDamage']/@value">0,.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--increase bleeds from blades for Deep Cuts perk-->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group[@name='Secondary']">
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="6"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="2" target="other"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="8" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="6">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="6"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="2" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="9">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="7"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="2" target="other"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="9" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="7">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="7"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="2" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="set" value="10">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="8"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="GTE" value="2" target="other"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="10" target="other"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="8">
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="8"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="2" target="other"/>
+		</triggered_effect>
+	</append>
+	<!--additional code for max bleeds handled in buffs.xml-->
+	<!--decrease enemy run speed while bleeding for Deep Cuts perk-->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="6"/>
+			<requirement name="CVarCompare" cvar="$bleedSlowdown" operation="GT" value="-.25" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.25"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.25"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="7"/>
+			<requirement name="CVarCompare" cvar="$bleedSlowdown" operation="GT" value="-.30" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.30"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.30"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="8"/>
+			<requirement name="CVarCompare" cvar="$bleedSlowdown" operation="GT" value="-.50" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.50"/>
+				<triggered_effect trigger="onSelfSecondaryActionRayHit" action="ModifyCVar" target="other" cvar="$bleedSlowdown" operation="set" value="-.50"/>
+		</effect_group>
+	</append>
+	<!--extend bleeds from grazing hits to higher levels of Deep Cuts perk-->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']">
+		<effect_group name="grazing hits T6">
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="6"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="8" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+		</effect_group>
+		<effect_group name="grazing hits T7">
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="7"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="9" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+		</effect_group>
+		<effect_group name="grazing hits T8">
+			<requirement name="ItemHasTags" tags="perkDeepCuts"/>
+			<requirement name="ProgressionLevel" progression_name="perkDeepCuts" operation="Equals" value="8"/>
+			<requirement name="CVarCompare" cvar="bleedCounter" operation="LT" value="10" target="other"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="ModifyCVar" target="other" cvar="bleedCounter" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+				<triggered_effect trigger="onSelfSecondaryActionGrazeHit" action="AddBuff" target="other" buff="buffInjuryBleeding"/>
+		</effect_group>
+	</append>
+	<!--link to localization for Deep Cuts perk-->
+	<append xpath="/progression/perks/perk[@name='perkDeepCuts']/effect_group">
+		<effect_description level="6" desc_key="perkDeepCutsRank6Desc" long_desc_key="perkDeepCutsRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkDeepCutsRank7Desc" long_desc_key="perkDeepCutsRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkDeepCutsRank8Desc" long_desc_key="perkDeepCutsRank8LongDesc"/>
+	</append>
+	
+	<!--Run and Gun Perk-->
+	<!--create level requirements for new Run and Gun perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkRunAndGun']" name="max_level">5</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkRunAndGun']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--increase hip fire accuracy for Run and Gun perk-->
+	<set xpath="progression/perks/perk[@name='perkRunAndGun']/effect_group/passive_effect[@name='SpreadMultiplierHip']/@level">1,2,3,4,5</set>
+	<set xpath="progression/perks/perk[@name='perkRunAndGun']/effect_group/passive_effect[@name='SpreadMultiplierHip']/@value">-.1,-.17,-.25,-.4,-.6</set>
+	<!--reload movement penalty requires no code to extend to higher levels, but would normally be handled in buffs.xml if it did need code-->
+	<!--link to localization for Run and Gun perk-->
+	<append xpath="/progression/perks/perk[@name='perkRunAndGun']/effect_group">
+		<effect_description level="4" desc_key="perkRunAndGunRank4Desc" long_desc_key="perkRunAndGunRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkRunAndGunRank5Desc" long_desc_key="perkRunAndGunRank5LongDesc"/>
+	</append>
+	
+	<!--Flurry of Blows Perk-->
+	<!--create level requirements for new Flurry of Blows perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkFlurryOfBlows']" name="max_level">5</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfBlows']">
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--increase one-handed melee attack speed for Flurry of Blows perk-->
+	<set xpath="progression/perks/perk[@name='perkFlurryOfBlows']/effect_group/passive_effect[@name='AttacksPerMinute']/@level">1,2,3,4,5</set>
+	<set xpath="progression/perks/perk[@name='perkFlurryOfBlows']/effect_group/passive_effect[@name='AttacksPerMinute']/@value">.1,.17,.25,.35,.50</set>
+	<!--increase stamina gain from kills with one-handed melee weapons for Flurry of Blows perk-->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfBlows']">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkFlurryOfBlows"/>
+			<requirement name="ProgressionLevel" progression_name="perkFlurryOfBlows" operation="Equals" value="4"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="45"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkFlurryOfBlows"/>
+			<requirement name="ProgressionLevel" progression_name="perkFlurryOfBlows" operation="Equals" value="5"/>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Stamina" operation="add" value="60"/>
+		</effect_group>
+	</append>
+	<!--link to localization for Flurry of Blows perk-->
+	<append xpath="/progression/perks/perk[@name='perkFlurryOfBlows']/effect_group">
+		<effect_description level="4" desc_key="perkFlurryOfBlowsRank4Desc" long_desc_key="perkFlurryOfBlowsRank4LongDesc"/>
+		<effect_description level="5" desc_key="perkFlurryOfBlowsRank5Desc" long_desc_key="perkFlurryOfBlowsRank5LongDesc"/>
+	</append>
+	
+	<!--Light Armor Perk-->
+	<!--create level requirements for new Light Armor perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkLightArmor']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkLightArmor']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Light Armor perk-->
+	<set xpath="progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='armorLeatherHood,armorLeatherChest,armorLeatherGloves,armorLeatherPants,armorLeatherBoots']/@level">1,6</set>
+	<append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5,6" value="1" tags="armorMilitaryHelmet,armorMilitaryVest,armorMilitaryGloves,armorMilitaryLegs,armorMilitaryBoots"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,5</set>
+	<!--increase durability of heavy armor for Light Armor perk-->
+	<append xpath="progression/perks/perk[@name='perkLightArmor']/effect_group">
+		<passive_effect name="DegradationPerUse" operation="perc_add" level="5,6" value="-.705,-.75" tags="lightArmorDeg"/>
+	</append>
+	<!--movement and stamina penalty for light armor handled in buffs.xml-->
+	<!--link to localization for Light Armor perk-->
+	<append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group">
+		<effect_description level="5" desc_key="perkLightArmorRank5Desc" long_desc_key="perkLightArmorRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkLightArmorRank6Desc" long_desc_key="perkLightArmorRank6LongDesc"/>
+	</append>
+	
+	<!--Parkour Perk-->
+	<!--create level requirements for new Parkour perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkParkour']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkParkour']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--extend existing jump height to higher levels of Parkour perk-->
+	<set xpath="progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@level">2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='JumpStrength']/@value">.39,.39,.75,.75,.75</set>
+	<!--decrease stamina usage while jumping for Parkour perk-->
+	<set xpath="progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='StaminaLoss']/@level">1,2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkParkour']/effect_group/passive_effect[@name='StaminaLoss']/@value">-.1,-.2,-.3,-.4,-.5,-.75</set>
+	<!--fall damage reduction handled in buffs.xml - break/sprain protection does not need to be extended but would also be handled in buffs.xml-->
+	<!--link to localization for Parkour perk-->
+	<append xpath="/progression/perks/perk[@name='perkParkour']/effect_group">
+		<effect_description level="5" desc_key="perkParkourRank5Desc" long_desc_key="perkParkourRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkParkourRank6Desc" long_desc_key="perkParkourRank6LongDesc"/>
+	</append>
+	
+	<!--Hidden Strike Perk-->
+	<!--create level requirements for new Hidden Strike perks-->
+	<append xpath="/progression/perks/perk[@name='perkHiddenStrike']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="12" desc_key="reqAgilityLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--increase sneak damage for Hidden Strike perk-->
+	<set xpath="progression/perks/perk[@name='perkHiddenStrike']/effect_group/passive_effect[@name='EntityDamage']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkHiddenStrike']/effect_group/passive_effect[@name='EntityDamage']/@value">.5,1,1.5,2,2.5,3,3.5,4,4.5</set>
+	<set xpath="progression/perks/perk[@name='perkHiddenStrike']/effect_group/passive_effect[@name='DamageBonus']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkHiddenStrike']/effect_group/passive_effect[@name='DamageBonus']/@value">1.5,2,2.5,3,3.5,4,4.5,5,5.5</set>
+	<!--link to localization for Hidden Strike perk-->
+	<append xpath="/progression/perks/perk[@name='perkHiddenStrike']/effect_group">
+		<effect_description level="6" desc_key="perkHiddenStrikeRank6Desc" long_desc_key="perkHiddenStrikeRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkHiddenStrikeRank7Desc" long_desc_key="perkHiddenStrikeRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkHiddenStrikeRank8Desc" long_desc_key="perkHiddenStrikeRank8LongDesc"/>
+	</append>
+	
+	<!--From the Shadows Perk-->
+	<!--create level requirements for new From the Shadows perks-->
+	<append xpath="/progression/perks/perk[@name='perkFromTheShadows']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="11" desc_key="reqAgilityLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="12" desc_key="reqAgilityLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attAgility" operation="GTE" value="13" desc_key="reqAgilityLevel13"/></level_requirements>
+	</append>
+	<!--decrease light and noise while sneaking for From the Shadows perk-->
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='LightMultiplier']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='LightMultiplier']/@value">0,-.13,-.26,-.39,-.52,-.65,-.75,-.85,-.95</set>
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='NoiseMultiplier']/@level">0,8</set>
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='NoiseMultiplier']/@value">0,-.8</set>
+	<!--increase speed while sneaking for From the Shadows perk-->
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='NoiseMultiplier']/@level">0,8</set>
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='NoiseMultiplier']/@value">0,.8</set>
+	<!--decrease enemy search time for From the Shadows perk-->
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='EnemySearchDuration']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkFromTheShadows']/effect_group/passive_effect[@name='EnemySearchDuration']/@value">0,-.17,-.33,-.5,-.58,-.67,-.75,-.84,-.92</set>
+	<!--link to localization for From the Shadows perk-->
+	<append xpath="/progression/perks/perk[@name='perkFromTheShadows']/effect_group">
+		<effect_description level="6" desc_key="perkFromTheShadowsRank6Desc" long_desc_key="perkFromTheShadowsRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkFromTheShadowsRank7Desc" long_desc_key="perkFromTheShadowsRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkFromTheShadowsRank8Desc" long_desc_key="perkFromTheShadowsRank8LongDesc"/>
+	</append>
+	
+	
+	
+	<!--INTELLECT ATTRIBUTE-->
+	<append xpath="/progression/attributes/attribute[@name='attIntellect']/effect_group">
+		<passive_effect name="DamageModifier" operation="perc_add" level="11,13" value="1.25,1.75" tags="head"/>
+		<passive_effect name="DismemberChance" operation="base_add" level="11,13" value=".5,.7"/>
+		<effect_description level="11" desc_key="attIntellectRank11Desc" long_desc_key="attIntellectRank11LongDesc"/>
+		<effect_description level="12" desc_key="attIntellectRank12Desc" long_desc_key="attIntellectRank12LongDesc"/>
+		<effect_description level="13" desc_key="attIntellectRank13Desc" long_desc_key="attIntellectRank13LongDesc"/>
+	</append>
+	
+	<!--Electrocutioner Perk-->
+	<!--create level requirements for new Electrocutioners perks-->
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="12" desc_key="reqIntellectLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Electrocutioner perk-->
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='meleeWpnBatonT2StunBaton']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,5,5,5</set>
+	<!--increase damage from stun batons for Electocutioner perk-->
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.5,.6,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkElectrocutioner']/effect_group/passive_effect[@name='BlockDamage']/@value">.2,.4,.6,.8,1,1.2,1.4,1.6</set>
+	<!--can't find anywhere to increase stun duration, assuming it's a hardcoded bonus based on levels of perk-->
+	<!--link to localization for Electrocutioner perk-->
+	<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group">
+		<effect_description level="6" desc_key="perkElectrocutionerRank6Desc" long_desc_key="perkElectrocutionerRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkElectrocutionerRank7Desc" long_desc_key="perkElectrocutionerRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkElectrocutionerRank8Desc" long_desc_key="perkElectrocutionerRank8LongDesc"/>
+	</append>
+	
+	<!--Robotics Inventor Perk-->
+	<!--create level requirements for new Robotics Inventor perks-->
+	<append xpath="/progression/perks/perk[@name='perkTurrets']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="12" desc_key="reqIntellectLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Robotics Inventor perk-->
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='gunBotT1JunkSledge']/@level">1,8</set>
+	<append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,8" value="1" tags="gunBotT2JunkTurret"/>
+	</append>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='CraftingTier']/@value">1,2,3,4,4,4,4,5</set>
+	<!--increase damage from robotic turrets for Robotics Inventor perk-->
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='EntityDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='EntityDamage']/@value">.1,.2,.3,.4,.4,.5,.75,1</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='BlockDamage']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='BlockDamage']/@value">.1,.2,.3,.4,.4,.5,.75,1</set>
+	<!--increase fire rate and ammo capacity for Robotics Inventor perk-->
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RoundsPerMinute' and @tags='turretMelee']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RoundsPerMinute' and @tags='turretMelee']/@value">.125,.25,.375,.5,.5,.625,.75,.875</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RoundsPerMinute' and @tags='turretRanged']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='RoundsPerMinute' and @tags='turretRanged']/@value">.3,.7,1.1,1.5,1.5,1.9,2.3,2.7</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='MagazineSize']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='MagazineSize']/@value">10,20,30,40,50,60,75,100</set>
+	<!--increase active range and max number of active turrets for Robotics Inventor perk-->
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveRange']/@level">0,1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveRange']/@value">10,14,15,16,17,18,19,20,20</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@level">5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='JunkTurretActiveCount' and @operation='base_add']/@value">1,1,1,2</set>
+	<!--increase reload speed for Robotics Inventor perk-->
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@level">4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkTurrets']/effect_group/passive_effect[@name='ReloadSpeedMultiplier']/@value">0.1,0.2,0.3,0.4,0.5</set>
+	<!--link to localization for Robotics Inventor perk-->
+	<append xpath="/progression/perks/perk[@name='perkTurrets']/effect_group">
+		<effect_description level="6" desc_key="perkTurretsRank6Desc" long_desc_key="perkTurretsRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkTurretsRank7Desc" long_desc_key="perkTurretsRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkTurretsRank8Desc" long_desc_key="perkTurretsRank8LongDesc"/>
+	</append>
+	
+	<!--Better Barter Perk-->
+	<!--create level requirements for new Better Barter perks-->
+	<append xpath="/progression/perks/perk[@name='perkBetterBarter']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="12" desc_key="reqIntellectLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--increase trade rate for Better Barter perk-->
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='BarteringBuying']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='BarteringBuying']/@value">.05,.1,.15,.2,.25,.35,.50,.70</set>
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='BarteringSelling']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='BarteringSelling']/@value">.05,.1,.15,.2,.25,.35,.50,.70</set>
+	<!--increase secret stash for Better Barter perk-->
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='SecretStash']/@level">3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkBetterBarter']/effect_group/passive_effect[@name='SecretStash']/@value">3000,4000,5000,5000,5000,7000</set>
+	<!--additional code for secret stash is handled in traders.xml-->
+	<!--link to localization for Better Barter perk-->
+	<append xpath="/progression/perks/perk[@name='perkBetterBarter']/effect_group">
+		<effect_description level="6" desc_key="perkBetterBarterRank6Desc" long_desc_key="perkBetterBarterRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkBetterBarterRank7Desc" long_desc_key="perkBetterBarterRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkBetterBarterRank8Desc" long_desc_key="perkBetterBarterRank8LongDesc"/>
+	</append>
+	
+	<!--Daring Adventurer Perk-->
+	<!--create level requirements for new Daring Adventurer perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkDaringAdventurer']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--increase cash reward on quest completion for Daring Adventurer perk-->
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestBonusItemReward']/@level">1,2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestBonusItemReward']/@value">.05,.10,.15,.20,.25,.50</set>
+	<!--increase non-cash reward on quest completion for Daring Adventurer perk-->
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestRewardOptionCount']/@level">1,2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestRewardOptionCount']/@value">1,2,3,3,3,3</set>
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestRewardChoiceCount']/@level">4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkDaringAdventurer']/effect_group/passive_effect[@name='QuestRewardChoiceCount']/@value">1,2,2</set>
+	<!--link to localization for Better Barter perk-->
+	<append xpath="/progression/perks/perk[@name='perkDaringAdventurer']/effect_group">
+		<effect_description level="5" desc_key="perkDaringAdventurerRank5Desc" long_desc_key="perkDaringAdventurerRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkDaringAdventurerRank6Desc" long_desc_key="perkDaringAdventurerRank6LongDesc"/>
+	</append>
+	
+	<!--Charismatic Nature Perk-->
+	<!--create level requirements for new Charismatic Nature perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkCharismaticNature']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--add triggered effects for Charismatic Nature perk-->
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/effect_group">
+		<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="5" target="selfAOE" target_tags="ally,party" range="15">
+			<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="Equals" value="5"/>
+			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="5"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="CharismaticNatureLevel" operation="set" value="6" target="selfAOE" target_tags="ally,party" range="15">
+			<requirement name="ProgressionLevel" progression_name="perkCharismaticNature" operation="GTE" value="6"/>
+			<requirement name="CVarCompare" cvar="CharismaticNatureLevel" target="other" operation="LT" value="6"/>
+		</triggered_effect>
+	</append>
+	<!--resulting conditions for triggered effects are handled in buffs.xml-->
+	<!--link to localization for Charismatic Nature perk-->
+	<append xpath="/progression/perks/perk[@name='perkCharismaticNature']/effect_group">
+		<effect_description level="5" desc_key="perkCharismaticNatureRank5Desc" long_desc_key="perkCharismaticNatureRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkCharismaticNatureRank6Desc" long_desc_key="perkCharismaticNatureRank6LongDesc"/>
+	</append>
+	
+	<!--Physician Perk-->
+	<!--create level requirements for new Physician perks-->
+	<setattribute xpath="/progression/perks/perk[@name='perkPhysician']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkPhysician']">
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Physician perk-->
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='chemistryStation,medicalFirstAidBandage,medicalPlasterCast']/@level">1,6</set>
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='drugPainkillers']/@level">2,6</set>
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='medicalFirstAidKit,drugSteroids']/@level">3,6</set>
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='drugFortBites,drugRecog,drugAntibiotics']/@level">4,6</set>
+	<!--faster crafting at chem station for Physician perk-->
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='CraftingTime']/@level">2,3,4,5,6</set>
+	<set xpath="progression/perks/perk[@name='perkPhysician']/effect_group/passive_effect[@name='CraftingTime']/@value">-.2,-.2,-.4,-.6,-.8</set>
+	<!--healing bonus from medical items is handled in buffs.xml-->
+	<!--link to localization for Physician perk-->
+	<append xpath="/progression/perks/perk[@name='perkPhysician']/effect_group">
+		<effect_description level="5" desc_key="perkPhysicianRank5Desc" long_desc_key="perkPhysicianRank5LongDesc"/>
+		<effect_description level="6" desc_key="perkPhysicianRank6Desc" long_desc_key="perkPhysicianRank6LongDesc"/>
+	</append>
+	
+	<!--Advanced Engineering Perk-->
+	<!--create level requirements for new Advanced Engineering perks-->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="11" desc_key="reqIntellectLevel11"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="12" desc_key="reqIntellectLevel12"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="13" desc_key="reqIntellectLevel13"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Advanced Engineering perk-->
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTier']/@level">0,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTier']/@value">0,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='forge']/@level">1,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='workbench,chemistryStation,cementMixer']/@level">2,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='resourceMilitaryFiber,generatorbank,electricwirerelay,switch,ceilingLight01_player,industrialLight01_player,industrialLight02_player,armorMiningHelmet,spotlightPlayer,speaker,pressureplate,pressureplateLong,dartTrap,electrictimerrelay,motionsensor,tripwirepost,electricfencepost,bladeTrap']/@level">3,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='batterybank,shotgunTurret,meleeToolRepairT3Nailgun,garageDoorMetal_v1Powered,garageDoorIndustrial_Powered,metalReinforcedWoodDrawBridgePowered,vaultHatch_v3_Powered,vaultDoor03_Powered']/@level">4,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='toolForgeCrucible,autoTurret']/@level">5,8</set>
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8" value="1" tags="solarCell,solarbank"/>
+	</append>
+	<!--reduce crafting times for Advanced Engineering perk-->
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='perkAdvancedEngineering']/@level">1,2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='perkAdvancedEngineering']/@value">-.2,-.2,-.2,-.2,-.2,-.5,-.5,-.5</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='workbenchCrafting,cementMixerCrafting']/@level">2,3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='CraftingTime' and @tags='workbenchCrafting,cementMixerCrafting']/@value">-.2,-.2,-.2,-.2,-.5,-.5,-.5</set>
+	<!--increase XP from elctrical trap kills for Advanced Engineering perk-->
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='ElectricalTrapXP']/@level">3,4,5,6,7,8</set>
+	<set xpath="progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='ElectricalTrapXP']/@value">0.2,0.35,0.5,0.65,0.8,1</set>
+	<!--reduced crafting costs and new solar recipes are handled in recipes.xml-->
+	<!--link to localization for Advanced Engineering perk-->
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<effect_description level="6" desc_key="perkAdvancedEngineeringRank6Desc" long_desc_key="perkAdvancedEngineeringRank6LongDesc"/>
+		<effect_description level="7" desc_key="perkAdvancedEngineeringRank7Desc" long_desc_key="perkAdvancedEngineeringRank7LongDesc"/>
+		<effect_description level="8" desc_key="perkAdvancedEngineeringRank8Desc" long_desc_key="perkAdvancedEngineeringRank8LongDesc"/>
+	</append>
+	
+	<!--Grease Monkey Perk-->
+	<!--create level requirements for new Grease Monkey perk-->
+	<setattribute xpath="/progression/perks/perk[@name='perkGreaseMonkey']" name="max_level">6</setattribute>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']">
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="12" desc_key="reqIntellectLevel12"/></level_requirements>
+	</append>
+	<!--crafting unlocks for Advanced Engineering perk-->
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='CraftingTier']/@level">0,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='CraftingTier']/@value">0,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='vehicleWheels,vehicleBicycleChassis,vehicleBicycleHandlebars']/@level">1,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='carBattery,ammoGasCan,vehicleMinibikeChassis,vehicleMinibikeHandlebars']/@level">2,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='resourceOil,vehicleMotorcycleChassis,vehicleMotorcycleHandlebars']/@level">3,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='ammoGasCanBundle,vehicle4x4TruckChassis,vehicle4x4TruckAccessories']/@level">4,6</set>
+	<set xpath="progression/perks/perk[@name='perkGreaseMonkey']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags='vehicleGyroCopterChassis,vehicleGyroCopterAccessories']/@level">5,6</set>
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6" value="1" tags="smallEngine"/>
+	</append>
+	<!--engine recipe is handled in recipes.xml-->
+	<!--link to localization for Grease Monkey perk-->
+	<append xpath="/progression/perks/perk[@name='perkGreaseMonkey']/effect_group">
+		<effect_description level="6" desc_key="perkGreaseMonkeyRank6Desc" long_desc_key="perkGreaseMonkeyRank6LongDesc"/>
+	</append>
+</configs>

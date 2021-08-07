@@ -1,0 +1,35 @@
+<configs>
+	<!--close gap from 499 to 3000, otherwise level 500 characters don't get a secret stash without perks-->
+	<set xpath="traders/trader_info/tier_items[@level='1,499']/@level">1,2999</set>
+	
+	<!--create range from 5000 to 7000, otherwise Bri's Secret Stash conflicts with level 5 secret stash-->
+	<set xpath="traders/trader_info/tier_items[@level='5000,-1']/@level">5000,6999</set>
+	
+	<!--create Bri's Secret Stash for Better Barter perk-->
+	<append xpath="/traders/trader_info">
+		<tier_items level="7000,-1" count="all">
+			<item group="traderElectrical" count="6,8"/>
+			<item group="tools" count="3,5"/>
+			<item group="rareTools" count="5,8"/>
+			<item name="cntVendingMachine" count="4"/>
+			<item group="weaponsMeleeMixed" count="4,6"/>
+			<item group="weaponsGunsMixed" count="4,6"/>
+			<item group="weaponsGunsT2" count="3"/>
+			<item group="ammo" count="12,20"/>
+			<item group="groupArmorHeavyT2" count="4,6"/>
+			<item group="groupArmorLightT2" count="4,6"/>
+			<item group="commonBooks" count="8,12"/>
+			<item group="rareBooks" count="4,6"/>
+			<item group="perkBooks" count="4,6"/>
+			<item name="armorMiningHelmet" quality="5,6" mods="modArmorHelmetLight" mod_chance="1"/>
+			<item group="vehiclePartsMixed" count="5,10"/>
+			<item name="apparelNightvisionGoggles" count="2"/>
+			<item name="solarbank" count="3"/>
+			<item name="solarCell" count="4,6" quality="5,6"/>
+			<item group="stashOnlyItemsHigh" count="6,10"/>
+			<item group="weaponsGunsT3QL5" count="4,6"/>
+			<item group="modAllT5SecretStash" count="5,10"/>
+			<item name="drinkJarGrandpasForgettingElixir" count="3"/>
+		</tier_items>
+	</append>
+</configs>
