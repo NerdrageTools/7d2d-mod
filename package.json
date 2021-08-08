@@ -1,0 +1,11 @@
+{
+  "name": "7d2d-mod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:NerdrageTools/7d2d-mod.git",
+  "author": "Troy Alford <talford@vestmark.com>",
+  "license": "MIT",
+	"scripts": {
+		"zip": "zip -r NerdRAGE_Zombies.zip ./NerdRAGE_Zombies/* -x \".*\""
+	}
+}
