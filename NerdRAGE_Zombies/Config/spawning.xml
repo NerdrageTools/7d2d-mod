@@ -23,10 +23,10 @@
 	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
 
 	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@respawndelay">0.4</set>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@respawndelay">0.2</set>
 
 	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
+	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0</set>
 
 	<!-- biome: desert -->
 	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@maxcount">2</set>
@@ -36,10 +36,10 @@
 	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
 
 	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@respawndelay">1</set>
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@respawndelay">.2</set>
 
 	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.4</set>
+	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0</set>
 
 	<!-- biome: pine_forest -->
 	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@maxcount">4</set>
@@ -49,37 +49,37 @@
 	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
 
 	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@respawndelay">.3</set>
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.1</set>
 
 	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">.2</set>
+	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0</set>
 
 	<!-- biome: snow -->
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@maxcount">2</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@respawndelay">.5</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@respawndelay">0.5</set>
 
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@respawndelay">.5</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@respawndelay">0.5</set>
 
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
 
 	<append xpath="/spawning/biome[@name='snow']">
-		<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay=".6" time="Day" spawnDeadChance="0">
+		<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay="0.1" time="Day" spawnDeadChance="0">
 	</append>
 
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@respawndelay">.3</set>
+	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0</set>
 
 	<!-- biome: wasteland -->
 	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">1</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@respawndelay">1</set>
 
 	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">.5</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.1</set>
 
 	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">.2</set>
+	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@respawndelay">0</set>
 
 
 	<!-- Dogs Barns -->
