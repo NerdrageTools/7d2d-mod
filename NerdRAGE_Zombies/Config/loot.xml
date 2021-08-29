@@ -26,7 +26,7 @@
 			<item group="rottenFood"/>
 			<item group="booksAllScaled"/>
 			<item group="seeds"/>
-			<item group="groupQuestChallenge" prob="0.11"/
+			<item group="groupQuestChallenge" prob="0.11"/>
 			<item group="groupTreasureMaps" prob="0.092"/>
 			<item name="resourceBone" count="5,10" prob="0.1"/>
 			<item name="resourceScrapPolymers" count="1,4"/>

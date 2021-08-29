@@ -65,7 +65,7 @@
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
 
 	<append xpath="/spawning/biome[@name='snow']">
-		<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay="0.1" time="Day" spawnDeadChance="0"></spawn>
+		<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay="0.1" time="Day" spawnDeadChance="0"/>
 	</append>
 
 	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">4</set>
