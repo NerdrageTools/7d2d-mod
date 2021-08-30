@@ -77,34 +77,34 @@
 					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="1" />
 				</rect>
 
-				<rect width="171" height="46" pos="0,-50" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+				<rect stat_type="Health" height="30" width="85" pos="0,-120" controller="HUDStatBar" visible="{statvisible}">
 					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+
 					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="83" type="filled" fill="{statmodifiedmax}" />
 
-					<filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
-
-					<filledsprite depth="5" name="BarContent" color="0,54,255,128" width="169" type="filled" fill="0"  />
-					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="35,35" pos="8,-6" foregroundlayer="true"/>
-					<label depth="7" name="TextContent" pos="6,-8" font_size="32" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="35"/>
+					<filledsprite depth="5" name="BarContent" color="255,0,0,128" width="83" type="filled" fill="0" />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="24,24" pos="3,-3" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="14,-7" font_size="16" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 
 					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
-					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
-					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="85" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="84" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 				</rect>
 
-				<rect width="171" height="46" pos="0,-100" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+				<rect stat_type="Stamina" height="30" width="85" pos="85,-120" controller="HUDStatBar" visible="{statvisible}">
 					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
-
 					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
-					<filledsprite depth="3" name="background" color="110,110,110,128" width="169" type="filled" fill="{statmodifiedmax}" />
 
-					<filledsprite depth="5" name="BarContent" color="255,0,0,128" width="169" type="filled" fill="0" />
-					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="35,35" pos="8,-6" foregroundlayer="true"/>
-					<label depth="7" name="TextContent" pos="6,-8" font_size="32" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="35"/>
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="83" type="filled" fill="{statmodifiedmax}" />
+
+					<filledsprite depth="5" name="BarContent" color="0,54,255,128" width="83" type="filled" fill="0"  />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="ui_game_symbol_agility" size="24,24" pos="3,-3" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="14,-7" font_size="16" color="[white]" justify="center" pivot="topleft" text="{statcurrentwithmax}" height="30"/>
 
 					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
-					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
-					<filledsprite depth="3" name="background" color="0,0,0,255" width="170" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="85" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="84" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 				</rect>
 			
 				<rect stat_type="Food" height="30" width="85" pos="0,-150" controller="HUDStatBar" visible="{statvisible}">
