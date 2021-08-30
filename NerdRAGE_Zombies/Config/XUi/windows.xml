@@ -51,9 +51,9 @@
 					</panel>
 				</rect>
 				
-				<sprite depth="3" pos="0,-75" height="20" width="748" color="[darkGrey]" foregroundlayer="true" type="sliced" />
-				<sprite depth="4" pos="0,-75" height="20" width="748" color="{xpcolor}" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />
-				<label text="Level: {playerlevel} | XP to Next Level: {playerxptonextlevel}[-]" controller="PlayerStatsWindow" depth="5" name="TextContent" pos="374,-85" font_size="14" color="[white]" justify="center" pivot="center" />
+				<sprite depth="3" pos="0,-75" height="20" width="753" color="[darkGrey]" foregroundlayer="true" type="sliced" />
+				<sprite depth="4" pos="0,-75" height="20" width="753" color="{xpcolor}" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />
+				<label text="Level: {playerlevel} | XP to Next Level: {playerxptonextlevel}[-]" controller="PlayerStatsWindow" depth="5" name="TextContent" pos="376,-85" font_size="14" color="[white]" justify="center" pivot="center" />
 			</rect>
 		</rect>
 	</set>
