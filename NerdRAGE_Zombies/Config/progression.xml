@@ -1,4 +1,3 @@
 <configs>
-	<set xpath="progression/level/@max_level">150</set>
-	<set xpath="progression/level/@experience_multiplier">1.01</set>
+	<set xpath="progression/level/@max_level">120</set>
 </configs>
