@@ -1,3 +1,42 @@
 <configs>
-	<set xpath="progression/level/@max_level">120</set>
+	<set xpath="progression/level/@max_level">150</set>
+
+	<append xpath="/progression/attributes">
+		<attribute name="attFaith" name_key="attFaithName" desc_key="attFaithDesc" icon="ui_symbol_holy">
+			<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="10" desc_key="reqGenericPoints01" /></level_requirements>
+			<level_requirements level="2"><requirement name="PlayerLevel" operation="GTE" value="20" desc_key="reqGenericPoints01" /></level_requirements>
+			<level_requirements level="3"><requirement name="PlayerLevel" operation="GTE" value="30" desc_key="reqGenericPoints01" /></level_requirements>
+			<level_requirements level="4"><requirement name="PlayerLevel" operation="GTE" value="40" desc_key="reqGenericPoints01" /></level_requirements>
+			<level_requirements level="5"><requirement name="PlayerLevel" operation="GTE" value="50" desc_key="reqGenericPoints01" /></level_requirements>
+			<level_requirements level="6"><requirement name="PlayerLevel" operation="GTE" value="60" desc_key="reqGenericPoints02" /></level_requirements>
+			<level_requirements level="7"><requirement name="PlayerLevel" operation="GTE" value="70" desc_key="reqGenericPoints02" /></level_requirements>
+			<level_requirements level="8"><requirement name="PlayerLevel" operation="GTE" value="80" desc_key="reqGenericPoints02" /></level_requirements>
+			<level_requirements level="9"><requirement name="PlayerLevel" operation="GTE" value="90" desc_key="reqGenericPoints03" /></level_requirements>
+			<level_requirements level="10"><requirement name="PlayerLevel" operation="GTE" value="100" desc_key="reqGenericPoints03" /></level_requirements>
+
+			<effect_group>
+				<requirement name="EntityTagCompare" target="other" tags="zombie" />
+				<passive_effect name="EntityDamage" operation="perc_add" level="1,2,3,4,5,6,7,8,9,10" value=".05,.1,.15,.2,.25,.3,.35,.4,.45,.5" tags="zombie" />
+			</effect_group>
+
+			<effect_group>
+				<requirement name="ItemHasTags" tags="attFaith" />
+				<passive_effect name="DamageModifier" operation="perc_add" level="2,8" value="0.1,.7" tags="head" />
+
+				<passive_effect name="DamageModifier" operation="perc_add" level="9,10" value=".85,1" tags="head" />
+				<passive_effect name="DismemberChance" operation="base_add" level="2,10" value=".05,.45" />
+
+				<effect_description level="1" desc_key="attFaithRank01Desc" long_desc_key="attFaithRank01LongDesc" />
+				<effect_description level="2" desc_key="attFaithRank02Desc" long_desc_key="attFaithRank02LongDesc" />
+				<effect_description level="3" desc_key="attFaithRank03Desc" long_desc_key="attFaithRank03LongDesc" />
+				<effect_description level="4" desc_key="attFaithRank04Desc" long_desc_key="attFaithRank04LongDesc" />
+				<effect_description level="5" desc_key="attFaithRank05Desc" long_desc_key="attFaithRank05LongDesc" />
+				<effect_description level="6" desc_key="attFaithRank06Desc" long_desc_key="attFaithRank06LongDesc" />
+				<effect_description level="7" desc_key="attFaithRank07Desc" long_desc_key="attFaithRank07LongDesc" />
+				<effect_description level="8" desc_key="attFaithRank08Desc" long_desc_key="attFaithRank08LongDesc" />
+				<effect_description level="9" desc_key="attFaithRank09Desc" long_desc_key="attFaithRank09LongDesc" />
+				<effect_description level="10" desc_key="attFaithRank10Desc" long_desc_key="attFaithRank10LongDesc" />
+			</effect_group>
+		</attribute>
+	</append>
 </configs>

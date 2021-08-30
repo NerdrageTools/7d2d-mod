@@ -1,0 +1,27 @@
+
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+attFaith,progression,Attribute,,,"Faith",,,,,,,,,,,,,,
+attFaithName,progression,Attribute,,,"Attribute: Faith",,,,,,,,,,,,,,
+attFaithDesc,progression,Attribute,,,"Faith measures your attunement to a higher power. The more you invest in the divine, the more the divine invests in you as its agent.",,,,,,,,,,,,,,
+
+attFaithRank01Desc,progression,Attribute,,,"Faith I",,,,,,,,,,,,,,
+attFaithRank01LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank02Desc,progression,Attribute,,,"Faith II",,,,,,,,,,,,,,
+attFaithRank02LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank03Desc,progression,Attribute,,,"Faith III",,,,,,,,,,,,,,
+attFaithRank03LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank04Desc,progression,Attribute,,,"Faith IV",,,,,,,,,,,,,,
+attFaithRank04LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank05Desc,progression,Attribute,,,"Faith V",,,,,,,,,,,,,,
+attFaithRank05LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank06Desc,progression,Attribute,,,"Faith VI",,,,,,,,,,,,,,
+attFaithRank06LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank07Desc,progression,Attribute,,,"Faith VII",,,,,,,,,,,,,,
+attFaithRank07LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank08Desc,progression,Attribute,,,"Faith VIII",,,,,,,,,,,,,,
+attFaithRank08LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank09Desc,progression,Attribute,,,"Faith IX",,,,,,,,,,,,,,
+attFaithRank09LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
+attFaithRank10Desc,progression,Attribute,,,"True Faith",,,,,,,,,,,,,,
+attFaithRank10LongDesc,progression,Attribute,,,"",,,,,,,,,,,,,,
