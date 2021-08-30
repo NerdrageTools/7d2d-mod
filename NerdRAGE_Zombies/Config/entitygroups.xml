@@ -1,24 +1,31 @@
 <configs>
+	<!-- replace all radiated zombies with feral versions -->
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'animalZombieVultureRadiated')]/@name">animalZombieVulture</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieArleneRadiated')]/@name">zombieArleneFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieBikerRadiated')]/@name">zombieBikerFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieBoeRadiated')]/@name">zombieBoeFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieCheerleaderRadiated')]/@name">zombieCheerleaderFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieDarleneRadiated')]/@name">zombieDarleneFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieFatCopRadiated')]/@name">zombieFatCopFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieFemaleFatRadiated')]/@name">zombieFemaleFatFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieJanitorRadiated')]/@name">zombieJanitorFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieJoeRadiated')]/@name">zombieJoeFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieLabRadiated')]/@name">zombieLabFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieMarleneRadiated')]/@name">zombieMarleneFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieMoeRadiated')]/@name">zombieMoeFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieOldTimerRadiated')]/@name">zombieOldTimerFeral</set>
+	<!-- zombieScreamerRadiated exists as entity_class, but does not belong to any groups -->
+	<!-- <set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieScreamerRadiated')]/@name">zombieScreamerFeral</set> -->
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSkateboarderRadiated')]/@name">zombieSkateboarderFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSoldierRadiated')]/@name">zombieSoldierFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpiderRadiated')]/@name">zombieSpiderFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSteveRadiated')]/@name">zombieSteveFeral</set>
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieYoRadiated')]/@name">zombieYoFeral</set>
+	<!-- zombieWightRadiated exists as an entity_class, but does not belong to any groups -->
+	<!-- <set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieWightRadiated')]/@name">zombieMoe</set> -->
 
-	<!-- No Radiated Zombies -->
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieWightRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieBoeRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieFemaleFatRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieJoeRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieJanitorRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieMoeRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieArleneRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieLabRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieScreamerRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieDarleneRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieMarleneRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieYoRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieSteveRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieSpiderRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieFatCopRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieSoldierRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieSkateboarderRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieCheerleaderRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieOldTimerRadiated')]/@name">zombieMoe</set>
-	<set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieBikerRadiated')]/@name">zombieMoe</set>
+	<!-- replace all spider zombies with crawlers -->
+	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpider')]/@name">zombieSteveCrawler</set>
+	<!-- zombieSpiderFeral exists as an entity_class, but does not belong to any groups -->
+	<!-- <set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpiderFeral')]/@name">zombieSteveCrawlerFeral</set> -->
 </configs>

@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- no more spiders -->
+    <remove xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']/item[@name='qc_itsbitsyspider']" />
 
-<survager>
 	<append xpath="/lootcontainers">
 		<lootgroup name="junkNew">
 			<item name="drinkJarEmpty"/>
@@ -1404,4 +1405,4 @@
 		</lootcontainer>
 		
 	</append>
-</survager>
+</configs>

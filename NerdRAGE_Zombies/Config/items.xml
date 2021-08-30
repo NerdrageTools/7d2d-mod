@@ -1,4 +1,7 @@
 <configs>
+	<!-- no more spiders -->
+    <remove xpath="/items/item[@name='qc_itsbitsyspider']" />
+
 	<!-- TOOLS -->
 
 	<!-- Stone Axe -->
