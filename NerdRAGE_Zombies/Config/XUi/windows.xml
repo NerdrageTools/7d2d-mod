@@ -25,8 +25,6 @@
 	<!-- remove food/water from toolbelt window -->
 	<set xpath="/windows/window[@name='windowToolbelt']">
 		<rect>
-			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />
-			
 			<rect pos="3,0" controller="Toolbelt">
 				<grid depth="10" name="inventory" rows="1" cols="10" pos="0,0" cell_width="75" cell_height="75" repeat_content="true">
 					<item_stack name="0"/>
@@ -68,9 +66,9 @@
 
 					<filledsprite depth="3" name="background" color="110,110,110,128" type="filled" fill="1" />
 
-					<filledsprite depth="4" name="BarContent" color="{stealthcolor}" type="filled" fill="0" />
-					<sprite depth="5" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="24,24" pos="3,-3" foregroundlayer="true"/>
-					<label depth="6" name="TextContent" pos="14,-7" font_size="16" color="[white]" justify="center" pivot="topleft" text="{statcurrent}" height="35"/>
+					<filledsprite name="BarContent" depth="4" color="{stealthcolor}" type="filled" fill="0" />
+					<sprite name="Icon" pos="3,-3" size="24,24" depth="5" atlas="{staticonatlas|once}" sprite="{staticon|once}" foregroundlayer="true"/>
+					<label name="TextContent" pos="14,-7" height="30" font_size="16" depth="6" color="[white]" justify="center" pivot="topleft" text="{statcurrent}"/>
 
 					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
 					<filledsprite depth="8" name="background" color="0,0,0,255" width="171" fillcenter="false" type="filled" fill="1" />
@@ -106,7 +104,7 @@
 					<filledsprite depth="8" name="background" color="0,0,0,255" width="85" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 					<filledsprite depth="3" name="background" color="0,0,0,255" width="84" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 				</rect>
-			
+
 				<rect stat_type="Food" height="30" width="85" pos="0,-150" controller="HUDStatBar" visible="{statvisible}">
 					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
 
@@ -138,11 +136,11 @@
 				</rect>
 			</rect>
 
-			<rect name="hud" pos="90,160" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
-				<panel width="168" height="46" name="item" visible="false" pivot="right" disableautobackground="true" pos="70, 0" style="press" sound="[recipe_click]" on_hover="true" >
-					<sprite depth="3" pos="0,0"  name="Background" sprite="ui_game_popup" height="46" width="162" pivot="center" flip="Horizontally" color="[transparent]" />
-					<sprite depth="4" name="Icon" size="40,40" pos="-54,0" pivot="center" color="[transparent]"/>
-					<label depth="6" name="TextContent" pos="0,0" font_size="28" color="[white]" justify="center" height="40" pivot="center"/>
+			<rect name="hud" pos="25,90" side="left" controller="BuffPopoutList" pivot="BottomLeft" >
+				<panel name="item" height="30" width="168" pos="30, 0" visible="false" pivot="right" disableautobackground="true" style="press" sound="[recipe_click]" on_hover="true" >
+					<sprite name="Background" pos="0,0" depth="3" sprite="ui_game_popup" height="30" width="168" pivot="center" flip="Horizontally" color="[transparent]" />
+					<sprite name="Icon" pos="3,-3" size="24,24" depth="4" pivot="center" color="[transparent]"/>
+					<label name="TextContent" pos="0,7" height="30" font_size="16" depth="6" color="[white]" justify="center" pivot="topleft" />
 				</panel>
 			</rect>
 		</window>
