@@ -24,8 +24,10 @@
 	<!-- zombieWightRadiated exists as an entity_class, but does not belong to any groups -->
 	<!-- <set xpath="/entitygroups/entitygroup[contains(@name, '')]/entity[contains(@name, 'zombieWightRadiated')]/@name">zombieMoe</set> -->
 
+	<!-- replace all demolition zombies with soldiers -->
+	<set xpath="/entitygroups/entitygroup/entity[@name='zombieDemolition']/@name">zombieSoldier</set>
 	<!-- replace all spider zombies with crawlers -->
-	<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpider')]/@name">zombieSteveCrawler</set>
+	<set xpath="/entitygroups/entitygroup/entity[@name='zombieSpider']/@name">zombieSteveCrawler</set>
 	<!-- zombieSpiderFeral exists as an entity_class, but does not belong to any groups -->
 	<!-- <set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpiderFeral')]/@name">zombieSteveCrawlerFeral</set> -->
 </configs>
