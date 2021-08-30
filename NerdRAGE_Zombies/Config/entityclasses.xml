@@ -1,5 +1,22 @@
 <configs>
-	<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale' or @name='zombieWightFeral' or @name='zombieWightRadiated' or @name='zombieWightRadiated' or @name='zombieBoe' or @name='zombieBoeFeral' or @name='zombieBoeRadiated' or @name='zombieFootballPlayer' or @name='zombieFemaleFat' or @name='zombieFemaleFatFeral' or @name='zombieFemaleFatRadiated' or @name='zombieJoe' or @name='zombieJoeFeral' or @name='zombieJoeRadiated' or @name='zombieJanitor' or @name='zombieJanitorFeral' or @name='zombieJanitorRadiated' or @name='zombieMoe' or @name='zombieMoeFeral' or @name='zombieMoeRadiated' or @name='zombieArlene' or @name='zombieArleneFeral' or @name='zombieArleneRadiated' or @name='zombieLab' or @name='zombieLabFeral' or @name='zombieLabRadiated' or @name='zombieScreamer' or @name='zombieScreamerFeral' or @name='zombieScreamerRadiated' or @name='zombieDarlene' or @name='zombieDarleneFeral' or @name='zombieDarleneRadiated' or @name='zombieMarlene' or @name='zombieMarleneFeral' or @name='zombieMarleneRadiated' or @name='zombieYo' or @name='zombieYoFeral' or @name='zombieYoRadiated' or @name='zombieSteve' or @name='zombieSteveFeral' or @name='zombieSteveRadiated' or @name='zombieSteveCrawler' or @name='zombieSteveCrawlerFeral' or @name='zombieBusinessMan' or @name='zombieBusinessManFeral' or @name='zombieSnow' or @name='zombieSnowFeral' or @name='zombieSpider' or @name='zombieSpiderFeral' or @name='zombieSpiderRadiated' or @name='zombieBurnt' or @name='zombieNurse' or @name='zombieNurseFeral' or @name='zombieFatHawaiian' or @name='zombieFatHawaiianFeral' or @name='zombieFatCop' or @name='zombieFatCopFeral' or @name='zombieFatCopRadiated' or @name='zombieMaleHazmat' or @name='zombieUtilityWorker' or @name='zombieUtilityWorkerFeral' or @name='zombieSoldier' or @name='zombieSoldierFeral' or @name='zombieSoldierRadiated' or @name='zombieDemolition' or @name='zombieSkateboarder' or @name='zombieSkateboarderFeral' or @name='zombieSkateboarderRadiated' or @name='zombieCheerleader' or @name='zombieCheerleaderFeral' or @name='zombieCheerleaderRadiated' or @name='zombieOldTimer' or @name='zombieOldTimerFeral' or @name='zombieOldTimerRadiated' or @name='zombieBiker' or @name='zombieBikerFeral' or @name='zombieBikerRadiated' or @name='zombieFarmer' or @name='zombieFarmerFeral' or @name='zombieStripper' or @name='zombieStripperFeral']/property[@name='LootDropProb']/@value">0</set>
+	<!-- remove twitchy zombie walking -->
+	<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieCheerleader']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFarmer']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFarmerFeral']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieFootballPlayer']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieOldTimer']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSnow']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieSteve']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='WalkType']/@value">7</set>
+	<set xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='WalkType']/@value">7</set>
 	
 	<append xpath="/entity_classes/entity_class[@name='zombieWightFeral']" >
 		<property name="LootListOnDeath" value="287"/>
