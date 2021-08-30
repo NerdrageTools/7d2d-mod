@@ -1,4 +1,0 @@
-<configs>
-  <!-- pocket mods can stack -->
-  <set xpath="/item_modifiers/item_modifier[@modifier_tags='carryweight']/property[@name='Stacknumber']/@value">5</set>
-</configs>
