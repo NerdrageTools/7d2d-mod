@@ -1,0 +1,9 @@
+<configs>
+	<set xpath="/item_modifiers/item_modifier[
+		(@name='modGunLaserSight') or
+		(@name='modGunScopeSmall') or
+		(@name='modGunScopeMedium') or
+		(@name='modGunScopeLarge') or
+		(@name='modGunReflexSight')
+	]/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
+</configs>
