@@ -7,5 +7,122 @@
 				<ingredient name="resourceAnimalFat" count="1" />
 			</recipe>
 		<!-- / -->
+
+		<!-- remove original recipe for coolers -->
+			<remove xpath="/recipes/recipe[@name='cntCoolerClosed']"/>
+		<!-- / -->
+
+		<!-- container recipes -->
+			<recipe name="CabinetBottom" count="1">
+				<ingredient name="resourceCobblestones" count="4"/>
+				<ingredient name="resourceWood" count="30"/>
+			</recipe>
+			<recipe name="CupboardCabinetRedTopClosed" count="1">
+				<ingredient name="resourceWood" count="10"/>
+			</recipe>
+			<recipe name="CabinetOldBottom" count="1">
+				<ingredient name="resourceCobblestones" count="4"/>
+				<ingredient name="resourceWood" count="25"/>
+			</recipe>
+			<recipe name="MicrowaveOvenClosed" count="1">
+				<ingredient name="resourceForgedIron" count="12"/>
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceMechanicalParts" count="1"/>
+			</recipe>
+			<recipe name="MedicineCabinetClosed" count="1">
+				<ingredient name="unit_glass" count="10"/>
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceMechanicalParts" count="2"/>
+				<ingredient name="resourceScrapIron" count="6"/>
+			</recipe>
+			<recipe name="CupboardCabinetOldTopClosed" count="1">
+				<ingredient name="resourceNail" count="10"/>
+				<ingredient name="resourceWood" count="20"/>
+			</recipe>
+			<recipe name="StoveOldClosed" count="1">
+				<ingredient name="unit_glass" count="5"/>
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceMechanicalParts" count="4"/>
+				<ingredient name="resourceScrapIron" count="25"/>
+			</recipe>
+			<recipe name="RetroFridgeClosed" count="1">
+				<ingredient name="unit_lead" count="40"/>
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceMechanicalParts" count="4"/>
+				<ingredient name="resourceScrapIron" count="25"/>
+			</recipe>
+			<recipe name="FridgeStainlessSteel" count="1">
+				<ingredient name="resourceForgedSteel" count="20"/>
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceMechanicalParts" count="4"/>
+				<ingredient name="resourceScrapIron" count="25"/>
+				<ingredient name="resourceDuctTape" count="3"/>
+			</recipe>
+			<recipe name="NightstandClosed" count="1">
+				<ingredient name="resourceNail" count="25"/>
+				<ingredient name="resourceWood" count="40"/>
+			</recipe>
+			<recipe name="MedicineCabinetFaucetClosed" count="1">
+				<ingredient name="unit_glass" count="10"/>
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceMechanicalParts" count="2"/>
+				<ingredient name="resourceScrapIron" count="6"/>
+				<ingredient name="unit_brass" count="4"/>
+			</recipe>
+			<recipe name="WoodDesk01Closed" count="1">
+				<ingredient name="resourceWood" count="15"/>
+			</recipe>
+			<recipe name="MetalDeskClosed" count="1">
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceForgedIron" count="15"/>
+			</recipe>
+			<recipe name="FileCabinetShortClosed" count="1">
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceForgedIron" count="15"/>
+			</recipe>
+			<recipe name="FileCabinetTallClosed" count="1">
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceForgedIron" count="30"/>
+			</recipe>
+			<recipe name="CoolerClosed" count="1" craft_area="workbench">
+				<ingredient name="resourceScrapPolymers" count="8"/>
+			</recipe>
+			<recipe name="LockersShortClosed" count="1" craft_area="workbench">
+				<ingredient name="resourceSpring" count="4" />
+				<ingredient name="resourceForgedIron" count="6"/>
+			</recipe>
+			<recipe name="LockersTallClosed" count="1">
+				<ingredient name="resourceSpring" count="6" />
+				<ingredient name="resourceForgedIron" count="25"/>
+			</recipe>
+			<recipe name="LockersTallDoubleClosed" count="1">
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceForgedIron" count="30"/>
+			</recipe>
+			<recipe name="LockersTallMixClosed" count="1">
+				<ingredient name="resourceSpring" count="10" />
+				<ingredient name="resourceForgedIron" count="40"/>
+			</recipe>
+			<recipe name="LockersTallMixLinkClosed" count="1">
+				<ingredient name="resourceSpring" count="10" />
+				<ingredient name="resourceForgedIron" count="45"/>
+			</recipe>
+			<recipe name="BookcaseFull" count="1">
+				<ingredient name="resourceNail" count="15"/>
+				<ingredient name="resourceWood" count="25"/>
+			</recipe>
+			<recipe name="cntWasherClosed" count="1">
+				<ingredient name="unit_glass" count="5"/>
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceMechanicalParts" count="4"/>
+				<ingredient name="resourceScrapIron" count="25"/>
+			</recipe>
+			<recipe name="cntDryerClosed" count="1">
+				<ingredient name="unit_glass" count="5"/>
+				<ingredient name="resourceSpring" count="8" />
+				<ingredient name="resourceMechanicalParts" count="4"/>
+				<ingredient name="resourceScrapIron" count="25"/>
+			</recipe>
+		<!-- / -->
 	</append>
 </configs>

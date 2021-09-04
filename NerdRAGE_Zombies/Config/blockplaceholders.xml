@@ -1,0 +1,649 @@
+<configs>
+	<!-- Containers open/close/respawn -->
+		<!-- removals -->
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleBottomFoodRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleTopFoodRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleBottomFoodRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleTopFoodRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleBottomHardwareRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleTopHardwareRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleBottomHardwareRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleTopHardwareRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleBottomPharmaRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleBottomPharmaRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreProduceBasketRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntGunRackSmallRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntGunRackLargeRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntClothesRackRoundRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntClothesRackRectangleRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntClothesRackWallRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntClothesShelfHalfRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntClothesShelfStackRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleBottomShoesRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfDoubleTopShoesRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleBottomShoesRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfSingleTopShoesRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfSingleBottomRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfSingleTopRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfDoubleBottomRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfDoubleTopRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfSingleCapBottomRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntBookShelfSingleCapTopRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntFreezerGroceriesMiddleRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntFreezerBeveragesMiddleRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntFreezerBeveragesStandaloneRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='bunkBedRandomHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntFileCabinetShortRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntFileCabinetTallRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLockersShortRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLockersTallRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLockersTallDoubleRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLockersTallMixRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLockersTallMixLinkRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntCashRegisterRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntToolBoxRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntRollingToolBoxRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLuggageMediumRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLuggageBigRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLuggagePileARandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntLuggagePileBRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntCabinetBottomRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntCupboardCabinetRedTopLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntCabinetOldBottomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntCupboardCabinetOldTopLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntNightstandRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntMedicineCabinetFaucetRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntMedicineCabinetClosedRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntPillCaseRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntWoodDesk01RandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntMetalDesk02RandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntDisplayCaseAmmoLeftRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntDisplayCaseAmmoMiddleRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntDisplayCaseAmmoRightRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfElectronicsSingleTallRandomLootHelper']"></remove>
+			<remove xpath="/blockplaceholders/placeholder[@name='cntStoreShelfElectronicsDoubleTallRandomLootHelper']"></remove>
+		<!-- / -->
+
+		<!-- probability adjustments -->
+			<set xpath="/blockplaceholders/placeholder[@name='cntMicrowaveOvenRandomLootHelper']/block[@name='cntMicrowaveOvenVer1Open']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntMicrowaveOvenRandomLootHelper']/block[@name='cntMicrowaveOvenVer1Closed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntStoveOldRandomLootHelper']/block[@name='cntStoveOldVer2Open']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntStoveOldRandomLootHelper']/block[@name='cntStoveOldVer1Closed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntRetroFridgeRandomLootHelper']/block[@name='cntRetroFridgeVer2Open']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntRetroFridgeRandomLootHelper']/block[@name='cntRetroFridgeVer1Closed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntFridgeStainlessSteelRandomLootHelper']/block[@name='cntFridgeStainlessSteelVer2Open']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntFridgeStainlessSteelRandomLootHelper']/block[@name='cntFridgeStainlessSteel']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntCoolerRandomLootHelper']/block[@name='cntCoolerOpen']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntCoolerRandomLootHelper']/block[@name='cntCoolerClosed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntBathTubsRandomLootHelper']/block[@name='cntBathTubEmpty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntBathTubsRandomLootHelper']/block[@name='cntBathTubGore']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntLaundryBasketRandomLootHelper']/block[@name='cntLaundryBasketVer1Empty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntLaundryBasketRandomLootHelper']/block[@name='cntLaundryBasketVer2Full']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntBookcaseGoodRandomLootHelper']/block[@name='cntBookcaseEmpty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntBookcaseGoodRandomLootHelper']/block[@name='cntBookcaseFull']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntShoppingCartRandomLootHelper']/block[@name='cntShoppingCartEmpty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntShoppingCartRandomLootHelper']/block[@name='cntShoppingCart']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntGasGrillRandomLootHelper']/block[@name='cntGasGrillOpen']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntGasGrillRandomLootHelper']/block[@name='cntGasGrillClosed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntCharcoalGrillRandomLootHelper']/block[@name='cntCharcoalGrillOpen']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntCharcoalGrillRandomLootHelper']/block[@name='cntCharcoalGrillClosed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntWasherRandomLootHelper']/block[@name='cntWasherOpen']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntWasherRandomLootHelper']/block[@name='cntWasherClosed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntDryerRandomLootHelper']/block[@name='cntDryerOpen']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntDryerRandomLootHelper']/block[@name='cntDryerClosed']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntUtilityCartRandomLootHelper']/block[@name='cntUtilityCartEmpty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntUtilityCartRandomLootHelper']/block[@name='cntUtilityCartFull']/@prob">.33</set>
+
+			<set xpath="/blockplaceholders/placeholder[@name='cntTiltTruckRandomLootHelper']/block[@name='cntTiltTruckEmpty']/@prob">.66</set>
+			<set xpath="/blockplaceholders/placeholder[@name='cntTiltTruckRandomLootHelper']/block[@name='cntTiltTruckFull']/@prob">.33</set>
+		<!-- / -->
+	<!-- / -->
+
+	<!-- Lock Picking Aditions -->
+		<append xpath="/blockplaceholders">
+			<placeholder name="cntNightstandRandomLootHelper">
+				<block name="cntNightstandOpen" prob=".40"/>
+				<block name="cntNightstandLocked" prob=".30"/>
+				<block name="cntNightstandClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntFileCabinetShortRandomLootHelper">
+				<block name="cntFileCabinetShortOpen" prob=".40"/>
+				<block name="cntFileCabinetShortLocked" prob=".30"/>
+				<block name="cntFileCabinetShortClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntFileCabinetTallRandomLootHelper">
+				<block name="cntFileCabinetTallOpen" prob=".40"/>
+				<block name="cntFileCabinetTallLocked" prob=".30"/>
+				<block name="cntFileCabinetTallClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLockersShortRandomLootHelper">
+				<block name="cntLockersShortOpen" prob=".40"/>
+				<block name="cntLockersShortLocked" prob=".30"/>
+				<block name="cntLockersShortClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLockersTallRandomLootHelper">
+				<block name="cntLockersTallOpen" prob=".40"/>
+				<block name="cntLockersTallLocked" prob=".30"/>
+				<block name="cntLockersTallClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLockersTallDoubleRandomLootHelper">
+				<block name="cntLockersTallDoubleOpen" prob=".40"/>
+				<block name="cntLockersTallDoubleLocked" prob=".30"/>
+				<block name="cntLockersTallDoubleClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLockersTallMixRandomLootHelper">
+				<block name="cntLockersTallMixOpen" prob=".40"/>
+				<block name="cntLockersTallMixLocked" prob=".30"/>
+				<block name="cntLockersTallMixClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLockersTallMixLinkRandomLootHelper">
+				<block name="cntLockersTallMixLinkOpen" prob=".40"/>
+				<block name="cntLockersTallMixLinkLocked" prob=".30"/>
+				<block name="cntLockersTallMixLinkClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntCashRegisterRandomLootHelper">
+				<block name="air" prob="0.05"/>
+				<block name="cntCashRegisterEmpty" prob=".40"/>
+				<block name="cntCashRegisterLocked" prob=".30"/>
+				<block name="cntCashRegister" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntToolBoxRandomLootHelper">
+				<block name="cntToolBoxOpen" prob=".40"/>
+				<block name="cntToolBoxLocked" prob=".30"/>
+				<block name="cntToolBoxClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntRollingToolBoxRandomLootHelper">
+				<block name="cntRollingToolBoxOpen" prob=".40"/>
+				<block name="cntRollingToolBoxLocked" prob=".30"/>
+				<block name="cntRollingToolBoxClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLuggageMediumRandomLootHelper">
+				<block name="cntLuggageMediumOpen" prob=".40"/>
+				<block name="cntLuggageMediumLocked" prob=".30"/>
+				<block name="cntLuggageMediumClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLuggageBigRandomLootHelper">
+				<block name="cntLuggageBigOpen" prob=".40"/>
+				<block name="cntLuggageBigLocked" prob=".30"/>
+				<block name="cntLuggageBigClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLuggagePileARandomLootHelper">
+				<block name="cntLuggagePileAOpen" prob=".40"/>
+				<block name="cntLuggagePileALocked" prob=".30"/>
+				<block name="cntLuggagePileAClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntLuggagePileBRandomLootHelper">
+				<block name="cntLuggagePileBOpen" prob=".40"/>
+				<block name="cntLuggagePileBLocked" prob=".30"/>
+				<block name="cntLuggagePileBClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntCabinetBottomRandomLootHelper">
+				<block name="cntCabinetBottomOpen" prob=".40"/>
+				<block name="cntCabinetBottomLocked" prob=".30"/>
+				<block name="cntCabinetBottom" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntCupboardCabinetRedTopLootHelper">
+				<block name="cntCupboardCabinetRedTopOpen" prob=".40"/>
+				<block name="cntCupboardCabinetRedTopLocked" prob=".30"/>
+				<block name="cntCupboardCabinetRedTopClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntCabinetOldBottomLootHelper">
+				<block name="cntCabinetOldBottomOpen" prob=".40"/>
+				<block name="cntCabinetOldBottomLocked" prob=".30"/>
+				<block name="cntCabinetOldBottom" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntCupboardCabinetOldTopLootHelper">
+				<block name="cntCupboardCabinetOldTopOpen" prob=".40"/>
+				<block name="cntCupboardCabinetOldTopLocked" prob=".30"/>
+				<block name="cntCupboardCabinetOldTopClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntMedicineCabinetFaucetRandomLootHelper">
+				<block name="cntMedicineCabinetFaucetOpen" prob=".40"/>
+				<block name="cntMedicineCabinetFaucetLocked" prob=".30"/>
+				<block name="cntMedicineCabinetFaucetClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntMedicineCabinetClosedRandomLootHelper">
+				<block name="cntMedicineCabinetOpen" prob=".40"/>
+				<block name="cntMedicineCabinetLocked" prob=".30"/>
+				<block name="cntMedicineCabinetClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntPillCaseRandomLootHelper">
+				<block name="cntPillCaseEmpty" prob=".40"/>
+				<block name="cntPillCaseLocked" prob=".30"/>
+				<block name="cntPillCaseClosed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntWoodDesk01RandomLootHelper">
+				<block name="cntWoodDesk01Open" prob=".40"/>
+				<block name="cntWoodDesk01Locked" prob=".30"/>
+				<block name="cntWoodDesk01Closed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntMetalDesk02RandomLootHelper">
+				<block name="cntMetalDesk02Open" prob=".40"/>
+				<block name="cntMetalDesk02Locked" prob=".30"/>
+				<block name="cntMetalDesk02Closed" prob=".30"/>
+			</placeholder>
+
+			<placeholder name="cntMunitionsBoxRandomLootHelper">
+				<block name="cntMunitionsBox" prob=".35"/>
+				<block name="cntMunitionsBoxInsecure" prob=".25"/>
+				<block name="cntMunitionsBoxEmpty" prob=".40"/>
+			</placeholder>
+
+			<placeholder name="cntDumpsterRandomLootHelper">
+				<block name="cntDumpster" prob=".25"/>
+				<block name="cntDumpsterInsecure" prob=".25"/>
+				<block name="cntDumpsterEmpty" prob=".50"/>
+			</placeholder>
+
+			<placeholder name="cntDumpsterFliesRandomLootHelper">
+				<block name="cntDumpsterFlies" prob=".25"/>
+				<block name="cntDumpsterFliesInsecure" prob=".25"/>
+				<block name="cntDumpsterFliesEmpty" prob=".50"/>
+			</placeholder>
+
+			<placeholder name="shoppingBasketRandomLootHelper">
+				<block name="shoppingBasketEmpty" prob=".66"/>
+				<block name="cntShoppingBasket" prob=".33"/>
+			</placeholder>
+
+			<placeholder name="cntTiltTruckFullFliesRandomLootHelper">
+				<block name="cntTiltTruckFullFliesEmpty" prob=".66"/>
+				<block name="cntTiltTruckFullFlies" prob=".33"/>
+			</placeholder>
+
+			<placeholder name="MedCaseRandomLootHelper">
+				<block name="MedCaseEmpty" prob=".66"/>
+				<block name="cntPillCase" prob=".33"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleBottomTrashRandomLootHelper">
+				<block name="cntStoreShelfSingleBottomTrash01Empty1" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomTrash02Empty2" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomTrash01" prob=".20"/>
+				<block name="cntStoreShelfSingleBottomTrash02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleTopTrashRandomLootHelper">
+				<block name="cntStoreShelfSingleTopTrash01Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleTopTrash02Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleTopTrash01" prob=".20"/>
+				<block name="cntStoreShelfSingleTopTrash02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleBottomTrashRandomLootHelper">
+				<block name="cntStoreShelfDoubleBottomTrash01Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomTrash02Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomTrash01" prob=".20"/>
+				<block name="cntStoreShelfDoubleBottomTrash02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleTopTrashRandomLootHelper">
+				<block name="cntStoreShelfDoubleTopTrash01Empty" prob=".66"/>
+				<block name="cntStoreShelfDoubleBottomTrash01" prob=".34"/>
+			</placeholder>
+
+			<placeholder name="cntArmyTruckRandomLootHelper">
+				<block name="cntArmyTruckOpen" prob=".66"/>
+				<block name="cntArmyTruckClosed" prob=".34"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleBottomFoodRandomLootHelper">
+				<block name="cntStoreShelfSingleBottomFood01Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomFood02Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomFood01" prob=".20"/>
+				<block name="cntStoreShelfSingleBottomFood02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleTopFoodRandomLootHelper">
+				<block name="cntStoreShelfSingleTopFood01Empty" prob=".66"/>
+				<block name="cntStoreShelfSingleTopFood01" prob=".33"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleBottomFoodRandomLootHelper">
+				<block name="cntStoreShelfDoubleBottomFood01Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomFood02Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomFood01" prob=".20"/>
+				<block name="cntStoreShelfDoubleBottomFood02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleTopFoodRandomLootHelper">
+				<block name="cntStoreShelfDoubleTopFood01Empty" prob=".66"/>
+				<block name="cntStoreShelfDoubleTopFood01" prob=".33"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleBottomHardwareRandomLootHelper">
+				<block name="cntStoreShelfSingleBottomHardware01Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomHardware02Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomHardware01" prob=".20"/>
+				<block name="cntStoreShelfSingleBottomHardware02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleTopHardwareRandomLootHelper">
+				<block name="cntStoreShelfSingleTopHardware01Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleTopHardware02Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleTopHardware01" prob=".20"/>
+				<block name="cntStoreShelfSingleTopHardware02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleBottomHardwareRandomLootHelper">
+				<block name="cntStoreShelfDoubleBottomHardware01Empty" prob=".22"/>
+				<block name="cntStoreShelfDoubleBottomHardware02Empty" prob=".2"/>
+				<block name="cntStoreShelfDoubleBottomHardware03RasgsEmpty" prob=".22"/>
+				<block name="cntStoreShelfDoubleBottomHardware01" prob=".11"/>
+				<block name="cntStoreShelfDoubleBottomHardware02" prob=".11"/>
+				<block name="cntStoreShelfDoubleBottomHardware03Rags" prob=".11"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleTopHardwareRandomLootHelper">
+				<block name="cntStoreShelfDoubleTopHardware01Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleTopHardware02RagsEmpty" prob=".30"/>
+				<block name="cntStoreShelfDoubleTopHardware01" prob=".20"/>
+				<block name="cntStoreShelfDoubleTopHardware02Rags" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleBottomPharmaRandomLootHelper">
+				<block name="cntStoreShelfSingleBottomPharmaGoods01Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomPharmaGoods02Empty" prob=".30"/>
+				<block name="cntStoreShelfSingleBottomPharmaGoods01" prob=".20"/>
+				<block name="cntStoreShelfSingleBottomPharmaGoods02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleBottomPharmaRandomLootHelper">
+				<block name="cntStoreShelfDoubleBottomPharmaGoods01Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomPharmaGoods02Empty" prob=".30"/>
+				<block name="cntStoreShelfDoubleBottomPharmaGoods01" prob=".20"/>
+				<block name="cntStoreShelfDoubleBottomPharmaGoods02" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreProduceBasketRandomLootHelper">
+				<block name="cntStoreProduceBasketApples1Empty" prob=".3"/>
+				<block name="cntStoreProduceBasketApples2Empty" prob=".3"/>
+				<block name="cntStoreProduceBasketGourds1Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketGourds2Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketlettuce1Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketlettuce2Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketMelons1Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketMelons2Empty" prob=".05"/>
+				<block name="cntStoreProduceBasketApples1" prob=".3"/>
+				<block name="cntStoreProduceBasketApples2" prob=".05"/>
+				<block name="cntStoreProduceBasketGourds1" prob=".05"/>
+				<block name="cntStoreProduceBasketGourds2" prob=".05"/>
+				<block name="cntStoreProduceBasketlettuce1" prob=".05"/>
+				<block name="cntStoreProduceBasketlettuce2" prob=".05"/>
+				<block name="cntStoreProduceBasketMelons1" prob=".05"/>
+				<block name="cntStoreProduceBasketMelons2" prob=".05"/>
+			</placeholder>
+
+			<placeholder name="cntGunRackSmallRandomLootHelper">
+				<block name="cntGunRackSmallMagazinesEmpty01" prob=".30"/>
+				<block name="cntGunRackSmallArmorEmpty" prob=".30"/>
+				<block name="cntGunRackSmallMagazines" prob=".20"/>
+				<block name="cntGunRackSmallArmor" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntGunRackLargeRandomLootHelper">
+				<block name="cntGunRackSmallEmpty" prob=".33"/>
+				<block name="cntGunRackSmallEmpty03" prob=".33"/>
+				<block name="cntGunRackLargeGuns01" prob=".11"/>
+				<block name="cntGunRackLargeGuns02" prob=".11"/>
+			</placeholder>
+
+			<placeholder name="cntClothesRackRoundRandomLootHelper">
+				<block name="cntClothesRackRoundPantsEmpty" prob=".33"/>
+				<block name="cntClothesRackRoundShirtsEmpty" prob=".33"/>
+				<block name="cntClothesRackRoundPants" prob=".17"/>
+				<block name="cntClothesRackRoundShirts" prob=".17"/>
+			</placeholder>
+
+			<placeholder name="cntClothesRackRectangleRandomLootHelper">
+				<block name="cntClothesRackRectanglePantsEmpty" prob=".33"/>
+				<block name="cntClothesRackRectangleShirtsEmpty" prob=".33"/>
+				<block name="cntClothesRackRectanglePants" prob=".17"/>
+				<block name="cntClothesRackRectangleShirts" prob=".17"/>
+			</placeholder>
+
+			<placeholder name="cntClothesRackWallRandomLootHelper">
+				<block name="cntClothesRackWallFlat" prob=".20"/>
+				<block name="cntClothesRackWallPantsEmptyHanger" prob=".12"/>
+				<block name="cntClothesRackWallLongSleeveEmptyHanger" prob=".12"/>
+				<block name="cntClothesRackWallSweaterEmptyHanger" prob=".12"/>
+				<block name="cntClothesRackWallTShirtsEmptyHanger" prob=".12"/>
+				<block name="cntClothesRackWallPants" prob=".08"/>
+				<block name="cntClothesRackWallLongSleeve" prob=".08"/>
+				<block name="cntClothesRackWallSweater" prob=".08"/>
+				<block name="cntClothesRackWallTShirts" prob=".08"/>
+			</placeholder>
+
+			<placeholder name="cntClothesShelfHalfRandomLootHelper">
+				<block name="cntClothesShelfHalfJeans01Empty" prob=".66"/>
+				<block name="cntClothesShelfHalfJeans02Empty" prob=".7"/>
+				<block name="cntClothesShelfHalfShirts01Empty" prob=".7"/>
+				<block name="cntClothesShelfHalfShirts02Empty" prob=".7"/>
+				<block name="cntClothesShelfHalfSweaters01Empty" prob=".7"/>
+				<block name="cntClothesShelfHalfJeans01" prob=".7"/>
+				<block name="cntClothesShelfHalfJeans02" prob=".7"/>
+				<block name="cntClothesShelfHalfShirts01" prob=".7"/>
+				<block name="cntClothesShelfHalfShirts02" prob=".7"/>
+				<block name="cntClothesShelfHalfSweaters01" prob=".7"/>
+			</placeholder>
+
+			<placeholder name="cntClothesShelfStackRandomLootHelper">
+				<block name="cntClothesShelfStackEmpty" prob=".66"/>
+				<block name="cntClothesShelfStackJeans01Empty" prob=".9"/>
+				<block name="cntClothesShelfStackJeans02Empty" prob=".9"/>
+				<block name="cntClothesShelfStackShirts01Empty" prob=".9"/>
+				<block name="cntClothesShelfStackShirts02Empty" prob=".9"/>
+				<block name="cntClothesShelfStackJeans01" prob=".9"/>
+				<block name="cntClothesShelfStackJeans02" prob=".9"/>
+				<block name="cntClothesShelfStackShirts01" prob=".9"/>
+				<block name="cntClothesShelfStackShirts02" prob=".9"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleBottomShoesRandomLootHelper">
+				<block name="cntStoreShelfDoubleBottomShoesEmpty" prob=".40"/>
+				<block name="cntStoreShelfDoubleBottomShoesOpen" prob=".40"/>
+				<block name="cntStoreShelfDoubleBottomShoesFull" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfDoubleTopShoesRandomLootHelper">
+				<block name="cntStoreShelfDoubleTopShoesEmpty" prob=".40"/>
+				<block name="cntStoreShelfDoubleTopShoesOpen" prob=".40"/>
+				<block name="cntStoreShelfDoubleTopShoesFull" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleBottomShoesRandomLootHelper">
+				<block name="cntStoreShelfSingleBottomShoesEmpty" prob=".40"/>
+				<block name="cntStoreShelfSingleBottomShoesOpen" prob=".40"/>
+				<block name="cntStoreShelfDoubleTopShoesFull" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfSingleTopShoesRandomLootHelper">
+				<block name="cntStoreShelfSingleTopShoesEmpty" prob=".40"/>
+				<block name="cntStoreShelfSingleTopShoesOpen" prob=".40"/>
+				<block name="cntStoreShelfDoubleTopShoesFull" prob=".20"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfSingleBottomRandomLootHelper">
+				<block name="cntBookShelfSingleBottomEmpty" prob=".40"/>
+				<block name="cntBookShelfSingleBottomFull01Empty" prob=".20"/>
+				<block name="cntBookShelfSingleBottomFull02Empty" prob=".20"/>
+				<block name="cntBookShelfSingleBottomFull01" prob=".10"/>
+				<block name="cntBookShelfSingleBottomFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfSingleTopRandomLootHelper">
+				<block name="cntBookShelfSingleTopEmpty" prob=".40"/>
+				<block name="cntBookShelfSingleTopFull01Empty" prob=".20"/>
+				<block name="cntBookShelfSingleTopFull02Empty" prob=".20"/>
+				<block name="cntBookShelfSingleTopFull01" prob=".10"/>
+				<block name="cntBookShelfSingleTopFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfDoubleBottomRandomLootHelper">
+				<block name="cntBookShelfDoubleBottomEmpty" prob=".40"/>
+				<block name="cntBookShelfDoubleBottomFull01Empty" prob=".20"/>
+				<block name="cntBookShelfDoubleBottomFull02Empty" prob=".20"/>
+				<block name="cntBookShelfDoubleBottomFull01" prob=".10"/>
+				<block name="cntBookShelfDoubleBottomFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfDoubleTopRandomLootHelper">
+				<block name="cntBookShelfDoubleTopEmpty" prob=".40"/>
+				<block name="cntBookShelfDoubleTopFull01Empty" prob=".20"/>
+				<block name="cntBookShelfDoubleTopFull02Empty" prob=".20"/>
+				<block name="cntBookShelfDoubleTopFull01" prob=".10"/>
+				<block name="cntBookShelfDoubleTopFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfSingleCapBottomRandomLootHelper">
+				<block name="cntBookShelfSingleCapBottomEmpty" prob=".40"/>
+				<block name="cntBookShelfSingleCapFull01BottomEmpty" prob=".20"/>
+				<block name="cntBookShelfSingleCapFull02BottomEmpty" prob=".20"/>
+				<block name="cntBookShelfSingleCapBottomFull01" prob=".10"/>
+				<block name="cntBookShelfSingleCapBottomFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntBookShelfSingleCapTopRandomLootHelper">
+				<block name="cntBookShelfSingleCapTopEmpty" prob=".40"/>
+				<block name="cntBookShelfSingleCapTopFull01Empty" prob=".20"/>
+				<block name="cntBookShelfSingleCapTopFull02Empty" prob=".20"/>
+				<block name="cntBookShelfSingleCapTopFull01" prob=".10"/>
+				<block name="cntBookShelfSingleCapTopFull02" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntFreezerGroceriesMiddleRandomLootHelper">
+				<block name="cntFreezerGroceriesMiddleEmptyClosed" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleEmptyClosedBroken" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleEmptyOpen" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleEmptyOpenBroken" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleFullClosedOpen" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleFullClosed2Open" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleFullClosedBrokenOpen" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleFullClosedBroken2Open" prob=".08"/>
+				<block name="cntFreezerGroceriesMiddleFullClosed" prob=".175"/>
+				<block name="cntFreezerGroceriesMiddleFullClosedBroken" prob=".175"/>
+				<block name="cntFreezerGroceriesMiddleFullClosed2" prob=".175"/>
+				<block name="cntFreezerGroceriesMiddleFullClosedBroken2" prob=".175"/>
+			</placeholder>
+
+			<placeholder name="cntFreezerBeveragesMiddleRandomLootHelper">
+				<block name="cntFreezerBeveragesMiddleEmptyClosed" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleEmptyClosedBroken" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleEmptyOpen" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleEmptyOpenBroken" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleFullClosedOpen" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleFullClosedBrokenOpen" prob=".08"/>
+				<block name="cntFreezerBeveragesMiddleFullClosed" prob=".35"/>
+				<block name="cntFreezerBeveragesMiddleFullClosedBroken" prob=".35"/>
+			</placeholder>
+
+			<placeholder name="cntFreezerBeveragesStandaloneRandomLootHelper">
+				<block name="cntFreezerBeveragesStandaloneEmptyClosed" prob=".15"/>
+				<block name="cntFreezerBeveragesStandaloneEmptyClosedBroken" prob=".15"/>
+				<block name="cntFreezerBeveragesStandaloneFullClosed" prob=".35"/>
+				<block name="cntFreezerBeveragesStandaloneFullClosedOpen" prob=".15"/>
+				<block name="cntFreezerBeveragesStandaloneFullClosedBrokenOpen" prob=".35"/>
+				<block name="cntFreezerBeveragesStandaloneFullClosedBroken" prob=".35"/>
+			</placeholder>
+
+			<placeholder name="bunkBedRandomHelper">
+				<block name="bunkBedMade" prob="1"/>
+				<block name="bunkBedMade1" prob="1"/>
+				<block name="bunkBedMessy" prob="1"/>
+				<block name="bunkBedMessy1" prob="1"/>
+				<block name="bunkBedMattress" prob="1"/>
+				<block name="bunkBedFrame" prob="1"/>
+			</placeholder>
+
+			<placeholder name="cntDisplayCaseAmmoLeftRandomLootHelper">
+				<block name="cntDisplayCaseLeftEmpty" prob=".65"/>
+				<block name="cntDisplayCaseAmmoLeftBroken" prob=".15"/>
+				<block name="cntDisplayCaseEmptyLeft" prob=".15"/>
+				<block name="cntDisplayCaseEmptyLeftBroken" prob=".05"/>
+			</placeholder>
+
+			<placeholder name="cntDisplayCaseAmmoMiddleRandomLootHelper">
+				<block name="cntDisplayCaseMiddleEmpty" prob=".50"/>
+				<block name="cntDisplayCaseAmmoMiddleBroken01" prob=".15"/>
+				<block name="cntDisplayCaseAmmoMiddleBroken02" prob=".15"/>
+				<block name="cntDisplayCaseEmptyMiddle" prob=".10"/>
+				<block name="cntDisplayCaseEmptyMiddleBroken" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntDisplayCaseAmmoRightRandomLootHelper">
+				<block name="cntDisplayCaseRightEmpty" prob=".60"/>
+				<block name="cntDisplayCaseAmmoRightBroken" prob=".15"/>
+				<block name="cntDisplayCaseEmptyRight" prob=".15"/>
+				<block name="cntDisplayCaseEmptyRightBroken" prob=".10"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfElectronicsSingleTallRandomLootHelper">
+				<block name="cntStoreShelfElectronicsSingleBottomPCEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomPC" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitorEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomElectronicsMonitor" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomGoodsMiscEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomGoodsMisc" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomHeadphonesEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomHeadphones" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomKeyboardEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomKeyboard" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomLaptopClosedEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomLaptopClosed" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomLaptopOpenEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomLaptopOpen" prob=".0425"/>
+				<block name="cntStoreShelfElectronicsSingleBottomSpeakerEmpty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsSingleBottomSpeaker" prob=".0425"/>
+			</placeholder>
+
+			<placeholder name="cntStoreShelfElectronicsDoubleTallRandomLootHelper">
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods01Empty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods01" prob=".085"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods02Empty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods02" prob=".085"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods03Empty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods03" prob=".085"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods04Empty" prob=".66"/>
+				<block name="cntStoreShelfElectronicsDoubleBottomGoods04" prob=".085"/>
+				<block name="cntStoreElectronicsBookShelfSpeakerEmpty" prob=".66"/>
+				<block name="cntStoreElectronicsBookShelfSpeaker" prob=".085"/>
+			</placeholder>
+
+		</append>
+</configs>
