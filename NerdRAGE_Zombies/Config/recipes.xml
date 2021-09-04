@@ -1,4 +1,14 @@
 <configs>	
+	<!-- create Cement in the Cement Mixer, not the forge -->
+		<remove xpath="/recipes/recipe[@name='resourceCement' and @craft_area='forge']" />
+		<append xpath="/recipes">
+			<recipe name="resourceCement" count="1" material_based="true" craft_area="cementMixer" tags="cementMixerCrafting">
+				<ingredient name="resourceRockSmall" count="10" />
+				<ingredient name="resourceClayLump" count="10" />
+			</recipe>
+		</append>
+	<!-- / -->
+
 	<append xpath="/recipes">
 		<!-- add recipe for Torches -->
 			<recipe name="meleeToolTorch">
