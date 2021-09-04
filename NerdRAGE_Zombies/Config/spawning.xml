@@ -1,120 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <configs>
-<!--
-	<biome name="desert">
-		<spawn maxcount="3" respawndelay="2.7" time="Any" entitygroup="ZombiesAll"></spawn>
-		<spawn maxcount="3" respawndelay="2.1" time="Night" entitygroup="ZombiesNight"></spawn>
-		<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
-		<spawn maxcount="3" respawndelay="3.5" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0"></spawn>
-	</biome>
+	<!-- HOW TO:
+		<biome name="desert">
+			<spawn maxcount="3" respawndelay="2.7" time="Any" entitygroup="ZombiesAll"></spawn>
+			<spawn maxcount="3" respawndelay="2.1" time="Night" entitygroup="ZombiesNight"></spawn>
+			<spawn maxcount="1" respawndelay="1" time="Any" entitygroup="WildGameForest" spawnDeadChance="0" />
+			<spawn maxcount="3" respawndelay="3.5" time="Any" entitygroup="EnemyAnimalsDesert" spawnDeadChance="0"></spawn>
+		</biome>
 
-	biomes:
-	 - maxcount <integer>: number of all spawned entities in the group may not exceed this number
-	 - respawndelay <decimal>: number of days between respawns (1 = 24h, .5 = 12h, etc)
-	 - time <'Any'|'Day'|'Night'>: the time of day during which this entry spawns enemies
--->
+		biomes:
+		- maxcount <integer>: number of all spawned entities in the group may not exceed this number
+		- respawndelay <decimal>: number of days between respawns (1 = 24h, .5 = 12h, etc)
+		- time <'Any'|'Day'|'Night'>: the time of day during which this entry spawns enemies
+	-->
 
-	<!-- biome: burnt_forest -->
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@maxcount">3</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@respawndelay">1</set>
+	<!-- adjust spawn count and respawn timing per biome -->
+		<!-- biome: burnt_forest -->
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@maxcount">3</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='EnemyAnimalsBurntForest']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@respawndelay">0.5</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">5</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
+		<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
 
-	<!-- biome: desert -->
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@maxcount">2</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@respawndelay">1</set>
+		<!-- biome: desert -->
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@maxcount">2</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='EnemyAnimalsDesert']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
 
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
+		<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
 
-	<!-- biome: pine_forest -->
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@respawndelay">1</set>
+		<!-- biome: pine_forest -->
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@maxcount">4</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='EnemyAnimalsForest']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='WildGameForest']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">3</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@maxcount">5</set>
+		<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
 
-	<!-- biome: snow -->
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@maxcount">2</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@respawndelay">0.5</set>
+		<!-- biome: snow -->
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@maxcount">2</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='EnemyAnimalsSnow']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@respawndelay">0.5</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">1</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@maxcount">1</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='WildGameForest']/@respawndelay">2</set>
 
-	<append xpath="/spawning/biome[@name='snow']">
-		<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay="0.1" time="Day" spawnDeadChance="0"/>
-	</append>
+		<append xpath="/spawning/biome[@name='snow']">
+			<spawn entitygroup="ZombiesAll" maxcount="3" respawndelay="0.1" time="Day" spawnDeadChance="0"/>
+		</append>
 
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@maxcount">4</set>
+		<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='ZombiesNight']/@respawndelay">0.2</set>
 
-	<!-- biome: wasteland -->
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@respawndelay">1</set>
+		<!-- biome: wasteland -->
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@maxcount">4</set>
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='EnemyAnimalsWasteland']/@respawndelay">1</set>
 
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">4</set>
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@respawndelay">0.5</set>
 
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">5</set>
-	<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@respawndelay">0.2</set>
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">5</set>
+		<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@respawndelay">0.2</set>
 
 
-	<!-- Dogs Barns -->
-	<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalAlive']/@value">4</set>
-	<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">2</set>
+		<!-- Dogs Barns -->
+		<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalAlive']/@value">4</set>
+		<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">2</set>
 
-	<!-- Dogs Barns -->
-	<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalAlive']/@value">8</set>
-	<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalPerWave']/@value">4</set>
+		<!-- Dogs Barns -->
+		<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalAlive']/@value">8</set>
+		<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalPerWave']/@value">4</set>
 
-	<!-- Small Groups -->
-	<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalAlive']/@value">8</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalPerWave']/@value">4</set>
+		<!-- Small Groups -->
+		<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalAlive']/@value">8</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalPerWave']/@value">4</set>
 
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalAlive']/@value">8</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalPerWave']/@value">4</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalAlive']/@value">8</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowSmall']/day/property[@name='TotalPerWave']/@value">4</set>
 
-	<!-- Medium Groups -->
-	<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalAlive']/@value">16</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalPerWave']/@value">8</set>
+		<!-- Medium Groups -->
+		<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalAlive']/@value">16</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalPerWave']/@value">8</set>
 
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalAlive']/@value">16</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalPerWave']/@value">8</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalAlive']/@value">16</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowMedium']/day/property[@name='TotalPerWave']/@value">8</set>
 
-	<!-- Large Groups -->
-	<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalAlive']/@value">32</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalPerWave']/@value">16</set>
+		<!-- Large Groups -->
+		<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalAlive']/@value">32</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalPerWave']/@value">16</set>
 
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalAlive']/@value">32</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalPerWave']/@value">16</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='EntityGroupName']/@value">ZombiesAll</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalAlive']/@value">32</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnSnowLarge']/day/property[@name='TotalPerWave']/@value">16</set>
 
-	<!-- Extra Large Groups -->
-	<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalAlive']/@value">64</set>
-	<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalPerWave']/@value">16</set>
+		<!-- Extra Large Groups -->
+		<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalAlive']/@value">64</set>
+		<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalPerWave']/@value">16</set>
+	<!-- / -->
 </configs>

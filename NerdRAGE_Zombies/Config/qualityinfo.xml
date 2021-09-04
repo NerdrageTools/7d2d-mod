@@ -1,9 +1,11 @@
 <configs>
-    <set xpath="/qualityinfo/quality[@key='0']/@color">9D9D9D</set>
-    <set xpath="/qualityinfo/quality[@key='1']/@color">9D9D9D</set>
-    <set xpath="/qualityinfo/quality[@key='2']/@color">FFFFFF</set>
-    <set xpath="/qualityinfo/quality[@key='3']/@color">1EFF00</set>
-    <set xpath="/qualityinfo/quality[@key='4']/@color">0070DD</set>
-    <set xpath="/qualityinfo/quality[@key='5']/@color">A335EE</set>
-    <set xpath="/qualityinfo/quality[@key='6']/@color">FF8000</set>
+	<!-- loot quality colors -->
+		<set xpath="/qualityinfo/quality[@key='0']/@color">9D9D9D</set><!-- grey -->
+		<set xpath="/qualityinfo/quality[@key='1']/@color">9D9D9D</set><!-- grey -->
+		<set xpath="/qualityinfo/quality[@key='2']/@color">FFFFFF</set><!-- white -->
+		<set xpath="/qualityinfo/quality[@key='3']/@color">1EFF00</set><!-- green -->
+		<set xpath="/qualityinfo/quality[@key='4']/@color">0070DD</set><!-- blue -->
+		<set xpath="/qualityinfo/quality[@key='5']/@color">A335EE</set><!-- purple -->
+		<set xpath="/qualityinfo/quality[@key='6']/@color">FF8000</set><!-- orange -->
+	<!-- / -->
 </configs>

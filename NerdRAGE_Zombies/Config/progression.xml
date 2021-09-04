@@ -1,3 +1,5 @@
 <configs>
-	<set xpath="progression/level/@max_level">120</set>
+	<!-- limit max level -->
+		<set xpath="progression/level/@max_level">150</set>
+	<!-- / -->
 </configs>

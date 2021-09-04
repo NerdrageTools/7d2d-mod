@@ -1,1408 +1,1411 @@
 <configs>
-	<!-- no more spiders -->
+	<!-- no more spider zombie quest -->
     <remove xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']/item[@name='qc_itsbitsyspider']" />
+	<!-- / -->
 
-	<append xpath="/lootcontainers">
-		<lootgroup name="junkNew">
-			<item name="drinkJarEmpty"/>
-			<item name="drinkCanEmpty"/>
-			<item name="resourcePaper" count="1,6" prob="0.7"/>
-			<item name="oldCash" count="1,6" prob="0.3"/>
-			<item name="resourceCloth" count="1,4"/>
-			<item group="trophyGroup"/>
-			<item name="resourceCandleStick"/>
-			<item name="resourceGunPowder" count="1,3"/>
-			<item name="resourceDoorKnob"/>
-			<item name="resourceOil" count="2,6"/>
-			<item name="resourceMetalPipe"/>
-			<item name="resourceFishingWeight" count="1,3"/>
-			<item name="resourceScrapLead" count="1,10"/>
-			<item name="resourceWood" count="1,4"/>
-			<item name="resourceGlue"/>
-			<item name="resourceNail" count="1,10"/>
-			<item name="casinoCoin" count="1,5"/>
-			<item name="resourceScrapBrass" count="40,120"/>
-			<item name="resourceFeather" count="1,5"/>
-			<item name="resourceDuctTape" count="1,3"/>
-			<item group="rottenFood"/>
-			<item group="booksAllScaled"/>
-			<item group="seeds"/>
-			<item group="groupQuestChallenge" prob="0.11"/>
-			<item group="groupTreasureMaps" prob="0.092"/>
-			<item name="resourceBone" count="5,10" prob="0.1"/>
-			<item name="resourceScrapPolymers" count="1,4"/>
-			<item name="resourceLockPick" count="1,4"/>
-			<item name="resourceSewingKit" count="1,2"/>
-		</lootgroup>
-		
-		<lootgroup name="foodRotting">
-			<item name="foodRottingFlesh" prob=".9"/>
-			<item name="foodMoldyBread" prob="0.5"/>
-			<item name="foodShamSandwich" prob="0.3"/>
-		</lootgroup>
-		
-		<lootgroup name="foodHomeMade">
-			<item name="foodBakedPotato" prob=".9"/>
-			<item name="foodCornOnTheCob" prob=".9"/>
-			<item name="foodCharredMeat" prob=".9"/>
-			<item name="foodGrilledMeat" prob="0.9"/>
-			<item name="foodBoiledMeat" prob="0.8"/>
-			<item name="foodEggBoiled" prob="0.7"/>
-			<item name="foodBlueberryPie" prob="0.3"/>
-			<item name="foodBaconAndEggs" prob="0.4"/>
-			<item name="foodPumpkinBread" prob="0.6"/>
-			<item name="foodCornBread" prob="0.7"/>
-		</lootgroup>
-		
-		<lootgroup name="foodAnimal">
-			<item name="foodCanCatfood" prob="0.8"/>
-			<item name="foodCanDogfood" prob="0.8"/>
-		</lootgroup>
-		
-		<lootgroup name="foodGoodCan">
-			<item name="foodCanSalmon" prob="0.1"/>
-			<item name="foodCanSham" prob="0.1"/>
-			<item name="foodCanBeef" prob="0.9"/>
-			<item name="foodCanChicken" prob="0.8"/>
-			<item name="foodCanChili" prob="0.7"/>
-			<item name="foodCanLamb" prob="0.8"/>
-			<item name="foodCanMiso" prob="0.8"/>
-			<item name="foodCanPasta" prob="0.7"/>
-			<item name="foodCanPears" prob="0.9"/>
-			<item name="foodCanPeas" prob="0.9"/>
-			<item name="foodCanSoup" prob="0.9"/>
-			<item name="foodCanStock" prob="0.9"/>
-			<item name="foodCanTuna" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="foodNice">
-			<item name="foodChiliDog" prob="0.1"/>
-			<item name="foodFishTacos" prob="0.1"/>
-			<item name="foodPumpkinPie" prob="0.1"/>
-			<item name="foodTunaFishGravyToast" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="foodDrink">
-			<item name="drinkJarBoiledWater" prob=".9"/>
-			<item name="drinkJarPureMineralWater" prob="0.3"/>
-			<item name="drinkJarRedTea" prob="0.6"/>
-			<item name="drinkJarGoldenRodTea" prob="0.5"/>
-			<item name="drinkJarYuccaJuice" prob="0.6"/>
-			<item name="drinkYuccaJuiceSmoothie" prob="0.4"/>
-			<item name="drinkJarCoffee" prob="0.4"/>
-			<item name="drinkJarBeer" prob="0.5"/>
-		</lootgroup>
-		
-		<lootgroup name="foodEnergy">
-			<item name="drinkJarCoffee" prob="0.6"/>
-			<item name="drinkCanMegaCrush" prob="0.08"/>
-			<item name="drinkJarBlackStrapCoffee" prob="0.2"/>
-			<item name="drinkJarBeer" prob="0.5"/>
-		</lootgroup>
-		
-		<lootgroup name="foodFermers">
-			<item name="foodCropPotato" prob="0.9"/>
-			<item name="foodCropCorn" prob=".9"/>
-			<item name="foodCropYuccaFruit" prob="0.9"/>
-			<item name="foodCropMushrooms" prob="0.7"/>
-			<item name="foodEgg" prob="0.4"/>
-			<item name="foodCropBlueberries" prob="0.6"/>
-			<item name="plantedAloe3Harvest" prob="0.6"/>
-			<item name="resourceFishingWeight" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="foodSeeds">
-			<item name="plantedAloe1" prob="0.3"/>
-			<item name="plantedBlueberry1" prob="0.2"/>
-			<item name="plantedChrysanthemum1" prob="0.7"/>
-			<item name="plantedCoffee1" prob="0.3"/>
-			<item name="plantedCorn1" prob="0.8"/>
-			<item name="plantedCotton1" prob=".9"/>
-			<item name="plantedGoldenrod1" prob="0.7"/>
-			<item name="plantedHop1" prob="0.1"/>
-			<item name="plantedMushroom1" prob="0.2"/>
-			<item name="plantedPotato1" prob="0.3"/>
-			<item name="plantedPumpkin1" prob="0.3"/>
-			<item name="plantedYucca1" prob="0.7"/>
-		</lootgroup>
-		
-		<lootgroup name="foodMeds">
-			<item name="drinkJarGrainAlcohol" prob="0.3"/>
-			<item name="medicalAloeCream" prob="0.3"/>
-			<item name="medicalBandage" prob=".9"/>
-			<item name="medicalBloodBag" prob="0.3"/>
-			<item name="medicalFirstAidBandage" prob="0.6"/>
-			<item name="medicalFirstAidKit" prob="0.08"/>
-			<item name="medicalPlasterCast" prob="0.3"/>
-			<item name="medicalSplint" prob="0.8"/>
-			<item name="drugPainkillers" prob="0.5"/>
-			<item name="drugVitamins" prob="0.3"/>
-			<item name="drugAntibiotics" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="itemsMoney">
-			<item name="casinoCoin" count="100" prob=".5"/>
-			<item name="oldCash" count="350" prob=".9"/>
-		</lootgroup>
-		
-		<lootgroup name="denimClothes">
-			<item name="apparelDenimPants" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="ordinaryClothes">
-			<item name="apparelFlannelShirt" prob="0.1"/>
-			<item name="apparelLongShirt" prob="0.1"/>
-			<item name="apparelSweatshirt" prob="0.1"/>
-			<item name="apparelTShirtPlain" prob="0.1"/>
-			<item name="apparelTShirtZU" prob="0.1"/>
-			<item name="apparelBallCap" prob="0.1"/>
-			<item name="apparelPressboyCap" prob="0.1"/>
-			<item name="apparelBandana" prob="0.1"/>
-			<item name="apparelCoatJacketGeneric" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="famaleClothes">
-			<item name="apparelTankTop" prob="0.1"/>
-			<item name="apparelSkirt" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="armyClothes">
-			<item name="apparelArmyPants" prob="0.1"/>
-			<item name="apparelArmyShirt" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="armyArmor">
-			<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".1"/>
-			<item name="armorMilitaryLegs" mods="modArmorPlatingBasic" mod_chance=".3" prob=".1"/>
-			<item name="armorMilitaryLegs" mods="modArmorPlatingReinforced" mod_chance=".2" prob=".1"/>
-			<item name="armorMilitaryLegs" mods="modArmorStoragePocket" mod_chance=".3" prob=".4"/>
-			<item name="armorMilitaryLegs" mods="modArmorDoubleStoragePocket" mod_chance=".1" prob=".1"/>
-			<item name="armorMilitaryVest" mods="modArmorPlatingBasic" mod_chance=".3" prob="0.1"/>
-			<item name="armorMilitaryVest" mods="modArmorPlatingReinforced" mod_chance=".2" prob="0.1"/>
-			<item name="armorMilitaryVest" mods="modArmorStoragePocket" mod_chance=".1" prob="0.1"/>
-			<item name="armorMilitaryVest" mods="modArmorDoubleStoragePocket" mod_chance=".1" prob="0.1"/>
-			<item name="armorMilitarySetParts" prob="0.3"/>
-			<item name="resourceMilitaryFiber" prob="0.2"/>
-			<item name="apparelNightvisionGoggles" prob="0.005"/>
-		</lootgroup>
-		
-		<lootgroup name="workerClothes">
-			<item name="armorMiningHelmet" prob="0.1"/>
-			<item name="apparelTShirtPlain" prob="0.1"/>
-			<item name="apparelOveralls" prob="0.1"/>
-			<item name="apparelHoodySweatshirt" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="winterClothes">
-			<item name="apparelCoatPufferCoat" prob="0.1"/>
-			<item name="apparelFlannelShirt" prob="0.1"/>
-			<item name="apparelCoatJacketGeneric" prob="0.1"/>
-			<item name="apparelSkullCap" prob="0.1"/>
-			<item name="armorSantaHat" prob="0.01"/>
-			<item name="apparelCoatLeatherDuster" prob="0.05"/>
-		</lootgroup>
-		
-		<lootgroup name="summerClothes">
-			<item name="apparelCoatLeatherPoncho" prob="0.1"/>
-			<item name="apparelBallCap" prob="0.1"/>
-			<item name="apparelCowboyHat" prob="0.1"/>
-			<item name="apparelDenimShortsPants" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="cowboyClothes">
-			<item name="apparelCowboyBoots" prob="0.1"/>
-			<item name="apparelCowboyHat" prob="0.1"/>
-			<item name="apparelDenimPants" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="bikerClothes">
-			<item name="apparelGothBoots" prob="0.1"/>
-			<item name="apparelGothPants" prob="0.1"/>
-			<item name="apparelFacialPiercings" prob="0.1"/>
-			<item name="apparelCigar" prob="0.001"/>
-			<item name="apparelAviatorGoggles" prob="0.01"/>
-			<item name="armorSwatHelmet" prob="0.01"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeRepairs">
-			<item name="meleeToolRepairT0StoneAxe" prob="0.4"/>
-			<item name="meleeToolRepairT1ClawHammer" prob="0.2"/>
-			<item name="meleeToolRepairT3Nailgun" prob="0.01"/>
-			<item name="meleeToolWireTool" prob="0.3"/>
-			<item name="meleeToolFlashlight02" prob="0.2"/>
-			<item name="ceilingLight01" prob="0.6"/>
-			<item name="resourceNail" prob="0.6"/>
-			<item name="resourceMechanicalParts" prob="0.6"/>
-			<item name="resourceElectricParts" prob="0.6"/>
-			<item name="resourceGlue" prob="0.6"/>
-			<item name="electricwirerelay" prob="0.01"/>
-			<item name="electrictimerrelay" prob="0.01"/>
-			<item name="cntToolBoxClosed" prob="0.05"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeDigging">
-			<item name="meleeToolAxeT1IronFireaxe" prob="0.3"/>
-			<item name="meleeToolAxeT2SteelAxe" prob="0.05"/>
-			<item name="meleeToolPickT1IronPickaxe" prob="0.3"/>
-			<item name="meleeToolPickT2SteelPickaxe" prob="0.05"/>
-			<item name="meleeToolShovelT0StoneShovel" prob="0.5"/>
-			<item name="meleeToolShovelT1IronShovel" prob="0.3"/>
-			<item name="meleeToolSalvageT1Wrench" prob="0.01"/>
-			<item name="meleeToolSalvageT2Ratchet" prob="0.008"/>
-			<item name="meleeToolSalvageT3ImpactDriver" prob="0.002"/>
-			<item name="meleeToolAllSteelParts" prob="0.05"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeDiggingProChainsaw">
-			<item name="meleeToolAxeT3ChainsawParts" prob="0.3"/>
-			<item name="meleeToolAxeT3Chainsaw" prob="0.02"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeDiggingProAuger">
-			<item name="meleeToolAxeT3ChainsawParts" prob="0.3"/>
-			<item name="meleeToolPickT3Auger" prob="0.02"/>
-			<item name="lanternDecorLight" prob="0.08"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeKnifes">
-			<item name="meleeWpnBladeT0BoneKnife" prob="0.4"/>
-			<item name="meleeWpnBladeT1HuntingKnife" prob="0.2"/>
-			<item name="meleeWpnBladeT3Machete" prob="0.05"/>
-			<item name="meleeWpnBladeT3MacheteParts" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeSledgehammers">
-			<item name="meleeWpnSledgeT0StoneSledgehammer" prob="0.3"/>
-			<item name="meleeWpnSledgeT1IronSledgehammer" prob="0.3"/>
-			<item name="meleeWpnSledgeT3SteelSledgehammer" prob="0.3"/>
-			<item name="meleeWpnSledgeT3SteelSledgehammerParts" prob="0.3"/>
-		</lootgroup>
-		
-		<lootgroup name="meleeClubs">
-			<item name="meleeWpnClubT0WoodenClub" prob="0.6"/>
-			<item name="meleeWpnClubT1BaseballBat" prob="0.3"/>
-			<item name="meleeWpnClubT3SteelClub" prob="0.05"/>
-			<item name="meleeWpnClubT3SteelClubParts" prob="0.1"/>
-			<item name="meleeWpnKnucklesT0LeatherKnuckles" prob="0.6"/>
-			<item name="meleeWpnKnucklesT1IronKnuckles" prob="0.2"/>
-			<item name="meleeWpnKnucklesT3SteelKnuckles" prob="0.05"/>
-			<item name="meleeWpnKnucklesT3SteelKnucklesParts" prob="0.1"/>
-			<item name="meleeWpnBatonT2StunBaton" prob="0.07"/>
-			<item name="meleeWpnBatonT2StunBatonParts" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="gunBows">
-			<item name="gunBowT0PrimitiveBow" prob="0.6"/>
-			<item name="gunBowT1WoodenBow" prob="0.2"/>
-			<item name="gunBowT3CompoundBow" prob="0.03"/>
-			<item name="gunBowT1IronCrossbow" prob="0.4"/>
-			<item name="gunBowT3CompoundCrossbow" prob="0.02"/>
-			<item name="gunBowT1WoodenBowParts" prob="0.1"/>
-		</lootgroup>
-		
-		<lootgroup name="gunPistols">
-			<item name="gunHandgunT1Pistol" prob="0.2"/>
-			<item name="gunHandgunT2Magnum44" prob="0.05"/>
-			<item name="gunHandgunT3DesertVulture" prob="0.008"/>
-			<item name="gunHandgunT1PistolParts" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="gunAutomatic">
-			<item name="gunHandgunT3SMG5" prob="0.05"/>
-			<item name="gunMGT1AK47" prob="0.02"/>
-			<item name="gunMGT2TacticalAR" prob="0.005"/>
-			<item name="gunMGT3M60" prob="0.001"/>
-			<item name="gunHandgunT1PistolParts" prob="0.6"/>
-			<item name="gunMGT1AK47Parts" prob="0.5"/>
-		</lootgroup>
-		
-		<lootgroup name="gunRifles">
-			<item name="gunRifleT1HuntingRifle" prob="0.3"/>
-			<item name="gunRifleT2MarksmanRifle" prob="0.08"/>
-			<item name="gunRifleT3SniperRifle" prob="0.01"/>
-			<item name="gunRifleT1HuntingRifleParts" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="gunShotguns">
-			<item name="gunShotgunT0Blunderbuss" prob="0.7"/>
-			<item name="gunShotgunT1DoubleBarrel" prob="0.3"/>
-			<item name="gunShotgunT2PumpShotgun" prob="0.07"/>
-			<item name="gunShotgunT3AutoShotgun" prob="0.01"/>
-			<item name="gunShotgunT1DoubleBarrelParts" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="gunRockets">
-			<item name="gunExplosivesT3RocketLauncher" prob="0.7"/>
-			<item name="gunExplosivesT3RocketLauncherParts" prob="0.7"/>
-		</lootgroup>
-		
-		<lootgroup name="gunRobotics">
-			<item name="gunBotRoboticsParts" prob="0.3"/>
-			<item name="gunBotT1JunkSledge" prob="0.1"/>
-			<item name="gunBotT2JunkTurret" prob="0.08"/>
+	<!-- add new loot containers -->
+		<append xpath="/lootcontainers">
+			<lootgroup name="junkNew">
+				<item name="drinkJarEmpty"/>
+				<item name="drinkCanEmpty"/>
+				<item name="resourcePaper" count="1,6" prob="0.7"/>
+				<item name="oldCash" count="1,6" prob="0.3"/>
+				<item name="resourceCloth" count="1,4"/>
+				<item group="trophyGroup"/>
+				<item name="resourceCandleStick"/>
+				<item name="resourceGunPowder" count="1,3"/>
+				<item name="resourceDoorKnob"/>
+				<item name="resourceOil" count="2,6"/>
+				<item name="resourceMetalPipe"/>
+				<item name="resourceFishingWeight" count="1,3"/>
+				<item name="resourceScrapLead" count="1,10"/>
+				<item name="resourceWood" count="1,4"/>
+				<item name="resourceGlue"/>
+				<item name="resourceNail" count="1,10"/>
+				<item name="casinoCoin" count="1,5"/>
+				<item name="resourceScrapBrass" count="40,120"/>
+				<item name="resourceFeather" count="1,5"/>
+				<item name="resourceDuctTape" count="1,3"/>
+				<item group="rottenFood"/>
+				<item group="booksAllScaled"/>
+				<item group="seeds"/>
+				<item group="groupQuestChallenge" prob="0.11"/>
+				<item group="groupTreasureMaps" prob="0.092"/>
+				<item name="resourceBone" count="5,10" prob="0.1"/>
+				<item name="resourceScrapPolymers" count="1,4"/>
+				<item name="resourceLockPick" count="1,4"/>
+				<item name="resourceSewingKit" count="1,2"/>
+			</lootgroup>
+			
+			<lootgroup name="foodRotting">
+				<item name="foodRottingFlesh" prob=".9"/>
+				<item name="foodMoldyBread" prob="0.5"/>
+				<item name="foodShamSandwich" prob="0.3"/>
+			</lootgroup>
+			
+			<lootgroup name="foodHomeMade">
+				<item name="foodBakedPotato" prob=".9"/>
+				<item name="foodCornOnTheCob" prob=".9"/>
+				<item name="foodCharredMeat" prob=".9"/>
+				<item name="foodGrilledMeat" prob="0.9"/>
+				<item name="foodBoiledMeat" prob="0.8"/>
+				<item name="foodEggBoiled" prob="0.7"/>
+				<item name="foodBlueberryPie" prob="0.3"/>
+				<item name="foodBaconAndEggs" prob="0.4"/>
+				<item name="foodPumpkinBread" prob="0.6"/>
+				<item name="foodCornBread" prob="0.7"/>
+			</lootgroup>
+			
+			<lootgroup name="foodAnimal">
+				<item name="foodCanCatfood" prob="0.8"/>
+				<item name="foodCanDogfood" prob="0.8"/>
+			</lootgroup>
+			
+			<lootgroup name="foodGoodCan">
+				<item name="foodCanSalmon" prob="0.1"/>
+				<item name="foodCanSham" prob="0.1"/>
+				<item name="foodCanBeef" prob="0.9"/>
+				<item name="foodCanChicken" prob="0.8"/>
+				<item name="foodCanChili" prob="0.7"/>
+				<item name="foodCanLamb" prob="0.8"/>
+				<item name="foodCanMiso" prob="0.8"/>
+				<item name="foodCanPasta" prob="0.7"/>
+				<item name="foodCanPears" prob="0.9"/>
+				<item name="foodCanPeas" prob="0.9"/>
+				<item name="foodCanSoup" prob="0.9"/>
+				<item name="foodCanStock" prob="0.9"/>
+				<item name="foodCanTuna" prob="0.6"/>
+			</lootgroup>
+			
+			<lootgroup name="foodNice">
+				<item name="foodChiliDog" prob="0.1"/>
+				<item name="foodFishTacos" prob="0.1"/>
+				<item name="foodPumpkinPie" prob="0.1"/>
+				<item name="foodTunaFishGravyToast" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="foodDrink">
+				<item name="drinkJarBoiledWater" prob=".9"/>
+				<item name="drinkJarPureMineralWater" prob="0.3"/>
+				<item name="drinkJarRedTea" prob="0.6"/>
+				<item name="drinkJarGoldenRodTea" prob="0.5"/>
+				<item name="drinkJarYuccaJuice" prob="0.6"/>
+				<item name="drinkYuccaJuiceSmoothie" prob="0.4"/>
+				<item name="drinkJarCoffee" prob="0.4"/>
+				<item name="drinkJarBeer" prob="0.5"/>
+			</lootgroup>
+			
+			<lootgroup name="foodEnergy">
+				<item name="drinkJarCoffee" prob="0.6"/>
+				<item name="drinkCanMegaCrush" prob="0.08"/>
+				<item name="drinkJarBlackStrapCoffee" prob="0.2"/>
+				<item name="drinkJarBeer" prob="0.5"/>
+			</lootgroup>
+			
+			<lootgroup name="foodFermers">
+				<item name="foodCropPotato" prob="0.9"/>
+				<item name="foodCropCorn" prob=".9"/>
+				<item name="foodCropYuccaFruit" prob="0.9"/>
+				<item name="foodCropMushrooms" prob="0.7"/>
+				<item name="foodEgg" prob="0.4"/>
+				<item name="foodCropBlueberries" prob="0.6"/>
+				<item name="plantedAloe3Harvest" prob="0.6"/>
+				<item name="resourceFishingWeight" prob="0.6"/>
+			</lootgroup>
+			
+			<lootgroup name="foodSeeds">
+				<item name="plantedAloe1" prob="0.3"/>
+				<item name="plantedBlueberry1" prob="0.2"/>
+				<item name="plantedChrysanthemum1" prob="0.7"/>
+				<item name="plantedCoffee1" prob="0.3"/>
+				<item name="plantedCorn1" prob="0.8"/>
+				<item name="plantedCotton1" prob=".9"/>
+				<item name="plantedGoldenrod1" prob="0.7"/>
+				<item name="plantedHop1" prob="0.1"/>
+				<item name="plantedMushroom1" prob="0.2"/>
+				<item name="plantedPotato1" prob="0.3"/>
+				<item name="plantedPumpkin1" prob="0.3"/>
+				<item name="plantedYucca1" prob="0.7"/>
+			</lootgroup>
+			
+			<lootgroup name="foodMeds">
+				<item name="drinkJarGrainAlcohol" prob="0.3"/>
+				<item name="medicalAloeCream" prob="0.3"/>
+				<item name="medicalBandage" prob=".9"/>
+				<item name="medicalBloodBag" prob="0.3"/>
+				<item name="medicalFirstAidBandage" prob="0.6"/>
+				<item name="medicalFirstAidKit" prob="0.08"/>
+				<item name="medicalPlasterCast" prob="0.3"/>
+				<item name="medicalSplint" prob="0.8"/>
+				<item name="drugPainkillers" prob="0.5"/>
+				<item name="drugVitamins" prob="0.3"/>
+				<item name="drugAntibiotics" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="itemsMoney">
+				<item name="casinoCoin" count="100" prob=".5"/>
+				<item name="oldCash" count="350" prob=".9"/>
+			</lootgroup>
+			
+			<lootgroup name="denimClothes">
+				<item name="apparelDenimPants" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="ordinaryClothes">
+				<item name="apparelFlannelShirt" prob="0.1"/>
+				<item name="apparelLongShirt" prob="0.1"/>
+				<item name="apparelSweatshirt" prob="0.1"/>
+				<item name="apparelTShirtPlain" prob="0.1"/>
+				<item name="apparelTShirtZU" prob="0.1"/>
+				<item name="apparelBallCap" prob="0.1"/>
+				<item name="apparelPressboyCap" prob="0.1"/>
+				<item name="apparelBandana" prob="0.1"/>
+				<item name="apparelCoatJacketGeneric" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="famaleClothes">
+				<item name="apparelTankTop" prob="0.1"/>
+				<item name="apparelSkirt" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="armyClothes">
+				<item name="apparelArmyPants" prob="0.1"/>
+				<item name="apparelArmyShirt" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="armyArmor">
+				<item name="armorMilitaryHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".1"/>
+				<item name="armorMilitaryLegs" mods="modArmorPlatingBasic" mod_chance=".3" prob=".1"/>
+				<item name="armorMilitaryLegs" mods="modArmorPlatingReinforced" mod_chance=".2" prob=".1"/>
+				<item name="armorMilitaryLegs" mods="modArmorStoragePocket" mod_chance=".3" prob=".4"/>
+				<item name="armorMilitaryLegs" mods="modArmorDoubleStoragePocket" mod_chance=".1" prob=".1"/>
+				<item name="armorMilitaryVest" mods="modArmorPlatingBasic" mod_chance=".3" prob="0.1"/>
+				<item name="armorMilitaryVest" mods="modArmorPlatingReinforced" mod_chance=".2" prob="0.1"/>
+				<item name="armorMilitaryVest" mods="modArmorStoragePocket" mod_chance=".1" prob="0.1"/>
+				<item name="armorMilitaryVest" mods="modArmorDoubleStoragePocket" mod_chance=".1" prob="0.1"/>
+				<item name="armorMilitarySetParts" prob="0.3"/>
+				<item name="resourceMilitaryFiber" prob="0.2"/>
+				<item name="apparelNightvisionGoggles" prob="0.005"/>
+			</lootgroup>
+			
+			<lootgroup name="workerClothes">
+				<item name="armorMiningHelmet" prob="0.1"/>
+				<item name="apparelTShirtPlain" prob="0.1"/>
+				<item name="apparelOveralls" prob="0.1"/>
+				<item name="apparelHoodySweatshirt" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="winterClothes">
+				<item name="apparelCoatPufferCoat" prob="0.1"/>
+				<item name="apparelFlannelShirt" prob="0.1"/>
+				<item name="apparelCoatJacketGeneric" prob="0.1"/>
+				<item name="apparelSkullCap" prob="0.1"/>
+				<item name="armorSantaHat" prob="0.01"/>
+				<item name="apparelCoatLeatherDuster" prob="0.05"/>
+			</lootgroup>
+			
+			<lootgroup name="summerClothes">
+				<item name="apparelCoatLeatherPoncho" prob="0.1"/>
+				<item name="apparelBallCap" prob="0.1"/>
+				<item name="apparelCowboyHat" prob="0.1"/>
+				<item name="apparelDenimShortsPants" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="cowboyClothes">
+				<item name="apparelCowboyBoots" prob="0.1"/>
+				<item name="apparelCowboyHat" prob="0.1"/>
+				<item name="apparelDenimPants" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="bikerClothes">
+				<item name="apparelGothBoots" prob="0.1"/>
+				<item name="apparelGothPants" prob="0.1"/>
+				<item name="apparelFacialPiercings" prob="0.1"/>
+				<item name="apparelCigar" prob="0.001"/>
+				<item name="apparelAviatorGoggles" prob="0.01"/>
+				<item name="armorSwatHelmet" prob="0.01"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeRepairs">
+				<item name="meleeToolRepairT0StoneAxe" prob="0.4"/>
+				<item name="meleeToolRepairT1ClawHammer" prob="0.2"/>
+				<item name="meleeToolRepairT3Nailgun" prob="0.01"/>
+				<item name="meleeToolWireTool" prob="0.3"/>
+				<item name="meleeToolFlashlight02" prob="0.2"/>
+				<item name="ceilingLight01" prob="0.6"/>
+				<item name="resourceNail" prob="0.6"/>
+				<item name="resourceMechanicalParts" prob="0.6"/>
+				<item name="resourceElectricParts" prob="0.6"/>
+				<item name="resourceGlue" prob="0.6"/>
+				<item name="electricwirerelay" prob="0.01"/>
+				<item name="electrictimerrelay" prob="0.01"/>
+				<item name="cntToolBoxClosed" prob="0.05"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeDigging">
+				<item name="meleeToolAxeT1IronFireaxe" prob="0.3"/>
+				<item name="meleeToolAxeT2SteelAxe" prob="0.05"/>
+				<item name="meleeToolPickT1IronPickaxe" prob="0.3"/>
+				<item name="meleeToolPickT2SteelPickaxe" prob="0.05"/>
+				<item name="meleeToolShovelT0StoneShovel" prob="0.5"/>
+				<item name="meleeToolShovelT1IronShovel" prob="0.3"/>
+				<item name="meleeToolSalvageT1Wrench" prob="0.01"/>
+				<item name="meleeToolSalvageT2Ratchet" prob="0.008"/>
+				<item name="meleeToolSalvageT3ImpactDriver" prob="0.002"/>
+				<item name="meleeToolAllSteelParts" prob="0.05"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeDiggingProChainsaw">
+				<item name="meleeToolAxeT3ChainsawParts" prob="0.3"/>
+				<item name="meleeToolAxeT3Chainsaw" prob="0.02"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeDiggingProAuger">
+				<item name="meleeToolAxeT3ChainsawParts" prob="0.3"/>
+				<item name="meleeToolPickT3Auger" prob="0.02"/>
+				<item name="lanternDecorLight" prob="0.08"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeKnifes">
+				<item name="meleeWpnBladeT0BoneKnife" prob="0.4"/>
+				<item name="meleeWpnBladeT1HuntingKnife" prob="0.2"/>
+				<item name="meleeWpnBladeT3Machete" prob="0.05"/>
+				<item name="meleeWpnBladeT3MacheteParts" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeSledgehammers">
+				<item name="meleeWpnSledgeT0StoneSledgehammer" prob="0.3"/>
+				<item name="meleeWpnSledgeT1IronSledgehammer" prob="0.3"/>
+				<item name="meleeWpnSledgeT3SteelSledgehammer" prob="0.3"/>
+				<item name="meleeWpnSledgeT3SteelSledgehammerParts" prob="0.3"/>
+			</lootgroup>
+			
+			<lootgroup name="meleeClubs">
+				<item name="meleeWpnClubT0WoodenClub" prob="0.6"/>
+				<item name="meleeWpnClubT1BaseballBat" prob="0.3"/>
+				<item name="meleeWpnClubT3SteelClub" prob="0.05"/>
+				<item name="meleeWpnClubT3SteelClubParts" prob="0.1"/>
+				<item name="meleeWpnKnucklesT0LeatherKnuckles" prob="0.6"/>
+				<item name="meleeWpnKnucklesT1IronKnuckles" prob="0.2"/>
+				<item name="meleeWpnKnucklesT3SteelKnuckles" prob="0.05"/>
+				<item name="meleeWpnKnucklesT3SteelKnucklesParts" prob="0.1"/>
+				<item name="meleeWpnBatonT2StunBaton" prob="0.07"/>
+				<item name="meleeWpnBatonT2StunBatonParts" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="gunBows">
+				<item name="gunBowT0PrimitiveBow" prob="0.6"/>
+				<item name="gunBowT1WoodenBow" prob="0.2"/>
+				<item name="gunBowT3CompoundBow" prob="0.03"/>
+				<item name="gunBowT1IronCrossbow" prob="0.4"/>
+				<item name="gunBowT3CompoundCrossbow" prob="0.02"/>
+				<item name="gunBowT1WoodenBowParts" prob="0.1"/>
+			</lootgroup>
+			
+			<lootgroup name="gunPistols">
+				<item name="gunHandgunT1Pistol" prob="0.2"/>
+				<item name="gunHandgunT2Magnum44" prob="0.05"/>
+				<item name="gunHandgunT3DesertVulture" prob="0.008"/>
+				<item name="gunHandgunT1PistolParts" prob="0.6"/>
+			</lootgroup>
+			
+			<lootgroup name="gunAutomatic">
+				<item name="gunHandgunT3SMG5" prob="0.05"/>
+				<item name="gunMGT1AK47" prob="0.02"/>
+				<item name="gunMGT2TacticalAR" prob="0.005"/>
+				<item name="gunMGT3M60" prob="0.001"/>
+				<item name="gunHandgunT1PistolParts" prob="0.6"/>
+				<item name="gunMGT1AK47Parts" prob="0.5"/>
+			</lootgroup>
+			
+			<lootgroup name="gunRifles">
+				<item name="gunRifleT1HuntingRifle" prob="0.3"/>
+				<item name="gunRifleT2MarksmanRifle" prob="0.08"/>
+				<item name="gunRifleT3SniperRifle" prob="0.01"/>
+				<item name="gunRifleT1HuntingRifleParts" prob="0.6"/>
+			</lootgroup>
+			
+			<lootgroup name="gunShotguns">
+				<item name="gunShotgunT0Blunderbuss" prob="0.7"/>
+				<item name="gunShotgunT1DoubleBarrel" prob="0.3"/>
+				<item name="gunShotgunT2PumpShotgun" prob="0.07"/>
+				<item name="gunShotgunT3AutoShotgun" prob="0.01"/>
+				<item name="gunShotgunT1DoubleBarrelParts" prob="0.6"/>
+			</lootgroup>
+			
+			<lootgroup name="gunRockets">
+				<item name="gunExplosivesT3RocketLauncher" prob="0.7"/>
+				<item name="gunExplosivesT3RocketLauncherParts" prob="0.7"/>
+			</lootgroup>
+			
+			<lootgroup name="gunRobotics">
+				<item name="gunBotRoboticsParts" prob="0.3"/>
+				<item name="gunBotT1JunkSledge" prob="0.1"/>
+				<item name="gunBotT2JunkTurret" prob="0.08"/>
 
-		</lootgroup>
-		
-		<lootgroup name="ammoArrows">
-			<item name="ammoArrowStone" count="10,25" prob=".9"/>
-			<item name="ammoCrossbowBoltStone" count="10,25" prob="0.9"/>
-			<item name="ammoArrowIron" count="8,22" prob="0.7"/>
-			<item name="ammoCrossbowBoltIron" count="8,22"  prob="0.7"/>
-			<item name="ammoArrowSteelAP" count="4,9" prob="0.1"/>
-			<item name="ammoCrossbowBoltSteelAP" count="4,9" prob="0.1"/>
-			<item name="ammoArrowFlaming" count="8,24" prob="0.3"/>
-			<item name="ammoCrossbowBoltFlaming" count="8,24" prob="0.3"/>
-			<item name="ammoArrowExploding" count="8,24" prob="0.08"/>
-			<item name="ammoCrossbowBoltExploding" count="5,18" prob="0.08"/>
-			<item name="resourceArrowHeadIron" count="20,45" prob="0.5"/>
-			<item name="resourceArrowHeadSteelAP" count="15,35" prob="0.3"/>
-		</lootgroup>
-		
-		<lootgroup name="ammo9mmBullets">
-			<item name="ammo9mmBulletBall" count="20,35" prob="0.3"/>
-			<item name="ammo9mmBulletAP" count="20,35" prob="0.08"/>
-			<item name="ammo9mmBulletHP" count="20,35" prob="0.08"/>
-			<item name="resourceBulletTip" count="30,55" prob="0.8"/>
-			<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
-		</lootgroup>
-		
-		<lootgroup name="ammo762mmBullets">
-			<item name="ammo762mmBulletBall" count="10,25" prob="0.3"/>
-			<item name="ammo762mmBulletAP" count="10,25" prob="0.08"/>
-			<item name="ammo762mmBulletHP" count="10,25" prob="0.08"/>
-			<item name="resourceBulletTip" count="30,55" prob="0.8"/>
-			<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
-		</lootgroup>
-		
-		<lootgroup name="ammo44mmBullets">
-			<item name="ammo44MagnumBulletBall" count="5,15" prob="0.4"/>
-			<item name="ammo44MagnumBulletAP" count="5,15" prob="0.08"/>
-			<item name="ammo44MagnumBulletHP" count="5,15" prob="0.08"/>
-			<item name="resourceBulletTip" count="30,55" prob="0.8"/>
-			<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
-		</lootgroup>
-		
-		<lootgroup name="ammoShotgunBullets">
-			<item name="ammoShotgunShell" count="10,15" prob="0.5"/>
-			<item name="ammoShotgunSlug" count="5,12" prob="0.08"/>
-			<item name="ammoShotgunBreachingSlug" count="3,8" prob="0.08"/>
-			<item name="ammoBlunderbuss" count="20,45" prob="0.8"/>
-			<item name="resourceBuckshot" count="15,24" prob="0.6"/>
-		</lootgroup>
-		
-		<lootgroup name="ammoRockets">
-			<item name="resourceRocketCasing" count="3,7" prob="0.3"/>
-			<item name="resourceRocketTip" count="3,7" prob="0.3"/>
-			<item name="ammoRocketHE" count="1,4" prob="0.05"/>
-			<item name="ammoRocketFrag" count="1,4" prob="0.05"/>
-		</lootgroup>
-		
-		<lootgroup name="ammoGrenades">
-			<item name="thrownAmmoPipeBomb"  count="4,8" prob="0.6"/>
-			<item name="thrownAmmoMolotovCocktail" count="5,10" prob="0.7"/>
-			<item name="thrownGrenade"  count="1,5" prob="0.1"/>
-			<item name="thrownGrenadeContact" count="1,7" prob="0.1"/>
-			<item name="thrownDynamite" count="1,2" prob="0.08"/>
-			<item name="thrownTimedCharge" prob="0.08"/>
-		</lootgroup>
-		
-		<lootcontainer id="210" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item name="drinkJarGrandpasLearningElixir" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="211" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".5"/>
-			<item group="meleeClubs" prob=".5"/>
-			<item group="ammo9mmBullets" prob=".6"/>
-			<item group="ammo762mmBullets" prob=".6"/>
-			<item name="drinkJarGrandpasLearningElixir" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="212" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".7"/>
-			<item group="meleeClubs" prob=".7"/>
-			<item name="gunHandgunT1Pistol" prob="0.3"/>
-			<item name="gunRifleT1HuntingRifle" prob="0.3"/>
-			<item name="drinkJarGrandpasLearningElixir" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="213" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="meleeClubs" prob=".9"/>
-			<item group="meleeKnifes" prob="0.2"/>
-			<item group="foodEnergy" prob="0.4"/>
-			<item name="drugSteroids" prob="0.08"/>
-		</lootcontainer>
-		
-		<lootcontainer id="214" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodHomeMade" prob="0.6"/>
-			<item group="foodAnimal" prob="0.8"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="foodEnergy" prob="0.2"/>
-			<item group="meleeKnifes" prob="0.1"/>
-			<item name="drugSugarButts" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="215" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodAnimal" prob="0.9"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.6"/>
-			<item group="foodEnergy" prob="0.3"/>
-			<item group="meleeKnifes" prob="0.3"/>
-			<item name="drugSugarButts" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="216" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="foodEnergy" prob="0.9"/>
-			<item group="meleeKnifes" prob="0.8"/>
-			<item name="drugSugarButts" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="217" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item name="drinkJarGrandpasMoonshine" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="218" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".5"/>
-			<item group="ammo9mmBullets" prob=".6"/>
-			<item group="ammo762mmBullets" prob=".6"/>
-			<item name="drinkJarGrandpasMoonshine" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="219" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".7"/>
-			<item name="gunHandgunT1Pistol" prob="0.7"/>
-			<item name="drinkJarGrandpasMoonshine" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="220" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarBeer" prob="0.7"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item group="workerClothes" prob="0.8"/>
-			<item group="meleeRepairs" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.3"/>
-			<item group="ammoGrenades" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="221" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarBeer" prob=".8"/>
-			<item name="foodShamSandwich" prob=".8"/>
-			<item group="workerClothes" prob=".6"/>
-			<item group="meleeRepairs" prob=".7"/>
-			<item group="meleeKnifes" prob=".4"/>
-			<item group="ammoGrenades" prob=".2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="222" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarBeer" prob=".8"/>
-			<item name="foodShamSandwich" prob=".8"/>
-			<item group="workerClothes" prob=".6"/>
-			<item group="meleeRepairs" prob=".7"/>
-			<item group="meleeKnifes" prob=".5"/>
-			<item group="ammoGrenades" prob=".4"/>
-		</lootcontainer>
-		
-		<lootcontainer id="223" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item group="meleeClubs" prob="0.6"/>
-			<item group="gunPistols" prob="0.2"/>
-			<item group="ammo9mmBullets" prob="0.3"/>
-			<item group="ammoShotgunBullets" prob="0.4"/>
-			<item name="drugSkullCrushers" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="224" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.7"/>
-			<item group="meleeClubs" prob="0.7"/>
-			<item group="gunPistols" prob="0.4"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item group="ammoShotgunBullets" prob="0.5"/>
-			<item name="drugSkullCrushers" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="225" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item group="meleeClubs" prob="0.5"/>
-			<item group="gunPistols" prob="0.5"/>
-			<item group="ammo9mmBullets" prob="0.7"/>
-			<item group="ammoShotgunBullets" prob="0.7"/>
-			<item name="drugSkullCrushers" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="226" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.1"/>
-			<item group="foodNice" prob="0.05"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodHomeMade" prob="0.6"/>
-			<item group="foodAnimal" prob="0.8"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.2"/>
-			<item name="drugCovertCats" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="227" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.4"/>
-			<item group="foodNice" prob="0.8"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="foodHomeMade" prob="0.5"/>
-			<item group="foodAnimal" prob="0.6"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item name="drugCovertCats" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="228" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.7"/>
-			<item group="foodNice" prob=".9"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodAnimal" prob="0.4"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item name="drugCovertCats" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="229" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.05"/>
-			<item group="foodNice" prob="0.01"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodHomeMade" prob="0.6"/>
-			<item group="foodAnimal" prob="0.8"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.1"/>
-			<item name="drinkJarCoffee" count="3" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="230" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.8"/>
-			<item group="foodNice" prob="0.4"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="foodHomeMade" prob="0.5"/>
-			<item group="foodAnimal" prob="0.6"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item name="drinkJarCoffee" count="4" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="231" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob=".9"/>
-			<item group="foodNice" prob="0.7"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodAnimal" prob="0.4"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item name="drinkJarCoffee" count="5" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="232" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.02"/>
-			<item group="foodNice" prob="0.02"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodHomeMade" prob="0.6"/>
-			<item group="foodAnimal" prob="0.8"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item name="apparelDenimShortsPants" prob="0.1"/>
-			<item group="meleeKnifes" prob="0.1"/>
-			<item name="drugCovertCats" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="233" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.5"/>
-			<item group="foodNice" prob="0.5"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="foodHomeMade" prob="0.5"/>
-			<item group="foodAnimal" prob="0.6"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item name="apparelDenimShortsPants" prob="0.1"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item name="drugCovertCats" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="234" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.8"/>
-			<item group="foodNice" prob="0.8"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodAnimal" prob="0.4"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item name="apparelDenimShortsPants" prob="0.1"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item name="drugCovertCats" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="235" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="ordinaryClothes" prob=".9"/>
-			<item group="ammo762mmBullets" prob="0.6"/>
-			<item name="gunRifleT1HuntingRifleParts" prob="0.3"/>
-			<item name="drugSkullCrushers" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="236" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="denimClothes" prob="0.8"/>
-			<item group="ordinaryClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item group="gunRifles" prob="0.5"/>
-			<item group="ammo762mmBullets" count="25" prob=".6"/>
-			<item name="drugSkullCrushers" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="237" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.5"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="denimClothes" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.9"/>
-			<item group="gunRifles" prob="0.8"/>
-			<item group="ammo762mmBullets" count="50" prob="0.9"/>
-			<item name="drugSkullCrushers" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="238" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item name="apparelDenimShortsPants" prob="0.9"/>
-			<item group="ammoArrows" prob="0.6"/>
-			<item group="gunBows" prob="0.6"/>
-			<item name="drugEyeKandy" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="239" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="denimClothes" prob="0.8"/>
-			<item name="apparelDenimShortsPants" prob="0.7"/>
-			<item group="ammoArrows" prob="0.4"/>
-			<item group="gunBows" prob="0.4"/>
-			<item group="ammo9mmBullets" prob="0.7"/>
-			<item group="gunPistols" prob="0.7"/>
-			<item name="drugEyeKandy" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="240" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob="0.5"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="denimClothes" prob="0.5"/>
-			<item name="apparelDenimShortsPants" prob="0.5"/>
-			<item group="ammoArrows" prob="0.3"/>
-			<item group="gunBows" prob="0.3"/>
-			<item group="ammo9mmBullets" prob="0.9"/>
-			<item group="gunPistols" prob="0.9"/>
-			<item name="drugEyeKandy" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="241" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="resourcePaper" prob="0.9"/>
-			<item name="apparelSuitDressShoes" prob="0.8"/>
-			<item name="apparelSuitJacket" prob="0.8"/>
-			<item name="apparelSuitPants" prob="0.8"/>
-			<item name="apparelLongShirt" prob="0.8"/>
-			<item name="apparelShades" prob="0.2"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="foodGoodCan" prob="0.6"/>
-		</lootcontainer>
-		
-		<lootcontainer id="242" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="resourcePaper" prob="0.8"/>
-			<item name="apparelSuitDressShoes" prob="0.5"/>
-			<item name="apparelSuitJacket" prob="0.5"/>
-			<item name="apparelSuitPants" prob="0.5"/>
-			<item name="apparelLongShirt" prob="0.5"/>
-			<item name="apparelShades" prob="0.4"/>
-			<item group="itemsMoney" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="foodGoodCan" prob=".9"/>
-		</lootcontainer>
-		
-		<lootcontainer id="243" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="resourcePaper" prob="0.8"/>
-			<item name="apparelNerdGlasses" prob="0.2"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="foodGoodCan" prob=".9"/>
-			<item group="gunRobotics" prob="0.05"/>
-			<item name="drugNerdTats" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="244" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="resourcePaper" prob="0.6"/>
-			<item name="apparelNerdGlasses" prob="0.4"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="foodGoodCan" prob=".9"/>
-			<item group="gunRobotics" prob="0.2"/>
-			<item name="drugNerdTats" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="245" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="resourcePaper" prob="0.4"/>
-			<item name="apparelNerdGlasses" prob="0.6"/>
-			<item group="foodDrink" prob=".9"/>
-			<item group="foodGoodCan" prob=".9"/>
-			<item group="gunRobotics" prob="0.4"/>
-			<item name="drugNerdTats" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="246" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarGoldenRodTea" prob=".9"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item name="drugAntibiotics" prob="0.05"/>
-			<item name="drugFortBites" prob="0.06"/>
-			<item name="drugPainkillers" prob="0.5"/>
-			<item name="drugSugarButts" prob="0.02"/>
-			<item name="drugVitamins" prob="0.4"/>
-		</lootcontainer>
-		
-		<lootcontainer id="247" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarGoldenRodTea" prob=".9"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item name="drugAntibiotics" prob="0.06"/>
-			<item name="drugFortBites" prob="0.07"/>
-			<item name="drugPainkillers" prob="0.6"/>
-			<item name="drugSugarButts" prob="0.03"/>
-			<item name="drugVitamins" prob="0.5"/>
-		</lootcontainer>
-		
-		<lootcontainer id="248" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarGoldenRodTea" prob=".9"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item name="drugAntibiotics" prob="0.07"/>
-			<item name="drugFortBites" prob="0.08"/>
-			<item name="drugPainkillers" prob="0.8"/>
-			<item name="drugSugarButts" prob="0.05"/>
-			<item name="drugVitamins" prob="0.7"/>
-		</lootcontainer>
-		
-		<lootcontainer id="249" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item name="resourceBone" count="5" prob=".9"/>
-			<item name="foodRottingFlesh" count="3" prob="0,8"/>
-			<item name="resourceCrushedSand" count="4" prob="0,5"/>
-			<item name="resourceYuccaFibers" count="10" prob="0,5"/>
-			<item name="resourceClayLump" count="5" prob="0,5"/>
-		</lootcontainer>
-		
-		<lootcontainer id="250" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item name="resourceBone" count="3,5" prob=".9"/>
-			<item name="foodRottingFlesh" count="2,8" prob="0,8"/>
-			<item name="resourceCrushedSand" count="10,18" prob="0,8"/>
-			<item name="resourceYuccaFibers" count="5,12" prob="0,6"/>
-			<item name="resourceClayLump" count="15,24" prob="0,6"/>
-			<item name="resourceBulletTip" count="3,11" prob="0,6"/>
-		</lootcontainer>
-		
-		<lootcontainer id="251" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodEnergy" prob="0.8"/>
-			<item group="winterClothes" prob="0.8"/>
-			<item group="meleeDiggingProAuger" prob="0.05"/>
-			<item group="meleeDiggingProChainsaw" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="252" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodEnergy" prob="0.8"/>
-			<item group="winterClothes" prob="0.8"/>
-			<item group="meleeDiggingProAuger" prob="0.1"/>
-			<item group="meleeDiggingProChainsaw" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="253" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodAnimal" prob="0.1"/>
-			<item group="ordinaryClothes" prob="0.1"/>
-			<item name="drugOhShitzDrops" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="254" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item group="foodAnimal" prob="0.4"/>
-			<item group="ordinaryClothes" prob="0.3"/>
-			<item name="drugOhShitzDrops" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="255" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.4"/>
-			<item group="foodAnimal" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.3"/>
-			<item name="drugOhShitzDrops" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="256" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item name="drinkJarEmpty" prob="0.5"/>
-			<item name="drinkCanEmpty" prob="0.5"/>
-			<item group="trophyGroup" prob="0.5"/>
-			<item name="resourceCandleStick" prob="0.5"/>
-			<item name="resourceDoorKnob" prob="0.5"/>
-			<item name="resourceMetalPipe" prob="0.5"/>
-			<item name="resourceFishingWeight" count="1,3" prob="0.5"/>
-			<item name="resourceScrapLead" count="1,10" prob="0.5"/>
+			</lootgroup>
 			
-			<item name="foodCharredMeat" count="1,4"/>
-			<item name="resourceCoal" count="5,24"/>
+			<lootgroup name="ammoArrows">
+				<item name="ammoArrowStone" count="10,25" prob=".9"/>
+				<item name="ammoCrossbowBoltStone" count="10,25" prob="0.9"/>
+				<item name="ammoArrowIron" count="8,22" prob="0.7"/>
+				<item name="ammoCrossbowBoltIron" count="8,22"  prob="0.7"/>
+				<item name="ammoArrowSteelAP" count="4,9" prob="0.1"/>
+				<item name="ammoCrossbowBoltSteelAP" count="4,9" prob="0.1"/>
+				<item name="ammoArrowFlaming" count="8,24" prob="0.3"/>
+				<item name="ammoCrossbowBoltFlaming" count="8,24" prob="0.3"/>
+				<item name="ammoArrowExploding" count="8,24" prob="0.08"/>
+				<item name="ammoCrossbowBoltExploding" count="5,18" prob="0.08"/>
+				<item name="resourceArrowHeadIron" count="20,45" prob="0.5"/>
+				<item name="resourceArrowHeadSteelAP" count="15,35" prob="0.3"/>
+			</lootgroup>
 			
-			<item name="resourceNail" count="1,10" prob="0.5"/>
-			<item name="casinoCoin" count="1,5" prob="0.5"/>
-			<item name="resourceScrapBrass" count="40,120" prob="0.5"/>
-			<item name="resourceLockPick" count="1,4" prob="0.5"/>
-		</lootcontainer>
-		
-		<lootcontainer id="257" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodMeds" prob="0.5"/>
-			<item group="ordinaryClothes" prob="0.7"/>
-			<item group="famaleClothes" prob="0.7"/>
-			<item name="plantedAloe3Harvest" prob="0.6"/>
-			<item name="plantedGoldenrod3HarvestPlayer" prob="0.6"/>
-			<item name="medicalAloeCream" prob="0.6"/>
-			<item name="drugHealthBar" count="1,3" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="258" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.6"/>
-			<item group="foodMeds" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.6"/>
-			<item group="famaleClothes" prob="0.6"/>
-			<item name="plantedAloe3Harvest" prob="0.5"/>
-			<item name="plantedGoldenrod3HarvestPlayer" prob="0.5"/>
-			<item name="medicalAloeCream" prob="0.5"/>
-			<item name="drugHealthBar" count="2,4" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="259" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodRotting" prob="0.6"/>
-			<item group="foodGoodCan" prob="0.6"/>
-			<item group="foodNice" prob="0.3"/>
-			<item group="foodDrink" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.7"/>
-			<item group="meleeSledgehammers" prob="0.2"/>
-			<item group="ammoShotgunBullets" prob="0.4"/>
-			<item group="gunShotguns" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="260" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.4"/>
-			<item group="foodRotting" prob="0.3"/>
-			<item group="foodGoodCan" prob="0.5"/>
-			<item group="foodNice" prob="0.6"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.4"/>
-			<item group="meleeSledgehammers" prob="0.4"/>
-			<item group="gunShotguns" prob="0.3"/>
-			<item group="ammoShotgunBullets" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="261" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.9"/>
-			<item group="foodRotting" prob="0.4"/>
-			<item group="foodGoodCan" prob="0.5"/>
-			<item group="foodNice" prob="0.6"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="ordinaryClothes" prob="0.5"/>
-			<item group="meleeSledgehammers" prob="0.5"/>
-			<item group="gunShotguns" prob="0.1"/>
-			<item group="ammoShotgunBullets" prob="0.3"/>
-			<item group="gunAutomatic" prob="0.1"/>
-			<item group="ammo762mmBullets" prob="0.3"/>
-			<item group="gunPistols" prob="0.1"/>
-			<item group="ammo9mmBullets" prob="0.3"/>
-			<item name="resourceAcid" count="1,2" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="262" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.9"/>
-			<item group="foodRotting" prob="0.3"/>
-			<item group="foodGoodCan" prob="0.4"/>
-			<item group="foodNice" prob="0.7"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.4"/>
-			<item group="meleeSledgehammers" prob="0.4"/>
-			<item group="gunShotguns" prob="0.2"/>
-			<item group="ammoShotgunBullets" prob="0.4"/>
-			<item group="gunAutomatic" prob="0.2"/>
-			<item group="ammo762mmBullets" prob="0.4"/>
-			<item group="gunPistols" prob="0.2"/>
-			<item group="ammo9mmBullets" prob="0.4"/>
-			<item name="resourceAcid" count="1,3" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="263" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.9"/>
-			<item group="foodRotting" prob="0.2"/>
-			<item group="foodGoodCan" prob="0.6"/>
-			<item group="foodNice" prob="0.7"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="ordinaryClothes" prob="0.3"/>
-			<item group="meleeSledgehammers" prob="0.4"/>
-			<item group="gunShotguns" prob="0.3"/>
-			<item group="ammoShotgunBullets" prob="0.5"/>
-			<item group="gunAutomatic" prob="0.3"/>
-			<item group="ammo762mmBullets" prob="0.5"/>
-			<item group="gunPistols" prob="0.3"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item name="resourceAcid" count="1,4" prob="0.3"/>
-		</lootcontainer>
-		
-		<lootcontainer id="264" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.9"/>
-			<item group="gunAutomatic" prob="0.3"/>
-			<item group="ammo762mmBullets" prob="0.5"/>
-			<item group="gunPistols" prob="0.3"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item group="gunRobotics" prob="0.01"/>
-			<item name="apparelHazmatGloves" prob="0.1"/>
-			<item name="apparelHazmatJacket" prob="0.1"/>
-			<item name="apparelHazmatMask" prob="0.1"/>
-			<item name="apparelHazmatPants" prob="0.1"/>
-			<item name="meleeWpnBatonT2StunBaton" prob="0.07"/>
-			<item name="meleeWpnBatonT2StunBatonParts" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="265" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item name="drinkJarBeer" prob="0.7"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item group="workerClothes" prob="0.8"/>
-			<item group="meleeRepairs" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.3"/>
-			<item group="ammoGrenades" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="266" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item name="drinkJarBeer" prob="0.7"/>
-			<item name="foodShamSandwich" prob="0.9"/>
-			<item group="workerClothes" prob="0.8"/>
-			<item group="meleeRepairs" prob="0.6"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item group="ammoGrenades" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="267" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item group="armyClothes" prob="0.7"/>
-			<item group="armyArmor" prob="0.2"/>
-			<item group="gunPistols" prob="0.4"/>
-			<item group="gunAutomatic" prob="0.3"/>
-			<item group="gunRifles" prob="0.3"/>
-			<item group="gunShotguns" prob="0.3"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item group="ammo762mmBullets" prob="0.5"/>
-			<item group="ammoShotgunBullets" prob="0.5"/>			
-			<item group="ammoGrenades" prob="0.3"/>
-			<item group="meleeKnifes" prob="0.7"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
-			<item name="drugFortBites" prob="0.05"/>
-			<item name="drugHealthBar" prob="0.05"/>
-			<item name="drugSkullCrushers" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="268" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item group="armyClothes" prob="0.7"/>
-			<item group="armyArmor" prob="0.2"/>
-			<item group="gunPistols" prob="0.4"/>
-			<item group="gunAutomatic" prob="0.3"/>
-			<item group="gunRifles" prob="0.3"/>
-			<item group="gunShotguns" prob="0.3"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item group="ammo762mmBullets" prob="0.5"/>
-			<item group="ammoShotgunBullets" prob="0.5"/>			
-			<item group="ammoGrenades" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.7"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
-			<item name="drugFortBites" prob="0.07"/>
-			<item name="drugHealthBar" prob="0.07"/>
-			<item name="drugSkullCrushers" prob="0.07"/>
-		</lootcontainer>
-		
-		<lootcontainer id="269" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="armyClothes" prob="0.7"/>
-			<item group="armyArmor" prob="0.3"/>
-			<item group="gunPistols" prob="0.5"/>
-			<item group="gunAutomatic" prob="0.4"/>
-			<item group="gunRifles" prob="0.4"/>
-			<item group="gunShotguns" prob="0.4"/>
-			<item group="ammo9mmBullets" prob="0.6"/>
-			<item group="ammo762mmBullets" prob="0.6"/>
-			<item group="ammoShotgunBullets" prob="0.6"/>			
-			<item group="ammoGrenades" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.8"/>
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
-			<item name="drugFortBites" prob="0.1"/>
-			<item name="drugHealthBar" prob="0.1"/>
-			<item name="drugSkullCrushers" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="270" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="armyClothes" prob="0.7"/>
-			<item group="armyArmor" prob="0.1"/>
-			<item group="meleeClubs" prob="0.5"/>
-			<item group="gunPistols" prob="0.5"/>
-			<item group="gunAutomatic" prob="0.4"/>
-			<item group="gunRifles" prob="0.4"/>
-			<item group="gunRockets" prob="0.4"/>
-			<item group="gunShotguns" prob="0.4"/>
-			<item group="ammoRockets" prob="0.4"/>
-			<item group="ammo9mmBullets" prob="0.6"/>
-			<item group="ammo762mmBullets" prob="0.6"/>
-			<item group="ammoShotgunBullets" prob="0.6"/>			
-			<item group="ammoGrenades" prob="0.5"/>
-			<item group="meleeKnifes" prob="0.8"/>
+			<lootgroup name="ammo9mmBullets">
+				<item name="ammo9mmBulletBall" count="20,35" prob="0.3"/>
+				<item name="ammo9mmBulletAP" count="20,35" prob="0.08"/>
+				<item name="ammo9mmBulletHP" count="20,35" prob="0.08"/>
+				<item name="resourceBulletTip" count="30,55" prob="0.8"/>
+				<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
+			</lootgroup>
 			
-			<item name="armorSteelLegs" mods="modArmorImpactBracing" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelLegs" mods="modArmorPlatingReinforced" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelLegs" mods="modArmorStoragePocket" mod_chance=".1" prob="0.3"/>
+			<lootgroup name="ammo762mmBullets">
+				<item name="ammo762mmBulletBall" count="10,25" prob="0.3"/>
+				<item name="ammo762mmBulletAP" count="10,25" prob="0.08"/>
+				<item name="ammo762mmBulletHP" count="10,25" prob="0.08"/>
+				<item name="resourceBulletTip" count="30,55" prob="0.8"/>
+				<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
+			</lootgroup>
 			
+			<lootgroup name="ammo44mmBullets">
+				<item name="ammo44MagnumBulletBall" count="5,15" prob="0.4"/>
+				<item name="ammo44MagnumBulletAP" count="5,15" prob="0.08"/>
+				<item name="ammo44MagnumBulletHP" count="5,15" prob="0.08"/>
+				<item name="resourceBulletTip" count="30,55" prob="0.8"/>
+				<item name="resourceBulletCasing" count="20,50" prob="0.8"/>
+			</lootgroup>
 			
-			<item name="armorSteelBoots" mods="modArmorBandolier" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelBoots" mods="modArmorCustomizedFittings" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelBoots" mods="modArmorInsulatedLiner" mod_chance=".1" prob="0.3"/>
+			<lootgroup name="ammoShotgunBullets">
+				<item name="ammoShotgunShell" count="10,15" prob="0.5"/>
+				<item name="ammoShotgunSlug" count="5,12" prob="0.08"/>
+				<item name="ammoShotgunBreachingSlug" count="3,8" prob="0.08"/>
+				<item name="ammoBlunderbuss" count="20,45" prob="0.8"/>
+				<item name="resourceBuckshot" count="15,24" prob="0.6"/>
+			</lootgroup>
 			
+			<lootgroup name="ammoRockets">
+				<item name="resourceRocketCasing" count="3,7" prob="0.3"/>
+				<item name="resourceRocketTip" count="3,7" prob="0.3"/>
+				<item name="ammoRocketHE" count="1,4" prob="0.05"/>
+				<item name="ammoRocketFrag" count="1,4" prob="0.05"/>
+			</lootgroup>
 			
-			<item name="armorSteelChest" mods="modArmorBandolier" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelChest" mods="modArmorImpactBracing" mod_chance=".1" prob="0.3"/>
-			<item name="armorSteelChest" mods="modArmorPlatingBasic" mod_chance=".1" prob="0.3"/>
+			<lootgroup name="ammoGrenades">
+				<item name="thrownAmmoPipeBomb"  count="4,8" prob="0.6"/>
+				<item name="thrownAmmoMolotovCocktail" count="5,10" prob="0.7"/>
+				<item name="thrownGrenade"  count="1,5" prob="0.1"/>
+				<item name="thrownGrenadeContact" count="1,7" prob="0.1"/>
+				<item name="thrownDynamite" count="1,2" prob="0.08"/>
+				<item name="thrownTimedCharge" prob="0.08"/>
+			</lootgroup>
 			
+			<lootcontainer id="210" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item name="drinkJarGrandpasLearningElixir" prob="0.05"/>
+			</lootcontainer>
 			
-			<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
-			<item name="drugFortBites" prob="0.1"/>
-			<item name="drugHealthBar" prob="0.1"/>
-			<item name="drugSkullCrushers" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="271" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodRotting" prob="0.7"/>
-			<item group="foodEnergy" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.5"/>
-			<item group="gunBows" prob="0.1"/>
-			<item group="ammoArrows" prob="0.1"/>
-			<item group="meleeClubs" prob="0.1"/>
-			<item group="meleeKnifes" prob="0.2"/>
-			<item name="plantedPumpkin1" prob="0.4"/>
-		</lootcontainer>
-		
-		<lootcontainer id="272" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodRotting" prob="0.7"/>
-			<item group="foodEnergy" prob="0.3"/>
-			<item group="ordinaryClothes" prob="0.5"/>
-			<item group="gunBows" prob="0.2"/>
-			<item group="ammoArrows" prob="0.2"/>
-			<item group="meleeClubs" prob="0.2"/>
-			<item group="meleeKnifes" prob="0.3"/>
-			<item name="plantedPumpkin1" prob="0.4"/>
-		</lootcontainer>
-		
-		<lootcontainer id="273" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="foodEnergy" prob="0.4"/>
-			<item group="ordinaryClothes" prob="0.5"/>
-			<item group="gunBows" prob="0.3"/>
-			<item group="ammoArrows" prob="0.3"/>
-			<item group="meleeClubs" prob="0.3"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item name="plantedPumpkin1" prob="0.5"/>
-		</lootcontainer>
-		
-		<lootcontainer id="274" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.1"/>
-			<item group="foodNice" prob="0.05"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodHomeMade" prob="0.6"/>
-			<item group="foodAnimal" prob="0.8"/>
-			<item group="foodDrink" prob="0.6"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.2"/>
-			<item name="drugCovertCats" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="275" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.4"/>
-			<item group="foodNice" prob="0.8"/>
-			<item group="foodRotting" prob="0.8"/>
-			<item group="foodHomeMade" prob="0.5"/>
-			<item group="foodAnimal" prob="0.6"/>
-			<item group="foodDrink" prob="0.7"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.4"/>
-			<item name="drugCovertCats" prob="0.1"/>
-		</lootcontainer>
-		
-		<lootcontainer id="276" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodGoodCan" prob="0.7"/>
-			<item group="foodNice" prob=".9"/>
-			<item group="foodRotting" prob="0.5"/>
-			<item group="foodHomeMade" prob="0.7"/>
-			<item group="foodAnimal" prob="0.4"/>
-			<item group="foodDrink" prob="0.8"/>
-			<item group="famaleClothes" prob="0.4"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item name="drugCovertCats" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="277" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="cowboyClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".4"/>
-			<item group="gunRifles" prob="0.2"/>
-			<item name="gunHandgunT1Pistol" prob="0.2"/>
-			<item name="drinkJarGrandpasAwesomeSauce" prob="0.02"/>
-		</lootcontainer>
-		
-		<lootcontainer id="278" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="cowboyClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".6"/>
-			<item name="gunHandgunT1Pistol" prob="0.5"/>
-			<item group="gunRifles" prob="0.5"/>
-			<item group="ammo9mmBullets" prob=".6"/>
-			<item group="ammo762mmBullets" prob=".6"/>
-			<item name="drinkJarGrandpasAwesomeSauce" prob="0.03"/>
-		</lootcontainer>
-		
-		<lootcontainer id="279" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodDrink" prob=".5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="cowboyClothes" prob=".9"/>
-			<item group="meleeKnifes" prob=".7"/>
-			<item name="gunHandgunT1Pistol" prob="0.7"/>
-			<item group="gunRifles" prob="0.7"/>
-			<item name="drinkJarGrandpasAwesomeSauce" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="280" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item name="drinkJarBeer" prob="0.9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="bikerClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.6"/>
-			<item group="meleeClubs" prob="0.6"/>
-			<item group="gunPistols" prob="0.2"/>
-			<item group="gunShotguns" prob="0.2"/>
-			<item group="ammo9mmBullets" prob="0.3"/>
-			<item group="ammoShotgunBullets" prob="0.4"/>
-			<item name="drugSkullCrushers" prob="0.05"/>
-			<item name="vehicleMotorcycleHandlebars" prob="0.01"/>
-			<item name="vehicleMotorcycleChassis" prob="0.01"/>
-		</lootcontainer>
-		
-		<lootcontainer id="281" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item name="drinkJarBeer" prob="0.9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="bikerClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.7"/>
-			<item group="meleeClubs" prob="0.7"/>
-			<item group="gunPistols" prob="0.4"/>
-			<item group="gunShotguns" prob="0.4"/>
-			<item group="ammo9mmBullets" prob="0.5"/>
-			<item group="ammoShotgunBullets" prob="0.5"/>
-			<item name="drugSkullCrushers" prob="0.1"/>
-			<item name="vehicleMotorcycleHandlebars" prob="0.02"/>
-			<item name="vehicleMotorcycleChassis" prob="0.02"/>
-		</lootcontainer>
-		
-		<lootcontainer id="282" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.5"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="foodDrink" prob=".9"/>
-			<item name="drinkJarBeer" prob="0.9"/>
-			<item group="itemsMoney" prob="0.8"/>
-			<item group="bikerClothes" prob="0.8"/>
-			<item group="meleeKnifes" prob="0.7"/>
-			<item group="meleeClubs" prob="0.7"/>
-			<item group="gunPistols" prob="0.5"/>
-			<item group="gunShotguns" prob="0.5"/>
-			<item group="ammo9mmBullets" prob="0.6"/>
-			<item group="ammoShotgunBullets" prob="0.6"/>
-			<item name="drugSkullCrushers" prob="0.3"/>
-			<item name="resourceTestosteroneExtract" prob="0.2"/>
-			<item name="vehicleMotorcycleHandlebars" prob="0.05"/>
-			<item name="vehicleMotorcycleChassis" prob="0.05"/>
-		</lootcontainer>
-		
-		<lootcontainer id="283" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item group="foodDrink" prob=".6"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="cowboyClothes" prob=".9"/>
+			<lootcontainer id="211" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".5"/>
+				<item group="meleeClubs" prob=".5"/>
+				<item group="ammo9mmBullets" prob=".6"/>
+				<item group="ammo762mmBullets" prob=".6"/>
+				<item name="drinkJarGrandpasLearningElixir" prob="0.1"/>
+			</lootcontainer>
 			
-			<item group="foodFermers" prob=".6"/>
-			<item group="foodSeeds" prob=".1"/>
-			<item group="meleeDigging" prob=".3"/>
+			<lootcontainer id="212" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".7"/>
+				<item group="meleeClubs" prob=".7"/>
+				<item name="gunHandgunT1Pistol" prob="0.3"/>
+				<item name="gunRifleT1HuntingRifle" prob="0.3"/>
+				<item name="drinkJarGrandpasLearningElixir" prob="0.2"/>
+			</lootcontainer>
 			
-			<item group="meleeKnifes" prob=".2"/>
-			<item name="drinkJarGrainAlcohol" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="284" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.9"/>
-			<item group="foodDrink" prob=".8"/>
-			<item group="foodRotting" prob=".9"/>
-			<item group="denimClothes" prob=".9"/>
-			<item group="cowboyClothes" prob=".9"/>
+			<lootcontainer id="213" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="meleeClubs" prob=".9"/>
+				<item group="meleeKnifes" prob="0.2"/>
+				<item group="foodEnergy" prob="0.4"/>
+				<item name="drugSteroids" prob="0.08"/>
+			</lootcontainer>
 			
-			<item group="foodFermers" prob=".8"/>
-			<item group="foodSeeds" prob=".2"/>
-			<item group="meleeDigging" prob=".4"/>
+			<lootcontainer id="214" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodHomeMade" prob="0.6"/>
+				<item group="foodAnimal" prob="0.8"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="foodEnergy" prob="0.2"/>
+				<item group="meleeKnifes" prob="0.1"/>
+				<item name="drugSugarButts" prob="0.05"/>
+			</lootcontainer>
 			
-			<item group="meleeKnifes" prob=".5"/>
-			<item name="drinkJarGrainAlcohol" prob="0.4"/>
-		</lootcontainer>
-		
-		<lootcontainer id="285" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.7"/>
-			<item group="foodDrink" prob=".6"/>
-			<item group="famaleClothes" prob=".6"/>
-			<item group="itemsMoney" prob=".2"/>
-			<item name="drugSugarButts" prob="0.2"/>
-			<item name="drugVitamins" prob="0.2"/>
-			<item name="plantedMushroom1" prob="0.01"/>
-			<item name="gunBotT1JunkSledge" prob="0.001"/>
-		</lootcontainer>
-		
-		<lootcontainer id="286" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.8"/>
-			<item group="foodDrink" prob=".7"/>
-			<item group="famaleClothes" prob=".6"/>
-			<item group="itemsMoney" prob=".4"/>
-			<item name="drugSugarButts" prob="0.3"/>
-			<item name="drugVitamins" prob="0.3"/>
-			<item name="plantedMushroom1" prob="0.03"/>
-			<item name="gunBotT1JunkSledge" prob="0.002"/>
-		</lootcontainer>
-		
-		<lootcontainer id="287" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.2"/>
-			<item group="itemsMoney" prob=".2"/>
-			<item name="resourceAcid" prob="0.03"/>
-			<item name="apparelFacialPiercings" prob="0.3"/>
-			<item name="drugSteroids" prob="0.01"/>
-			<item name="resourceTestosteroneExtract" prob="0.2"/>
-		</lootcontainer>
-		
-		<lootcontainer id="288" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
-			<item group="junkNew" prob="0.3"/>
-			<item group="itemsMoney" prob=".5"/>
-			<item name="resourceAcid" prob="0.04"/>
-			<item name="apparelFacialPiercings" prob="0.5"/>
-			<item name="drugSteroids" prob="0.08"/>
-			<item name="resourceTestosteroneExtract" prob="0.6"/>
-		</lootcontainer>
-		
-	</append>
+			<lootcontainer id="215" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodAnimal" prob="0.9"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="famaleClothes" prob="0.6"/>
+				<item group="foodEnergy" prob="0.3"/>
+				<item group="meleeKnifes" prob="0.3"/>
+				<item name="drugSugarButts" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="216" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="foodEnergy" prob="0.9"/>
+				<item group="meleeKnifes" prob="0.8"/>
+				<item name="drugSugarButts" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="217" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item name="drinkJarGrandpasMoonshine" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="218" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".5"/>
+				<item group="ammo9mmBullets" prob=".6"/>
+				<item group="ammo762mmBullets" prob=".6"/>
+				<item name="drinkJarGrandpasMoonshine" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="219" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".7"/>
+				<item name="gunHandgunT1Pistol" prob="0.7"/>
+				<item name="drinkJarGrandpasMoonshine" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="220" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarBeer" prob="0.7"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item group="workerClothes" prob="0.8"/>
+				<item group="meleeRepairs" prob="0.5"/>
+				<item group="meleeKnifes" prob="0.3"/>
+				<item group="ammoGrenades" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="221" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarBeer" prob=".8"/>
+				<item name="foodShamSandwich" prob=".8"/>
+				<item group="workerClothes" prob=".6"/>
+				<item group="meleeRepairs" prob=".7"/>
+				<item group="meleeKnifes" prob=".4"/>
+				<item group="ammoGrenades" prob=".2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="222" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarBeer" prob=".8"/>
+				<item name="foodShamSandwich" prob=".8"/>
+				<item group="workerClothes" prob=".6"/>
+				<item group="meleeRepairs" prob=".7"/>
+				<item group="meleeKnifes" prob=".5"/>
+				<item group="ammoGrenades" prob=".4"/>
+			</lootcontainer>
+			
+			<lootcontainer id="223" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="ordinaryClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item group="meleeClubs" prob="0.6"/>
+				<item group="gunPistols" prob="0.2"/>
+				<item group="ammo9mmBullets" prob="0.3"/>
+				<item group="ammoShotgunBullets" prob="0.4"/>
+				<item name="drugSkullCrushers" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="224" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="ordinaryClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.7"/>
+				<item group="meleeClubs" prob="0.7"/>
+				<item group="gunPistols" prob="0.4"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item group="ammoShotgunBullets" prob="0.5"/>
+				<item name="drugSkullCrushers" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="225" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="ordinaryClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item group="meleeClubs" prob="0.5"/>
+				<item group="gunPistols" prob="0.5"/>
+				<item group="ammo9mmBullets" prob="0.7"/>
+				<item group="ammoShotgunBullets" prob="0.7"/>
+				<item name="drugSkullCrushers" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="226" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.1"/>
+				<item group="foodNice" prob="0.05"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodHomeMade" prob="0.6"/>
+				<item group="foodAnimal" prob="0.8"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.2"/>
+				<item name="drugCovertCats" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="227" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.4"/>
+				<item group="foodNice" prob="0.8"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="foodHomeMade" prob="0.5"/>
+				<item group="foodAnimal" prob="0.6"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item name="drugCovertCats" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="228" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.7"/>
+				<item group="foodNice" prob=".9"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodAnimal" prob="0.4"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item name="drugCovertCats" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="229" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.05"/>
+				<item group="foodNice" prob="0.01"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodHomeMade" prob="0.6"/>
+				<item group="foodAnimal" prob="0.8"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="ordinaryClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.1"/>
+				<item name="drinkJarCoffee" count="3" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="230" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.8"/>
+				<item group="foodNice" prob="0.4"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="foodHomeMade" prob="0.5"/>
+				<item group="foodAnimal" prob="0.6"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="ordinaryClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item name="drinkJarCoffee" count="4" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="231" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob=".9"/>
+				<item group="foodNice" prob="0.7"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodAnimal" prob="0.4"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item group="ordinaryClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item name="drinkJarCoffee" count="5" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="232" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.02"/>
+				<item group="foodNice" prob="0.02"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodHomeMade" prob="0.6"/>
+				<item group="foodAnimal" prob="0.8"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item name="apparelDenimShortsPants" prob="0.1"/>
+				<item group="meleeKnifes" prob="0.1"/>
+				<item name="drugCovertCats" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="233" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.5"/>
+				<item group="foodNice" prob="0.5"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="foodHomeMade" prob="0.5"/>
+				<item group="foodAnimal" prob="0.6"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item name="apparelDenimShortsPants" prob="0.1"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item name="drugCovertCats" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="234" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.8"/>
+				<item group="foodNice" prob="0.8"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodAnimal" prob="0.4"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item name="apparelDenimShortsPants" prob="0.1"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item name="drugCovertCats" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="235" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="ordinaryClothes" prob=".9"/>
+				<item group="ammo762mmBullets" prob="0.6"/>
+				<item name="gunRifleT1HuntingRifleParts" prob="0.3"/>
+				<item name="drugSkullCrushers" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="236" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="denimClothes" prob="0.8"/>
+				<item group="ordinaryClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item group="gunRifles" prob="0.5"/>
+				<item group="ammo762mmBullets" count="25" prob=".6"/>
+				<item name="drugSkullCrushers" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="237" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.5"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="denimClothes" prob="0.5"/>
+				<item group="ordinaryClothes" prob="0.5"/>
+				<item group="meleeKnifes" prob="0.9"/>
+				<item group="gunRifles" prob="0.8"/>
+				<item group="ammo762mmBullets" count="50" prob="0.9"/>
+				<item name="drugSkullCrushers" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="238" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item name="apparelDenimShortsPants" prob="0.9"/>
+				<item group="ammoArrows" prob="0.6"/>
+				<item group="gunBows" prob="0.6"/>
+				<item name="drugEyeKandy" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="239" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="denimClothes" prob="0.8"/>
+				<item name="apparelDenimShortsPants" prob="0.7"/>
+				<item group="ammoArrows" prob="0.4"/>
+				<item group="gunBows" prob="0.4"/>
+				<item group="ammo9mmBullets" prob="0.7"/>
+				<item group="gunPistols" prob="0.7"/>
+				<item name="drugEyeKandy" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="240" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob="0.5"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="denimClothes" prob="0.5"/>
+				<item name="apparelDenimShortsPants" prob="0.5"/>
+				<item group="ammoArrows" prob="0.3"/>
+				<item group="gunBows" prob="0.3"/>
+				<item group="ammo9mmBullets" prob="0.9"/>
+				<item group="gunPistols" prob="0.9"/>
+				<item name="drugEyeKandy" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="241" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="resourcePaper" prob="0.9"/>
+				<item name="apparelSuitDressShoes" prob="0.8"/>
+				<item name="apparelSuitJacket" prob="0.8"/>
+				<item name="apparelSuitPants" prob="0.8"/>
+				<item name="apparelLongShirt" prob="0.8"/>
+				<item name="apparelShades" prob="0.2"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="foodGoodCan" prob="0.6"/>
+			</lootcontainer>
+			
+			<lootcontainer id="242" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="resourcePaper" prob="0.8"/>
+				<item name="apparelSuitDressShoes" prob="0.5"/>
+				<item name="apparelSuitJacket" prob="0.5"/>
+				<item name="apparelSuitPants" prob="0.5"/>
+				<item name="apparelLongShirt" prob="0.5"/>
+				<item name="apparelShades" prob="0.4"/>
+				<item group="itemsMoney" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="foodGoodCan" prob=".9"/>
+			</lootcontainer>
+			
+			<lootcontainer id="243" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="resourcePaper" prob="0.8"/>
+				<item name="apparelNerdGlasses" prob="0.2"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="foodGoodCan" prob=".9"/>
+				<item group="gunRobotics" prob="0.05"/>
+				<item name="drugNerdTats" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="244" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="resourcePaper" prob="0.6"/>
+				<item name="apparelNerdGlasses" prob="0.4"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="foodGoodCan" prob=".9"/>
+				<item group="gunRobotics" prob="0.2"/>
+				<item name="drugNerdTats" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="245" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="resourcePaper" prob="0.4"/>
+				<item name="apparelNerdGlasses" prob="0.6"/>
+				<item group="foodDrink" prob=".9"/>
+				<item group="foodGoodCan" prob=".9"/>
+				<item group="gunRobotics" prob="0.4"/>
+				<item name="drugNerdTats" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="246" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarGoldenRodTea" prob=".9"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item name="drugAntibiotics" prob="0.05"/>
+				<item name="drugFortBites" prob="0.06"/>
+				<item name="drugPainkillers" prob="0.5"/>
+				<item name="drugSugarButts" prob="0.02"/>
+				<item name="drugVitamins" prob="0.4"/>
+			</lootcontainer>
+			
+			<lootcontainer id="247" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarGoldenRodTea" prob=".9"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item name="drugAntibiotics" prob="0.06"/>
+				<item name="drugFortBites" prob="0.07"/>
+				<item name="drugPainkillers" prob="0.6"/>
+				<item name="drugSugarButts" prob="0.03"/>
+				<item name="drugVitamins" prob="0.5"/>
+			</lootcontainer>
+			
+			<lootcontainer id="248" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarGoldenRodTea" prob=".9"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item name="drugAntibiotics" prob="0.07"/>
+				<item name="drugFortBites" prob="0.08"/>
+				<item name="drugPainkillers" prob="0.8"/>
+				<item name="drugSugarButts" prob="0.05"/>
+				<item name="drugVitamins" prob="0.7"/>
+			</lootcontainer>
+			
+			<lootcontainer id="249" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item name="resourceBone" count="5" prob=".9"/>
+				<item name="foodRottingFlesh" count="3" prob="0,8"/>
+				<item name="resourceCrushedSand" count="4" prob="0,5"/>
+				<item name="resourceYuccaFibers" count="10" prob="0,5"/>
+				<item name="resourceClayLump" count="5" prob="0,5"/>
+			</lootcontainer>
+			
+			<lootcontainer id="250" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item name="resourceBone" count="3,5" prob=".9"/>
+				<item name="foodRottingFlesh" count="2,8" prob="0,8"/>
+				<item name="resourceCrushedSand" count="10,18" prob="0,8"/>
+				<item name="resourceYuccaFibers" count="5,12" prob="0,6"/>
+				<item name="resourceClayLump" count="15,24" prob="0,6"/>
+				<item name="resourceBulletTip" count="3,11" prob="0,6"/>
+			</lootcontainer>
+			
+			<lootcontainer id="251" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodEnergy" prob="0.8"/>
+				<item group="winterClothes" prob="0.8"/>
+				<item group="meleeDiggingProAuger" prob="0.05"/>
+				<item group="meleeDiggingProChainsaw" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="252" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodEnergy" prob="0.8"/>
+				<item group="winterClothes" prob="0.8"/>
+				<item group="meleeDiggingProAuger" prob="0.1"/>
+				<item group="meleeDiggingProChainsaw" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="253" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodAnimal" prob="0.1"/>
+				<item group="ordinaryClothes" prob="0.1"/>
+				<item name="drugOhShitzDrops" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="254" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item group="foodAnimal" prob="0.4"/>
+				<item group="ordinaryClothes" prob="0.3"/>
+				<item name="drugOhShitzDrops" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="255" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.4"/>
+				<item group="foodAnimal" prob="0.5"/>
+				<item group="ordinaryClothes" prob="0.3"/>
+				<item name="drugOhShitzDrops" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="256" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item name="drinkJarEmpty" prob="0.5"/>
+				<item name="drinkCanEmpty" prob="0.5"/>
+				<item group="trophyGroup" prob="0.5"/>
+				<item name="resourceCandleStick" prob="0.5"/>
+				<item name="resourceDoorKnob" prob="0.5"/>
+				<item name="resourceMetalPipe" prob="0.5"/>
+				<item name="resourceFishingWeight" count="1,3" prob="0.5"/>
+				<item name="resourceScrapLead" count="1,10" prob="0.5"/>
+				
+				<item name="foodCharredMeat" count="1,4"/>
+				<item name="resourceCoal" count="5,24"/>
+				
+				<item name="resourceNail" count="1,10" prob="0.5"/>
+				<item name="casinoCoin" count="1,5" prob="0.5"/>
+				<item name="resourceScrapBrass" count="40,120" prob="0.5"/>
+				<item name="resourceLockPick" count="1,4" prob="0.5"/>
+			</lootcontainer>
+			
+			<lootcontainer id="257" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodMeds" prob="0.5"/>
+				<item group="ordinaryClothes" prob="0.7"/>
+				<item group="famaleClothes" prob="0.7"/>
+				<item name="plantedAloe3Harvest" prob="0.6"/>
+				<item name="plantedGoldenrod3HarvestPlayer" prob="0.6"/>
+				<item name="medicalAloeCream" prob="0.6"/>
+				<item name="drugHealthBar" count="1,3" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="258" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.6"/>
+				<item group="foodMeds" prob="0.7"/>
+				<item group="ordinaryClothes" prob="0.6"/>
+				<item group="famaleClothes" prob="0.6"/>
+				<item name="plantedAloe3Harvest" prob="0.5"/>
+				<item name="plantedGoldenrod3HarvestPlayer" prob="0.5"/>
+				<item name="medicalAloeCream" prob="0.5"/>
+				<item name="drugHealthBar" count="2,4" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="259" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodRotting" prob="0.6"/>
+				<item group="foodGoodCan" prob="0.6"/>
+				<item group="foodNice" prob="0.3"/>
+				<item group="foodDrink" prob="0.3"/>
+				<item group="ordinaryClothes" prob="0.7"/>
+				<item group="meleeSledgehammers" prob="0.2"/>
+				<item group="ammoShotgunBullets" prob="0.4"/>
+				<item group="gunShotguns" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="260" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.4"/>
+				<item group="foodRotting" prob="0.3"/>
+				<item group="foodGoodCan" prob="0.5"/>
+				<item group="foodNice" prob="0.6"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="ordinaryClothes" prob="0.4"/>
+				<item group="meleeSledgehammers" prob="0.4"/>
+				<item group="gunShotguns" prob="0.3"/>
+				<item group="ammoShotgunBullets" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="261" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.9"/>
+				<item group="foodRotting" prob="0.4"/>
+				<item group="foodGoodCan" prob="0.5"/>
+				<item group="foodNice" prob="0.6"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="ordinaryClothes" prob="0.5"/>
+				<item group="meleeSledgehammers" prob="0.5"/>
+				<item group="gunShotguns" prob="0.1"/>
+				<item group="ammoShotgunBullets" prob="0.3"/>
+				<item group="gunAutomatic" prob="0.1"/>
+				<item group="ammo762mmBullets" prob="0.3"/>
+				<item group="gunPistols" prob="0.1"/>
+				<item group="ammo9mmBullets" prob="0.3"/>
+				<item name="resourceAcid" count="1,2" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="262" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.9"/>
+				<item group="foodRotting" prob="0.3"/>
+				<item group="foodGoodCan" prob="0.4"/>
+				<item group="foodNice" prob="0.7"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="ordinaryClothes" prob="0.4"/>
+				<item group="meleeSledgehammers" prob="0.4"/>
+				<item group="gunShotguns" prob="0.2"/>
+				<item group="ammoShotgunBullets" prob="0.4"/>
+				<item group="gunAutomatic" prob="0.2"/>
+				<item group="ammo762mmBullets" prob="0.4"/>
+				<item group="gunPistols" prob="0.2"/>
+				<item group="ammo9mmBullets" prob="0.4"/>
+				<item name="resourceAcid" count="1,3" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="263" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.9"/>
+				<item group="foodRotting" prob="0.2"/>
+				<item group="foodGoodCan" prob="0.6"/>
+				<item group="foodNice" prob="0.7"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="ordinaryClothes" prob="0.3"/>
+				<item group="meleeSledgehammers" prob="0.4"/>
+				<item group="gunShotguns" prob="0.3"/>
+				<item group="ammoShotgunBullets" prob="0.5"/>
+				<item group="gunAutomatic" prob="0.3"/>
+				<item group="ammo762mmBullets" prob="0.5"/>
+				<item group="gunPistols" prob="0.3"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item name="resourceAcid" count="1,4" prob="0.3"/>
+			</lootcontainer>
+			
+			<lootcontainer id="264" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.9"/>
+				<item group="gunAutomatic" prob="0.3"/>
+				<item group="ammo762mmBullets" prob="0.5"/>
+				<item group="gunPistols" prob="0.3"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item group="gunRobotics" prob="0.01"/>
+				<item name="apparelHazmatGloves" prob="0.1"/>
+				<item name="apparelHazmatJacket" prob="0.1"/>
+				<item name="apparelHazmatMask" prob="0.1"/>
+				<item name="apparelHazmatPants" prob="0.1"/>
+				<item name="meleeWpnBatonT2StunBaton" prob="0.07"/>
+				<item name="meleeWpnBatonT2StunBatonParts" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="265" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item name="drinkJarBeer" prob="0.7"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item group="workerClothes" prob="0.8"/>
+				<item group="meleeRepairs" prob="0.5"/>
+				<item group="meleeKnifes" prob="0.3"/>
+				<item group="ammoGrenades" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="266" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item name="drinkJarBeer" prob="0.7"/>
+				<item name="foodShamSandwich" prob="0.9"/>
+				<item group="workerClothes" prob="0.8"/>
+				<item group="meleeRepairs" prob="0.6"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item group="ammoGrenades" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="267" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item group="armyClothes" prob="0.7"/>
+				<item group="armyArmor" prob="0.2"/>
+				<item group="gunPistols" prob="0.4"/>
+				<item group="gunAutomatic" prob="0.3"/>
+				<item group="gunRifles" prob="0.3"/>
+				<item group="gunShotguns" prob="0.3"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item group="ammo762mmBullets" prob="0.5"/>
+				<item group="ammoShotgunBullets" prob="0.5"/>			
+				<item group="ammoGrenades" prob="0.3"/>
+				<item group="meleeKnifes" prob="0.7"/>
+				<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+				<item name="drugFortBites" prob="0.05"/>
+				<item name="drugHealthBar" prob="0.05"/>
+				<item name="drugSkullCrushers" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="268" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item group="armyClothes" prob="0.7"/>
+				<item group="armyArmor" prob="0.2"/>
+				<item group="gunPistols" prob="0.4"/>
+				<item group="gunAutomatic" prob="0.3"/>
+				<item group="gunRifles" prob="0.3"/>
+				<item group="gunShotguns" prob="0.3"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item group="ammo762mmBullets" prob="0.5"/>
+				<item group="ammoShotgunBullets" prob="0.5"/>			
+				<item group="ammoGrenades" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.7"/>
+				<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+				<item name="drugFortBites" prob="0.07"/>
+				<item name="drugHealthBar" prob="0.07"/>
+				<item name="drugSkullCrushers" prob="0.07"/>
+			</lootcontainer>
+			
+			<lootcontainer id="269" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="armyClothes" prob="0.7"/>
+				<item group="armyArmor" prob="0.3"/>
+				<item group="gunPistols" prob="0.5"/>
+				<item group="gunAutomatic" prob="0.4"/>
+				<item group="gunRifles" prob="0.4"/>
+				<item group="gunShotguns" prob="0.4"/>
+				<item group="ammo9mmBullets" prob="0.6"/>
+				<item group="ammo762mmBullets" prob="0.6"/>
+				<item group="ammoShotgunBullets" prob="0.6"/>			
+				<item group="ammoGrenades" prob="0.5"/>
+				<item group="meleeKnifes" prob="0.8"/>
+				<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+				<item name="drugFortBites" prob="0.1"/>
+				<item name="drugHealthBar" prob="0.1"/>
+				<item name="drugSkullCrushers" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="270" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="armyClothes" prob="0.7"/>
+				<item group="armyArmor" prob="0.1"/>
+				<item group="meleeClubs" prob="0.5"/>
+				<item group="gunPistols" prob="0.5"/>
+				<item group="gunAutomatic" prob="0.4"/>
+				<item group="gunRifles" prob="0.4"/>
+				<item group="gunRockets" prob="0.4"/>
+				<item group="gunShotguns" prob="0.4"/>
+				<item group="ammoRockets" prob="0.4"/>
+				<item group="ammo9mmBullets" prob="0.6"/>
+				<item group="ammo762mmBullets" prob="0.6"/>
+				<item group="ammoShotgunBullets" prob="0.6"/>			
+				<item group="ammoGrenades" prob="0.5"/>
+				<item group="meleeKnifes" prob="0.8"/>
+				
+				<item name="armorSteelLegs" mods="modArmorImpactBracing" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelLegs" mods="modArmorPlatingReinforced" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelLegs" mods="modArmorStoragePocket" mod_chance=".1" prob="0.3"/>
+				
+				
+				<item name="armorSteelBoots" mods="modArmorBandolier" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelBoots" mods="modArmorCustomizedFittings" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelBoots" mods="modArmorInsulatedLiner" mod_chance=".1" prob="0.3"/>
+				
+				
+				<item name="armorSteelChest" mods="modArmorBandolier" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelChest" mods="modArmorImpactBracing" mod_chance=".1" prob="0.3"/>
+				<item name="armorSteelChest" mods="modArmorPlatingBasic" mod_chance=".1" prob="0.3"/>
+				
+				
+				<item name="armorSwatHelmet" mods="modArmorHelmetLight" mod_chance=".2" prob=".4"/>
+				<item name="drugFortBites" prob="0.1"/>
+				<item name="drugHealthBar" prob="0.1"/>
+				<item name="drugSkullCrushers" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="271" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodRotting" prob="0.7"/>
+				<item group="foodEnergy" prob="0.3"/>
+				<item group="ordinaryClothes" prob="0.5"/>
+				<item group="gunBows" prob="0.1"/>
+				<item group="ammoArrows" prob="0.1"/>
+				<item group="meleeClubs" prob="0.1"/>
+				<item group="meleeKnifes" prob="0.2"/>
+				<item name="plantedPumpkin1" prob="0.4"/>
+			</lootcontainer>
+			
+			<lootcontainer id="272" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodRotting" prob="0.7"/>
+				<item group="foodEnergy" prob="0.3"/>
+				<item group="ordinaryClothes" prob="0.5"/>
+				<item group="gunBows" prob="0.2"/>
+				<item group="ammoArrows" prob="0.2"/>
+				<item group="meleeClubs" prob="0.2"/>
+				<item group="meleeKnifes" prob="0.3"/>
+				<item name="plantedPumpkin1" prob="0.4"/>
+			</lootcontainer>
+			
+			<lootcontainer id="273" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="foodEnergy" prob="0.4"/>
+				<item group="ordinaryClothes" prob="0.5"/>
+				<item group="gunBows" prob="0.3"/>
+				<item group="ammoArrows" prob="0.3"/>
+				<item group="meleeClubs" prob="0.3"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item name="plantedPumpkin1" prob="0.5"/>
+			</lootcontainer>
+			
+			<lootcontainer id="274" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.1"/>
+				<item group="foodNice" prob="0.05"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodHomeMade" prob="0.6"/>
+				<item group="foodAnimal" prob="0.8"/>
+				<item group="foodDrink" prob="0.6"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.2"/>
+				<item name="drugCovertCats" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="275" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.4"/>
+				<item group="foodNice" prob="0.8"/>
+				<item group="foodRotting" prob="0.8"/>
+				<item group="foodHomeMade" prob="0.5"/>
+				<item group="foodAnimal" prob="0.6"/>
+				<item group="foodDrink" prob="0.7"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.4"/>
+				<item name="drugCovertCats" prob="0.1"/>
+			</lootcontainer>
+			
+			<lootcontainer id="276" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodGoodCan" prob="0.7"/>
+				<item group="foodNice" prob=".9"/>
+				<item group="foodRotting" prob="0.5"/>
+				<item group="foodHomeMade" prob="0.7"/>
+				<item group="foodAnimal" prob="0.4"/>
+				<item group="foodDrink" prob="0.8"/>
+				<item group="famaleClothes" prob="0.4"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item name="drugCovertCats" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="277" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="cowboyClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".4"/>
+				<item group="gunRifles" prob="0.2"/>
+				<item name="gunHandgunT1Pistol" prob="0.2"/>
+				<item name="drinkJarGrandpasAwesomeSauce" prob="0.02"/>
+			</lootcontainer>
+			
+			<lootcontainer id="278" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="cowboyClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".6"/>
+				<item name="gunHandgunT1Pistol" prob="0.5"/>
+				<item group="gunRifles" prob="0.5"/>
+				<item group="ammo9mmBullets" prob=".6"/>
+				<item group="ammo762mmBullets" prob=".6"/>
+				<item name="drinkJarGrandpasAwesomeSauce" prob="0.03"/>
+			</lootcontainer>
+			
+			<lootcontainer id="279" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodDrink" prob=".5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="cowboyClothes" prob=".9"/>
+				<item group="meleeKnifes" prob=".7"/>
+				<item name="gunHandgunT1Pistol" prob="0.7"/>
+				<item group="gunRifles" prob="0.7"/>
+				<item name="drinkJarGrandpasAwesomeSauce" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="280" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item name="drinkJarBeer" prob="0.9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="bikerClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.6"/>
+				<item group="meleeClubs" prob="0.6"/>
+				<item group="gunPistols" prob="0.2"/>
+				<item group="gunShotguns" prob="0.2"/>
+				<item group="ammo9mmBullets" prob="0.3"/>
+				<item group="ammoShotgunBullets" prob="0.4"/>
+				<item name="drugSkullCrushers" prob="0.05"/>
+				<item name="vehicleMotorcycleHandlebars" prob="0.01"/>
+				<item name="vehicleMotorcycleChassis" prob="0.01"/>
+			</lootcontainer>
+			
+			<lootcontainer id="281" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item name="drinkJarBeer" prob="0.9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="bikerClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.7"/>
+				<item group="meleeClubs" prob="0.7"/>
+				<item group="gunPistols" prob="0.4"/>
+				<item group="gunShotguns" prob="0.4"/>
+				<item group="ammo9mmBullets" prob="0.5"/>
+				<item group="ammoShotgunBullets" prob="0.5"/>
+				<item name="drugSkullCrushers" prob="0.1"/>
+				<item name="vehicleMotorcycleHandlebars" prob="0.02"/>
+				<item name="vehicleMotorcycleChassis" prob="0.02"/>
+			</lootcontainer>
+			
+			<lootcontainer id="282" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.5"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="foodDrink" prob=".9"/>
+				<item name="drinkJarBeer" prob="0.9"/>
+				<item group="itemsMoney" prob="0.8"/>
+				<item group="bikerClothes" prob="0.8"/>
+				<item group="meleeKnifes" prob="0.7"/>
+				<item group="meleeClubs" prob="0.7"/>
+				<item group="gunPistols" prob="0.5"/>
+				<item group="gunShotguns" prob="0.5"/>
+				<item group="ammo9mmBullets" prob="0.6"/>
+				<item group="ammoShotgunBullets" prob="0.6"/>
+				<item name="drugSkullCrushers" prob="0.3"/>
+				<item name="resourceTestosteroneExtract" prob="0.2"/>
+				<item name="vehicleMotorcycleHandlebars" prob="0.05"/>
+				<item name="vehicleMotorcycleChassis" prob="0.05"/>
+			</lootcontainer>
+			
+			<lootcontainer id="283" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item group="foodDrink" prob=".6"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="cowboyClothes" prob=".9"/>
+				
+				<item group="foodFermers" prob=".6"/>
+				<item group="foodSeeds" prob=".1"/>
+				<item group="meleeDigging" prob=".3"/>
+				
+				<item group="meleeKnifes" prob=".2"/>
+				<item name="drinkJarGrainAlcohol" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="284" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.9"/>
+				<item group="foodDrink" prob=".8"/>
+				<item group="foodRotting" prob=".9"/>
+				<item group="denimClothes" prob=".9"/>
+				<item group="cowboyClothes" prob=".9"/>
+				
+				<item group="foodFermers" prob=".8"/>
+				<item group="foodSeeds" prob=".2"/>
+				<item group="meleeDigging" prob=".4"/>
+				
+				<item group="meleeKnifes" prob=".5"/>
+				<item name="drinkJarGrainAlcohol" prob="0.4"/>
+			</lootcontainer>
+			
+			<lootcontainer id="285" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.7"/>
+				<item group="foodDrink" prob=".6"/>
+				<item group="famaleClothes" prob=".6"/>
+				<item group="itemsMoney" prob=".2"/>
+				<item name="drugSugarButts" prob="0.2"/>
+				<item name="drugVitamins" prob="0.2"/>
+				<item name="plantedMushroom1" prob="0.01"/>
+				<item name="gunBotT1JunkSledge" prob="0.001"/>
+			</lootcontainer>
+			
+			<lootcontainer id="286" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.8"/>
+				<item group="foodDrink" prob=".7"/>
+				<item group="famaleClothes" prob=".6"/>
+				<item group="itemsMoney" prob=".4"/>
+				<item name="drugSugarButts" prob="0.3"/>
+				<item name="drugVitamins" prob="0.3"/>
+				<item name="plantedMushroom1" prob="0.03"/>
+				<item name="gunBotT1JunkSledge" prob="0.002"/>
+			</lootcontainer>
+			
+			<lootcontainer id="287" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.2"/>
+				<item group="itemsMoney" prob=".2"/>
+				<item name="resourceAcid" prob="0.03"/>
+				<item name="apparelFacialPiercings" prob="0.3"/>
+				<item name="drugSteroids" prob="0.01"/>
+				<item name="resourceTestosteroneExtract" prob="0.2"/>
+			</lootcontainer>
+			
+			<lootcontainer id="288" count="1,2" size="6,3" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="qualBaseTemplate">
+				<item group="junkNew" prob="0.3"/>
+				<item group="itemsMoney" prob=".5"/>
+				<item name="resourceAcid" prob="0.04"/>
+				<item name="apparelFacialPiercings" prob="0.5"/>
+				<item name="drugSteroids" prob="0.08"/>
+				<item name="resourceTestosteroneExtract" prob="0.6"/>
+			</lootcontainer>
+			
+		</append>
+	<!-- / -->
 </configs>

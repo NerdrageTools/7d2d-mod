@@ -1,8 +1,11 @@
 <configs>
-    <!-- dim the moon --><!-- add, scale -->
-    <set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0.45, 0.4</set>
-    <!-- increase fog cover --><!-- day, night (lower = more fog) -->
-    <set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.9,0.55</set>
-    <!-- higher value decreases "darkening" inside POIs --><!-- value > 1.0 disables entirely -->
-    <!-- <set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">1.3</set> -->
+	<!-- dim the moon :: add, scale -->
+		<set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0.45, 0.4</set>
+	<!-- / -->
+	<!-- increase fog :: day, night (lower = more fog) -->
+		<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.9,0.55</set>
+	<!-- / -->
+	<!-- "darkning" in POIs :: higher = less :: value > 1.0 disables entirely -->
+		<set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">.4</set>
+	<!-- / -->
 </configs>

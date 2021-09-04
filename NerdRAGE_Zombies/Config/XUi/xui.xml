@@ -1,4 +1,5 @@
 <configs>
-    <!-- replace the left status bar entirely -->
-	<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">StatusBars</set>
+	<!-- replace the default left status bar with the new custom one -->
+		<set xpath="/xui/ruleset/window_group[@name='toolbelt']/window[@name='HUDLeftStatBars']/@name">StatusBars</set>
+	<!-- / -->
 </configs>

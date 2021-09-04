@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <configs>
-	<append xpath="//block[@name='goreBlockHumanCorpse' or @name='bodyBagBlack']">
-		<property name="Class" value="Loot"/>
-		<property name="LootList" value="210"/>
-	</append>
+	<!-- corpses and bodybags have loot -->
+		<append xpath="//block[@name='goreBlockHumanCorpse' or @name='bodyBagBlack']">
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="210"/>
+		</append>
+	<!-- / -->
 </configs>
