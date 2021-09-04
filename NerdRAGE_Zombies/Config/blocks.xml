@@ -2,7 +2,7 @@
 
 <configs>
 	<!-- corpses and bodybags have loot -->
-		<append xpath="//block[@name='goreBlockHumanCorpse' or @name='bodyBagBlack']">
+		<append xpath="/blocks/block[@name='goreBlockHumanCorpse' or @name='bodyBagBlack']">
 			<property name="Class" value="Loot"/>
 			<property name="LootList" value="610"/>
 		</append>
