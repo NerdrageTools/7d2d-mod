@@ -31,7 +31,6 @@
 
 	<!-- replace all spider zombies with crawlers -->
 		<set xpath="/entitygroups/entitygroup/entity[@name='zombieSpider']/@name">zombieSteveCrawler</set>
-		<!-- zombieSpiderFeral exists as an entity_class, but does not belong to any groups -->
-		<!-- <set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpiderFeral')]/@name">zombieSteveCrawlerFeral</set> -->
+		<set xpath="/entitygroups/entitygroup/entity[contains(@name, 'zombieSpiderFeral')]/@name">zombieSteveCrawlerFeral</set>
 	<!-- / -->
 </configs>
