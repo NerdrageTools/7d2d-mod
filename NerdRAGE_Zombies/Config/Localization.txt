@@ -1,256 +1,295 @@
 Key,Source,Context,Changes,English
-cntMedicineCabinetLocked,blocks,Container,KgNone,Medicine Cabinet 
+
+<!-- Vanilla Item/Creature Renames -->,comments,Comment,None,Comment
+animalBear,entityclasses,Entity,New,Wild Bear
+animalBoar,entityclasses,Entity,New,Wild Boar
+animalBossGrace,entityclasses,Entity,New,Radiated Boar
+animalCoyote,entityclasses,Entity,New,Coyote
+animalDireWolf,entityclasses,Entity,New,Dire Wolf
+animalMountainLion,entityclasses,Entity,New,Mountain Lion
+animalSnake,entityclasses,Entity,New,Snake
+animalWolf,entityclasses,Entity,New,Wolf
+animalZombieBear,entityclasses,Entity,New,Infected Bear
+animalZombieDog,entityclasses,Entity,New,Infected Dog
+animalZombieVulture,entityclasses,Entity,New,Infected Vulture
+animalZombieVultureRadiated,entityclasses,Entity,New,Radiated Vulture
+junkTurretGun,entityclasses,Entity,New,Turret
+junkTurretSledge,entityclasses,Entity,New,Sledge Turret
+legendaryZombieBusinessMan,entityclasses,Entity,New,Legendary Business Man
+legendaryZombieLab,entityclasses,Entity,New,Legendary Lab Assistant
+legendaryZombieUtilityWorker,entityclasses,Entity,New,Legendary Utility Worker
+zombieArleneRadiated,entityclasses,Entity,New,Radiated Putrid Girl
+zombieBiker,entityclasses,Entity,New,Infected Biker
+zombieBikerFeral,entityclasses,Entity,New,Feral Biker
+zombieBikerRadiated,entityclasses,Entity,New,Radiated Biker
+zombieBoeRadiated,entityclasses,Entity,New,Radiated Infected Survivor
+zombieCheerleader,entityclasses,Entity,New,Infected Cheerleader
+zombieCheerleaderFeral,entityclasses,Entity,New,Feral Cheerleader
+zombieCheerleaderRadiated,entityclasses,Entity,New,Radiated Cheerleader
+zombieDarleneRadiated,entityclasses,Entity,New,Radiated Decayed Mother
+zombieDemolition,entityclasses,Entity,New,The Demolition Man
+zombieFemaleFatRadiated,entityclasses,Entity,New,Radiated Hungry Zombie
+zombieJanitor,entityclasses,Entity,New,Infected Janitor
+zombieJanitorFeral,entityclasses,Entity,New,Feral Janitor
+zombieJanitorRadiated,entityclasses,Entity,New,Radiated Janitor
+zombieJoeRadiated,entityclasses,Entity,New,Radiated Cadaver
+zombieLab,entityclasses,Entity,New,Infected Lab Assistant
+zombieLabFeral,entityclasses,Entity,New,Feral Lab Assistant
+zombieLabRadiated,entityclasses,Entity,New,Radiated Lab Assistant
+zombieMarleneRadiated,entityclasses,Entity,New,Radiated Woman
+zombieMoeRadiated,entityclasses,Entity,New,Radiated Bloated Walker
+zombieOldTimerRadiated,entityclasses,Entity,New,Radiated Zombie Cowboy
+zombieScreamerRadiated,entityclasses,Entity,New,Radiated Screamer
+zombieSkateboarder,entityclasses,Entity,New,Infected Skater Punk
+zombieSkateboarderFeral,entityclasses,Entity,New,Feral Skater
+zombieSkateboarderRadiated,entityclasses,Entity,New,Radiated Punk
+zombieSoldierRadiated,entityclasses,Entity,New,Radiated Soldier
+zombieSpiderRadiated,entityclasses,Entity,New,Radiated Spider Zombie
+zombieUtilityWorker,entityclasses,Entity,New,Infected Utility Worker
+zombieUtilityWorkerFeral,entityclasses,Entity,New,Feral Utility Worker
+zombieWightRadiated,entityclasses,Entity,New,Radiated Wight
+zombieYoRadiated,entityclasses,Entity,New,Radiated Carcass
+
+<!-- Container Renames -->,comments,Comment,None,Comment
+BookcaseFull,blocks,Container,KgNone,Book Case
+bunkBedMade1,blocks,Container,,,Bunk Bed Made 1
+bunkBedMessy1,blocks,Container,,,Bunk Bed Messy 1
+CabinetBottom,blocks,Container,KgNone,Cabinet Bottom
+CabinetOldBottom,blocks,Container,KgNone,Cabinet Old Bottom
+cntArmyTruckClosed,blocks,Container,,,Army Truck Closed
+cntArmyTruckOpen,blocks,Container,,,Army Truck Open
+cntArmyTruckRandomLootHelper,blocks,Container,,,= Army Truck Loot Helper = Random Helper
+cntBookShelfDoubleBottomFull01,blocks,Container,,,Book Shelf Double Bottom Full 01
+cntBookShelfDoubleBottomFull01Empty,blocks,Container,,,Book Shelf Double Bottom Full 01 Empty
+cntBookShelfDoubleBottomFull02,blocks,Container,,,Book Shelf Double Bottom Full 02
+cntBookShelfDoubleBottomFull02Empty,blocks,Container,,,Book Shelf Double Bottom Full 02 Empty
+cntBookShelfDoubleTopFull01,blocks,Container,,,Book Shelf Double Top Full 01
+cntBookShelfDoubleTopFull01Empty,blocks,Container,,,Book Shelf Double Top Full 01 Empty
+cntBookShelfDoubleTopFull02,blocks,Container,,,Book Shelf Double Top Full 02
+cntBookShelfDoubleTopFull02Empty,blocks,Container,,,Book Shelf Double Top Full 02 Empty
+cntBookShelfSingleBottomFull01,blocks,Container,,,Book Shelf Single Bottom Full 01
+cntBookShelfSingleBottomFull01Empty,blocks,Container,,,Book Shelf Single Bottom Full 01 Empty
+cntBookShelfSingleBottomFull02,blocks,Container,,,Book Shelf Single Bottom Full 02
+cntBookShelfSingleBottomFull02Empty,blocks,Container,,,Book Shelf Single Bottom Full 02 Empty
+cntBookShelfSingleCapBottomFull01,blocks,Container,,,Book Shelf Single Cap Bottom Full 01
+cntBookShelfSingleCapBottomFull02,blocks,Container,,,Book Shelf Single Cap Bottom Full 02
+cntBookShelfSingleCapFull01BottomEmpty,blocks,Container,,,Book Shelf Single Cap Full 01 Empty
+cntBookShelfSingleCapFull02BottomEmpty,blocks,Container,,,Book Shelf Single Cap Full 02 Bottom Empty
+cntBookShelfSingleCapTopFull01,blocks,Container,,,Book Shelf Single Cap Top Full 01
+cntBookShelfSingleCapTopFull01Empty,blocks,Container,,,Book Shelf Single Cap Top Full 01 Empty
+cntBookShelfSingleCapTopFull02,blocks,Container,,,Book Shelf Single Cap Top Full 02
+cntBookShelfSingleCapTopFull02Empty,blocks,Container,,,Book Shelf Single Cap Top Full 02 Empty
+cntBookShelfSingleTopFull01,blocks,Container,,,Book Shelf Single Top Full 01
+cntBookShelfSingleTopFull01Empty,blocks,Container,,,Book Shelf Single Top Full 01 Empty
+cntBookShelfSingleTopFull02,blocks,Container,,,Book Shelf Single Top Full 02
+cntBookShelfSingleTopFull02Empty,blocks,Container,,,Book Shelf Single Top Full 02 Empty
 cntCabinetBottomLocked,blocks,Container,KgNone,Cabinet Bottom 
-cntCupboardCabinetRedTopLocked,blocks,Container,KgNone,Cupboard Cabinet Red Top 
 cntCabinetOldBottomLocked,blocks,Container,KgNone,Cabinet Old Bottom 
+cntCashRegisterLocked,blocks,Container,KgNone,Cash Register 
+cntClothesRackRectanglePants,blocks,Container,,,Clothes Rack Rectangle Pants
+cntClothesRackRectanglePantsEmpty,blocks,Container,,,Clothes Rack Rectangle Pants Empty
+cntClothesRackRectangleShirts,blocks,Container,,,Clothes Rack Rectangle Shirts
+cntClothesRackRectangleShirtsEmpty,blocks,Container,,,Clothes Rack Rectangle Shirts Empty
+cntClothesRackRoundPants,blocks,Container,,,Clothes Rack Round Pants
+cntClothesRackRoundPantsEmpty,blocks,Container,,,Clothes Rack Round Pants Empty
+cntClothesRackRoundShirts,blocks,Container,,,Clothes Rack Round Shirts
+cntClothesRackRoundShirtsEmpty,blocks,Container,,,Clothes Rack Round Shirts Empty
+cntClothesRackWallLongSleeve,blocks,Container,,,Clothes Rack Wall Long Sleeve
+cntClothesRackWallLongSleeveEmptyHanger,blocks,Container,,,Clothes Rack Wall Long Sleeve Empty Hanger
+cntClothesRackWallPants,blocks,Container,,,Clothes Rack Wall Pants
+cntClothesRackWallPantsEmptyHanger,blocks,Container,,,Clothes Rack Wall Pants Empty Hanger
+cntClothesRackWallSweater,blocks,Container,,,Clothes Rack Wall Sweater
+cntClothesRackWallSweaterEmptyHanger,blocks,Container,,,Clothes Rack Wall Sweater Empty Hanger
+cntClothesRackWallTShirts,blocks,Container,,,Clothes Rack Wall TShirts
+cntClothesRackWallTShirtsEmptyHanger,blocks,Container,,,Clothes Rack Wall TShirts Empty Hanger
+cntClothesShelfHalfJeans01,blocks,Container,,,Clothes Shelf Half Jeans 01
+cntClothesShelfHalfJeans01Empty,blocks,Container,,,Clothes Shelf Half Jeans 01 Empty
+cntClothesShelfHalfJeans02,blocks,Container,,,Clothes Shelf Half Jeans 02
+cntClothesShelfHalfJeans02Empty,blocks,Container,,,Clothes Shelf Half Jeans 02 Empty
+cntClothesShelfHalfShirts01,blocks,Container,,,Clothes Shelf Half Shirts 01
+cntClothesShelfHalfShirts01Empty,blocks,Container,,,Clothes Shelf Half Shirts 01 Empty
+cntClothesShelfHalfShirts02,blocks,Container,,,Clothes Shelf Half Shirts 02
+cntClothesShelfHalfShirts02Empty,blocks,Container,,,Clothes Shelf Half Shirts 02 Empty
+cntClothesShelfHalfSweaters01,blocks,Container,,,Clothes Shelf Half Sweaters 01
+cntClothesShelfHalfSweaters01Empty,blocks,Container,,,Clothes Shelf Half Sweaters 01 Empty
+cntClothesShelfStackJeans01,blocks,Container,,,Clothes Shelf Stack Jeans 01
+cntClothesShelfStackJeans01Empty,blocks,Container,,,Clothes Shelf Stack Jeans 01 Empty
+cntClothesShelfStackJeans02,blocks,Container,,,Clothes Shelf Stack Jeans 02
+cntClothesShelfStackJeans02Empty,blocks,Container,,,Clothes Shelf Stack Jeans 02 Empty
+cntClothesShelfStackShirts01,blocks,Container,,,Clothes Shelf Stack Shirts 01
+cntClothesShelfStackShirts01Empty,blocks,Container,,,Clothes Shelf Stack Shirts 01 Empty
+cntClothesShelfStackShirts02,blocks,Container,,,Clothes Shelf Stack Shirts 02
+cntClothesShelfStackShirts02Empty,blocks,Container,,,Clothes Shelf Stack Shirts 02 Empty
 cntCupboardCabinetOldTopLocked,blocks,Container,KgNone,Cupboard Cabinet Old Top 
-cntNightstandLocked,blocks,Container,KgNone,Night Stand 
-cntMedicineCabinetFaucetLocked,blocks,Container,KgNone,Medicine Cabinet Faucet 
-cntWoodDesk01Locked,blocks,Container,KgNone,Wood Desk 01 
-cntMetalDesk02Locked,blocks,Container,KgNone,Metal Desk 02 
+cntCupboardCabinetRedTopLocked,blocks,Container,KgNone,Cupboard Cabinet Red Top 
+cntDisplayCaseAmmoLeftBroken,blocks,Container,,,Display case Ammo Left Broken
+cntDisplayCaseAmmoMiddleBroken02,blocks,Container,,,Display case Ammo Middle Broken 02
+cntDisplayCaseAmmoRightBroken,blocks,Container,,,Display case Ammo Right Broken
+cntDisplayCaseEmptyMiddle,blocks,Container,,,Display case Empty Middle
+cntDisplayCaseEmptyRight,blocks,Container,,,Display case Bed Empty Right
+cntDisplayCaseLeftEmpty,blocks,Container,,,Display case Left Empty
+cntDumpsterEmpty,blocks,Container,KgNone,Dumpster Empty
+cntDumpsterFliesEmpty,blocks,Container,KgNone,Dumpster Flies Empty
+cntDumpsterFliesInsecure,blocks,Container,KgNone,Dumpster Flies Insecure
+cntDumpsterInsecure,blocks,Container,KgNone,Dumpster Insecure
 cntFileCabinetShortLocked,blocks,Container,KgNone,File Cabinet Short 
 cntFileCabinetTallLocked,blocks,Container,KgNone,File Cabinet Tall 
+cntFreezerBeveragesMiddleFullClosed,blocks,Container,,,Book Beverages Middle Full Closed
+cntFreezerBeveragesMiddleFullClosedBroken,blocks,Container,,,Book Beverages Middle Full Closed Broken
+cntFreezerBeveragesMiddleFullClosedBrokenOpen,blocks,Container,,,Book Beverages Middle Full Closed Broken Open
+cntFreezerBeveragesMiddleFullClosedOpen,blocks,Container,,,Book Beverages Middle Full Closed Open
+cntFreezerBeveragesStandaloneFullClosed,blocks,Container,,,Book Beverages Standalone Full Closed
+cntFreezerBeveragesStandaloneFullClosedBroken,blocks,Container,,,Book Beverages Standalone Full Closed Broken
+cntFreezerBeveragesStandaloneFullClosedBrokenOpen,blocks,Container,,,Book Beverages Standalone Full Closed Broken Open
+cntFreezerBeveragesStandaloneFullClosedOpen,blocks,Container,,,Book Beverages Standalone Full Closed Open
+cntFreezerGroceriesMiddleFullClosed,blocks,Container,,,Book Freezer Groceries Middle Full Closed
+cntFreezerGroceriesMiddleFullClosed2,blocks,Container,,,Book Freezer Groceries Middle Full Closed 2
+cntFreezerGroceriesMiddleFullClosed2Open,blocks,Container,,,Book Freezer Groceries Middle Full Closed 2 Open
+cntFreezerGroceriesMiddleFullClosedBroken,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken
+cntFreezerGroceriesMiddleFullClosedBroken2,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken 2
+cntFreezerGroceriesMiddleFullClosedBroken2Open,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken 2 Open
+cntFreezerGroceriesMiddleFullClosedBrokenOpen,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken Open
+cntFreezerGroceriesMiddleFullClosedOpen,blocks,Container,,,Book Freezer Groceries Middle Full Closed Open
+cntGunRackSmall03Empty,blocks,Container,,,Gun Rack Small 03 Empty
+cntGunRackSmallArmorEmpty,blocks,Container,,,Gun Rack Small Armor Empty
+cntGunRackSmallEmpty,blocks,Container,,,Gun Rack Small Empty
+cntGunRackSmallMagazinesEmpty01,blocks,Container,,,Gun Rack Small Magazines Empty
 cntLockersShortLocked,blocks,Container,KgNone,Lockers Short 
 cntLockersTallLocked,blocks,Container,KgNone,Lockers Tall 
-cntLockersTallMixLocked,blocks,Container,KgNone,Lockers Tall Mix 
 cntLockersTallMixLinkLocked,blocks,Container,KgNone,Lockers Tall Mix Link 
-cntCashRegisterLocked,blocks,Container,KgNone,Cash Register 
-cntLuggageMediumLocked,blocks,Container,KgNone,Luggage Medium 
+cntLockersTallMixLocked,blocks,Container,KgNone,Lockers Tall Mix 
 cntLuggageBigLocked,blocks,Container,KgNone,Luggage Big 
-cntPillCaseLocked,blocks,Container,KgNone,Pill Case 
-cntToolBoxLocked,blocks,Container,KgNone,Tool Box 
-cntRollingToolBoxLocked,blocks,Container,KgNone,Rolling Tool Box 
+cntLuggageMediumLocked,blocks,Container,KgNone,Luggage Medium 
 cntLuggagePileALocked,blocks,Container,KgNone,Luggage Pile A 
 cntLuggagePileBLocked,blocks,Container,KgNone,Luggage Pile B 
-cntTiltTruckFullFliesEmpty,blocks,Container,KgNone,Tilt Truck Full Flies Empty
-cntMunitionsBoxInsecure,blocks,Container,KgNone,Munitions Box Insecure
+cntMedicineCabinetFaucetLocked,blocks,Container,KgNone,Medicine Cabinet Faucet 
+cntMedicineCabinetLocked,blocks,Container,KgNone,Medicine Cabinet 
+cntMetalDesk02Locked,blocks,Container,KgNone,Metal Desk 02 
 cntMunitionsBoxEmpty,blocks,Container,KgNone,Munitions Box Empty
-cntDumpsterInsecure,blocks,Container,KgNone,Dumpster Insecure
-cntDumpsterEmpty,blocks,Container,KgNone,Dumpster Empty
-cntDumpsterFliesInsecure,blocks,Container,KgNone,Dumpster Flies Insecure
-cntDumpsterFliesEmpty,blocks,Container,KgNone,Dumpster Flies Empty
-CabinetBottom,blocks,Container,KgNone,Cabinet Bottom
-CupboardCabinetRedTopClosed,blocks,Container,KgNone,Cupboard Cabinet Red Top
-CabinetOldBottom,blocks,Container,KgNone,Cabinet Old Bottom
-MicrowaveOvenClosed,blocks,Container,KgNone,Microwave Oven
-MedicineCabinetClosed,blocks,Container,KgNone,Medicine Cabinet
+cntMunitionsBoxInsecure,blocks,Container,KgNone,Munitions Box Insecure
+cntNightstandLocked,blocks,Container,KgNone,Night Stand 
+cntPillCaseLocked,blocks,Container,KgNone,Pill Case 
+cntRollingToolBoxLocked,blocks,Container,KgNone,Rolling Tool Box 
+cntStoreElectronicsBookShelfSpeakerEmpty,blocks,Container,,,Store Electronics Book Shelf Speaker Empty
+cntStoreElectronicsPalletTvFallenEmpty,blocks,Container,,,Store Electronics Pallet Tv Fallen Empty
+cntStoreElectronicsPalletTvStandingEmpty,blocks,Container,,,Store Electronics Pallet Tv Standing Empty
+cntStoreProduceBasketApples1,blocks,Container,,,Store Produce Basket Apples 1
+cntStoreProduceBasketApples1Empty,blocks,Container,,,Store Produce Basket Apples 1 Empty
+cntStoreProduceBasketApples2,blocks,Container,,,Store Produce Basket Apples 2
+cntStoreProduceBasketApples2Empty,blocks,Container,,,Store Produce Basket Apples 2 Empty
+cntStoreProduceBasketGourds1,blocks,Container,,,Store Produce Basket Gourds 1
+cntStoreProduceBasketGourds1Empty,blocks,Container,,,Store Produce Basket Gourds 1 Empty
+cntStoreProduceBasketGourds2,blocks,Container,,,Store Produce Basket Gourds 2
+cntStoreProduceBasketGourds2Empty,blocks,Container,,,Store Produce Basket Gourds 2 Empty
+cntStoreProduceBasketLettuce1,blocks,Container,,,Store Produce Basket Lettuce 1
+cntStoreProduceBasketLettuce1Empty,blocks,Container,,,Store Produce Basket Lettuce 1 Empty
+cntStoreProduceBasketLettuce2,blocks,Container,,,Store Produce Basket Lettuce 2
+cntStoreProduceBasketLettuce2Empty,blocks,Container,,,Store Produce Basket Lettuce 2 Empty
+cntStoreProduceBasketMelons1,blocks,Container,,,Store Produce Basket Melons 1
+cntStoreProduceBasketMelons1Empty,blocks,Container,,,Store Produce Basket Melons 1 Empty
+cntStoreProduceBasketMelons2,blocks,Container,,,Store Produce Basket Melons 1
+cntStoreProduceBasketMelons2Empty,blocks,Container,,,Store Produce Basket Melons 1 Empty
+cntStoreShelfDoubleBottomFood01,blocks,Container,,,Store Shelf Double Bottom Food 01
+cntStoreShelfDoubleBottomFood01Empty,blocks,Container,,,Store Shelf Double Bottom Food 01 Empty
+cntStoreShelfDoubleBottomFood02,blocks,Container,,,Store Shelf Double Bottom Food 02
+cntStoreShelfDoubleBottomFood02Empty,blocks,Container,,,Store Shelf Double Bottom Food 02 Empty
+cntStoreShelfDoubleBottomHardware01,blocks,Container,,,Store Shelf Double Bottom Hardware 01
+cntStoreShelfDoubleBottomHardware01Empty,blocks,Container,,,Store Shelf Double Bottom Hardware 01 Empty
+cntStoreShelfDoubleBottomHardware02,blocks,Container,,,Store Shelf Double Bottom Hardware 02
+cntStoreShelfDoubleBottomHardware02Empty,blocks,Container,,,Store Shelf Double Bottom Hardware 01 Empty
+cntStoreShelfDoubleBottomHardware03Rasgs,blocks,Container,,,Store Shelf Double Bottom Hardware 03 Rags
+cntStoreShelfDoubleBottomHardware03RasgsEmpty,blocks,Container,,,Store Shelf Double Bottom Hardware 03 Rags Empty
+cntStoreShelfDoubleBottomPharmaGoods01,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 01
+cntStoreShelfDoubleBottomPharmaGoods01Empty,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 01 Empty
+cntStoreShelfDoubleBottomPharmaGoods02,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 02
+cntStoreShelfDoubleBottomPharmaGoods02Empty,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 02 Empty
+cntStoreShelfDoubleBottomShoesFull,blocks,Container,,,Store Shelf Double Bottom Shoes Full
+cntStoreShelfDoubleBottomShoesOpen,blocks,Container,,,Store Shelf Double Bottom Shoes Open
+cntStoreShelfDoubleBottomTrash01,blocks,Container,,,Store Shelf Double Bottom Trash 01
+cntStoreShelfDoubleBottomTrash01Empty,blocks,Container,,,Store Shelf Double Bottom Trash 01 Empty
+cntStoreShelfDoubleBottomTrash02,blocks,Container,,,Store Shelf Double Bottom Trash 02
+cntStoreShelfDoubleBottomTrash02Empty,blocks,Container,,,Store Shelf Double Bottom Trash 02 Empty
+cntStoreShelfDoubleBottomTrashRandomLootHelper,blocks,Container,,,= Store Shelf Double Bottom Trash = Random Helper
+cntStoreShelfDoubleTopFood01,blocks,Container,,,Store Shelf Double Top Food 01
+cntStoreShelfDoubleTopFood01Empty,blocks,Container,,,Store Shelf Double Top Food 01 Empty
+cntStoreShelfDoubleTopHardware01,blocks,Container,,,Store Shelf Double Top Hardware 01
+cntStoreShelfDoubleTopHardware01Empty,blocks,Container,,,Store Shelf Double Top Hardware 01 Empty
+cntStoreShelfDoubleTopHardware02Rags,blocks,Container,,,Store Shelf Double Top Hardware 03 Rags
+cntStoreShelfDoubleTopHardware02RagsEmpty,blocks,Container,,,Store Shelf Double Top Hardware 03 Rags Empty
+cntStoreShelfDoubleTopShoesFull,blocks,Container,,,Store Shelf Double Top Shoes Full
+cntStoreShelfDoubleTopShoesOpen,blocks,Container,,,Store Shelf Double Top Shoes Open
+cntStoreShelfDoubleTopTrash01,blocks,Container,,,Store Shelf Double Top Trash 01
+cntStoreShelfDoubleTopTrash01Empty,blocks,Container,,,Store Shelf Double Top Trash 01 Empty
+cntStoreShelfDoubleTopTrashRandomLootHelper,blocks,Container,,,= Store Shelf Double Top Trash = Random Helper
+cntStoreShelfElectronicsDoubleBottomGoods01Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 01 Empty
+cntStoreShelfElectronicsDoubleBottomGoods02Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 02 Empty
+cntStoreShelfElectronicsDoubleBottomGoods03Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 03 Empty
+cntStoreShelfElectronicsDoubleBottomGoods04Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 04 Empty
+cntStoreShelfElectronicsSingleBottomElectronicsMonitorEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Electronics Monitor Empty
+cntStoreShelfElectronicsSingleBottomGoodsMiscEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Goods Misc Empty
+cntStoreShelfElectronicsSingleBottomHeadphonesEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Headphones Empty
+cntStoreShelfElectronicsSingleBottomKeyboardEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Keyboard Empty
+cntStoreShelfElectronicsSingleBottomLaptopClosedEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Laptop Closed Empty
+cntStoreShelfElectronicsSingleBottomLaptopOpenEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Laptop Open Empty
+cntStoreShelfElectronicsSingleBottomPCEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom PC Empty
+cntStoreShelfElectronicsSingleBottomSpeakerEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Speaker Empty
+cntStoreShelfSingleBottomFood01,blocks,Container,,,Store Shelf Single Bottom Food 01
+cntStoreShelfSingleBottomFood01Empty,blocks,Container,,,Store Shelf Single Bottom Food 01 Empty
+cntStoreShelfSingleBottomFood02,blocks,Container,,,Store Shelf Single Bottom Food 02
+cntStoreShelfSingleBottomFood02Empty,blocks,Container,,,Store Shelf Single Bottom Food 02 Empty
+cntStoreShelfSingleBottomHardware01,blocks,Container,,,Store Shelf Single Bottom Hardware 01
+cntStoreShelfSingleBottomHardware01Empty,blocks,Container,,,Store Shelf Single Bottom Hardware 01 Empty
+cntStoreShelfSingleBottomHardware02,blocks,Container,,,Store Shelf Single Bottom Hardware 02
+cntStoreShelfSingleBottomHardware02Empty,blocks,Container,,,Store Shelf Single Bottom Hardware 02 Empty
+cntStoreShelfSingleBottomPharmaGoods01,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 01
+cntStoreShelfSingleBottomPharmaGoods01Empty,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 01 Empty
+cntStoreShelfSingleBottomPharmaGoods02,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 02
+cntStoreShelfSingleBottomPharmaGoods02Empty,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 02 Empty
+cntStoreShelfSingleBottomShoesFull,blocks,Container,,,Store Shelf Single Bottom Shoes Full
+cntStoreShelfSingleBottomShoesOpen,blocks,Container,,,Store Shelf Single Bottom Shoes Open
+cntStoreShelfSingleBottomTrash01,blocks,Container,,,Store Shelf Single Bottom Trash 01
+cntStoreShelfSingleBottomTrash01Empty,blocks,Container,,,Store Shelf Single Bottom Trash 01 Empty
+cntStoreShelfSingleBottomTrash02,blocks,Container,,,Store Shelf Single Bottom Trash 02
+cntStoreShelfSingleBottomTrash02Empty,blocks,Container,,,Store Shelf Single Bottom Trash 02 Empty
+cntStoreShelfSingleBottomTrashRandomLootHelper,blocks,Container,,,= Store Shelf Single Bottom Trash = Random Helper
+cntStoreShelfSingleTopFood01,blocks,Container,,,Store Shelf Single Top Food 01
+cntStoreShelfSingleTopFood01Empty,blocks,Container,,,Store Shelf Single Top Food 01 Empty
+cntStoreShelfSingleTopHardware01,blocks,Container,,,Store Shelf Single Top Hardware 01
+cntStoreShelfSingleTopHardware01Empty,blocks,Container,,,Store Shelf Single Top Hardware 01 Empty
+cntStoreShelfSingleTopHardware02,blocks,Container,,,Store Shelf Single Top Hardware 02
+cntStoreShelfSingleTopHardware02Empty,blocks,Container,,,Store Shelf Single Top Hardware 02 Empty
+cntStoreShelfSingleTopShoesFull,blocks,Container,,,Store Shelf Single Top Shoes Full
+cntStoreShelfSingleTopShoesOpen,blocks,Container,,,Store Shelf Single Top Shoes Open
+cntStoreShelfSingleTopTrash01,blocks,Container,,,Store Shelf Single Top Trash 01
+cntStoreShelfSingleTopTrash01Empty,blocks,Container,,,Store Shelf Single Top Trash 01 Empty
+cntStoreShelfSingleTopTrash02,blocks,Container,,,Store Shelf Single Top Trash 02
+cntStoreShelfSingleTopTrash02Empty,blocks,Container,,,Store Shelf Single Top Trash 02 Empty
+cntStoreShelfSingleTopTrashRandomLootHelper,blocks,Container,,,= Store Shelf Single Top Trash = Random Helper
+cntTiltTruckFullFliesEmpty,blocks,Container,KgNone,Tilt Truck Full Flies Empty
+cntToolBoxLocked,blocks,Container,KgNone,Tool Box 
+cntWoodDesk01Locked,blocks,Container,KgNone,Wood Desk 01
+CoolerClosed,blocks,Container,KgNone,Cooler
 CupboardCabinetOldTopClosed,blocks,Container,KgNone,Cupboard Cabinet Old Top
-StoveOldClosed,blocks,Container,KgNone,Stove Old
-RetroFridgeClosed,blocks,Container,KgNone,Retro Fridge
-FridgeStainlessSteel,blocks,Container,KgNone,Fridge Stainless Steel
-NightstandClosed,blocks,Container,KgNone,Night stand
-MedicineCabinetFaucetClosed,blocks,Container,KgNone,Medicine Cabinet Faucet
-WoodDesk01Closed,blocks,Container,KgNone,Wood Desk
-MetalDeskClosed,blocks,Container,KgNone,Metal Desk
+CupboardCabinetRedTopClosed,blocks,Container,KgNone,Cupboard Cabinet Red Top
 FileCabinetShortClosed,blocks,Container,KgNone,File Cabinet Short
 FileCabinetTallClosed,blocks,Container,KgNone,File Cabinet Tall
-CoolerClosed,blocks,Container,KgNone,Cooler
+FridgeStainlessSteel,blocks,Container,KgNone,Fridge Stainless Steel
+goreBlockAnimal,blocks,Container,KgNone,Rotting Flesh
+goreBlockHumanBones,blocks,Container,KgNone,Rotting Flesh
+goreBlockHumanCorpse,blocks,Container,KgNone,Rotting Corpse
+goreBlockHumanCorpse1,blocks,Container,KgNone,Rotting Corpse
+goreBlockHumanCorpse2,blocks,Container,KgNone,Rotting Corpse
+goreBlockHumanCorpse3,blocks,Container,KgNone,Rotting Corpse
 LockersShortClosed,blocks,Container,Lockers Short
 LockersTallClosed,blocks,Container,KgNone,Lockers Tall
 LockersTallDoubleClosed,blocks,Container,KgNone,Lockers Tall Double
 LockersTallMixClosed,blocks,Container,KgNone,Lockers Tall Mix
 LockersTallMixLinkClosed,blocks,Container,KgNone,Lockers Tall Mix Link
-BookcaseFull,blocks,Container,KgNone,Book Case
-cntStoreShelfSingleBottomFood01Empty,blocks,Container,,,Store Shelf Single Bottom Food 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomFood01,blocks,Container,,,Store Shelf Single Bottom Food 01,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomFood02Empty,blocks,Container,,,Store Shelf Single Bottom Food 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomFood02,blocks,Container,,,Store Shelf Single Bottom Food 02,,,,,,,,,,,,,,
-cntStoreShelfSingleTopFood01Empty,blocks,Container,,,Store Shelf Single Top Food 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleTopFood01,blocks,Container,,,Store Shelf Single Top Food 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomFood01Empty,blocks,Container,,,Store Shelf Double Bottom Food 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomFood01,blocks,Container,,,Store Shelf Double Bottom Food 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomFood02Empty,blocks,Container,,,Store Shelf Double Bottom Food 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomFood02,blocks,Container,,,Store Shelf Double Bottom Food 02,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopFood01Empty,blocks,Container,,,Store Shelf Double Top Food 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopFood01,blocks,Container,,,Store Shelf Double Top Food 01,,,,,,,,,,,,,,
-
-cntStoreShelfSingleBottomHardware01Empty,blocks,Container,,,Store Shelf Single Bottom Hardware 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomHardware01,blocks,Container,,,Store Shelf Single Bottom Hardware 01,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomHardware02Empty,blocks,Container,,,Store Shelf Single Bottom Hardware 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomHardware02,blocks,Container,,,Store Shelf Single Bottom Hardware 02,,,,,,,,,,,,,,
-cntStoreShelfSingleTopHardware01Empty,blocks,Container,,,Store Shelf Single Top Hardware 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleTopHardware01,blocks,Container,,,Store Shelf Single Top Hardware 01,,,,,,,,,,,,,,
-cntStoreShelfSingleTopHardware02Empty,blocks,Container,,,Store Shelf Single Top Hardware 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleTopHardware02,blocks,Container,,,Store Shelf Single Top Hardware 02,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware01Empty,blocks,Container,,,Store Shelf Double Bottom Hardware 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware01,blocks,Container,,,Store Shelf Double Bottom Hardware 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware02Empty,blocks,Container,,,Store Shelf Double Bottom Hardware 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware02,blocks,Container,,,Store Shelf Double Bottom Hardware 02,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware03RasgsEmpty,blocks,Container,,,Store Shelf Double Bottom Hardware 03 Rags Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomHardware03Rasgs,blocks,Container,,,Store Shelf Double Bottom Hardware 03 Rags,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopHardware01Empty,blocks,Container,,,Store Shelf Double Top Hardware 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopHardware01,blocks,Container,,,Store Shelf Double Top Hardware 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopHardware02RagsEmpty,blocks,Container,,,Store Shelf Double Top Hardware 03 Rags Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopHardware02Rags,blocks,Container,,,Store Shelf Double Top Hardware 03 Rags,,,,,,,,,,,,,,
-
-cntStoreShelfSingleBottomPharmaGoods01Empty,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomPharmaGoods01,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 01,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomPharmaGoods02Empty,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomPharmaGoods02,blocks,Container,,,Store Shelf Single Bottom Pharmacy Goods 02,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomPharmaGoods01Empty,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomPharmaGoods01,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomPharmaGoods02Empty,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomPharmaGoods02,blocks,Container,,,Store Shelf Double Bottom Pharmacy Goods 02,,,,,,,,,,,,,,
-
-cntStoreShelfSingleBottomTrash01Empty,blocks,Container,,,Store Shelf Single Bottom Trash 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomTrash01,blocks,Container,,,Store Shelf Single Bottom Trash 01,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomTrash02Empty,blocks,Container,,,Store Shelf Single Bottom Trash 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomTrash02,blocks,Container,,,Store Shelf Single Bottom Trash 02,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomTrashRandomLootHelper,blocks,Container,,,= Store Shelf Single Bottom Trash = Random Helper,,,,,,,,,,,,,,
-cntStoreShelfSingleTopTrash01Empty,blocks,Container,,,Store Shelf Single Top Trash 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleTopTrash01,blocks,Container,,,Store Shelf Single Top Trash 01,,,,,,,,,,,,,,
-cntStoreShelfSingleTopTrash02Empty,blocks,Container,,,Store Shelf Single Top Trash 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfSingleTopTrash02,blocks,Container,,,Store Shelf Single Top Trash 02,,,,,,,,,,,,,,
-cntStoreShelfSingleTopTrashRandomLootHelper,blocks,Container,,,= Store Shelf Single Top Trash = Random Helper,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomTrash01Empty,blocks,Container,,,Store Shelf Double Bottom Trash 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomTrash01,blocks,Container,,,Store Shelf Double Bottom Trash 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomTrash02Empty,blocks,Container,,,Store Shelf Double Bottom Trash 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomTrash02,blocks,Container,,,Store Shelf Double Bottom Trash 02,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomTrashRandomLootHelper,blocks,Container,,,= Store Shelf Double Bottom Trash = Random Helper,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopTrash01Empty,blocks,Container,,,Store Shelf Double Top Trash 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopTrash01,blocks,Container,,,Store Shelf Double Top Trash 01,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopTrashRandomLootHelper,blocks,Container,,,= Store Shelf Double Top Trash = Random Helper,,,,,,,,,,,,,,
-
-cntStoreProduceBasketApples1Empty,blocks,Container,,,Store Produce Basket Apples 1 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketApples1,blocks,Container,,,Store Produce Basket Apples 1,,,,,,,,,,,,,,
-cntStoreProduceBasketApples2Empty,blocks,Container,,,Store Produce Basket Apples 2 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketApples2,blocks,Container,,,Store Produce Basket Apples 2,,,,,,,,,,,,,,
-cntStoreProduceBasketGourds1Empty,blocks,Container,,,Store Produce Basket Gourds 1 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketGourds1,blocks,Container,,,Store Produce Basket Gourds 1,,,,,,,,,,,,,,
-cntStoreProduceBasketGourds2Empty,blocks,Container,,,Store Produce Basket Gourds 2 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketGourds2,blocks,Container,,,Store Produce Basket Gourds 2,,,,,,,,,,,,,,
-cntStoreProduceBasketLettuce1Empty,blocks,Container,,,Store Produce Basket Lettuce 1 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketLettuce1,blocks,Container,,,Store Produce Basket Lettuce 1,,,,,,,,,,,,,,
-cntStoreProduceBasketLettuce2Empty,blocks,Container,,,Store Produce Basket Lettuce 2 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketLettuce2,blocks,Container,,,Store Produce Basket Lettuce 2,,,,,,,,,,,,,,
-cntStoreProduceBasketMelons1Empty,blocks,Container,,,Store Produce Basket Melons 1 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketMelons1,blocks,Container,,,Store Produce Basket Melons 1,,,,,,,,,,,,,,
-cntStoreProduceBasketMelons2Empty,blocks,Container,,,Store Produce Basket Melons 1 Empty,,,,,,,,,,,,,,
-cntStoreProduceBasketMelons2,blocks,Container,,,Store Produce Basket Melons 1,,,,,,,,,,,,,,
-
-cntGunRackSmallMagazinesEmpty01,blocks,Container,,,Gun Rack Small Magazines Empty,,,,,,,,,,,,,,
-cntGunRackSmallArmorEmpty,blocks,Container,,,Gun Rack Small Armor Empty,,,,,,,,,,,,,,
-
-cntGunRackSmallEmpty,blocks,Container,,,Gun Rack Small Empty,,,,,,,,,,,,,,
-cntGunRackSmall03Empty,blocks,Container,,,Gun Rack Small 03 Empty,,,,,,,,,,,,,,
-
-cntStoreShelfElectronicsSingleBottomPCEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom PC Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomElectronicsMonitorEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Electronics Monitor Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomGoodsMiscEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Goods Misc Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomHeadphonesEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Headphones Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomKeyboardEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Keyboard Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomLaptopClosedEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Laptop Closed Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomLaptopOpenEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Laptop Open Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsSingleBottomSpeakerEmpty,blocks,Container,,,Store Shelf Electronics Single Bottom Speaker Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsDoubleBottomGoods01Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 01 Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsDoubleBottomGoods02Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 02 Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsDoubleBottomGoods03Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 03 Empty,,,,,,,,,,,,,,
-cntStoreShelfElectronicsDoubleBottomGoods04Empty,blocks,Container,,,Store Shelf Electronics Double Bottom Goods 04 Empty,,,,,,,,,,,,,,
-cntStoreElectronicsBookShelfSpeakerEmpty,blocks,Container,,,Store Electronics Book Shelf Speaker Empty,,,,,,,,,,,,,,
-cntStoreElectronicsPalletTvFallenEmpty,blocks,Container,,,Store Electronics Pallet Tv Fallen Empty,,,,,,,,,,,,,,
-cntStoreElectronicsPalletTvStandingEmpty,blocks,Container,,,Store Electronics Pallet Tv Standing Empty,,,,,,,,,,,,,,
-
-cntClothesRackRoundPantsEmpty,blocks,Container,,,Clothes Rack Round Pants Empty,,,,,,,,,,,,,,
-cntClothesRackRoundPants,blocks,Container,,,Clothes Rack Round Pants,,,,,,,,,,,,,,
-cntClothesRackRoundShirtsEmpty,blocks,Container,,,Clothes Rack Round Shirts Empty,,,,,,,,,,,,,,
-cntClothesRackRoundShirts,blocks,Container,,,Clothes Rack Round Shirts,,,,,,,,,,,,,,
-
-cntClothesRackRectanglePantsEmpty,blocks,Container,,,Clothes Rack Rectangle Pants Empty,,,,,,,,,,,,,,
-cntClothesRackRectanglePants,blocks,Container,,,Clothes Rack Rectangle Pants,,,,,,,,,,,,,,
-cntClothesRackRectangleShirtsEmpty,blocks,Container,,,Clothes Rack Rectangle Shirts Empty,,,,,,,,,,,,,,
-cntClothesRackRectangleShirts,blocks,Container,,,Clothes Rack Rectangle Shirts,,,,,,,,,,,,,,
-
-cntClothesRackWallPantsEmptyHanger,blocks,Container,,,Clothes Rack Wall Pants Empty Hanger,,,,,,,,,,,,,,
-cntClothesRackWallPants,blocks,Container,,,Clothes Rack Wall Pants,,,,,,,,,,,,,,
-cntClothesRackWallLongSleeveEmptyHanger,blocks,Container,,,Clothes Rack Wall Long Sleeve Empty Hanger,,,,,,,,,,,,,,
-cntClothesRackWallLongSleeve,blocks,Container,,,Clothes Rack Wall Long Sleeve,,,,,,,,,,,,,,
-cntClothesRackWallSweaterEmptyHanger,blocks,Container,,,Clothes Rack Wall Sweater Empty Hanger,,,,,,,,,,,,,,
-cntClothesRackWallSweater,blocks,Container,,,Clothes Rack Wall Sweater,,,,,,,,,,,,,,
-cntClothesRackWallTShirtsEmptyHanger,blocks,Container,,,Clothes Rack Wall TShirts Empty Hanger,,,,,,,,,,,,,,
-cntClothesRackWallTShirts,blocks,Container,,,Clothes Rack Wall TShirts,,,,,,,,,,,,,,
-
-cntClothesShelfHalfJeans01Empty,blocks,Container,,,Clothes Shelf Half Jeans 01 Empty,,,,,,,,,,,,,,
-cntClothesShelfHalfJeans01,blocks,Container,,,Clothes Shelf Half Jeans 01,,,,,,,,,,,,,,
-cntClothesShelfHalfJeans02Empty,blocks,Container,,,Clothes Shelf Half Jeans 02 Empty,,,,,,,,,,,,,,
-cntClothesShelfHalfJeans02,blocks,Container,,,Clothes Shelf Half Jeans 02,,,,,,,,,,,,,,
-cntClothesShelfHalfShirts01Empty,blocks,Container,,,Clothes Shelf Half Shirts 01 Empty,,,,,,,,,,,,,,
-cntClothesShelfHalfShirts01,blocks,Container,,,Clothes Shelf Half Shirts 01,,,,,,,,,,,,,,
-cntClothesShelfHalfShirts02Empty,blocks,Container,,,Clothes Shelf Half Shirts 02 Empty,,,,,,,,,,,,,,
-cntClothesShelfHalfShirts02,blocks,Container,,,Clothes Shelf Half Shirts 02,,,,,,,,,,,,,,
-cntClothesShelfHalfSweaters01Empty,blocks,Container,,,Clothes Shelf Half Sweaters 01 Empty,,,,,,,,,,,,,,
-cntClothesShelfHalfSweaters01,blocks,Container,,,Clothes Shelf Half Sweaters 01,,,,,,,,,,,,,,
-
-cntClothesShelfStackJeans01Empty,blocks,Container,,,Clothes Shelf Stack Jeans 01 Empty,,,,,,,,,,,,,,
-cntClothesShelfStackJeans01,blocks,Container,,,Clothes Shelf Stack Jeans 01,,,,,,,,,,,,,,
-cntClothesShelfStackJeans02Empty,blocks,Container,,,Clothes Shelf Stack Jeans 02 Empty,,,,,,,,,,,,,,
-cntClothesShelfStackJeans02,blocks,Container,,,Clothes Shelf Stack Jeans 02,,,,,,,,,,,,,,
-cntClothesShelfStackShirts01Empty,blocks,Container,,,Clothes Shelf Stack Shirts 01 Empty,,,,,,,,,,,,,,
-cntClothesShelfStackShirts01,blocks,Container,,,Clothes Shelf Stack Shirts 01,,,,,,,,,,,,,,
-cntClothesShelfStackShirts02Empty,blocks,Container,,,Clothes Shelf Stack Shirts 02 Empty,,,,,,,,,,,,,,
-cntClothesShelfStackShirts02,blocks,Container,,,Clothes Shelf Stack Shirts 02,,,,,,,,,,,,,,
-
-cntStoreShelfDoubleBottomShoesOpen,blocks,Container,,,Store Shelf Double Bottom Shoes Open,,,,,,,,,,,,,,
-cntStoreShelfDoubleBottomShoesFull,blocks,Container,,,Store Shelf Double Bottom Shoes Full,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopShoesOpen,blocks,Container,,,Store Shelf Double Top Shoes Open,,,,,,,,,,,,,,
-cntStoreShelfDoubleTopShoesFull,blocks,Container,,,Store Shelf Double Top Shoes Full,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomShoesOpen,blocks,Container,,,Store Shelf Single Bottom Shoes Open,,,,,,,,,,,,,,
-cntStoreShelfSingleBottomShoesFull,blocks,Container,,,Store Shelf Single Bottom Shoes Full,,,,,,,,,,,,,,
-cntStoreShelfSingleTopShoesOpen,blocks,Container,,,Store Shelf Single Top Shoes Open,,,,,,,,,,,,,,
-cntStoreShelfSingleTopShoesFull,blocks,Container,,,Store Shelf Single Top Shoes Full,,,,,,,,,,,,,,
-
-cntBookShelfSingleBottomFull01Empty,blocks,Container,,,Book Shelf Single Bottom Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleBottomFull01,blocks,Container,,,Book Shelf Single Bottom Full 01,,,,,,,,,,,,,,
-cntBookShelfSingleBottomFull02Empty,blocks,Container,,,Book Shelf Single Bottom Full 02 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleBottomFull02,blocks,Container,,,Book Shelf Single Bottom Full 02,,,,,,,,,,,,,,
-cntBookShelfSingleTopFull01Empty,blocks,Container,,,Book Shelf Single Top Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleTopFull01,blocks,Container,,,Book Shelf Single Top Full 01,,,,,,,,,,,,,,
-cntBookShelfSingleTopFull02Empty,blocks,Container,,,Book Shelf Single Top Full 02 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleTopFull02,blocks,Container,,,Book Shelf Single Top Full 02,,,,,,,,,,,,,,
-cntBookShelfDoubleBottomFull01Empty,blocks,Container,,,Book Shelf Double Bottom Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfDoubleBottomFull01,blocks,Container,,,Book Shelf Double Bottom Full 01,,,,,,,,,,,,,,
-cntBookShelfDoubleBottomFull02Empty,blocks,Container,,,Book Shelf Double Bottom Full 02 Empty,,,,,,,,,,,,,,
-cntBookShelfDoubleBottomFull02,blocks,Container,,,Book Shelf Double Bottom Full 02,,,,,,,,,,,,,,
-cntBookShelfDoubleTopFull01Empty,blocks,Container,,,Book Shelf Double Top Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfDoubleTopFull01,blocks,Container,,,Book Shelf Double Top Full 01,,,,,,,,,,,,,,
-cntBookShelfDoubleTopFull02Empty,blocks,Container,,,Book Shelf Double Top Full 02 Empty,,,,,,,,,,,,,,
-cntBookShelfDoubleTopFull02,blocks,Container,,,Book Shelf Double Top Full 02,,,,,,,,,,,,,,
-
-cntBookShelfSingleCapFull01BottomEmpty,blocks,Container,,,Book Shelf Single Cap Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleCapBottomFull01,blocks,Container,,,Book Shelf Single Cap Bottom Full 01,,,,,,,,,,,,,,
-cntBookShelfSingleCapFull02BottomEmpty,blocks,Container,,,Book Shelf Single Cap Full 02 Bottom Empty,,,,,,,,,,,,,,
-cntBookShelfSingleCapBottomFull02,blocks,Container,,,Book Shelf Single Cap Bottom Full 02,,,,,,,,,,,,,,
-cntBookShelfSingleCapTopFull01Empty,blocks,Container,,,Book Shelf Single Cap Top Full 01 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleCapTopFull01,blocks,Container,,,Book Shelf Single Cap Top Full 01,,,,,,,,,,,,,,
-cntBookShelfSingleCapTopFull02Empty,blocks,Container,,,Book Shelf Single Cap Top Full 02 Empty,,,,,,,,,,,,,,
-cntBookShelfSingleCapTopFull02,blocks,Container,,,Book Shelf Single Cap Top Full 02,,,,,,,,,,,,,,
-
-cntFreezerGroceriesMiddleFullClosedOpen,blocks,Container,,,Book Freezer Groceries Middle Full Closed Open,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosed,blocks,Container,,,Book Freezer Groceries Middle Full Closed,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosedBrokenOpen,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken Open,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosedBroken,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosed2Open,blocks,Container,,,Book Freezer Groceries Middle Full Closed 2 Open,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosed2,blocks,Container,,,Book Freezer Groceries Middle Full Closed 2,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosedBroken2Open,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken 2 Open,,,,,,,,,,,,,,
-cntFreezerGroceriesMiddleFullClosedBroken2,blocks,Container,,,Book Freezer Groceries Middle Full Closed Broken 2,,,,,,,,,,,,,,
-
-cntFreezerBeveragesMiddleFullClosedOpen,blocks,Container,,,Book Beverages Middle Full Closed Open,,,,,,,,,,,,,,
-cntFreezerBeveragesMiddleFullClosed,blocks,Container,,,Book Beverages Middle Full Closed,,,,,,,,,,,,,,
-cntFreezerBeveragesMiddleFullClosedBrokenOpen,blocks,Container,,,Book Beverages Middle Full Closed Broken Open,,,,,,,,,,,,,,
-cntFreezerBeveragesMiddleFullClosedBroken,blocks,Container,,,Book Beverages Middle Full Closed Broken,,,,,,,,,,,,,,
-cntFreezerBeveragesStandaloneFullClosedOpen,blocks,Container,,,Book Beverages Standalone Full Closed Open,,,,,,,,,,,,,,
-cntFreezerBeveragesStandaloneFullClosed,blocks,Container,,,Book Beverages Standalone Full Closed,,,,,,,,,,,,,,
-cntFreezerBeveragesStandaloneFullClosedBrokenOpen,blocks,Container,,,Book Beverages Standalone Full Closed Broken Open,,,,,,,,,,,,,,
-cntFreezerBeveragesStandaloneFullClosedBroken,blocks,Container,,,Book Beverages Standalone Full Closed Broken,,,,,,,,,,,,,,
-
-cntArmyTruckOpen,blocks,Container,,,Army Truck Open,,,,,,,,,,,,,,
-cntArmyTruckClosed,blocks,Container,,,Army Truck Closed,,,,,,,,,,,,,,
-cntArmyTruckRandomLootHelper,blocks,Container,,,= Army Truck Loot Helper = Random Helper,,,,,,,,,,,,,,
-bunkBedMade1,blocks,Container,,,Bunk Bed Made 1,,,,,,,,,,,,,,
-bunkBedMessy1,blocks,Container,,,Bunk Bed Messy 1,,,,,,,,,,,,,,
-
-cntDisplayCaseLeftEmpty,blocks,Container,,,Display case Left Empty,,,,,,,,,,,,,,
-cntDisplayCaseAmmoLeftBroken,blocks,Container,,,Display case Ammo Left Broken,,,,,,,,,,,,,,
-cntDisplayCaseEmptyMiddle,blocks,Container,,,Display case Empty Middle,,,,,,,,,,,,,,
-cntDisplayCaseAmmoMiddleBroken02,blocks,Container,,,Display case Ammo Middle Broken 02,,,,,,,,,,,,,,
-cntDisplayCaseEmptyRight,blocks,Container,,,Display case Bed Empty Right,,,,,,,,,,,,,,
-cntDisplayCaseAmmoRightBroken,blocks,Container,,,Display case Ammo Right Broken,,,,,,,,,,,,,,
+MedicineCabinetClosed,blocks,Container,KgNone,Medicine Cabinet
+MedicineCabinetFaucetClosed,blocks,Container,KgNone,Medicine Cabinet Faucet
+MetalDeskClosed,blocks,Container,KgNone,Metal Desk
+MicrowaveOvenClosed,blocks,Container,KgNone,Microwave Oven
+NightstandClosed,blocks,Container,KgNone,Night stand
+RetroFridgeClosed,blocks,Container,KgNone,Retro Fridge
+StoveOldClosed,blocks,Container,KgNone,Stove Old
+WoodDesk01Closed,blocks,Container,KgNone,Wood Desk
