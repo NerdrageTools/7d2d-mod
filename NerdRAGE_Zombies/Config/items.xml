@@ -35,6 +35,59 @@
 		]/property[@name='CrosshairOnAim']/@value">false</set>
 	<!-- / -->
 
+	<!-- ammo stacks should be full-sized -->
+		<!-- ammo stacks should stack to 10 -->
+		<append xpath="/items/item[@name='ammoBundleMaster']">
+			<property name="SellableToTrader" value="false" />
+		</append>
+		<set xpath="/items/item[@name='ammoBundleMaster']/property[@name='Stacknumber']/@value">10</set>
+
+		<!-- arrows and bolts-->
+		<set xpath="/items/item[
+			(@name='ammoArrowExploding') or
+			(@name='ammoCrossbowBoltExploding')
+		]/property[@name='Stacknumber']/@value">150</set>
+		<append xpath="/items/item[
+			(@name='ammoBundleArrowStone') or
+			(@name='ammoBundleArrowIron') or
+			(@name='ammoBundleArrowSteelAP') or
+			(@name='ammoBundleArrowFlaming') or
+			(@name='ammoBundleArrowExploding') or
+			(@name='ammoBundleCrossbowBoltStone') or
+			(@name='ammoBundleCrossbowBoltIron') or
+			(@name='ammoBundleCrossbowBoltSteelAP') or
+			(@name='ammoBundleCrossbowBoltFlaming') or
+			(@name='ammoBundleCrossbowBoltExploding')
+		]/property[@class='Action0']">
+			<property name="Create_item_count" value="150" />
+		</append>
+
+		<!-- 9mm and .44 ammo -->
+		<append xpath="/items/item[
+			(@name='ammoBundle9mmBulletBall') or
+			(@name='ammoBundle9mmBulletAP') or
+			(@name='ammoBundle9mmBulletHP') or
+			(@name='ammoBundle44MagnumBulletBall') or
+			(@name='ammoBundle44MagnumBulletAP') or
+			(@name='ammoBundle44MagnumBulletHP')
+		]/property[@class='Action0']">
+			<property name="Create_item_count" value="300" />
+		</append>
+
+		<!-- 7.62 and Shotgun ammo -->
+		<append xpath="/items/item[
+			(@name='ammoBundle762mmBulletBall') or
+			(@name='ammoBundle762mmBulletAP') or
+			(@name='ammoBundle762mmBulletHP') or
+			(@name='ammoBundleShotgunShell') or
+			(@name='ammoBundleShotgunSlug') or
+			(@name='ammoBundleShotgunSlug') or
+			(@name='ammoBundleShotgunBreachingSlug')
+		]/property[@class='Action0']">
+			<property name="Create_item_count" value="150" />
+		</append>
+	<!-- / -->
+
 	<!-- tool adjustments -->
 		<!-- Stone Axe -->
 		<set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/effect_group[@name='meleeToolRepairT0StoneAxe']/passive_effect[@name='EntityDamage' and @operation='base_set']/@value">9</set>
