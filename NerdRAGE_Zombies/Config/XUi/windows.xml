@@ -3,11 +3,11 @@
 		<set xpath="/windows/window[@name='windowBackpack']/@width">604</set>
 		<set xpath="/windows/window[@name='windowBackpack']/@height">373</set>
 	<!-- / -->
-		
+
 	<!-- increase the backpack content panel size -->
 		<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">330</set>
 	<!-- / -->
-		
+
 	<!-- adjust the rows, heights, and their cell equivalent -->
 		<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
 		<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">10</set>
@@ -16,7 +16,7 @@
 		<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">601</set>
 		<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">363</set>
 	<!-- / -->
-	
+
 	<!-- adjust windowlooting to match the size of the new player dropped backpack container -->
 		<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">10</set>
 		<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">10</set>
@@ -53,7 +53,7 @@
 							</rect>
 						</panel>
 					</rect>
-					
+
 					<sprite depth="3" pos="0,-75" height="20" width="753" color="[darkGrey]" foregroundlayer="true" type="sliced" />
 					<sprite depth="4" pos="0,-75" height="20" width="753" color="{xpcolor}" sprite="menu_empty3px" foregroundlayer="true" type="filled" fill="{xp}" />
 					<label text="Level: {playerlevel} | XP to Next Level: {playerxptonextlevel}[-]" controller="PlayerStatsWindow" depth="5" name="TextContent" pos="376,-85" font_size="14" color="[white]" justify="center" pivot="center" />
@@ -125,7 +125,7 @@
 						<filledsprite depth="8" name="background" color="0,0,0,255" width="85" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 						<filledsprite depth="3" name="background" color="0,0,0,255" width="84" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
 					</rect>
-					
+
 					<rect stat_type="Water" height="30" width="85" pos="85,-150" controller="HUDStatBar" visible="{statvisible}">
 						<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
 

@@ -8,12 +8,13 @@
 		</append>
 	<!-- / -->
 
-	<!-- dirt occasionally spawns veggies -->
-	<append xpath="/blocks/block[@name='terrDirt']">
-		<drop event="Harvest" name="foodCropMushrooms" prob=".01" count="1,5" tag="wildCropsHarvest"/>
-		<drop event="Harvest" name="foodCropPotato" prob=".01" count="1,3" tag="wildCropsHarvest"/>
-		<drop event="Harvest" name="foodCropPumpkin" prob=".01" count="1,1" tag="wildCropsHarvest"/>
-	</append>
+	<!-- digging up dirt occasionally yields veggies -->
+		<append xpath="/blocks/block[@name='terrDirt']">
+			<drop event="Harvest" name="foodCropMushrooms" prob=".01" count="1,5" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropPotato" prob=".01" count="1,3" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropPumpkin" prob=".01" count="1,1" tag="wildCropsHarvest"/>
+		</append>
+	<!-- / -->
 
 	<!-- Add a burnt-out Burning Barrel -->
 		<append xpath="/blocks">
