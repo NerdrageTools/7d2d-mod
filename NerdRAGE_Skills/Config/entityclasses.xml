@@ -1,0 +1,7 @@
+<configs>
+	<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group name="Mastery">
+			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Running_Lvl" tags="perkMasterOfRunning"/>
+		</effect_group>
+	</append>
+</configs>

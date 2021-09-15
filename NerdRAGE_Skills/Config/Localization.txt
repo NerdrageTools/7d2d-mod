@@ -1,0 +1,8 @@
+Key,Source,Context,Changes,English
+
+attMasteryName,progression,Attribute,New,Mastery
+skillAthleticsName,progression,Skill,New,Athletics
+perkMasterOfRunningName,progression,Perk,New,Running
+perkMasterOfRunningDesc,progression,Perk,New,"+0.3% Running Speed and -0.3% Stamina Usage while running per level"
+perkMasterOfJumpingName,progression,Perk,New,Jumping
+perkMasterOfJumpingDesc,progression,Perk,New,Jump Higher

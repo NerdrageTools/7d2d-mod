@@ -1,0 +1,43 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="buffIsRunning" hidden="false" remove_on_death="true">
+			<stack_type value="ignore" />
+			<duration value="10000" />
+			<update_rate value="1" />
+
+			<effect_group name="Level Up Running">
+				<requirement name="CVarCompare" cvar="$Mastery_Running_Lvl" operation="LT" value="100" />
+				<requirement name="ProgressionLevel" progression_name="perkMasterOfRunning" operation="LT" value="100" />
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffIsRunning">
+					<requirement name="!EntityHasMovementTag" tags="running" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="add" value="10">
+					<requirement name="EntityHasMovementTag" tags="running" />
+				</triggered_effect> 
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_Lvl" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_XP" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_LvlNextAdd" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_LvlNextTotal" />
+
+				<triggered_effect trigger="onSelfBuffUpdate" action="ShowToolbeltMessage" message="Your Mastery of Running Has Increased!" message_key="attRunningLevelUp">
+					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_LvlNextTotal" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="levelup" play_in_head="true">
+					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_LvlNextTotal" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_LvlNextAdd" operation="multiply" value="@$Mastery_XPMultiplier">
+					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_LvlNextTotal" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_LvlNextTotal" operation="add" value="@$Mastery_Running_LvlNextAdd">
+					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_LvlNextTotal" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="add" value="1">
+					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_LvlNextTotal" />
+				</triggered_effect>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

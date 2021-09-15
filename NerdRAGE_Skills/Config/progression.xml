@@ -1,0 +1,35 @@
+<configs>
+	<append xpath="/progression/attributes">
+		<attribute name="attMastery" name_key="attMasteryName" desc_key="attMasteryDesc" icon="ui_game_symbol_quest" min_level="1" max_level="1" base_skill_point_cost="0">
+			<effect_group name="Mastery Initialization">
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_XPMultiplier" operation="set" value="1.015" />
+			</effect_group>
+
+			<effect_group name="Running Mastery Initialization">
+				<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="Equals" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_LvlNextAdd" operation="set" value="100" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_LvlNextTotal" operation="set" value="100" />
+			</effect_group>
+		</attribute>
+	</append>
+
+	<append xpath="/progression/skills">
+		<skill name="skillAthletics" parent="attMastery" name_key="skillAthleticsName" desc_key="skillAthleticsDesc" icon="ui_game_symbol_run"><effect_group/></skill>
+	</append>
+
+	<append xpath="/progression/perks">
+		<perk parent="skillAthletics" name="perkMasterOfRunning" max_level="100" base_skill_point_cost="0"
+			icon="ui_game_symbol_run" name_key="perkMasterOfRunningName" desc_key="perkMasterOfRunningDesc">
+			<effect_group name="Toggle Running Buff">
+				<effect_description level="1,100" desc_key="perkMasterOfRunningDesc" />
+
+				<passive_effect name="RunSpeed" operation="perc_add" value="0.0,0.3" level="1,100" tags="running" />
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.0,0.15" level="1,100" tags="running" />
+
+				<triggered_effect trigger="onSelfRun" action="AddBuff" target="self" buff="buffIsRunning" />
+				<triggered_effect trigger="onSelfCrouchRun" action="AddBuff" target="self" buff="buffIsRunning" />
+			</effect_group>
+		</perk>
+	</append>
+</configs>
