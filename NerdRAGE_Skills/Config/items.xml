@@ -1,0 +1,423 @@
+<configs>
+	<append xpath="/items">
+		<item name="noteAddMastery">
+			<property name="Extends" value="skillBookMaster" />
+			<property name="CustomIconTint" value="50,150,50" />
+			<property name="CreativeMode" value="Player" />
+			<property name="DescriptionKey" value="noteAddMasteryDesc" />
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XP" operation="set" value="@$Mastery_Jumping_LvlNextTotal" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="@$Mastery_Running_LvlNextTotal" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+			</effect_group>
+		</item>
+
+		<item name="noteMaxMastery">
+			<property name="Extends" value="skillBookMaster" />
+			<property name="CustomIconTint" value="50,250,50" />
+			<property name="CreativeMode" value="Player" />
+			<property name="DescriptionKey" value="noteMaxMasteryDesc" />
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_Lvl" operation="set" value="10" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="10" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+			</effect_group>
+		</item>
+
+		<item name="noteResetMastery">
+			<property name="Extends" value="skillBookMaster" />
+			<property name="CustomIconTint" value="250,50,50" />
+			<property name="CreativeMode" value="Player" />
+			<property name="DescriptionKey" value="noteMaxMasteryDesc" />
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XPTarget" operation="set" value="100" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="set" value="100" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+			</effect_group>
+		</item>
+	</append>
+
+
+	<!-- Masteries -->
+		<!-- add Mastery effect_group -->
+			<append xpath="/items/item[
+				(@name='meleeToolRepairT0StoneAxe') or
+				(@name='meleeToolRepairT0TazasStoneAxe') or
+				(@name='meleeToolFarmT1IronHoe') or
+				(@name='meleeToolPickT1IronPickaxe') or
+				(@name='meleeToolPickT2SteelPickaxe') or
+				(@name='meleeToolPickT3Auger') or
+				(@name='meleeToolShovelT0StoneShovel') or
+				(@name='meleeToolShovelT1IronShovel') or
+				(@name='meleeToolShovelT2SteelShovel') or
+				(@name='gunBowT0PrimitiveBow') or
+				(@name='gunBowT1IronCrossbow') or
+				(@name='gunBowT1WoodenBow') or
+				(@name='gunBowT3CompoundBow') or
+				(@name='gunBowT3CompoundCrossbow') or
+				(@name='meleeToolAxeT1IronFireaxe') or
+				(@name='meleeToolAxeT2SteelAxe') or
+				(@name='meleeToolAxeT3Chainsaw') or
+				(@name='meleeHandPlayer') or
+				(@name='meleeWpnKnucklesT0LeatherKnuckles') or
+				(@name='meleeWpnKnucklesT1IronKnuckles') or
+				(@name='meleeWpnKnucklesT3SteelKnuckles') or
+				(@name='meleeToolTorch') or
+				(@name='meleeWpnClubT0WoodenClub') or
+				(@name='meleeWpnClubT1BaseballBat') or
+				(@name='meleeWpnClubT1CandyClub') or
+				(@name='meleeWpnClubT3SteelClub') or
+				(@name='meleeWpnSledgeT0StoneSledgehammer') or
+				(@name='meleeWpnSledgeT1IronSledgehammer') or
+				(@name='meleeWpnSledgeT3SteelSledgehammer') or
+				(@name='gunHandgunT1Pistol') or
+				(@name='gunHandgunT2Magnum44') or
+				(@name='gunHandgunT3DesertVulture') or
+				(@name='gunHandgunT3SMG5') or
+				(@name='meleeWpnBladeT0BoneKnife') or
+				(@name='meleeWpnBladeT1CandyKnife') or
+				(@name='meleeWpnBladeT1HuntingKnife') or
+				(@name='meleeWpnBladeT3Machete') or
+				(@name='gunMGT1AK47') or
+				(@name='gunMGT2TacticalAR') or
+				(@name='gunMGT3M60') or
+				(@name='meleeToolRepairT1ClawHammer') or
+				(@name='meleeToolRepairT3Nailgun') or
+				(@name='gunRifleT1HuntingRifle') or
+				(@name='gunRifleT2MarksmanRifle') or
+				(@name='gunRifleT3SniperRifle') or
+				(@name='meleeToolSalvageT1Wrench') or
+				(@name='meleeToolSalvageT2Ratchet') or
+				(@name='meleeToolSalvageT3ImpactDriver') or
+				(@name='gunShotgunT0Blunderbuss') or
+				(@name='gunShotgunT1DoubleBarrel') or
+				(@name='gunShotgunT2PumpShotgun') or
+				(@name='gunShotgunT3AutoShotgun') or
+				(@name='meleeWpnSpearT0StoneSpear') or
+				(@name='meleeWpnSpearT1IronSpear') or
+				(@name='meleeWpnSpearT3SteelSpear') or
+				(@name='meleeWpnBatonT1JunkBaton') or
+				(@name='meleeWpnBatonT2StunBaton') or
+				(@name='meleeWpnBatonT3PlasmaBaton')
+			]">
+				<effect_group name="Mastery">
+					<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPHarvest" operation="add" value="@.MasteryXPForPoorTool">
+						<requirement name="EntityTagCompare" target="other" tags="masteryHarvest,wood" />
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPMining" operation="add" value="@.MasteryXPForPoorTool">
+						<requirement name="EntityTagCompare" target="other" tags="masteryDigging,ore" />
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPSalvage" operation="add" value="@.MasteryXPForPoorTool">
+						<requirement name="!EntityTagCompare" target="other" tags="masteryDigging,masteryMining,ore,wood" />
+					</triggered_effect>
+				</effect_group>
+			</append>
+		<!-- / -->
+
+		<!-- mastery from attacks/killing blows -->
+			<!-- MasteryXPArchery -->
+				<append xpath="/items/item[
+					(@name='gunBowT0PrimitiveBow') or
+					(@name='gunBowT1IronCrossbow') or
+					(@name='gunBowT1WoodenBow') or
+					(@name='gunBowT3CompoundBow') or
+					(@name='gunBowT3CompoundCrossbow')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPArchery" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPArchery" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPBaton -->
+				<append xpath="/items/item[
+					(@name='meleeWpnBatonT1JunkBaton') or
+					(@name='meleeWpnBatonT2StunBaton') or
+					(@name='meleeWpnBatonT3PlasmaBaton')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPBaton" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPBaton" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPBlade -->
+				<!-- all bladed weapons/tools -->
+				<append xpath="/items/item[
+					(@name='meleeToolAxeT1IronFireaxe') or
+					(@name='meleeToolAxeT2SteelAxe') or
+					(@name='meleeToolAxeT3Chainsaw') or
+					(@name='meleeToolFarmT1IronHoe') or
+					(@name='meleeToolPickT1IronPickaxe') or
+					(@name='meleeToolPickT2SteelPickaxe') or
+					(@name='meleeToolPickT3Auger') or
+					(@name='meleeToolRepairT0StoneAxe') or
+					(@name='meleeToolRepairT0TazasStoneAxe') or
+					(@name='meleeToolShovelT0StoneShovel') or
+					(@name='meleeToolShovelT1IronShovel') or
+					(@name='meleeToolShovelT2SteelShovel') or
+					(@name='meleeWpnBladeT0BoneKnife') or
+					(@name='meleeWpnBladeT1CandyKnife') or
+					(@name='meleeWpnBladeT1HuntingKnife') or
+					(@name='meleeWpnBladeT3Machete')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPBlade" operation="add" value="@.MasteryXPForPoorTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPBlade" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+
+				<!-- actual bladed weapons -->
+				<set xpath="/items/item[
+					(@name='meleeToolAxeT2SteelAxe') or
+					(@name='meleeWpnBladeT0BoneKnife') or
+					(@name='meleeWpnBladeT1CandyKnife') or
+					(@name='meleeWpnBladeT1HuntingKnife') or
+					(@name='meleeWpnBladeT3Machete')
+				]/effect_group[@name='Mastery']/triggered_effect[@trigger='onSelfAttackedOther']/@value">@.MasteryXPForBestTool</set>
+			<!-- / -->
+
+			<!-- MasteryXPBlunt -->
+				<!-- all bladed weapons/tools -->
+				<append xpath="/items/item[
+					(@name='meleeToolRepairT1ClawHammer') or
+					(@name='meleeToolRepairT3Nailgun') or
+					(@name='meleeToolSalvageT1Wrench') or
+					(@name='meleeToolSalvageT2Ratchet') or
+					(@name='meleeToolSalvageT3ImpactDriver') or
+					(@name='meleeToolTorch') or
+					(@name='meleeWpnClubT0WoodenClub') or
+					(@name='meleeWpnClubT1BaseballBat') or
+					(@name='meleeWpnClubT1CandyClub') or
+					(@name='meleeWpnClubT3SteelClub') or
+					(@name='meleeWpnSledgeT0StoneSledgehammer') or
+					(@name='meleeWpnSledgeT1IronSledgehammer') or
+					(@name='meleeWpnSledgeT3SteelSledgehammer')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPBlunt" operation="add" value="@.MasteryXPForPoorTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPBlunt" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+
+				<!-- actual blunt weapons -->
+				<set xpath="/items/item[
+					(@name='meleeToolSalvageT1Wrench') or
+					(@name='meleeToolTorch') or
+					(@name='meleeWpnClubT0WoodenClub') or
+					(@name='meleeWpnClubT1BaseballBat') or
+					(@name='meleeWpnClubT1CandyClub') or
+					(@name='meleeWpnClubT3SteelClub') or
+					(@name='meleeWpnSledgeT0StoneSledgehammer') or
+					(@name='meleeWpnSledgeT1IronSledgehammer') or
+					(@name='meleeWpnSledgeT3SteelSledgehammer')
+				]/effect_group[@name='Mastery']/triggered_effect[@trigger='onSelfAttackedOther']/@value">@.MasteryXPForBestTool</set>
+			<!-- / -->
+
+			<!-- MasteryXPBrawl -->
+				<append xpath="/items/item[
+					(@name='meleeHandPlayer') or
+					(@name='meleeWpnKnucklesT0LeatherKnuckles') or
+					(@name='meleeWpnKnucklesT1IronKnuckles') or
+					(@name='meleeWpnKnucklesT3SteelKnuckles')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPBrawl" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPBrawl" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPHandgun -->
+				<append xpath="/items/item[
+					(@name='gunHandgunT1Pistol') or
+					(@name='gunHandgunT2Magnum44') or
+					(@name='gunHandgunT3DesertVulture') or
+					(@name='gunHandgunT3SMG5')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPHandgun" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPHandgun" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPMachineGun -->
+				<append xpath="/items/item[
+					(@name='gunMGT1AK47') or
+					(@name='gunMGT2TacticalAR') or
+					(@name='gunMGT3M60')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPMachineGun" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPMachineGun" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPRifle -->
+				<append xpath="/items/item[
+					(@name='gunRifleT1HuntingRifle') or
+					(@name='gunRifleT2MarksmanRifle') or
+					(@name='gunRifleT3SniperRifle')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPRifle" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPRifle" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPShotgun -->
+				<append xpath="/items/item[
+					(@name='gunShotgunT0Blunderbuss') or
+					(@name='gunShotgunT1DoubleBarrel') or
+					(@name='gunShotgunT2PumpShotgun') or
+					(@name='gunShotgunT3AutoShotgun')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPShotgun" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPShotgun" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+
+			<!-- MasteryXPSpear -->
+				<append xpath="/items/item[
+					(@name='meleeWpnSpearT0StoneSpear') or
+					(@name='meleeWpnSpearT1IronSpear') or
+					(@name='meleeWpnSpearT3SteelSpear')
+				]/effect_group[@name='Mastery']">
+					<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPSpear" operation="add" value="@.MasteryXPForBestTool">
+						<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0"/>
+					</triggered_effect>
+
+					<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPSpear" operation="add" value="@.MasteryXPForKillingBlow"/>
+				</append>
+			<!-- / -->
+		<!-- / -->
+
+		<!-- MasteryXPHarvest -->
+
+		<!-- / -->
+
+		<!-- MasteryXPMining -->
+		<!-- / -->
+
+		<!-- MasteryXPSalvage -->
+		<!-- / -->
+
+		<!-- stone axes (separated because they are also repair tools) -->
+			<append xpath="/items/item[
+				(@name='meleeToolRepairT0StoneAxe') or
+				(@name='meleeToolRepairT0TazasStoneAxe')
+			]/effect_group[@name='Mastery']">
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPHarvest" operation="add" value="@.MasteryXPForPoorTool">
+					<requirement name="EntityTagCompare" target="other" tags="masteryHarvest" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPMining" operation="add" value="@.MasteryXPForPoorTool">
+					<requirement name="EntityTagCompare" target="other" tags="coalBurnedDmg,wood" />
+				</triggered_effect>
+			</append>
+		<!-- / -->
+
+		<!-- iron hoe -->
+			<append xpath="/items/item[
+				(@name='meleeToolFarmT1IronHoe')
+			]/effect_group[@name='Mastery']">
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPHarvest" operation="add" value="@.MasteryXPForBestTool">
+					<requirement name="EntityTagCompare" target="other" tags="masteryHarvest" />
+				</triggered_effect>
+			</append>
+		<!-- / -->
+
+		<!-- pick axes -->
+			<append xpath="/items/item[
+				(@name='meleeToolPickT1IronPickaxe') or
+				(@name='meleeToolPickT2SteelPickaxe') or
+				(@name='meleeToolPickT3Auger')
+			]/effect_group[@name='Mastery']">
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPMining" operation="add" value="@.MasteryXPForBestTool">
+					<requirement name="EntityTagCompare" target="other" tags="masteryMining,ore" />
+				</triggered_effect>
+			</append>
+		<!-- / -->
+
+		<!-- shovels -->
+			<append xpath="/items/item[
+				(@name='meleeToolShovelT0StoneShovel') or
+				(@name='meleeToolShovelT1IronShovel') or
+				(@name='meleeToolShovelT2SteelShovel')
+			]/effect_group[@name='Mastery']">
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPHarvest" operation="add" value="@.MasteryXPForBestTool">
+					<requirement name="EntityTagCompare" target="other" tags="masteryHarvest" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPMining" operation="add" value="@.MasteryXPForBestTool">
+					<requirement name="EntityTagCompare" target="other" tags="masteryDigging" />
+				</triggered_effect>
+			</append>
+		<!-- / -->
+
+		<!-- axes -->
+			<append xpath="/items/item[
+				(@name='meleeToolAxeT1IronFireaxe') or
+				(@name='meleeToolAxeT2SteelAxe') or
+				(@name='meleeToolAxeT3Chainsaw')
+			]/effect_group[@name='Mastery']">
+				<triggered_effect trigger="onSelfHarvestBlock" action="ModifyCVar" cvar=".MasteryXPHarvest" operation="add" value="@.MasteryXPForBestTool">
+					<requirement name="EntityTagCompare" target="other" tags="wood" />
+				</triggered_effect>
+
+				<triggered_effect trigger="onSelfAttackedOther" action="ModifyCVar" cvar=".MasteryXPBlade" operation="add" value="@.MasteryXPForPoorTool">
+					<requirement name="StatCompareCurrent" target="other" stat="health" operation="GT" value="0" />
+				</triggered_effect>
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar=".MasteryXPBlade" operation="add" value="@.MasteryXPForKillingBlow" />
+			</append>
+		<!-- / -->
+
+		<!-- steel knuckles can be used to harvest meat -->
+
+		<!-- knives can be used to harvest meat -->
+			<append xpath="/items/item[
+				(@name='meleeWpnBladeT0BoneKnife') or
+				(@name='meleeWpnBladeT1CandyKnife') or
+				(@name='meleeWpnBladeT1HuntingKnife') or
+				(@name='meleeWpnBladeT3Machete')
+			]/effect_group[@name='Mastery']">
+			</append>
+		<!-- / -->
+
+		<!-- salvage tools -->
+			<append xpath="/items/item[
+				(@name='meleeToolSalvageT1Wrench') or
+				(@name='meleeToolSalvageT2Ratchet') or
+				(@name='meleeToolSalvageT3ImpactDriver')
+			]/effect_group[@name='Mastery']">
+			</append>
+		<!-- / -->
+	<!-- / -->
+</configs>

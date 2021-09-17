@@ -2,7 +2,14 @@ Key,Source,Context,Changes,English
 
 attMasteryName,progression,Attribute,New,Mastery
 skillAthleticsName,progression,Skill,New,Athletics
-perkMasterOfRunningName,progression,Perk,New,Running
-perkMasterOfRunningDesc,progression,Perk,New,"+0.3% Running Speed and -0.3% Stamina Usage while running per level"
 perkMasterOfJumpingName,progression,Perk,New,Jumping
-perkMasterOfJumpingDesc,progression,Perk,New,Jump Higher
+perkMasterOfJumpingDesc,progression,Perk,New,"Jumping Power gains +5% Height and uses 3% less Stamina per level"
+perkMasterOfRunningName,progression,Perk,New,Running
+perkMasterOfRunningDesc,progression,Perk,New,"Running is +3% faster and uses 3% less Stamina per level"
+StaminaChangeOT,stat,Stat,New,Stamina Use
+
+!!Items
+noteAddMastery,items,item,New,"Mastery: +1 to All"
+noteAddMasteryDesc,items,item,New,"Add 1 to the level of each Mastery Skill"
+noteMaxMastery,items,item,New,"Mastery: Max All"
+noteMaxMasteryDesc,items,item,New,"Max out the level of each Mastery Skill"

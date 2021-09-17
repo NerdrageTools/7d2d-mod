@@ -1,31 +1,141 @@
 <configs>
 	<append xpath="/progression/attributes">
-		<attribute name="attMastery" name_key="attMasteryName" desc_key="attMasteryDesc" icon="ui_game_symbol_quest" min_level="1" max_level="1" base_skill_point_cost="0">
+		<attribute
+			name="attMastery" name_key="attMasteryName" desc_key="attMasteryDesc" icon="ui_game_symbol_quest"
+			min_level="1" max_level="1" base_skill_point_cost="0"
+		>
 			<effect_group name="Mastery Initialization">
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_XPMultiplier" operation="set" value="1.015" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_XPMultiplier" operation="set" value="1.05" />
+			</effect_group>
+
+			<effect_group name="Jumping Mastery Initialization">
+				<requirement name="ProgressionLevel" progression_name="perkMasterOfJumping" operation="LT" value="10" />
+				<requirement name="CVarCompare" cvar="$Mastery_Jumping_XPTarget" operation="Equals" value="0" />
+
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Jumping_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Jumping_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Jumping_XPTarget" operation="set" value="100" />
 			</effect_group>
 
 			<effect_group name="Running Mastery Initialization">
-				<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="Equals" value="0" />
+				<requirement name="ProgressionLevel" progression_name="perkMasterOfRunning" operation="LT" value="10" />
+				<requirement name="CVarCompare" cvar="$Mastery_Running_XPTarget" operation="Equals" value="0" />
+
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="0" />
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_LvlNextAdd" operation="set" value="100" />
-				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_LvlNextTotal" operation="set" value="100" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="set" value="100" />
 			</effect_group>
+
+			<!--
+				<effect_group name="Mastery of Armor Initialization">
+					<requirement name="CVarCompare" cvar="$AS_ArmorUse_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextAdd" operation="set" value="10" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ArmorUse_LvlNextTotal" operation="set" value="10" />
+				</effect_group>
+
+				<effect_group name="Mastery of Athletics Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Athletics_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Athletics_LvlNextAdd" operation="set" value="100" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Athletics_LvlNextTotal" operation="set" value="100" />
+				</effect_group>
+
+				<effect_group name="Mastery of Bartering Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Bartering_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bartering_LvlNextAdd" operation="set" value="10" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bartering_LvlNextTotal" operation="set" value="10" />
+				</effect_group>
+
+				<effect_group name="Mastery of Construction Initialization">
+					<requirement name="CVarCompare" cvar="$AS_ConstructionTools_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextAdd" operation="set" value="150" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_ConstructionTools_LvlNextTotal" operation="set" value="150" />
+				</effect_group>
+
+				<effect_group name="Mastery of Mining Initialization">
+					<requirement name="CVarCompare" cvar="$AS_MiningTools_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextAdd" operation="set" value="400" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_MiningTools_LvlNextTotal" operation="set" value="400" />
+				</effect_group>
+
+				<effect_group name="Mastery of Scavenging Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Scavenging_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextAdd" operation="set" value="75" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Scavenging_LvlNextTotal" operation="set" value="75" />
+				</effect_group>
+
+
+				<effect_group name="Mastery of Archery Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Archery_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Archery_LvlNextAdd" operation="set" value="100" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Archery_LvlNextTotal" operation="set" value="100" />
+				</effect_group>
+
+				<effect_group name="Mastery of Bladed Weapons Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Bladed_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bladed_LvlNextAdd" operation="set" value="200" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Bladed_LvlNextTotal" operation="set" value="200" />
+				</effect_group>
+
+				<effect_group name="Mastery of Blunt Weapons Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Blunt_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Blunt_LvlNextAdd" operation="set" value="200" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Blunt_LvlNextTotal" operation="set" value="200" />
+				</effect_group>
+
+				<effect_group name="Mastery of Machine Guns Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Automatics_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Automatics_LvlNextAdd" operation="set" value="600" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Automatics_LvlNextTotal" operation="set" value="600" />
+				</effect_group>
+
+				<effect_group name="Mastery of Pistols Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Pistols_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Pistols_LvlNextAdd" operation="set" value="200" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Pistols_LvlNextTotal" operation="set" value="200" />
+				</effect_group>
+
+				<effect_group name="Mastery of Rifles Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Rifles_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Rifles_LvlNextAdd" operation="set" value="200" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Rifles_LvlNextTotal" operation="set" value="200" />
+				</effect_group>
+
+				<effect_group name="Mastery of Shotguns Initialization">
+					<requirement name="CVarCompare" cvar="$AS_Shotguns_XP" operation="Equals" value="0" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextAdd" operation="set" value="500" />
+					<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$AS_Shotguns_LvlNextTotal" operation="set" value="500" />
+				</effect_group>
+			-->
 		</attribute>
 	</append>
 
 	<append xpath="/progression/skills">
-		<skill name="skillAthletics" parent="attMastery" name_key="skillAthleticsName" desc_key="skillAthleticsDesc" icon="ui_game_symbol_run"><effect_group/></skill>
+		<skill name="skillAthletics" parent="attMastery" name_key="skillAthleticsName" desc_key="skillAthleticsDesc" icon="ui_game_symbol_run">
+			<effect_group />
+		</skill>
 	</append>
 
 	<append xpath="/progression/perks">
-		<perk parent="skillAthletics" name="perkMasterOfRunning" max_level="100" base_skill_point_cost="0"
-			icon="ui_game_symbol_run" name_key="perkMasterOfRunningName" desc_key="perkMasterOfRunningDesc">
-			<effect_group name="Toggle Running Buff">
-				<effect_description level="1,100" desc_key="perkMasterOfRunningDesc" />
+		<perk name="perkMasterOfJumping" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
+			icon="ui_game_symbol_agility" name_key="perkMasterOfJumpingName" desc_key="perkMasterOfJumpingDesc">
+			<effect_group name="Jumping Buff">
+				<passive_effect name="JumpStrength" operation="perc_add" value=".1,1" level="1,10" />
+				<passive_effect name="StaminaLoss" operation="perc_add" value=".05,.5" level="1,10" />
+	
+				<requirement name="CVarCompare" cvar="$Mastery_Jumping_Lvl" operation="LT" value="10" />
+				<requirement name="ProgressionLevel" progression_name="perkMasterOfJumping" operation="LT" value="10" />
 
-				<passive_effect name="RunSpeed" operation="perc_add" value="0.0,0.3" level="1,100" tags="running" />
-				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.0,0.15" level="1,100" tags="running" />
+				<triggered_effect trigger="onSelfJump" action="AddBuff" target="self" buff="buffIsJumping" />
+			</effect_group>
+		</perk>
+
+		<perk name="perkMasterOfRunning" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
+			icon="ui_game_symbol_run" name_key="perkMasterOfRunningName" desc_key="perkMasterOfRunningDesc">
+			<effect_group name="Running Buff">
+				<passive_effect name="RunSpeed" operation="perc_add" value="0,.5" level="1,10" />
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0,.25" level="1,10" tags="running" />
+				<passive_effect name="CrouchSpeed" operation="perc_add" value="0,.25" level="0,10" />
+				<passive_effect name="WalkSpeed" operation="perc_add" value="0,.25" level="0,10" />
 
 				<triggered_effect trigger="onSelfRun" action="AddBuff" target="self" buff="buffIsRunning" />
 				<triggered_effect trigger="onSelfCrouchRun" action="AddBuff" target="self" buff="buffIsRunning" />
