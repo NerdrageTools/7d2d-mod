@@ -12,6 +12,9 @@
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="@$Mastery_Running_LvlNextTotal" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="set" value="@$Mastery_Sneaking_LvlNextTotal" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
 			</effect_group>
 		</item>
 
@@ -27,6 +30,9 @@
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="10" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_Lvl" operation="set" value="10" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
 			</effect_group>
 		</item>
 
@@ -46,6 +52,11 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="set" value="100" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XPTarget" operation="set" value="100" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
 			</effect_group>
 		</item>
 	</append>

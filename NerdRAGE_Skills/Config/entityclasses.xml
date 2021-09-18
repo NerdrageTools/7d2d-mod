@@ -3,6 +3,14 @@
 		<effect_group name="Mastery">
 			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Jumping_Lvl" tags="perkMasterOfJumping"/>
 			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Running_Lvl" tags="perkMasterOfRunning"/>
+			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Sneaking_Lvl" tags="perkMasterOfSneaking"/>
 		</effect_group>
+	</append>
+
+	<append xpath="/entity_classes/entity_class[
+		(@name='animalTemplateHostile') or
+		(@name='zombieTemplateMale')
+	]/effect_group[@name='Base Effects']">
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEnemyTargeting" />
 	</append>
 </configs>

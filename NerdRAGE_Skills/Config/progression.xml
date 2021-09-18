@@ -26,6 +26,15 @@
 				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="set" value="100" />
 			</effect_group>
 
+			<effect_group name="Sneaking Mastery Initialization">
+				<requirement name="ProgressionLevel" progression_name="perkMasterOfSneaking" operation="LT" value="10" />
+				<requirement name="CVarCompare" cvar="$Mastery_Sneaking_XPTarget" operation="Equals" value="0" />
+
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Sneaking_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="$Mastery_Sneaking_XPTarget" operation="set" value="100" />
+			</effect_group>
+
 			<!--
 				<effect_group name="Mastery of Armor Initialization">
 					<requirement name="CVarCompare" cvar="$AS_ArmorUse_XP" operation="Equals" value="0" />
@@ -131,11 +140,32 @@
 			<effect_group name="Running Buff">
 				<passive_effect name="RunSpeed" operation="perc_add" value="0,.5" level="1,10" />
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0,.25" level="1,10" tags="running" />
-				<passive_effect name="CrouchSpeed" operation="perc_add" value="0,.25" level="0,10" />
 				<passive_effect name="WalkSpeed" operation="perc_add" value="0,.25" level="0,10" />
 
 				<triggered_effect trigger="onSelfRun" action="AddBuff" target="self" buff="buffIsRunning" />
 				<triggered_effect trigger="onSelfCrouchRun" action="AddBuff" target="self" buff="buffIsRunning" />
+			</effect_group>
+		</perk>
+
+		<perk name="perkMasterOfSneaking" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
+			icon="ui_game_symbol_run" name_key="perkMasterOfSneakingName" desc_key="perkMasterOfSneakingDesc">
+			<effect_group name="Sneaking Buff">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1" />
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other" />
+				<requirement name="NotHasBuff" buff="buffPlayerHasBeenNoticed" />
+
+				<passive_effect name="CrouchSpeed" operation="perc_add" level="0,10" value="0,0.5" />
+				<passive_effect name="EnemySearchDuration" operation="perc_add" level="0,10" value="0,-.75" />
+				<passive_effect name="LightMultiplier" operation="perc_add" level="0,10" value="0,-.75">
+					<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="50" />
+				</passive_effect>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" level="0,10" value="0,-.75" />
+
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="add" value="1" />
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffLvlSneaking" />
+
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="add" value="2" />
+				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffLvlSneaking" />
 			</effect_group>
 		</perk>
 	</append>
