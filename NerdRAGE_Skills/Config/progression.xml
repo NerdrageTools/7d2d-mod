@@ -119,11 +119,8 @@
 		<perk name="perkMasterOfJumping" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
 			icon="ui_game_symbol_agility" name_key="perkMasterOfJumpingName" desc_key="perkMasterOfJumpingDesc">
 			<effect_group name="Jumping Buff">
-				<passive_effect name="JumpStrength" operation="perc_add" value=".1,1" level="1,10" />
-				<passive_effect name="StaminaLoss" operation="perc_add" value=".05,.5" level="1,10" />
-	
-				<requirement name="CVarCompare" cvar="$Mastery_Jumping_Lvl" operation="LT" value="10" />
-				<requirement name="ProgressionLevel" progression_name="perkMasterOfJumping" operation="LT" value="10" />
+				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".1,1" />
+				<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.1,-.5" tags="jumping" />
 
 				<triggered_effect trigger="onSelfJump" action="AddBuff" target="self" buff="buffIsJumping" />
 			</effect_group>
