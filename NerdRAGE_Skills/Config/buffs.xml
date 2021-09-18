@@ -19,12 +19,6 @@
 			<effect_group name="Level Up Jumping">
 				<requirement name="CVarCompare" cvar="$Mastery_Jumping_XP" operation="GTE" value="@$Mastery_Jumping_XPTarget" />
 
-				<!-- -->
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_Lvl" />
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_XP" />
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_XPTarget" />
-				<!-- -->
-
 				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Your Mastery of Jumping Has Increased!" />
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="levelup" play_in_head="true" />
 
@@ -34,6 +28,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_Jumping_XPTarget" operation="multiply" value="100" />
 
 				<!-- -->
+					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_Lvl" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_XP" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Jumping_XPTarget" />
 				<!-- -->
@@ -42,18 +37,18 @@
 
 		<buff name="buffIsRunning" hidden="true" remove_on_death="true">
 			<stack_type value="ignore" />
-			<duration value="10000" />
+			<duration value="0" /><!-- 0 = infinite -->
 			<update_rate value="1" />
 
 			<effect_group name="Gain Running XP">
 				<requirement name="CVarCompare" cvar="$Mastery_Running_Lvl" operation="LT" value="10" />
 
-				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="add" value="1" />
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="add" value="1" tag="running" />
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffIsRunning">
 					<requirement name="!EntityHasMovementTag" tags="running" />
 				</triggered_effect>
 				
-				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" target="self" buff="buffLvlRunning">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffLvlRunning">
 					<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_XPTarget" />
 				</triggered_effect>
 			</effect_group>
@@ -67,12 +62,6 @@
 				<requirement name="CVarCompare" cvar="$Mastery_Running_Lvl" operation="LT" value="10" />
 				<requirement name="CVarCompare" cvar="$Mastery_Running_XP" operation="GTE" value="@$Mastery_Running_XPTarget" />
 
-				<!-- -->
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_Lvl" />
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_XP" />
-					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_XPTarget" />
-				<!-- -->
-
 				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Your Mastery of Running Has Increased!" />
 				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="levelup" play_in_head="true" />
 
@@ -82,6 +71,7 @@
 				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="multiply" value="100" />
 
 				<!-- -->
+					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_Lvl" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_XP" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Running_XPTarget" />
 				<!-- -->
