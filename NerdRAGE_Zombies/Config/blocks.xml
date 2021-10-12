@@ -97,6 +97,17 @@
 		</insertAfter>
 	<!-- / -->
 
+	<!-- Jack O Lanterns -->
+		<set xpath="/blocks/block[@name='decoPumpkinJackOLantern']/property[@name='Class']/@value">PlantGrowing</set>
+		<insertAfter xpath="/blocks/block[@name='decoPumpkinJackOLantern']/property[@name='Model']">
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="3"/>
+			<property name="PlantGrowing.Next" value="cobweb"/>
+		</insertAfter>
+	<!-- / -->
+
 	<!-- Allow burnt-out torches to be relit via repair w/cloth -->
 		<set xpath="/blocks/block[@name='torchWallHolder']/property[@class='UpgradeBlock']/property[@name='UpgradeHitCount']/@value">1</set>
 		<set xpath="/blocks/block[@name='torchWallHolder']/property[@class='UpgradeBlock']/property[@name='Item']/@value">resourceCloth</set>
@@ -1769,7 +1780,7 @@
 				<property name="DowngradeBlock" value="cntMetalDesk02Closed"/>
 			</block>
 		</insertAfter>
-		<!-- <insertAfter xpath="/blocks/block[@name='cntMetalDesk02Locked']">	
+		<!-- <insertAfter xpath="/blocks/block[@name='cntMetalDesk02Locked']">
 		<block name="cntMetalDesk02RandomLootHelper">
 		<property name="Extends" value="cntMetalDesk02Closed" />
 		<property name="CreativeMode" value="Dev"/>
