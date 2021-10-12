@@ -8,13 +8,18 @@
 
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XP" operation="set" value="@$Mastery_Jumping_LvlNextTotal" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLvlJumping" />
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="@$Mastery_Running_LvlNextTotal" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLvlRunning" />
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="set" value="@$Mastery_Sneaking_LvlNextTotal" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLvlSneaking" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XP" operation="set" value="@$Mastery_SneakAttacks_LvlNextTotal" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffLvlSneakAttacks" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="levelup" play_in_head="true" />
 			</effect_group>
 		</item>
 
@@ -26,13 +31,10 @@
 
 			<effect_group tiered="false">
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_Lvl" operation="set" value="10" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
-
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="10" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
-
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_Lvl" operation="set" value="10" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_SneakAttacks_Lvl" operation="set" value="10" />
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="levelup" play_in_head="true" />
 			</effect_group>
 		</item>
 
@@ -46,21 +48,21 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_Lvl" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XP" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Jumping_XPTarget" operation="set" value="100" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsJumping" />
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_Lvl" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Running_XPTarget" operation="set" value="100" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsRunning" />
 
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_Lvl" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="set" value="0" />
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_Sneaking_XPTarget" operation="set" value="100" />
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffIsSneaking" />
+
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_SneakAttacks_Lvl" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XPTarget" operation="set" value="100" />
 			</effect_group>
 		</item>
 	</append>
-
 
 	<!-- Masteries -->
 		<!-- add Mastery effect_group -->

@@ -119,14 +119,17 @@
 	</append>
 
 	<append xpath="/progression/skills">
-		<skill name="skillAthletics" parent="attMastery" name_key="skillAthleticsName" desc_key="skillAthleticsDesc" icon="ui_game_symbol_run">
+		<skill name="skillAthletics" parent="attMastery" name_key="Athletics" icon="ui_game_symbol_run">
+			<effect_group />
+		</skill>
+		<skill name="skillCombatMastery" parent="attMastery" name_key="Combat Mastery" icon="ui_game_symbol_run">
 			<effect_group />
 		</skill>
 	</append>
 
 	<append xpath="/progression/perks">
 		<perk name="perkMasterOfJumping" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
-			icon="ui_game_symbol_agility" name_key="perkMasterOfJumpingName" desc_key="perkMasterOfJumpingDesc">
+			icon="ui_game_symbol_agility" name_key="Mastery of Jumping" desc_key="Jump higher for less stamina.">
 			<effect_group name="Jumping Buff">
 				<passive_effect name="JumpStrength" operation="perc_add" level="1,10" value=".1,1" />
 				<passive_effect name="StaminaLoss" operation="perc_add" level="1,10" value="-.1,-.5" tags="jumping" />
@@ -136,7 +139,7 @@
 		</perk>
 
 		<perk name="perkMasterOfRunning" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
-			icon="ui_game_symbol_run" name_key="perkMasterOfRunningName" desc_key="perkMasterOfRunningDesc">
+			icon="ui_game_symbol_run" name_key="Mastery of Running" desc_key="Run (and walk) faster.">
 			<effect_group name="Running Buff">
 				<passive_effect name="RunSpeed" operation="perc_add" value="0,.5" level="1,10" />
 				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0,.25" level="1,10" tags="running" />
@@ -148,11 +151,11 @@
 		</perk>
 
 		<perk name="perkMasterOfSneaking" parent="skillAthletics" max_level="10" base_skill_point_cost="0"
-			icon="ui_game_symbol_run" name_key="perkMasterOfSneakingName" desc_key="perkMasterOfSneakingDesc">
+			icon="ui_game_symbol_run" name_key="Mastery of Sneaking" desc_key="Sneak faster and more effectively, especially in the dark.">
 			<effect_group name="Sneaking Buff">
 				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1" />
 				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other" />
-				<requirement name="NotHasBuff" buff="buffPlayerHasBeenNoticed" />
+				<requirement name="NotHasBuff" buff="buffStealthBonusDisabled" />
 
 				<passive_effect name="CrouchSpeed" operation="perc_add" level="0,10" value="0,0.5" />
 				<passive_effect name="EnemySearchDuration" operation="perc_add" level="0,10" value="0,-.75" />
@@ -163,9 +166,26 @@
 
 				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="add" value="1" />
 				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffLvlSneaking" />
-
+    
 				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$Mastery_Sneaking_XP" operation="add" value="2" />
 				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffLvlSneaking" />
+			</effect_group>
+		</perk>
+
+		<perk name="perkMasterOfSneakAttacks" parent="skillCombatMastery" max_level="10" base_skill_point_cost="0"
+			icon="ui_game_symbol_run" name_key="perkMasterOfSneakAttacksName" desc_key="perkMasterOfSneakAttacksDesc">
+			<effect_group name="Sneak Attacks Buff">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1" />
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other" />
+				<requirement name="NotHasBuff" buff="buffStealthBonusDisabled" />
+
+				<passive_effect name="EntityDamage" operation="perc_add" level="0,10" value="0,.5" />
+
+				<triggered_effect trigger="onSelfDamagedOther" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XP" operation="add" value="1" />
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffLvlSneakAttacks" />
+    
+				<triggered_effect trigger="onSelfKilledOther" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XP" operation="add" value="2" />
+				<triggered_effect trigger="onSelfKilledOther" action="AddBuff" target="self" buff="buffLvlSneakAttacks" />
 			</effect_group>
 		</perk>
 	</append>

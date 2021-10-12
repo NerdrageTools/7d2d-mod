@@ -4,19 +4,19 @@
 		<buff name="buffEnemyTargeting" hidden="true" remove_on_death="true">
 			<duration value="0" />
 			<stack_type value="ignore" />
-			<update_rate value="1" />
 
 			<effect_group name="Buff Target">
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="buffPlayerHasBeenNoticed">
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="buffStealthBonusDisabled">
 					<requirement name="EntityTagCompare" target="other" tags="player" />
 					<requirement name="NPCIsAlert" target="self" />
 				</triggered_effect>
+				<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffStealthBonusDisabled" />
+				<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffStealthBonusDisabled" />
 			</effect_group>
 		</buff>
-		<buff name="buffPlayerHasBeenNoticed" remove_on_death="true" icon="ui_game_symbol_stealth">
-			<stack_type value="ignore" />
-			<duration value="5" />
-			<display_value value="Noticed!" />
+		<buff name="buffStealthBonusDisabled" remove_on_death="true" icon="ui_game_symbol_stealth" icon_color="255,0,0">
+			<stack_type value="duration" />
+			<duration value="15" />
 		</buff>
 
 		<!-- mastery buffs -->
@@ -64,6 +64,12 @@
 				<requirement name="CVarCompare" cvar="$Mastery_Running_Lvl" operation="LT" value="10" />
 
 				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$Mastery_Running_XP" operation="add" value="1" tag="running" />
+				<!-- -->
+					<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_Lvl" tag="running" />
+					<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_XP" tag="running" />
+					<triggered_effect trigger="onSelfBuffUpdate" action="CVarLogValue" cvar="$Mastery_Running_XPTarget" tag="running" />
+				<!-- -->
+
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffIsRunning">
 					<requirement name="!EntityHasMovementTag" tags="running" />
 				</triggered_effect>
@@ -118,6 +124,30 @@
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Sneaking_Lvl" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Sneaking_XP" />
 					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_Sneaking_XPTarget" />
+				<!-- -->
+			</effect_group>
+		</buff>
+
+		<buff name="buffLvlSneakAttacks" hidden="true" remove_on_death="true">
+			<stack_type value="ignore" />
+			<duration value="1" />
+
+			<effect_group name="Level Up Sneak Attacks">
+				<requirement name="CVarCompare" cvar="$Mastery_SneakAttacks_Lvl" operation="LT" value="10" />
+				<requirement name="CVarCompare" cvar="$Mastery_SneakAttacks_XP" operation="GTE" value="@$Mastery_SneakAttacks_XPTarget" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="ShowToolbeltMessage" message="Your Mastery of SneakAttacks Has Increased!" />
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="levelup" play_in_head="true" />
+
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_SneakAttacks_Lvl" operation="add" value="1" />
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XP" operation="set" value="0" />
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XPTarget" operation="set" value="@$Mastery_SneakAttacks_Lvl" />
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$Mastery_SneakAttacks_XPTarget" operation="multiply" value="100" />
+
+				<!-- -->
+					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_SneakAttacks_Lvl" />
+					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_SneakAttacks_XP" />
+					<triggered_effect trigger="onSelfBuffStart" action="CVarLogValue" cvar="$Mastery_SneakAttacks_XPTarget" />
 				<!-- -->
 			</effect_group>
 		</buff>

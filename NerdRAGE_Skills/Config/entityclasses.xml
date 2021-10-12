@@ -4,6 +4,19 @@
 			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Jumping_Lvl" tags="perkMasterOfJumping"/>
 			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Running_Lvl" tags="perkMasterOfRunning"/>
 			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_Sneaking_Lvl" tags="perkMasterOfSneaking"/>
+			<passive_effect name="PerkLevel" operation="base_add" value="@$Mastery_SneakAttacks_Lvl" tags="perkMasterOfSneakAttacks"/>
+
+			<triggered_effect trigger="onCombatEntered" action="AddBuff" target="self" buff="buffStealthBonusDisabled">
+				<!-- if target IS alerted to you, and alive, disable stealth -->
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="EQ" value="0" target="other" />
+				<requirement name="IsAlive" target="other" />
+			</triggered_effect>
+
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffStealthBonusDisabled">
+				<!-- if target IS alerted to you, and alive, disable stealth -->
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="EQ" value="0" target="other" />
+				<requirement name="IsAlive" target="other" />
+			</triggered_effect>
 		</effect_group>
 	</append>
 
