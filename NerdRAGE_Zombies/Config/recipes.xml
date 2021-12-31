@@ -1,0 +1,140 @@
+<config>
+	<!-- fix recipes for ammo stacks -->
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="300" />
+			<ingredient name="resourceGunPowder" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletAP']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="300" />
+			<ingredient name="resourceGunPowder" count="630" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletHP']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="480" />
+			<ingredient name="resourceGunPowder" count="480" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletBall']">
+			<ingredient name="resourceBulletCasing" count="150" />
+			<ingredient name="resourceBulletTip" count="150" />
+			<ingredient name="resourceGunPowder" count="360" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletAP']">
+			<ingredient name="resourceBulletCasing" count="150" />
+			<ingredient name="resourceBulletTip" count="150" />
+			<ingredient name="resourceGunPowder" count="600" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle762mmBulletHP']">
+			<ingredient name="resourceBulletCasing" count="150" />
+			<ingredient name="resourceBulletTip" count="240" />
+			<ingredient name="resourceGunPowder" count="360" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletBall']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="300" />
+			<ingredient name="resourceGunPowder" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletHP']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="600" />
+			<ingredient name="resourceGunPowder" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundle9mmBulletAP']">
+			<ingredient name="resourceBulletCasing" count="300" />
+			<ingredient name="resourceBulletTip" count="300" />
+			<ingredient name="resourceGunPowder" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunShell']">
+			<ingredient name="resourceBuckshot" count="150" />
+			<ingredient name="resourceGunPowder" count="480" />
+			<ingredient name="resourcePaper" count="150" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunSlug']">
+			<ingredient name="resourceBulletTip" count="300" />
+			<ingredient name="resourceGunPowder" count="480" />
+			<ingredient name="resourceScrapPolymers" count="150" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleShotgunBreachingSlug']">
+			<ingredient name="resourceClayLump" count="240" />
+			<ingredient name="resourceForgedSteel" count="480" />
+			<ingredient name="resourceGunPowder" count="480" />
+			<ingredient name="resourceScrapPolymers" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowStone']">
+			<ingredient name="resourceFeather" count="150" />
+			<ingredient name="resourceRockSmall" count="120" />
+			<ingredient name="resourceWood" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowIron']">
+			<ingredient name="resourceArrowHeadIron" count="150" />
+			<ingredient name="resourceFeather" count="150" />
+			<ingredient name="resourceWood" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowSteelAP']">
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceScrapPolymers" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowFlaming']">
+			<ingredient name="resourceAnimalFat" count="120" />
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceCloth" count="120" />
+			<ingredient name="resourceGunPowder" count="240" />
+			<ingredient name="resourceScrapPolymers" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleArrowExploding']">
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceDuctTape" count="120" />
+			<ingredient name="resourceGunPowder" count="720" />
+			<ingredient name="resourceScrapPolymers" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltStone']">
+			<ingredient name="resourceFeather" count="150" />
+			<ingredient name="resourceRockSmall" count="150" />
+			<ingredient name="resourceWood" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltIron']">
+			<ingredient name="resourceArrowHeadIron" count="150" />
+			<ingredient name="resourceFeather" count="150" />
+			<ingredient name="resourceWood" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltSteelAP']">
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceScrapPolymers" count="120" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltFlaming']">
+			<ingredient name="resourceAnimalFat" count="120" />
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceCloth" count="120" />
+			<ingredient name="resourceGunPowder" count="240" />
+			<ingredient name="resourceScrapPolymers" count="240" />
+		</set>
+
+		<set xpath="/recipes/recipe[@name='ammoBundleCrossbowBoltExploding']">
+			<ingredient name="resourceArrowHeadSteelAP" count="150" />
+			<ingredient name="resourceDuctTape" count="120" />
+			<ingredient name="resourceGunPowder" count="960" />
+			<ingredient name="resourceScrapPolymers" count="240" />
+		</set>
+	<!-- / -->
+</config>
