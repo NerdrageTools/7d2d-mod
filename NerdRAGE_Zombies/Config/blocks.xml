@@ -2,7 +2,7 @@
 	<!-- corpses and bodybags have loot -->
 		<append xpath="/blocks/block[@name='goreBlockHumanCorpse']">
 			<property name="Class" value="Loot" />
-			<property name="LootList" value="301" />
+			<property name="LootList" value="human_corpse" />
 		</append>
 
 		<append xpath="/blocks/block[
@@ -10,7 +10,7 @@
 			@name='goreBlockHumanBones'
 		]">
 			<property name="Class" value="Loot" />
-			<property name="LootList" value="302" />
+			<property name="LootList" value="body_bags" />
 		</append>
 	<!-- / -->
 

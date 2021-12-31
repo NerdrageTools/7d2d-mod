@@ -5,7 +5,7 @@
 				destroy_on_close="false" loot_quality_template="qualBaseTemplate"
 				sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse"
 			>
-				<item group="cannedfood" loot_prob_template="high" />
+				<item group="cannedfood" loot_prob_template="medLow" />
 				<item group="foodCandy" loot_prob_template="medLow" />
 				<item group="drinks" loot_prob_template="medLow" />
 				<item group="groupApparelClothes" loot_prob_template="high" />

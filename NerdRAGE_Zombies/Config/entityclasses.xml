@@ -18,5 +18,15 @@
 		<!-- corpse hitpoints/despawn timers -->
 		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">250</set>
 		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">180</set>
+
+		<!-- remove dropped loot bags -->
+		<set xpath="/entity_classes/entity_class[
+			starts-with(@name, 'zombie')
+		]/property[@name='LootDropProb']/@value">0</set>
+
+		<!-- make lootable -->
+		<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
+			<property name="LootListOnDeath" value="human_corpse" /> <!-- same as human corpse gore block -->
+		</append>
 	<!-- / -->
 </configs>
