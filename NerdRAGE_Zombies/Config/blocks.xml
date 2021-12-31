@@ -13,4 +13,11 @@
 			<property name="LootList" value="302" />
 		</append>
 	<!-- / -->
+
+	<!-- digging up dirt occasionally yields veggies -->
+		<append xpath="/blocks/block[@name='terrDirt']">
+			<drop event="Harvest" name="foodCropMushrooms" prob=".02" count="1,3" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropPotato" prob=".01" count="1" tag="wildCropsHarvest"/>
+		</append>
+	<!-- / -->
 </configs>
