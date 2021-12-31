@@ -16,8 +16,108 @@
 
 	<!-- digging up dirt occasionally yields veggies -->
 		<append xpath="/blocks/block[@name='terrDirt']">
-			<drop event="Harvest" name="foodCropMushrooms" prob=".02" count="1,3" tag="wildCropsHarvest"/>
-			<drop event="Harvest" name="foodCropPotato" prob=".01" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropMushrooms" prob=".02" count="1,3" tag="wildCropsHarvest" />
+			<drop event="Harvest" name="foodCropPotato" prob=".01" count="1" tag="wildCropsHarvest" />
 		</append>
+	<!-- / -->
+
+	<!-- flaming objects burn out over time -->
+		<!-- cannot pick up flaming objects -->
+			<set xpath="/blocks/block[
+				(@name='candleTableLight') or (@name='candleTableLightPlayer') or
+				(@name='candleWallLight') or (@name='candleWallLightPlayer') or
+				(@name='wallTorchLight') or (@name='wallTorchLightPlayer')
+			]/property[@name='CanPickup']/@value">false</set>
+		<!-- / -->
+
+		<!-- Candles -->
+			<!-- drop animal fat -->
+			<set xpath="/blocks/block[
+				(@name='candleTableLight') or (@name='candleTableLightPlayer') or
+				(@name='candleWallLight') or (@name='candleWallLightPlayer')
+			]/drop/@name">resourceAnimalFat</set>
+
+			<!-- burn out, and turn into air -->
+			<set xpath="/blocks/block[
+				(@name='candleWallLight') or (@name='candleWallLightPlayer')
+			]/property[@name='Class']/@value">PlantGrowing</set>
+			<insertAfter xpath="/blocks/block[@name='candleWallLight']/property[@name='Model']">
+				<property name="PlantGrowing.LightLevelGrow" value="0" />
+				<property name="PlantGrowing.LightLevelStay" value="0" />
+				<property name="PlantGrowing.FertileLevel" value="0" />
+				<property name="PlantGrowing.GrowthRate" value="3" />
+				<property name="PlantGrowing.Next" value="air" />
+			</insertAfter>
+		<!-- / -->
+
+		<!-- Wall Torches -->
+			<!-- drop torch holders -->
+			<set xpath="/blocks/block[
+				(@name='wallTorchLight') or (@name='wallTorchLightPlayer')
+			]/drop/@name">torchWallHolder</set>
+
+			<!-- burn out, and turn into torch holders -->
+			<set xpath="/blocks/block[
+				(@name='wallTorchLight') or (@name='wallTorchLightPlayer')
+			]/property[@name='Class']/@value">PlantGrowing</set>
+			<insertAfter xpath="/blocks/block[
+				(@name='wallTorchLight') or (@name='wallTorchLightPlayer')
+			]/property[@name='Model']">
+				<property name="PlantGrowing.LightLevelGrow" value="0" />
+				<property name="PlantGrowing.LightLevelStay" value="0" />
+				<property name="PlantGrowing.FertileLevel" value="0" />
+				<property name="PlantGrowing.GrowthRate" value="8" />
+				<property name="PlantGrowing.Next" value="torchWallHolder" />
+			</insertAfter>
+		<!-- / -->
+
+		<!-- Burning Barrels -->
+			<!-- burn out, and turn into barrels -->
+			<append xpath="/blocks">
+				<block name="burntOutBarrel">
+					<property name="CanPickup" value="false" />
+					<property name="Class" value="Light" />
+					<property name="CustomIcon" value="cntBarrelAcidSingle00" />
+					<property name="DescriptionKey" value="cntBarrelGroupDesc" />
+					<property name="Extends" value="burningBarrelPlayer" param1="Class,HeatMapStrength,HeatMapTime,HeatMapFrequency" />
+					<property name="FilterTags" value="MC_building,SC_lighting" />
+					<property name="HeatMapStrength" value="0" />
+					<property name="HeatMapTime" value="0" />
+					<property name="Light" value="0" />
+					<property name="Model" value="Entities/Industrial/barrel03Prefab" />
+					<property class="UpgradeBlock">
+						<property name="ToBlock" value="burningBarrelPlayer" />
+						<property name="Item" value="resourceWood" />
+						<property name="ItemCount" value="20" />
+						<property name="UpgradeHitCount" value="1" />
+					</property>
+				</block>
+			</append>
+
+			<set xpath="/blocks/block[
+				(@name='burningBarrel') or (@name='burningBarrelPlayer')
+			]/property[@name='Class']/@value">PlantGrowing</set>
+			<insertAfter xpath="/blocks/block[
+				(@name='burningBarrel') or (@name='burningBarrelPlayer')
+			]/property[@name='Model']">
+				<property name="PlantGrowing.LightLevelGrow" value="0" />
+				<property name="PlantGrowing.LightLevelStay" value="0" />
+				<property name="PlantGrowing.FertileLevel" value="0" />
+				<property name="PlantGrowing.GrowthRate" value="16" />
+				<property name="PlantGrowing.Next" value="burntOutBarrel" />
+			</insertAfter>
+		<!-- / -->
+
+		<!-- Jack O Lanterns -->
+			<!-- burn out, and turn into air -->
+			<set xpath="/blocks/block[@name='decoPumpkinJackOLantern']/property[@name='Class']/@value">PlantGrowing</set>
+			<insertAfter xpath="/blocks/block[@name='decoPumpkinJackOLantern']/property[@name='Model']">
+				<property name="PlantGrowing.LightLevelGrow" value="0" />
+				<property name="PlantGrowing.LightLevelStay" value="0" />
+				<property name="PlantGrowing.FertileLevel" value="0" />
+				<property name="PlantGrowing.GrowthRate" value="3" />
+				<property name="PlantGrowing.Next" value="air" />
+			</insertAfter>
+		<!-- / -->
 	<!-- / -->
 </configs>
