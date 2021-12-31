@@ -1,0 +1,15 @@
+<configs>
+	<!-- make ranged weapons accurate while aiming -->
+		<!-- remove crosshairs (except for bows) -->
+		<set xpath="/items/item[not(contains(@name, 'Bow'))]/property[@name='CrosshairOnAim']/@value">false</set>
+
+		<!-- accurate aim: bullets fire perfectly straight while aiming -->
+		<set xpath="/items/item/effect_group/passive_effect[@name='SpreadMultiplierAiming']/@value">0</set>
+
+		<!-- setting this to 1 makes spread stay consistent from shot to shot -->
+		<set xpath="/items/item[not(contains(@name, 'Shotgun'))]/effect_group/passive_effect[@name='IncrementalSpreadMultiplier']/@value">1</set>
+
+		<!-- WeaponHandling 10 (except shotguns) -->
+		<set xpath="/items/item[not(contains(@name, 'Shotgun'))]/effect_group/passive_effect[(@name='WeaponHandling') and (@operation='base_set')]/@value">10</set>
+	<!-- / -->
+</configs>

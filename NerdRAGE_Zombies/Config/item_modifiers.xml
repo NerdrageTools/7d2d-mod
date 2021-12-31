@@ -1,0 +1,4 @@
+<configs>
+	<!-- disable crosshairs from all sights/mods -->
+	<set xpath="/item_modifiers/item_modifier/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
+</configs>
