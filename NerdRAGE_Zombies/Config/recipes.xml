@@ -1,4 +1,22 @@
 <config>
+	<!-- create Cement in the Cement Mixer, not the forge -->
+		<remove xpath="/recipes/recipe[@name='resourceCement' and @craft_area='forge']" />
+		<append xpath="/recipes">
+			<recipe name="resourceCement" count="1" material_based="true" craft_area="cementMixer" tags="cementMixerCrafting">
+				<ingredient name="resourceRockSmall" count="10" />
+			</recipe>
+		</append>
+	<!-- / -->
+
+	<!-- sewing kits -->
+		<append xpath="/recipes">
+			<recipe name="resourceSewingKit" count="1">
+				<ingredient name="resourceCropCottonPlant" count="2"/>
+				<ingredient name="resourceScrapIron" count="1" />
+			</recipe>
+		</append>
+	<!-- / -->
+
 	<!-- fix recipes for ammo stacks -->
 		<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']">
 			<ingredient name="resourceBulletCasing" count="300" />
