@@ -1,0 +1,4 @@
+<configs>
+	<!-- remove opening quest -->
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[class='AddQuest']" />
+</configs>
