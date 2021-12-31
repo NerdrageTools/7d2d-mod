@@ -1,9 +1,0 @@
-<configs>
-	<!-- adjust starting gear -->
-		<set xpath="/entity_classes/entity_class[@name='playerMale']/property[
-			(@name='ItemsOnEnterGame.GameModeSurvival') or
-			(@name='ItemsOnEnterGame.GameModeSurvivalSP') or
-			(@name='ItemsOnEnterGame.GameModeSurvivalMP')
-		]/@value">apparelPlantFiberShirt,apparelPlantFiberPants,meleeToolRepairT0StoneAxe,meleeWpnClubT0WoodenClub,meleeToolTorch,medicalFirstAidBandage</set>
-	<!-- / -->
-</configs>
