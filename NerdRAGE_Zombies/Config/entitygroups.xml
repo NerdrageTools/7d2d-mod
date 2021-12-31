@@ -1,4 +1,0 @@
-<configs>
-	<!-- set radiation regen to 0 -->
-	<set xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]/effect_group/triggered_effect[@cvar='RadiatedRegenAmount']/@value">0</set>
-</configs>

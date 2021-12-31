@@ -36,5 +36,8 @@
 		<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
 			<property name="LootListOnDeath" value="human_corpse" /> <!-- same as human corpse gore block -->
 		</append>
+
+		<!-- remove regen from radiated -->
+		<set xpath="/entity_classes/entity_class[contains(@name, 'Radiated')]/effect_group/triggered_effect[@cvar='RadiatedRegenAmount']/@value">0</set>
 	<!-- / -->
 </configs>
