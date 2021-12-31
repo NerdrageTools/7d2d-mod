@@ -1,8 +1,4 @@
 <configs>
-	<!-- no more spider zombie quest -->
-    <remove xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']/item[@name='qc_itsbitsyspider']" />
-	<!-- / -->
-
 	<!-- remove original cabinet loot lists, replaced below -->
 		<remove xpath="/lootcontainers/lootcontainer[@id='10']"></remove>
 		<remove xpath="/lootcontainers/lootcontainer[@id='11']"></remove>

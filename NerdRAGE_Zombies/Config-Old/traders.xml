@@ -1,5 +1,0 @@
-<configs>
-	<!-- no more spider zombie quest -->
-		<remove xpath="/traders/trader_item_groups/trader_item_group[@name='groupQuestChallenge']/item[@name='qc_itsbitsyspider']" />
-	<!-- / -->
-</configs>
