@@ -1,0 +1,26 @@
+Key,Source,Context,Changes,English
+
+<!-- Attribute Renames -->,comments,Comment,None,Comment
+attGeneral,progression,Attribute,New,General
+attGeneralDesc,progression,Attribute,New,General Skills & Perks
+reqGeneralLevel0,progression,Requirement,New,General Skill
+skillGeneralGatheringName,progression,Skill,New,Gathering
+skillGeneralGatheringDesc,progression,Skill,New,Gathering
+skillGeneralHuntingName,progression,Skill,New,Hunting
+skillGeneralHuntingDesc,progression,Skill,New,Hunting
+skillGeneralScavengingName,progression,Skill,New,Scavenging
+skillGeneralScavengingDesc,progression,Skill,New,Scavenging
+
+<!-- Vanilla Item/Creature Renames -->,comments,Comment,None,Comment
+animalBear,entityclasses,Entity,New,Wild Bear
+animalBoar,entityclasses,Entity,New,Wild Boar
+animalBossGrace,entityclasses,Entity,New,Radiated Boar
+animalCoyote,entityclasses,Entity,New,Coyote
+animalDireWolf,entityclasses,Entity,New,Dire Wolf
+animalMountainLion,entityclasses,Entity,New,Mountain Lion
+animalSnake,entityclasses,Entity,New,Snake
+animalWolf,entityclasses,Entity,New,Wolf
+animalZombieBear,entityclasses,Entity,New,Infected Bear
+animalZombieDog,entityclasses,Entity,New,Infected Dog
+animalZombieVulture,entityclasses,Entity,New,Infected Vulture
+animalZombieVultureRadiated,entityclasses,Entity,New,Radiated Vulture
