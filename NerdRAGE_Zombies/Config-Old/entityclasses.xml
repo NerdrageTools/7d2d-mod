@@ -7,36 +7,6 @@
 		]/@value">apparelPlantFiberShirt,apparelPlantFiberPants,meleeToolRepairT0StoneAxe,meleeWpnClubT0WoodenClub,meleeToolTorch,medicalFirstAidBandage</set>
 	<!-- / -->
 
-	<!-- remove zombie twitchy walking -->
-		<set xpath="/entity_classes/entity_class[@name='zombieArlene']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieBoe']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieCheerleader']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieDarlene']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieFarmer']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieFarmerFeral']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieFootballPlayer']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieJoe']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieMarlene']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieOldTimer']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieSnow']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieSteve']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='WalkType']/@value">7</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieYo']/property[@name='WalkType']/@value">7</set>
-	<!-- / -->
-
-	<!-- randomize knockdown/stun durations -->
-		<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">0.2,30.0</set>
-		<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">0.2,30.0</set>
-	<!-- / -->
-
-	<!-- corpse hitpoints/despawn timers -->
-		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">250</set>
-		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">180</set>
-	<!-- / -->
-
 	<!-- zombie loot lists by type -->
 		<set xpath="/entity_classes/entity_class[
 			@name='zombieArlene' or

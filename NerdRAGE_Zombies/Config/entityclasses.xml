@@ -4,4 +4,19 @@
 		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">30</set>
 		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">60</set>
 	<!-- / -->
+
+	<!-- zombies -->
+		<!-- remove twitchy walk -->
+		<set xpath="/entity_classes/entity_class[starts-with(@name, 'zombie')]/property[@name='WalkType']/@value">7</set>
+		<set xpath="/entity_classes/entity_class[contains(@name, 'Crawler')]/property[@name='WalkType']/@value">4</set>
+		<set xpath="/entity_classes/entity_class[contains(@name, 'Spider')]/property[@name='WalkType']/@value">8</set>
+
+		<!-- randomize knockdown/stun durations -->
+		<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">0.2,30.0</set>
+		<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">0.2,30.0</set>
+
+		<!-- corpse hitpoints/despawn timers -->
+		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">250</set>
+		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">180</set>
+	<!-- / -->
 </configs>
