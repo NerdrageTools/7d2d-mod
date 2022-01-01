@@ -13,12 +13,14 @@
 		<set xpath="/items/item[not(contains(@name, 'Shotgun'))]/effect_group/passive_effect[(@name='WeaponHandling') and (@operation='base_set')]/@value">10</set>
 	<!-- / -->
 
+	<!-- normalize rifle mod compatibilities, add drum magazines -->
+	<set xpath="/items/item[starts-with(@name, 'gunRifle')]/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,drumMagazine</set>
+
 	<!-- normalize ammo stacks and bundles -->
 		<!-- no selling bundles -->
 		<append xpath="/items/item[@name='ammoBundleMaster']">
 			<property name="SellableToTrader" value="false" />
 		</append>
-
 
 		<!-- ammo stacks to 300, bundles stack to 10, and bundles create 300 -->
 		<set xpath="/items/item[starts-with(@name,'ammo')]/property[@name='Stacknumber']/@value">300</set>

@@ -1,4 +1,7 @@
 <configs>
 	<!-- disable crosshairs from all sights/mods -->
 	<set xpath="/item_modifiers/item_modifier/item_property_overrides[@name='*']/property[@name='CrosshairOnAim']/@value">false</set>
+
+	<!-- increase drum magazine from 2x bonus to 3x -->
+	<set xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']/effect_group/passive_effect[@name='MagazineSize']/@value">2</set>
 </configs>
