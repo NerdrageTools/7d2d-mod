@@ -56,4 +56,8 @@
 			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800"/>
 		</append>
 	<!-- / -->
+
+	<!-- remove xp penalty on death -->
+		<remove xpath="/buffs/buff[@name='buffNearDeathTrauma']/effect_group/requirements/requirement[@cvar='_expdeficit']" />
+	<!-- / -->
 </configs>
