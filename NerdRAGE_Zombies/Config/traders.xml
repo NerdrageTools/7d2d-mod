@@ -1,0 +1,6 @@
+<configs>
+	<!-- traders never close -->
+		<set xpath="/traders/trader_info/open_time">0:00</set>
+		<set xpath="/traders/trader_info/close_time">0:00</set>
+	<!-- / -->
+</configs>
