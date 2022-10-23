@@ -17,6 +17,17 @@
 		</append>
 	<!-- / -->
 
+	<!-- sewing kits -->
+		<append xpath="/recipes">
+			<recipe name="resourceAcid" count="1" craft_area="chemistryStation">
+				<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+				<ingredient name="resourceCoal" count="5" />
+				<ingredient name="drinkJarRiverWater" count="1" />
+				<ingredient name="resourceBone" count="1" />
+			</recipe>
+		</append>
+	<!-- / -->
+
 	<!-- fix recipes for ammo stacks -->
 		<!-- .44 Magnum ammo -->
 			<set xpath="/recipes/recipe[@name='ammoBundle44MagnumBulletBall']">
