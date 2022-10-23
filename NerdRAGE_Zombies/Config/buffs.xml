@@ -57,7 +57,12 @@
 		</append>
 	<!-- / -->
 
-	<!-- remove xp penalty on death -->
-		<remove xpath="/buffs/buff[@name='buffNearDeathTrauma']/effect_group/requirements/requirement[@cvar='_expdeficit']" />
+	<!-- automatically repay XP Penalty from death -->
+		<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+			<effect_group name="No XP Penalty">
+				<triggered_effect trigger="onSelfBuffStart" action="GiveExp" exp="@_expdeficit"/>
+				<triggered_effect trigger="onSelfBuffStart" action="GiveExp" exp="@_expdeficit"/>
+			</effect_group>
+		</append>
 	<!-- / -->
 </configs>
