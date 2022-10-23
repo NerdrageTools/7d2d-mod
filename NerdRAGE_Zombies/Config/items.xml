@@ -26,6 +26,8 @@
 		<set xpath="/items/item[starts-with(@name,'ammo')]/property[@name='Stacknumber']/@value">300</set>
 		<set xpath="/items/item[starts-with(@name,'ammoBundle')]/property[@name='Stacknumber']/@value">10</set>
 		<set xpath="/items/item[starts-with(@name,'ammoBundle')]/property[@class='Action0']/property[@name='Create_item_count']/@value">300</set>
+		<!-- reset gas cans back to stacks of 10,000 -->
+		<set xpath="/items/item[@name='ammoGasCan']/property[@name='Stacknumber']/@value">10000</set>
 
 		<!-- turret ammo stacks to 1000, and bundles create 1000 -->
 		<set xpath="/items/item[starts-with(@name,'ammoJunkTurret')]/property[@name='Stacknumber']/@value">1000</set>
