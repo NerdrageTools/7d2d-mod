@@ -25,35 +25,35 @@
 		<append xpath="/buffs/buff[@name='buffInfectionMain']/effect_group[not(contains(@name, 'main loop')) and not(contains(@name, 'shut down')) and not(contains(@name, 'display % values')) and not(contains(@name, 'signaling buffs')) and not(contains(@name, 'getting hit makes it worse'))]">
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="7200"> <!-- 2 hours  -->
-				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="10800"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="85"/>
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="10800" />
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="85" />
 			</triggered_effect>
 
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="5400"> <!-- 1.5 hours  -->
-				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="7200"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="65"/>
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="7200" />
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="65" />
 			</triggered_effect>
 
 			<!-- Add randomness to vanilla default buff entry point -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="3600"> <!-- 1 hour -->
-				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="5400"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40"/>
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="5400" />
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="40" />
 			</triggered_effect>
 
 			<!-- Add randomness to vanilla default buff entry point. Make this the "min" value (shortest to live) -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="2700"> <!-- 45 minutes -->
-				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="3600"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="3600" />
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15" />
 			</triggered_effect>
 
 			<!-- Add randomness to vanilla default buff entry point. Make this the "min" value (shortest to live) -->
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="1800"> <!-- 30 minutes -->
-				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="2700"/>
-				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5"/>
+				<requirement name="CVarCompare" cvar="$infectionMaxDuration" operation="Equals" value="2700" />
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="5" />
 			</triggered_effect>
 
 			<!-- cleanup, as it seems to be set to the lowest it hit last time and does not reset -->
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$infectionMaxDuration" operation="set" value="10800" />
 		</append>
 	<!-- / -->
 
