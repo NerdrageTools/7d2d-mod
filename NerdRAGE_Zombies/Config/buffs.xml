@@ -61,7 +61,6 @@
 		<append xpath="/buffs/buff[@name='buffStatusCheck01']">
 			<effect_group name="No XP Penalty">
 				<triggered_effect trigger="onSelfBuffStart" action="GiveExp" exp="@_expdeficit"/>
-				<triggered_effect trigger="onSelfBuffStart" action="GiveExp" exp="@_expdeficit"/>
 			</effect_group>
 		</append>
 	<!-- / -->
