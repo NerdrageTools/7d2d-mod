@@ -1,4 +1,85 @@
 <configs>
 	<!-- remove opening quest -->
 	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddQuest']" />
+
+	<!-- carrying meat/fat spawns animals to hunt you -->
+	<append xpath="/gameevents">
+		<action_sequence name="spawn_fresh_meat_hunters">
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalWolf,animalZombieDog" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="25" />
+				</requirement>
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalWolf,animalZombieDog" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="50" />
+				</requirement>
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalWolf,animalZombieDog,animalMountainLion" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="75" />
+				</requirement>
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalBear,animalDireWolf" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="100" />
+				</requirement>
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalZombieBear" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="125" />
+				</requirement>
+			</action>
+
+			<action class="SpawnEntity">
+				<property name="entity_names" value="animalZombieBear" />
+				<property name="spawn_count" value="1" />
+				<requirement class="Gamestage">
+					<property name="operation" value="GTE" />
+					<property name="game_stage" value="150" />
+				</requirement>
+			</action>
+
+			<action class="AddJournalTip">
+				<property name="phase" value="1" />
+				<property name="show_window" value="false" />
+				<property name="tip_name" value="tutorialSmellsLikeMeat" />
+			</action>
+		</action_sequence>
+	</append>
+
+	<append xpath="/gameevents/action_sequence[@name='spawn_fresh_meat_hunters']/action[@class='SpawnEntity']">
+		<property name="attack_target" value="false"/>
+		<property name="clear_position_on_complete" value="true" />
+		<property name="max_distance" value="75" />
+		<property name="min_distance" value="25" />
+		<property name="party_addition" value="2" />
+		<property name="single_choice" value="true" />
+		<property name="spawn_from_position" value="true" />
+		<requirement class="RandomRoll">
+			<property name="min_max" value="0,100" />
+			<property name="operation" value="LT" />
+			<property name="value" value="5" />
+		</requirement>
+	</append>
+
 </configs>

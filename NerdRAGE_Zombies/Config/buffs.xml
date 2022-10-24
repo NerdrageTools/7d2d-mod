@@ -64,4 +64,106 @@
 			</effect_group>
 		</append>
 	<!-- / -->
+
+	<!-- carrying meat/fat makes zombies & animals hunt you -->
+		<!-- https://github.com/magejosh/ScentOfPreyA20/tree/main/Config -->
+		<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+
+			<!-- if you are carrying meat, you smell like it -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffSmellsLikeMeat">
+				<requirement name="PlayerItemCount" item_name="foodRawMeat" operation="GTE" value="1" />
+				<requirement name="!HasBuff" buff="buffSmellsLikeMeat" />
+			</triggered_effect>
+
+			<!-- if you are carrying fat, you smell like it -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffSmellsLikeMeat">
+				<requirement name="PlayerItemCount" item_name="resourceAnimalFat" operation="GTE" value="1" />
+				<requirement name="!HasBuff" buff="buffSmellsLikeMeat" />
+			</triggered_effect>
+
+			<!-- if you stop carrying any meat/fat, you stop smelling like it -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="buffSmellsLikeMeat">
+				<requirement name="HasBuff" buff="buffSmellsLikeMeat" />
+				<requirement name="PlayerItemCount" item_name="foodRawMeat" operation="LT" value="1" />
+				<requirement name="PlayerItemCount" item_name="resourceAnimalFat" operation="LT" value="1" />
+			</triggered_effect>
+
+		</append>
+
+		<append xpath="/buffs">
+			<buff name="buffSmellsLikeMeat" hidden="false" remove_on_death="true" name_key="buffSmellsLikeMeatName" description_key="buffSmellsLikeMeatDesc" icon="ui_game_symbol_smell" icon_color="219,124,29" showonhud="true">
+				<stack_type value="ignore" />
+				<update_rate value="600" /><!-- every 30 seconds -->
+				
+				<effect_group name="Not Sneaking">
+					<requirement name="!HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value="2" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value="2" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="2" />
+				</effect_group>
+
+				<effect_group name="No fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="LT" value="1" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value="1" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value="1" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value="1" />
+				</effect_group>
+
+				<effect_group name="1x fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="Equals" value="1" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value=".8" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value=".8" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value=".8" />
+				</effect_group>
+
+				<effect_group name="2x fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="Equals" value="2" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value=".6" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value=".6" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value=".6" />
+				</effect_group>
+
+				<effect_group name="3x fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="Equals" value="3" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value=".4" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value=".4" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value=".4" />
+				</effect_group>
+
+				<effect_group name="4x fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="Equals" value="4" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="perc_add" value=".2" />
+					<passive_effect name="LightMultiplier" operation="perc_add" value=".2" />
+					<passive_effect name="NoiseMultiplier" operation="perc_add" value=".2" />
+				</effect_group>
+
+				<!-- at From The Shadows 5, this buff no longer affects you while crouching -->
+				<!--
+				<effect_group name="5x fromTheShadows">
+					<requirement name="ProgressionLevel" progression_name="perkFromTheShadows" operation="GTE" value="5" />
+					<requirement name="HasBuff" buff="buffCrouching" />
+					<passive_effect name="EnemySearchDuration" operation="multiply" value=".5" />
+					<passive_effect name="LightMultiplier" operation="multiply" value=".5" />
+					<passive_effect name="NoiseMultiplier" operation="multiply" value=".5" />
+				</effect_group>
+				-->
+
+				<!-- Spawn Zombies if you're carrying meat/fat -->
+				<effect_group name="Spawn Hunter">
+					<requirement name="!HasBuff" buff="buffCrouching" />
+					<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawn_fresh_meat_hunters">
+						<!-- only spawn animals if outdoors -->
+						<requirement class="IsIndoors">
+							<property name="invert" value="true" />
+						</requirement>
+					</triggered_effect>
+				</effect_group>
+			</buff>
+		</append>
+	<!-- / -->
 </configs>

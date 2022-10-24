@@ -24,3 +24,9 @@ animalZombieBear,entityclasses,Entity,New,Infected Bear
 animalZombieDog,entityclasses,Entity,New,Infected Dog
 animalZombieVulture,entityclasses,Entity,New,Infected Vulture
 animalZombieVultureRadiated,entityclasses,Entity,New,Radiated Vulture
+
+<!-- Smells Like Meat -->,comments,Comment,None,Comment
+buffSmellsLikeMeatDesc,buffs,Buff,New,"You are carrying [db7c1d]Something Smelly[ffffff], predators will come far and wide to find you because of it. Better stash it somewhere safe, like a vehicle to protect yourself."
+buffSmellsLikeMeatName,buffs,Buff,New,"[db7c1d]Smells Like Meat"
+tutorialSmellsLikeMeat,Journal Tip,,,,"You are carrying [db7c1d]Something Smelly[ffffff], predators will come far and wide to find you because of it. Better stash it somewhere safe, like a vehicle to protect yourself."
+tutorialSmellsLikeMeat_title,Journal Tip,,,,"[db7c1d]Smells Like Meat"
