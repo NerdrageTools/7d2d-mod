@@ -153,16 +153,17 @@
 				</effect_group>
 				-->
 
-				<!-- Spawn Zombies if you're carrying meat/fat -->
+				<!-- Spawn Zombies if you're carrying meat/fat outdoors -->
+				<!--
 				<effect_group name="Spawn Hunter">
 					<requirement name="!HasBuff" buff="buffCrouching" />
 					<triggered_effect trigger="onSelfBuffUpdate" action="CallGameEvent" event="spawn_fresh_meat_hunters">
-						<!-- only spawn animals if outdoors -->
 						<requirement class="IsIndoors">
 							<property name="invert" value="true" />
 						</requirement>
 					</triggered_effect>
 				</effect_group>
+				-->
 			</buff>
 		</append>
 	<!-- / -->
