@@ -7,6 +7,14 @@
 
 		<append xpath="/blocks/block[
 			@name='bodyBagBlack' or
+      @name='bodyBagYellow' or
+      @name='bodyBagPile' or
+      @name='bodyBagPileMix' or
+      @name='bodyBagPair' or
+      @name='bodyBagPairMixed' or
+      @name='bodyBagPairYellow' or
+      @name='bodyBagBlackFlies' or
+      @name='bodyBagYellowFlies' or
 			@name='goreBlockHumanBones'
 		]">
 			<property name="Class" value="Loot" />

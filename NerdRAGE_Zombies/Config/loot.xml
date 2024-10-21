@@ -1,30 +1,55 @@
 <configs>
+  
 	<!-- custom loot containers -->
 		<append xpath="/lootcontainers">
-			<lootcontainer id="301" name="human_corpse" count="1,2" size="6,3"
-				destroy_on_close="false" loot_quality_template="qualBaseTemplate"
-				sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse"
-			>
-				<item group="cannedfood" loot_prob_template="medLow" />
-				<item group="foodCandy" loot_prob_template="medLow" />
-				<item group="drinks" loot_prob_template="medLow" />
-				<item group="groupApparelClothes" loot_prob_template="high" />
-				<item group="groupApparelShoesAll" loot_prob_template="low" />
-				<item group="groupArmorScaled" loot_prob_template="veryLow" />
-				<item group="groupAmmoRegular" loot_prob_template="low" />
-				<item group="groupToolsTiered" loot_prob_template="veryLow" />
-				<item group="groupWeaponsAllScaled" loot_prob_template="low" />
-				<item group="perkBooks" loot_prob_template="veryLow" />
-				<item group="survivalMedical" loot_prob_template="veryLow" />
-			</lootcontainer>
+      <!-- restore drinks group -->
+        <lootgroup name="drinks">
+          <item name="drinkJarRiverWater" count="1" loot_prob_template="high" />
+          <item name="drinkJarBoiledWater" count="1" loot_prob_template="med"/>
+          <item name="drinkJarCoffee" count="1" loot_prob_template="low"/>
+          <item name="drinkJarGoldenRodTea" count="1" loot_prob_template="veryLow"/>
+          <item name="drinkJarRedTea" count="1" loot_prob_template="veryLow"/>
+          <item name="drinkJarBeer" count="1" loot_prob_template="veryLow"/>
+          <item name="drinkJarYuccaJuice" count="1" loot_prob_template="veryLow"/>
+          <item name="drinkCanMegaCrush" count="1" loot_prob_template="veryLow"/>
+        </lootgroup>
+      <!-- / -->
 
-			<lootcontainer id="302" name="body_bags" count="1,2" size="6,3"
-				destroy_on_close="false" loot_quality_template="qualBaseTemplate"
-				sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse"
-			>
-				<item group="groupApparelClothes" loot_prob_template="high" />
-				<item group="groupApparelShoesAll" loot_prob_template="low" />
-			</lootcontainer>
+      <!-- human corpse -->
+        <lootcontainer name="human_corpse" count="1,2" size="6,3"
+          destroy_on_close="false" loot_quality_template="qualBaseTemplate"
+          sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse"
+        >
+          <item group="groupFoodTrashCommon" loot_prob_template="med" />
+          <item name="foodRottingFlesh" count="1,3" loot_prob_template="med"/>
+          <item name="resourceAnimalFat" count="1,2" loot_prob_template="med"/>
+          <item name="resourceBone" count="1,3" loot_prob_template="med" />
+
+          <item group="cannedfood" loot_prob_template="veryLow" />
+          <item group="drinks" loot_prob_template="veryLow" />
+          <item group="foodCandy" loot_prob_template="veryLow" />
+          <item group="groupAmmoSmall" loot_prob_template="veryLow" />
+          <item group="groupArmorScaled" loot_prob_template="veryLow" />
+          <item group="groupFoodTrashUncommon" loot_prob_template="veryLow" />
+          <item group="groupToolsTiered" loot_prob_template="veryLow" />
+          <item group="groupWeaponsAllScaled" loot_prob_template="veryLow" />
+          <item group="perkBooks" loot_prob_template="veryLow" />
+          <item group="survivalMedical" loot_prob_template="veryLow" />
+        </lootcontainer>
+      <!-- / -->
+
+      <!-- body bags -->
+        <lootcontainer id="302" name="body_bags" count="1,2" size="6,3"
+          destroy_on_close="false" loot_quality_template="qualBaseTemplate"
+          sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse"
+        >
+          <item name="foodRottingFlesh" count="1,3" loot_prob_template="med"/>
+          <item name="resourceAnimalFat" count="1,2" loot_prob_template="med"/>
+          <item name="resourceBone" count="1,3" loot_prob_template="med" />
+          <item group="groupFoodTrashCommon" loot_prob_template="veryLow" />
+          <item group="groupArmorParts" loot_prob_template="veryLow" />
+        </lootcontainer>
+      <!-- / -->
 		</append>
 	<!-- / -->
 </configs>

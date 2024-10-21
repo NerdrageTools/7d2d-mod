@@ -5,11 +5,11 @@
 				(@name='ItemsOnEnterGame.GameModeSurvival') or
 				(@name='ItemsOnEnterGame.GameModeSurvivalSP') or
 				(@name='ItemsOnEnterGame.GameModeSurvivalMP')
-			]/@value">apparelPlantFiberShirt,apparelPlantFiberPants,meleeToolRepairT0StoneAxe,meleeWpnClubT0WoodenClub,meleeToolTorch,medicalFirstAidBandage</set>
+			]/@value">drinkJarBoiledWater=2,foodCanChili=2,medicalFirstAidBandage=2,meleeToolTorch,meleeToolRepairT0StoneAxe,meleeWpnClubT0WoodenClub</set>
 		<!-- / -->
 
 		<!-- backpack size increase -->
-		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">30</set>
+		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='CarryCapacity']/@value">25</set>
 		<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group/passive_effect[@name='BagSize']/@value">60</set>
 	<!-- / -->
 
@@ -20,8 +20,8 @@
 		<set xpath="/entity_classes/entity_class[contains(@name, 'Spider')]/property[@name='WalkType']/@value">8</set>
 
 		<!-- randomize knockdown/stun durations -->
-		<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">0.2,30.0</set>
-		<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">0.2,30.0</set>
+		<set xpath="/entity_classes/entity_class/property[@name='KnockdownProneStunDuration']/@value">0.2,45.0</set>
+		<set xpath="/entity_classes/entity_class/property[@name='KnockdownKneelStunDuration']/@value">0.2,45.0</set>
 
 		<!-- corpse hitpoints/despawn timers -->
 		<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='DeadBodyHitPoints']/@value">250</set>

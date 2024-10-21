@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
-	<ModInfo>
-		<Author value="NerdRAGE Tools" />
-		<Description value="Custom Server" />
-		<Name value="NerdRAGE Zombies" />
-		<Version value="20.0" />
-	</ModInfo>
+  <Author value="NerdRAGE Tools" />
+  <Description value="Game Balancing/Hardmode Fun Increase" />
+  <DisplayName value="NerdRAGE Zombies" />
+  <Name value="NerdRAGE_Zombies" />
+  <Version value="1.1.0" compat="1.0" />
+  <Website value="" />
 </xml>

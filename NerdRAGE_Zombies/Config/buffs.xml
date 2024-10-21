@@ -11,7 +11,7 @@
 		<set xpath="/buffs/buff[@name='buffInfectionMain']/effect_group/triggered_effect[@trigger='onSelfBuffStart'][@cvar='$infectionMaxDuration'][@operation='set']/@value">10800</set>
 
 		<!--
-			Handle "making random of how long it takes to die
+			Randomize how long it takes to die from infection
 			15% chance of having 3 hours (10800 seconds) [real time]
 			20% chance of having 2 hours (7200 seconds)
 			25% chance of having 1.5 hours (5400 seconds)

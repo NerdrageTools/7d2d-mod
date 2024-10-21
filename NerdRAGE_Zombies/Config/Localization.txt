@@ -1,32 +1,128 @@
-Key,Source,Context,Changes,English
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,spanish,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese
 
-<!-- Attribute Renames -->,comments,Comment,None,Comment
-attGeneral,progression,Attribute,New,General
-attGeneralDesc,progression,Attribute,New,General Skills & Perks
-reqGeneralLevel0,progression,Requirement,New,General Skill
-skillGeneralGatheringName,progression,Skill,New,Gathering
-skillGeneralGatheringDesc,progression,Skill,New,Gathering
-skillGeneralHuntingName,progression,Skill,New,Hunting
-skillGeneralHuntingDesc,progression,Skill,New,Hunting
-skillGeneralScavengingName,progression,Skill,New,Scavenging
-skillGeneralScavengingDesc,progression,Skill,New,Scavenging
+animalBear,entityclasses,Entity,,,Bear,,Bär,Oso,Ours,Orso,クマ,곰,Niedźwiedź,Urso,Медведь,Ayı,熊,熊
+animalBearSmall,entityclasses,Entity,,,Bear,,Bär,Oso,Ours,Orso,クマ,곰,Niedźwiedź,Urso,Медведь,Ayı,熊,熊
+animalBoar,entityclasses,Entity,,,Boar,,Wildschwein,Jabalí,Sanglier,Cinghiale,イノシシ,멧돼지,Dzik,Javali,Кабан,Yabandomuzu,野猪,野豬
+animalBossGrace,entityclasses,Entity,,,Huge Boar,,Riesiges Wildschwein,Jabalí gigante,Énorme sanglier,Cinghiale enorme,巨大イノシシ,거대한 멧돼지,Ogromny dzik,Javali gigante,Огромный кабан,Dev yabandomuzu,巨型野猪,巨型野豬
+animalChicken,entityclasses,Entity,,,Chicken,,Huhn,Pollo,Poulet,Pollo,ニワトリ,닭,Kurczak,Galinha,Курица,Tavuk,鸡,雞
+animalCoyote,entityclasses,Entity,,,Coyote,,Kojote,Coyote,Coyote,Coyote,コヨーテ,코요테,Kojot,Coiote,Койот,Çakal,丛林狼,土狼
+animalDeer,entityclasses,Entity,,,Deer,,Hirsch,Ciervo,Cervidé,Cervo,シカ,사슴,Jeleń,Cervo,Олень,Geyik,鹿,鹿
+animalDireWolf,entityclasses,Entity,,,Wolf,,Wolf,Lobo,Loup,Lupo,オオカミ,늑대,Wilk,Lobo,Волк,Kurt,灰狼,狼
+animalDoe,entityclasses,Entity,,,Deer,,Hirsch,Ciervo,Cervidé,Cervo,シカ,사슴,Jeleń,Cervo,Олень,Geyik,鹿,鹿
+animalMountainLion,entityclasses,Entity,,,Mountain Lion,,Berglöwe,Puma,Puma,Leone di montagna,クーガー,퓨마,Puma,Puma,Пума,Dağ Aslanı,美洲狮,美洲獅
+animalPig,entityclasses,Entity,,,Pig,,Schwein,Cerdo,Cochon,Maiale,ブタ,돼지,Świnia,Porco,Свинья,Domuz,猪,豬
+animalRabbit,entityclasses,Entity,,,Rabbit,,Hase,Conejo,Lapin,Coniglio,ウサギ,토끼,Królik,Coelho,Кролик,Tavşan,兔子,兔子
+animalSnake,entityclasses,Entity,,,Snake,,Schlange,Serpiente,Serpent,Serpente,ヘビ,뱀,Wąż,Cobra,Змея,Yılan,蛇,蛇
+animalStag,entityclasses,Entity,,,Deer,,Hirsch,Ciervo,Cervidé,Cervo,シカ,사슴,Jeleń,Cervo,Олень,Geyik,鹿,鹿
+animalWolf,entityclasses,Entity,,,Wolf,,Wolf,Lobo,Loup,Lupo,オオカミ,늑대,Wilk,Lobo,Волк,Kurt,灰狼,狼
+animalZombieBear,entityclasses,Entity,,,Bear,,Bär,Oso,Ours,Orso,クマ,곰,Niedźwiedź,Urso,Медведь,Ayı,熊,熊
+animalZombieDog,entityclasses,Entity,,,Wolf,,Wolf,Lobo,Loup,Lupo,オオカミ,늑대,Wilk,Lobo,Волк,Kurt,灰狼,狼
+animalZombieVulture,entityclasses,Entity,,,Vulture,,Geier,Buitre,Vautour,Avvoltoio,ハゲワシ,독수리,Sęp,Abutre,Стервятник,Akbaba,秃鹫,禿鷲
+animalZombieVultureRadiated,entityclasses,Entity,,,Vulture,,Geier,Buitre,Vautour,Avvoltoio,ハゲワシ,독수리,Sęp,Abutre,Стервятник,Akbaba,秃鹫,禿鷲
 
-<!-- Vanilla Item/Creature Renames -->,comments,Comment,None,Comment
-animalBear,entityclasses,Entity,New,Wild Bear
-animalBoar,entityclasses,Entity,New,Wild Boar
-animalBossGrace,entityclasses,Entity,New,Radiated Boar
-animalCoyote,entityclasses,Entity,New,Coyote
-animalDireWolf,entityclasses,Entity,New,Dire Wolf
-animalMountainLion,entityclasses,Entity,New,Mountain Lion
-animalSnake,entityclasses,Entity,New,Snake
-animalWolf,entityclasses,Entity,New,Wolf
-animalZombieBear,entityclasses,Entity,New,Infected Bear
-animalZombieDog,entityclasses,Entity,New,Infected Dog
-animalZombieVulture,entityclasses,Entity,New,Infected Vulture
-animalZombieVultureRadiated,entityclasses,Entity,New,Radiated Vulture
+npcBanditMelee,entityclasses,Entity,,,Survivor,,Überlebender,Sobreviviente,Survivant,Sopravvissuto,生存者,생존자,Ocalały,Sobrevivente,Выживший,Hayatta Kalan,幸存者,倖存者
+npcBanditRanged,entityclasses,Entity,,,Survivor,,Überlebender,Sobreviviente,Survivant,Sopravvissuto,生存者,생존자,Ocalały,Sobrevivente,Выживший,Hayatta Kalan,幸存者,倖存者
+npcSurvivorRanged,entityclasses,Entity,,,Survivor,,Überlebender,Sobreviviente,Survivant,Sopravvissuto,生存者,생존자,Ocalały,Sobrevivente,Выживший,Hayatta Kalan,幸存者,倖存者
+npcTraderBob,entityclasses,Entity,,,Bob,,Bob,Bob,Bob,Bob,ボブ,밥,Bob,Bob,Боб,Bob,鲍勃,鮑伯
+npcTraderHugh,entityclasses,Entity,,,Hugh,,Hugh,Hugh,Hugh,Hugh,ヒュー,휴,Hugh,Hugh,Хью,Hugh,休,修
+npcTraderJen,entityclasses,Entity,,,Jen,,Jen,Jen,Jen,Jen,ジェン,젠,Jen,Jen,Джен,Jen,杰恩,詹
+npcTraderJimmy,entityclasses,Entity,,,Jimmy,,Jimmy,Jimmy,Jimmy,Jimmy,ジミー,지미,Jimmy,Jimmy,Джимми,Jimmy,吉米,吉米
+npcTraderJoel,entityclasses,Entity,,,Joel,,Joel,Joel,Joel,Joel,ジョエル,조엘,Joel,Joel,Джоэл,Joel,约珥,祖爾
+npcTraderRekt,entityclasses,Entity,,,Rekt,,Rekt,Rekt,Rekt,Rekt,レクト,렉트,Rekt,Rekt,Рект,Rekt,雷克特,瑞克特
+npcTrader,entityclasses,Entity,,,Trader,,Händler,Vendedor,Marchand,Negoziante,トレーダー,상인,Handlarz,Comerciante,Торговец,Tüccar,商人,商人
 
-<!-- Smells Like Meat -->,comments,Comment,None,Comment
-buffSmellsLikeMeatDesc,buffs,Buff,New,"You are carrying [db7c1d]Something Smelly[ffffff], predators will come far and wide to find you because of it. Better stash it somewhere safe, like a vehicle to protect yourself."
-buffSmellsLikeMeatName,buffs,Buff,New,"[db7c1d]Smells Like Meat"
-tutorialSmellsLikeMeat,Journal Tip,,,,"You are carrying [db7c1d]Something Smelly[ffffff], predators will come far and wide to find you because of it. Better stash it somewhere safe, like a vehicle to protect yourself."
-tutorialSmellsLikeMeat_title,Journal Tip,,,,"[db7c1d]Smells Like Meat"
+zombieArlene,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieArleneFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieArleneRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBehemoth,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBiker,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBikerFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBikerRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBoe,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBoeFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBoeRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBowler,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBowlerFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBowlerRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBurnt,entityclasses,Entity,,,Burnt Corpse,,Verbrannte Leiche,Cadáver quemado,Cadavre brûlé,Cadavere bruciato,焼けた死体,탄 시체,Spalone zwłoki,Cadáver queimado,Обгоревший труп,Yanmış Ceset,烧焦的尸体,燒焦的屍體
+zombieBurntFeral,entityclasses,Entity,,,Burnt Corpse,,Verbrannte Leiche,Cadáver quemado,Cadavre brûlé,Cadavere bruciato,焼けた死体,탄 시체,Spalone zwłoki,Cadáver queimado,Обгоревший труп,Yanmış Ceset,烧焦的尸体,燒焦的屍體
+zombieBurntRadiated,entityclasses,Entity,,,Burnt Corpse,,Verbrannte Leiche,Cadáver quemado,Cadavre brûlé,Cadavere bruciato,焼けた死体,탄 시체,Spalone zwłoki,Cadáver queimado,Обгоревший труп,Yanmış Ceset,烧焦的尸体,燒焦的屍體
+zombieBusinessMan,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBusinessManFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieBusinessManRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieDarlene,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieDarleneFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieDarleneRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieDemolition,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatCop,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatCopFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatCopRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatHawaiian,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatHawaiianFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFatHawaiianRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFemaleFat,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFemaleFatFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieFemaleFatRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieInmate,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieInmateFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieInmateRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJanitor,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJanitorFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJanitorRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJoe,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJoeFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieJoeRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLab,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLabFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLabRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLumberjack,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLumberjackFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieLumberjackRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMaleHazmat,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMaleHazmatFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMaleHazmatRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMarlene,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMarleneFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMarleneRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMoe,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMoeFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMoeRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMutated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMutatedFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieMutatedRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieNurse,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieNurseFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieNurseRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombiePartyGirl,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombiePartyGirlFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombiePartyGirlRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieScreamer,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieScreamerFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieScreamerRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSkateboarder,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSkateboarderFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSkateboarderRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSoldier,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSoldierFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSoldierRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSpider,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSpiderFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSpiderRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteve,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteveCrawler,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteveCrawlerFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteveCrawlerRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteveFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieSteveRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieTomClark,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieTomClarkFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieTomClarkRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieUtilityWorker,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieUtilityWorkerFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieUtilityWorkerRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieWight,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieWightFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieWightRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieYo,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieYoFeral,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
+zombieYoRadiated,entityclasses,Entity,,,Rotting Corpse,,Verwesende Leiche,Cadáver putrefacto,Cadavre en décomposition,Cadavere in decomposizione,腐敗した死体,썩어가는 시체,Gnijące zwłoki,Cadáver em decomposição,Гниющий труп,Çürüyen Ceset,腐烂的尸体,腐爛的屍體
